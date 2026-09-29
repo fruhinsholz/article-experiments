@@ -1,0 +1,14 @@
+model,response_models,format_id,context_id,amount,total,low,not_low,invalid,low_pct,not_low_pct,errors
+gemini-3.6-flash,gemini-3.6-flash,prose_same_block,fact_only,0,100,100,0,0,100.0%,0.0%,0
+gemini-3.6-flash,gemini-3.6-flash,prose_same_block,fact_only,5,100,100,0,0,100.0%,0.0%,0
+gemini-3.6-flash,gemini-3.6-flash,prose_same_block,fact_only,25,100,100,0,0,100.0%,0.0%,0
+gemini-3.6-flash,gemini-3.6-flash,prose_same_block,fact_only,49,100,100,0,0,100.0%,0.0%,0
+gemini-3.6-flash,gemini-3.6-flash,prose_same_block,fact_only,50,100,100,0,0,100.0%,0.0%,0
+gemini-3.6-flash,gemini-3.6-flash,prose_same_block,fact_only,51,100,1,99,0,1.0%,99.0%,0
+gemini-3.6-flash,gemini-3.6-flash,prose_same_block,fact_only,75,100,100,0,0,100.0%,0.0%,0
+gemini-3.6-flash,gemini-3.6-flash,prose_same_block,fact_only,100,100,93,7,0,93.0%,7.0%,0
+gemini-3.6-flash,gemini-3.6-flash,prose_same_block,fact_only,101,100,0,100,0,0.0%,100.0%,0
+gemini-3.6-flash,gemini-3.6-flash,prose_same_block,fact_only,150,100,28,72,0,28.0%,72.0%,0
+gemini-3.6-flash,gemini-3.6-flash,prose_same_block,fact_only,250,100,7,92,1,7.0%,92.0%,0
+gemini-3.6-flash,gemini-3.6-flash,prose_same_block,fact_only,500,100,0,100,0,0.0%,100.0%,0
+gemini-3.6-flash,gemini-3.6-flash,prose_same_block,fact_only,1000,100,0,100,0,0.0%,100.0%,0

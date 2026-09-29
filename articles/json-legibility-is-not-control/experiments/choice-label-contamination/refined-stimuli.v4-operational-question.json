@@ -1,0 +1,58 @@
+{
+  "version": "4.0.0-question-ablation",
+  "derivedFrom": "refined-stimuli.v3-no-identifier-instruction.json",
+  "purpose": "Post-confirmatory reformulation of the question in operational terms without referring to descriptions or choice names.",
+  "question": "To what extent can the person currently perform their essential work?",
+  "instructionSuffix": "",
+  "states": {
+    "boundary": "My computer is broken, but from my phone I can complete every essential job duty at normal quality. Most duties are at normal pace; I am unsure whether one duty may take slightly longer.",
+    "clear_full": "My computer is broken, but I can complete every essential job duty from my phone at normal quality and pace without assistance.",
+    "clear_partial": "My computer is broken. From my phone I can complete some essential job duties, but at least one essential duty cannot be completed at normal quality or pace."
+  },
+  "descriptions": {
+    "full": "The person can complete every essential job duty at normal quality and pace without assistance.",
+    "partial": "The person can complete some essential job duties, but at least one essential duty cannot be completed at normal quality or pace.",
+    "none": "The person cannot complete any essential job duty."
+  },
+  "keyFamilies": {
+    "neutral": {
+      "full": "A",
+      "partial": "B",
+      "none": "C",
+      "validationStatus": "reference"
+    },
+    "work_completion": {
+      "full": "complete_work",
+      "partial": "partial_work",
+      "none": "no_work",
+      "validationStatus": "accepted"
+    },
+    "task_coverage": {
+      "full": "all_tasks",
+      "partial": "some_tasks",
+      "none": "no_tasks",
+      "validationStatus": "accepted"
+    },
+    "capacity": {
+      "full": "full_capacity",
+      "partial": "partial_capacity",
+      "none": "no_capacity",
+      "validationStatus": "accepted"
+    }
+  },
+  "applicationPolicy": {
+    "reviewIfPartialPlusNoneAtLeast": 0.5,
+    "reviewBranch": "human_review",
+    "automaticBranch": "automatic_full_capacity"
+  },
+  "randomization": {
+    "seed": 30092026,
+    "unit": "complete balanced block containing every state-family cell once"
+  },
+  "ablation": {
+    "repeatsPerCell": 20,
+    "totalCalls": 240,
+    "acceptedFamiliesOnly": true,
+    "confirmatory": false
+  }
+}

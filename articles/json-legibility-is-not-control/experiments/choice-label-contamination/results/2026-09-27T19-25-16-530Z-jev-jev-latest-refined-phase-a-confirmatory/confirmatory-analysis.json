@@ -1,0 +1,232 @@
+{
+  "method": {
+    "pairingUnit": "balanced block",
+    "bootstrapSamples": 10000,
+    "bootstrapSeed": 30092027,
+    "interval": "paired percentile bootstrap 95%",
+    "test": "two-sided exact paired sign-flip test on review-score differences",
+    "multiplicity": "Holm adjustment across the three accepted families within each state",
+    "neutralOrderRange": 0.0705
+  },
+  "calls": 240,
+  "errors": 0,
+  "responseModels": [
+    "jev-1.13.0"
+  ],
+  "results": [
+    {
+      "state": "boundary",
+      "family": "capacity",
+      "nBlocks": 20,
+      "reviewScoreDifference": {
+        "mean": -0.042000000000000016,
+        "bootstrap95": [
+          -0.06100000000000002,
+          -0.02400000000000001
+        ],
+        "exactSignFlipPValue": 0.000461578369140625,
+        "holmAdjustedPValue": 0.000461578369140625
+      },
+      "humanReviewRateDifference": {
+        "mean": -0.35,
+        "bootstrap95": [
+          -0.55,
+          -0.15
+        ]
+      },
+      "exceedsNeutralOrderRange": false,
+      "changesApplicationBranch": true
+    },
+    {
+      "state": "boundary",
+      "family": "work_completion",
+      "nBlocks": 20,
+      "reviewScoreDifference": {
+        "mean": -0.06400000000000002,
+        "bootstrap95": [
+          -0.08449999999999999,
+          -0.043000000000000003
+        ],
+        "exactSignFlipPValue": 0.00005340576171875,
+        "holmAdjustedPValue": 0.0001068115234375
+      },
+      "humanReviewRateDifference": {
+        "mean": -0.4,
+        "bootstrap95": [
+          -0.65,
+          -0.15
+        ]
+      },
+      "exceedsNeutralOrderRange": false,
+      "changesApplicationBranch": true
+    },
+    {
+      "state": "boundary",
+      "family": "task_coverage",
+      "nBlocks": 20,
+      "reviewScoreDifference": {
+        "mean": -0.08800000000000001,
+        "bootstrap95": [
+          -0.10400000000000002,
+          -0.07200000000000004
+        ],
+        "exactSignFlipPValue": 0.0000019073486328125,
+        "holmAdjustedPValue": 0.0000057220458984375
+      },
+      "humanReviewRateDifference": {
+        "mean": -0.45,
+        "bootstrap95": [
+          -0.65,
+          -0.25
+        ]
+      },
+      "exceedsNeutralOrderRange": true,
+      "changesApplicationBranch": true
+    },
+    {
+      "state": "clear_partial",
+      "family": "capacity",
+      "nBlocks": 20,
+      "reviewScoreDifference": {
+        "mean": 0,
+        "bootstrap95": [
+          0,
+          0
+        ],
+        "exactSignFlipPValue": 1,
+        "holmAdjustedPValue": 1
+      },
+      "humanReviewRateDifference": {
+        "mean": 0,
+        "bootstrap95": [
+          0,
+          0
+        ]
+      },
+      "exceedsNeutralOrderRange": false,
+      "changesApplicationBranch": false
+    },
+    {
+      "state": "clear_partial",
+      "family": "work_completion",
+      "nBlocks": 20,
+      "reviewScoreDifference": {
+        "mean": 0,
+        "bootstrap95": [
+          0,
+          0
+        ],
+        "exactSignFlipPValue": 1,
+        "holmAdjustedPValue": 1
+      },
+      "humanReviewRateDifference": {
+        "mean": 0,
+        "bootstrap95": [
+          0,
+          0
+        ]
+      },
+      "exceedsNeutralOrderRange": false,
+      "changesApplicationBranch": false
+    },
+    {
+      "state": "clear_partial",
+      "family": "task_coverage",
+      "nBlocks": 20,
+      "reviewScoreDifference": {
+        "mean": 0,
+        "bootstrap95": [
+          0,
+          0
+        ],
+        "exactSignFlipPValue": 1,
+        "holmAdjustedPValue": 1
+      },
+      "humanReviewRateDifference": {
+        "mean": 0,
+        "bootstrap95": [
+          0,
+          0
+        ]
+      },
+      "exceedsNeutralOrderRange": false,
+      "changesApplicationBranch": false
+    },
+    {
+      "state": "clear_full",
+      "family": "capacity",
+      "nBlocks": 20,
+      "reviewScoreDifference": {
+        "mean": 0,
+        "bootstrap95": [
+          0,
+          0
+        ],
+        "exactSignFlipPValue": 1,
+        "holmAdjustedPValue": 1
+      },
+      "humanReviewRateDifference": {
+        "mean": 0,
+        "bootstrap95": [
+          0,
+          0
+        ]
+      },
+      "exceedsNeutralOrderRange": false,
+      "changesApplicationBranch": false
+    },
+    {
+      "state": "clear_full",
+      "family": "work_completion",
+      "nBlocks": 20,
+      "reviewScoreDifference": {
+        "mean": 0,
+        "bootstrap95": [
+          0,
+          0
+        ],
+        "exactSignFlipPValue": 1,
+        "holmAdjustedPValue": 1
+      },
+      "humanReviewRateDifference": {
+        "mean": 0,
+        "bootstrap95": [
+          0,
+          0
+        ]
+      },
+      "exceedsNeutralOrderRange": false,
+      "changesApplicationBranch": false
+    },
+    {
+      "state": "clear_full",
+      "family": "task_coverage",
+      "nBlocks": 20,
+      "reviewScoreDifference": {
+        "mean": 0,
+        "bootstrap95": [
+          0,
+          0
+        ],
+        "exactSignFlipPValue": 1,
+        "holmAdjustedPValue": 1
+      },
+      "humanReviewRateDifference": {
+        "mean": 0,
+        "bootstrap95": [
+          0,
+          0
+        ]
+      },
+      "exceedsNeutralOrderRange": false,
+      "changesApplicationBranch": false
+    }
+  ],
+  "successCriterion": {
+    "qualifyingFamilies": [
+      "task_coverage"
+    ],
+    "requiredFamilies": 2,
+    "supported": false
+  }
+}

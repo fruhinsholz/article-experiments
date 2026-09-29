@@ -1,0 +1,43 @@
+{
+  "version": "replication-calibration-1.0.0",
+  "dateFrozen": "2026-09-27",
+  "purpose": "Select four boundary states before testing the descriptive key families.",
+  "question": "To what extent can the person currently perform their essential work?",
+  "instructionSuffix": "",
+  "descriptions": {
+    "full": "The person can complete every essential job duty at normal quality and pace without assistance.",
+    "partial": "The person can complete some essential job duties, but at least one essential duty cannot be completed at normal quality or pace.",
+    "none": "The person cannot complete any essential job duty."
+  },
+  "applicationPolicy": {
+    "reviewIfPartialPlusNoneAtLeast": 0.5,
+    "reviewBranch": "human_review",
+    "automaticBranch": "automatic_full_capacity"
+  },
+  "randomization": {
+    "seed": 27092031,
+    "unit": "complete balanced block containing every calibration state once"
+  },
+  "states": {
+    "r00_explicit_normal": "My computer is broken, but from my phone I can complete every essential job duty at normal quality and pace without assistance.",
+    "r01_normal_pace_less_convenient": "My computer is broken, but from my phone I can complete every essential job duty at normal quality and pace without assistance. The phone is less convenient.",
+    "r02_normal_pace_not_full_day": "My computer is broken, but from my phone I can complete every essential job duty at normal quality and pace without assistance. I have not yet used the phone workflow for a full day.",
+    "r03_roughly_normal_pace": "My computer is broken, but from my phone I can complete every essential job duty at normal quality and roughly normal pace without assistance.",
+    "r04_close_to_normal_pace": "My computer is broken, but from my phone I can complete every essential job duty at normal quality. My pace is close to normal, although the phone is less convenient.",
+    "r05_maybe_one_slight_delay": "My computer is broken, but from my phone I can complete every essential job duty at normal quality and pace without assistance. One duty might occasionally take slightly longer.",
+    "r06_unsure_one_slight_delay": "My computer is broken, but from my phone I can complete every essential job duty at normal quality. Most duties are at normal pace; I am unsure whether one duty may take slightly longer.",
+    "r07_one_duty_sometimes_slower": "My computer is broken, but from my phone I can complete every essential job duty at normal quality. One duty is sometimes slightly slower than normal.",
+    "r08_one_duty_slightly_slower": "My computer is broken, but from my phone I can complete every essential job duty at normal quality. One duty takes slightly longer than normal.",
+    "r09_one_duty_noticeably_slower": "My computer is broken, but from my phone I can complete every essential job duty at normal quality. One duty takes noticeably longer than normal.",
+    "r10_one_duty_not_normal_pace": "My computer is broken, but from my phone I can complete every essential job duty at normal quality. One essential duty cannot be completed at normal pace.",
+    "r11_explicit_partial": "My computer is broken. From my phone I can complete some essential job duties, but at least one essential duty cannot be completed at normal quality or pace."
+  },
+  "keyFamilies": {
+    "neutral": {
+      "full": "A",
+      "partial": "B",
+      "none": "C",
+      "validationStatus": "reference"
+    }
+  }
+}

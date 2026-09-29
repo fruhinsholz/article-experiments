@@ -1,0 +1,87 @@
+# JSON Input LOW Summary
+
+Created: 2026-07-31T00:37:06.560Z
+Commit: 8103e4c5b690a840ba285a35633b1392006f7076
+
+| Model | Format | Context | Amount | Total | LOW | NOT_LOW | Invalid |
+| --- | --- | --- | ---: | ---: | ---: | ---: | ---: |
+| `sonnet` | `json_flat` | `fact_only` | 50 | 1 | 1 (100.0%) | 0 (0.0%) | 0 |
+| `sonnet` | `json_flat` | `fact_only` | 100 | 1 | 1 (100.0%) | 0 (0.0%) | 0 |
+| `sonnet` | `json_flat` | `fact_only` | 150 | 1 | 0 (0.0%) | 1 (100.0%) | 0 |
+| `sonnet` | `json_flat` | `fact_only` | 500 | 1 | 0 (0.0%) | 1 (100.0%) | 0 |
+| `sonnet` | `json_flat` | `fact_only` | 1000 | 1 | 0 (0.0%) | 1 (100.0%) | 0 |
+| `sonnet` | `json_flat` | `fact_only` | 5000 | 1 | 0 (0.0%) | 1 (100.0%) | 0 |
+| `sonnet` | `json_flat` | `fact_only` | 10000 | 1 | 0 (0.0%) | 1 (100.0%) | 0 |
+| `sonnet` | `json_flat` | `fact_only` | 20000 | 1 | 0 (0.0%) | 1 (100.0%) | 0 |
+| `sonnet` | `json_flat` | `retrieved_100000_contract` | 50 | 1 | 1 (100.0%) | 0 (0.0%) | 0 |
+| `sonnet` | `json_flat` | `retrieved_100000_contract` | 100 | 1 | 1 (100.0%) | 0 (0.0%) | 0 |
+| `sonnet` | `json_flat` | `retrieved_100000_contract` | 150 | 1 | 1 (100.0%) | 0 (0.0%) | 0 |
+| `sonnet` | `json_flat` | `retrieved_100000_contract` | 500 | 1 | 1 (100.0%) | 0 (0.0%) | 0 |
+| `sonnet` | `json_flat` | `retrieved_100000_contract` | 1000 | 1 | 1 (100.0%) | 0 (0.0%) | 0 |
+| `sonnet` | `json_flat` | `retrieved_100000_contract` | 5000 | 1 | 1 (100.0%) | 0 (0.0%) | 0 |
+| `sonnet` | `json_flat` | `retrieved_100000_contract` | 10000 | 1 | 0 (0.0%) | 1 (100.0%) | 0 |
+| `sonnet` | `json_flat` | `retrieved_100000_contract` | 20000 | 1 | 1 (100.0%) | 0 (0.0%) | 0 |
+| `sonnet` | `json_typed_boundary_rule` | `fact_only` | 50 | 1 | 1 (100.0%) | 0 (0.0%) | 0 |
+| `sonnet` | `json_typed_boundary_rule` | `fact_only` | 100 | 1 | 1 (100.0%) | 0 (0.0%) | 0 |
+| `sonnet` | `json_typed_boundary_rule` | `fact_only` | 150 | 1 | 0 (0.0%) | 1 (100.0%) | 0 |
+| `sonnet` | `json_typed_boundary_rule` | `fact_only` | 500 | 1 | 0 (0.0%) | 1 (100.0%) | 0 |
+| `sonnet` | `json_typed_boundary_rule` | `fact_only` | 1000 | 1 | 0 (0.0%) | 1 (100.0%) | 0 |
+| `sonnet` | `json_typed_boundary_rule` | `fact_only` | 5000 | 1 | 0 (0.0%) | 1 (100.0%) | 0 |
+| `sonnet` | `json_typed_boundary_rule` | `fact_only` | 10000 | 1 | 0 (0.0%) | 1 (100.0%) | 0 |
+| `sonnet` | `json_typed_boundary_rule` | `fact_only` | 20000 | 1 | 0 (0.0%) | 1 (100.0%) | 0 |
+| `sonnet` | `json_typed_boundary_rule` | `retrieved_100000_contract` | 50 | 1 | 1 (100.0%) | 0 (0.0%) | 0 |
+| `sonnet` | `json_typed_boundary_rule` | `retrieved_100000_contract` | 100 | 1 | 1 (100.0%) | 0 (0.0%) | 0 |
+| `sonnet` | `json_typed_boundary_rule` | `retrieved_100000_contract` | 150 | 1 | 0 (0.0%) | 1 (100.0%) | 0 |
+| `sonnet` | `json_typed_boundary_rule` | `retrieved_100000_contract` | 500 | 1 | 0 (0.0%) | 1 (100.0%) | 0 |
+| `sonnet` | `json_typed_boundary_rule` | `retrieved_100000_contract` | 1000 | 1 | 0 (0.0%) | 1 (100.0%) | 0 |
+| `sonnet` | `json_typed_boundary_rule` | `retrieved_100000_contract` | 5000 | 1 | 0 (0.0%) | 1 (100.0%) | 0 |
+| `sonnet` | `json_typed_boundary_rule` | `retrieved_100000_contract` | 10000 | 1 | 0 (0.0%) | 1 (100.0%) | 0 |
+| `sonnet` | `json_typed_boundary_rule` | `retrieved_100000_contract` | 20000 | 1 | 0 (0.0%) | 1 (100.0%) | 0 |
+| `sonnet` | `json_typed` | `fact_only` | 50 | 1 | 1 (100.0%) | 0 (0.0%) | 0 |
+| `sonnet` | `json_typed` | `fact_only` | 100 | 1 | 1 (100.0%) | 0 (0.0%) | 0 |
+| `sonnet` | `json_typed` | `fact_only` | 150 | 1 | 0 (0.0%) | 1 (100.0%) | 0 |
+| `sonnet` | `json_typed` | `fact_only` | 500 | 1 | 0 (0.0%) | 1 (100.0%) | 0 |
+| `sonnet` | `json_typed` | `fact_only` | 1000 | 1 | 0 (0.0%) | 1 (100.0%) | 0 |
+| `sonnet` | `json_typed` | `fact_only` | 5000 | 1 | 0 (0.0%) | 1 (100.0%) | 0 |
+| `sonnet` | `json_typed` | `fact_only` | 10000 | 1 | 0 (0.0%) | 1 (100.0%) | 0 |
+| `sonnet` | `json_typed` | `fact_only` | 20000 | 1 | 0 (0.0%) | 1 (100.0%) | 0 |
+| `sonnet` | `json_typed` | `retrieved_100000_contract` | 50 | 1 | 1 (100.0%) | 0 (0.0%) | 0 |
+| `sonnet` | `json_typed` | `retrieved_100000_contract` | 100 | 1 | 1 (100.0%) | 0 (0.0%) | 0 |
+| `sonnet` | `json_typed` | `retrieved_100000_contract` | 150 | 1 | 1 (100.0%) | 0 (0.0%) | 0 |
+| `sonnet` | `json_typed` | `retrieved_100000_contract` | 500 | 1 | 1 (100.0%) | 0 (0.0%) | 0 |
+| `sonnet` | `json_typed` | `retrieved_100000_contract` | 1000 | 1 | 1 (100.0%) | 0 (0.0%) | 0 |
+| `sonnet` | `json_typed` | `retrieved_100000_contract` | 5000 | 1 | 1 (100.0%) | 0 (0.0%) | 0 |
+| `sonnet` | `json_typed` | `retrieved_100000_contract` | 10000 | 1 | 1 (100.0%) | 0 (0.0%) | 0 |
+| `sonnet` | `json_typed` | `retrieved_100000_contract` | 20000 | 1 | 0 (0.0%) | 1 (100.0%) | 0 |
+| `sonnet` | `prose_same_block` | `fact_only` | 50 | 1 | 1 (100.0%) | 0 (0.0%) | 0 |
+| `sonnet` | `prose_same_block` | `fact_only` | 100 | 1 | 1 (100.0%) | 0 (0.0%) | 0 |
+| `sonnet` | `prose_same_block` | `fact_only` | 150 | 1 | 0 (0.0%) | 1 (100.0%) | 0 |
+| `sonnet` | `prose_same_block` | `fact_only` | 500 | 1 | 0 (0.0%) | 1 (100.0%) | 0 |
+| `sonnet` | `prose_same_block` | `fact_only` | 1000 | 1 | 0 (0.0%) | 1 (100.0%) | 0 |
+| `sonnet` | `prose_same_block` | `fact_only` | 5000 | 1 | 0 (0.0%) | 1 (100.0%) | 0 |
+| `sonnet` | `prose_same_block` | `fact_only` | 10000 | 1 | 0 (0.0%) | 1 (100.0%) | 0 |
+| `sonnet` | `prose_same_block` | `fact_only` | 20000 | 1 | 0 (0.0%) | 1 (100.0%) | 0 |
+| `sonnet` | `prose_same_block` | `retrieved_100000_contract` | 50 | 1 | 1 (100.0%) | 0 (0.0%) | 0 |
+| `sonnet` | `prose_same_block` | `retrieved_100000_contract` | 100 | 1 | 1 (100.0%) | 0 (0.0%) | 0 |
+| `sonnet` | `prose_same_block` | `retrieved_100000_contract` | 150 | 1 | 1 (100.0%) | 0 (0.0%) | 0 |
+| `sonnet` | `prose_same_block` | `retrieved_100000_contract` | 500 | 1 | 1 (100.0%) | 0 (0.0%) | 0 |
+| `sonnet` | `prose_same_block` | `retrieved_100000_contract` | 1000 | 1 | 1 (100.0%) | 0 (0.0%) | 0 |
+| `sonnet` | `prose_same_block` | `retrieved_100000_contract` | 5000 | 1 | 1 (100.0%) | 0 (0.0%) | 0 |
+| `sonnet` | `prose_same_block` | `retrieved_100000_contract` | 10000 | 1 | 1 (100.0%) | 0 (0.0%) | 0 |
+| `sonnet` | `prose_same_block` | `retrieved_100000_contract` | 20000 | 1 | 1 (100.0%) | 0 (0.0%) | 0 |
+| `sonnet` | `prose_separated` | `fact_only` | 50 | 1 | 1 (100.0%) | 0 (0.0%) | 0 |
+| `sonnet` | `prose_separated` | `fact_only` | 100 | 1 | 1 (100.0%) | 0 (0.0%) | 0 |
+| `sonnet` | `prose_separated` | `fact_only` | 150 | 1 | 1 (100.0%) | 0 (0.0%) | 0 |
+| `sonnet` | `prose_separated` | `fact_only` | 500 | 1 | 0 (0.0%) | 1 (100.0%) | 0 |
+| `sonnet` | `prose_separated` | `fact_only` | 1000 | 1 | 0 (0.0%) | 1 (100.0%) | 0 |
+| `sonnet` | `prose_separated` | `fact_only` | 5000 | 1 | 0 (0.0%) | 1 (100.0%) | 0 |
+| `sonnet` | `prose_separated` | `fact_only` | 10000 | 1 | 0 (0.0%) | 1 (100.0%) | 0 |
+| `sonnet` | `prose_separated` | `fact_only` | 20000 | 1 | 0 (0.0%) | 1 (100.0%) | 0 |
+| `sonnet` | `prose_separated` | `retrieved_100000_contract` | 50 | 1 | 1 (100.0%) | 0 (0.0%) | 0 |
+| `sonnet` | `prose_separated` | `retrieved_100000_contract` | 100 | 1 | 1 (100.0%) | 0 (0.0%) | 0 |
+| `sonnet` | `prose_separated` | `retrieved_100000_contract` | 150 | 1 | 1 (100.0%) | 0 (0.0%) | 0 |
+| `sonnet` | `prose_separated` | `retrieved_100000_contract` | 500 | 1 | 1 (100.0%) | 0 (0.0%) | 0 |
+| `sonnet` | `prose_separated` | `retrieved_100000_contract` | 1000 | 1 | 1 (100.0%) | 0 (0.0%) | 0 |
+| `sonnet` | `prose_separated` | `retrieved_100000_contract` | 5000 | 1 | 1 (100.0%) | 0 (0.0%) | 0 |
+| `sonnet` | `prose_separated` | `retrieved_100000_contract` | 10000 | 1 | 1 (100.0%) | 0 (0.0%) | 0 |
+| `sonnet` | `prose_separated` | `retrieved_100000_contract` | 20000 | 1 | 1 (100.0%) | 0 (0.0%) | 0 |

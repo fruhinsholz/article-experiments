@@ -1,0 +1,437 @@
+{
+  "args": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "samples": 20,
+    "maxCalls": 100,
+    "maxOutputTokens": 500,
+    "temperature": 0,
+    "concurrency": 4,
+    "label": "similar-enough-context",
+    "dryRun": false
+  },
+  "jobs": [
+    {
+      "contextId": "draft_grouping",
+      "sampleIndex": 0
+    },
+    {
+      "contextId": "draft_grouping",
+      "sampleIndex": 1
+    },
+    {
+      "contextId": "draft_grouping",
+      "sampleIndex": 2
+    },
+    {
+      "contextId": "draft_grouping",
+      "sampleIndex": 3
+    },
+    {
+      "contextId": "draft_grouping",
+      "sampleIndex": 4
+    },
+    {
+      "contextId": "draft_grouping",
+      "sampleIndex": 5
+    },
+    {
+      "contextId": "draft_grouping",
+      "sampleIndex": 6
+    },
+    {
+      "contextId": "draft_grouping",
+      "sampleIndex": 7
+    },
+    {
+      "contextId": "draft_grouping",
+      "sampleIndex": 8
+    },
+    {
+      "contextId": "draft_grouping",
+      "sampleIndex": 9
+    },
+    {
+      "contextId": "draft_grouping",
+      "sampleIndex": 10
+    },
+    {
+      "contextId": "draft_grouping",
+      "sampleIndex": 11
+    },
+    {
+      "contextId": "draft_grouping",
+      "sampleIndex": 12
+    },
+    {
+      "contextId": "draft_grouping",
+      "sampleIndex": 13
+    },
+    {
+      "contextId": "draft_grouping",
+      "sampleIndex": 14
+    },
+    {
+      "contextId": "draft_grouping",
+      "sampleIndex": 15
+    },
+    {
+      "contextId": "draft_grouping",
+      "sampleIndex": 16
+    },
+    {
+      "contextId": "draft_grouping",
+      "sampleIndex": 17
+    },
+    {
+      "contextId": "draft_grouping",
+      "sampleIndex": 18
+    },
+    {
+      "contextId": "draft_grouping",
+      "sampleIndex": 19
+    },
+    {
+      "contextId": "internal_alert",
+      "sampleIndex": 0
+    },
+    {
+      "contextId": "internal_alert",
+      "sampleIndex": 1
+    },
+    {
+      "contextId": "internal_alert",
+      "sampleIndex": 2
+    },
+    {
+      "contextId": "internal_alert",
+      "sampleIndex": 3
+    },
+    {
+      "contextId": "internal_alert",
+      "sampleIndex": 4
+    },
+    {
+      "contextId": "internal_alert",
+      "sampleIndex": 5
+    },
+    {
+      "contextId": "internal_alert",
+      "sampleIndex": 6
+    },
+    {
+      "contextId": "internal_alert",
+      "sampleIndex": 7
+    },
+    {
+      "contextId": "internal_alert",
+      "sampleIndex": 8
+    },
+    {
+      "contextId": "internal_alert",
+      "sampleIndex": 9
+    },
+    {
+      "contextId": "internal_alert",
+      "sampleIndex": 10
+    },
+    {
+      "contextId": "internal_alert",
+      "sampleIndex": 11
+    },
+    {
+      "contextId": "internal_alert",
+      "sampleIndex": 12
+    },
+    {
+      "contextId": "internal_alert",
+      "sampleIndex": 13
+    },
+    {
+      "contextId": "internal_alert",
+      "sampleIndex": 14
+    },
+    {
+      "contextId": "internal_alert",
+      "sampleIndex": 15
+    },
+    {
+      "contextId": "internal_alert",
+      "sampleIndex": 16
+    },
+    {
+      "contextId": "internal_alert",
+      "sampleIndex": 17
+    },
+    {
+      "contextId": "internal_alert",
+      "sampleIndex": 18
+    },
+    {
+      "contextId": "internal_alert",
+      "sampleIndex": 19
+    },
+    {
+      "contextId": "customer_notification",
+      "sampleIndex": 0
+    },
+    {
+      "contextId": "customer_notification",
+      "sampleIndex": 1
+    },
+    {
+      "contextId": "customer_notification",
+      "sampleIndex": 2
+    },
+    {
+      "contextId": "customer_notification",
+      "sampleIndex": 3
+    },
+    {
+      "contextId": "customer_notification",
+      "sampleIndex": 4
+    },
+    {
+      "contextId": "customer_notification",
+      "sampleIndex": 5
+    },
+    {
+      "contextId": "customer_notification",
+      "sampleIndex": 6
+    },
+    {
+      "contextId": "customer_notification",
+      "sampleIndex": 7
+    },
+    {
+      "contextId": "customer_notification",
+      "sampleIndex": 8
+    },
+    {
+      "contextId": "customer_notification",
+      "sampleIndex": 9
+    },
+    {
+      "contextId": "customer_notification",
+      "sampleIndex": 10
+    },
+    {
+      "contextId": "customer_notification",
+      "sampleIndex": 11
+    },
+    {
+      "contextId": "customer_notification",
+      "sampleIndex": 12
+    },
+    {
+      "contextId": "customer_notification",
+      "sampleIndex": 13
+    },
+    {
+      "contextId": "customer_notification",
+      "sampleIndex": 14
+    },
+    {
+      "contextId": "customer_notification",
+      "sampleIndex": 15
+    },
+    {
+      "contextId": "customer_notification",
+      "sampleIndex": 16
+    },
+    {
+      "contextId": "customer_notification",
+      "sampleIndex": 17
+    },
+    {
+      "contextId": "customer_notification",
+      "sampleIndex": 18
+    },
+    {
+      "contextId": "customer_notification",
+      "sampleIndex": 19
+    },
+    {
+      "contextId": "billing_rule",
+      "sampleIndex": 0
+    },
+    {
+      "contextId": "billing_rule",
+      "sampleIndex": 1
+    },
+    {
+      "contextId": "billing_rule",
+      "sampleIndex": 2
+    },
+    {
+      "contextId": "billing_rule",
+      "sampleIndex": 3
+    },
+    {
+      "contextId": "billing_rule",
+      "sampleIndex": 4
+    },
+    {
+      "contextId": "billing_rule",
+      "sampleIndex": 5
+    },
+    {
+      "contextId": "billing_rule",
+      "sampleIndex": 6
+    },
+    {
+      "contextId": "billing_rule",
+      "sampleIndex": 7
+    },
+    {
+      "contextId": "billing_rule",
+      "sampleIndex": 8
+    },
+    {
+      "contextId": "billing_rule",
+      "sampleIndex": 9
+    },
+    {
+      "contextId": "billing_rule",
+      "sampleIndex": 10
+    },
+    {
+      "contextId": "billing_rule",
+      "sampleIndex": 11
+    },
+    {
+      "contextId": "billing_rule",
+      "sampleIndex": 12
+    },
+    {
+      "contextId": "billing_rule",
+      "sampleIndex": 13
+    },
+    {
+      "contextId": "billing_rule",
+      "sampleIndex": 14
+    },
+    {
+      "contextId": "billing_rule",
+      "sampleIndex": 15
+    },
+    {
+      "contextId": "billing_rule",
+      "sampleIndex": 16
+    },
+    {
+      "contextId": "billing_rule",
+      "sampleIndex": 17
+    },
+    {
+      "contextId": "billing_rule",
+      "sampleIndex": 18
+    },
+    {
+      "contextId": "billing_rule",
+      "sampleIndex": 19
+    },
+    {
+      "contextId": "access_rule",
+      "sampleIndex": 0
+    },
+    {
+      "contextId": "access_rule",
+      "sampleIndex": 1
+    },
+    {
+      "contextId": "access_rule",
+      "sampleIndex": 2
+    },
+    {
+      "contextId": "access_rule",
+      "sampleIndex": 3
+    },
+    {
+      "contextId": "access_rule",
+      "sampleIndex": 4
+    },
+    {
+      "contextId": "access_rule",
+      "sampleIndex": 5
+    },
+    {
+      "contextId": "access_rule",
+      "sampleIndex": 6
+    },
+    {
+      "contextId": "access_rule",
+      "sampleIndex": 7
+    },
+    {
+      "contextId": "access_rule",
+      "sampleIndex": 8
+    },
+    {
+      "contextId": "access_rule",
+      "sampleIndex": 9
+    },
+    {
+      "contextId": "access_rule",
+      "sampleIndex": 10
+    },
+    {
+      "contextId": "access_rule",
+      "sampleIndex": 11
+    },
+    {
+      "contextId": "access_rule",
+      "sampleIndex": 12
+    },
+    {
+      "contextId": "access_rule",
+      "sampleIndex": 13
+    },
+    {
+      "contextId": "access_rule",
+      "sampleIndex": 14
+    },
+    {
+      "contextId": "access_rule",
+      "sampleIndex": 15
+    },
+    {
+      "contextId": "access_rule",
+      "sampleIndex": 16
+    },
+    {
+      "contextId": "access_rule",
+      "sampleIndex": 17
+    },
+    {
+      "contextId": "access_rule",
+      "sampleIndex": 18
+    },
+    {
+      "contextId": "access_rule",
+      "sampleIndex": 19
+    }
+  ],
+  "contexts": [
+    {
+      "id": "draft_grouping",
+      "consequence": "group two draft-writing notes for later reading; no external action occurs"
+    },
+    {
+      "id": "internal_alert",
+      "consequence": "reuse one internal monitoring alert rule; a wrong decision pages an engineer but does not affect customers"
+    },
+    {
+      "id": "customer_notification",
+      "consequence": "reuse one customer-facing notification rule; a wrong decision sends the wrong message to customers"
+    },
+    {
+      "id": "billing_rule",
+      "consequence": "reuse one billing rule; a wrong decision changes when customers are charged"
+    },
+    {
+      "id": "access_rule",
+      "consequence": "reuse one access-control rule; a wrong decision grants or denies administrative access"
+    }
+  ]
+}

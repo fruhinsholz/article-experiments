@@ -1,0 +1,86 @@
+{
+  "args": {
+    "model": "jev-latest",
+    "repeats": 5,
+    "maxCalls": 30,
+    "concurrency": 3,
+    "label": "choice-label-permutations-r5",
+    "stateMode": "ambiguous",
+    "conditionSet": "permutations",
+    "dryRun": false
+  },
+  "conditions": {
+    "permutation_1_full_partial_none": {
+      "criteria": {
+        "fully_operational": "The customer can perform all necessary work.",
+        "partially_blocked": "The customer can perform some, but not all, necessary work.",
+        "fully_blocked": "The customer cannot perform any necessary work."
+      },
+      "semanticKeys": {
+        "full": "fully_operational",
+        "partial": "partially_blocked",
+        "none": "fully_blocked"
+      }
+    },
+    "permutation_2_full_none_partial": {
+      "criteria": {
+        "fully_operational": "The customer can perform all necessary work.",
+        "partially_blocked": "The customer cannot perform any necessary work.",
+        "fully_blocked": "The customer can perform some, but not all, necessary work."
+      },
+      "semanticKeys": {
+        "full": "fully_operational",
+        "none": "partially_blocked",
+        "partial": "fully_blocked"
+      }
+    },
+    "permutation_3_partial_full_none": {
+      "criteria": {
+        "fully_operational": "The customer can perform some, but not all, necessary work.",
+        "partially_blocked": "The customer can perform all necessary work.",
+        "fully_blocked": "The customer cannot perform any necessary work."
+      },
+      "semanticKeys": {
+        "partial": "fully_operational",
+        "full": "partially_blocked",
+        "none": "fully_blocked"
+      }
+    },
+    "permutation_4_partial_none_full": {
+      "criteria": {
+        "fully_operational": "The customer can perform some, but not all, necessary work.",
+        "partially_blocked": "The customer cannot perform any necessary work.",
+        "fully_blocked": "The customer can perform all necessary work."
+      },
+      "semanticKeys": {
+        "partial": "fully_operational",
+        "none": "partially_blocked",
+        "full": "fully_blocked"
+      }
+    },
+    "permutation_5_none_full_partial": {
+      "criteria": {
+        "fully_operational": "The customer cannot perform any necessary work.",
+        "partially_blocked": "The customer can perform all necessary work.",
+        "fully_blocked": "The customer can perform some, but not all, necessary work."
+      },
+      "semanticKeys": {
+        "none": "fully_operational",
+        "full": "partially_blocked",
+        "partial": "fully_blocked"
+      }
+    },
+    "permutation_6_none_partial_full": {
+      "criteria": {
+        "fully_operational": "The customer cannot perform any necessary work.",
+        "partially_blocked": "The customer can perform some, but not all, necessary work.",
+        "fully_blocked": "The customer can perform all necessary work."
+      },
+      "semanticKeys": {
+        "none": "fully_operational",
+        "partial": "partially_blocked",
+        "full": "fully_blocked"
+      }
+    }
+  }
+}

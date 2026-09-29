@@ -1,0 +1,12 @@
+{
+  "run_dir": "/home/eric/workspace/prompt-contract-experiments/neutral-reviews/results/2026-08-02T160738-703Z-beneficial-agent-simulation-v1-anthropic-retry",
+  "outputs": [
+    {
+      "provider": "anthropic",
+      "requested_model": "latest",
+      "resolved_model": "claude-opus-5",
+      "error": null,
+      "text_file": "anthropic-claude-opus-5.md"
+    }
+  ]
+}

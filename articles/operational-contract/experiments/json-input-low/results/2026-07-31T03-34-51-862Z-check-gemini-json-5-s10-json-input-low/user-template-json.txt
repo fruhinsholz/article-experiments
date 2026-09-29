@@ -1,0 +1,21 @@
+{
+  "inputs": {
+    "retrieved_context": {
+      "kind": "separate_retrieved_note",
+      "text": "A separate enterprise account note says that contracts above $100,000 require executive review during the seasonal sales period."
+    },
+    "case": {
+      "refund_claim_amount_usd": "X",
+      "purchase_type": "consumer_purchase"
+    }
+  },
+  "output_schema": {
+    "label": {
+      "enum": [
+        "LOW",
+        "NOT_LOW"
+      ]
+    }
+  },
+  "instruction": "Classify only the case refund amount. Return only the label."
+}

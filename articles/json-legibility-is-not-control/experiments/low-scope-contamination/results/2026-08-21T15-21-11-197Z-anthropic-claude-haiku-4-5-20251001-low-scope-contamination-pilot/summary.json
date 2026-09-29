@@ -1,0 +1,44 @@
+{
+  "provider": "anthropic",
+  "model": "claude-haiku-4-5-20251001",
+  "calls": 40,
+  "errors": 0,
+  "conditions": {
+    "b_only_same_word": {
+      "calls": 10,
+      "counts": {
+        "other": 10
+      },
+      "outputs": [
+        "# Analysis\n\n**Routing Rule Application:**\n- route_amount: \"$5\" (low)\n- Routing rule: \"If route_amount"
+      ]
+    },
+    "inactive_a_same_word": {
+      "calls": 10,
+      "counts": {
+        "other": 10
+      },
+      "outputs": [
+        "# Execution\n\n**Step 1: Apply routing rule**\n- route_amount: \"$5\" (low)\n- Routing rule: \""
+      ]
+    },
+    "inactive_a_different_word": {
+      "calls": 10,
+      "counts": {
+        "other": 10
+      },
+      "outputs": [
+        "# Execution\n\n**Routing Rule Analysis:**\n- route_amount: \"$5\" (small)\n- Decision: Execute branch B\n\n**Branch"
+      ]
+    },
+    "inactive_a_explicit_scope": {
+      "calls": 10,
+      "counts": {
+        "other": 10
+      },
+      "outputs": [
+        "# Execution\n\n**Routing Rule:** route_amount is \"$5\" (low) → Execute **Branch B**\n\n**Branch B Execution:**"
+      ]
+    }
+  }
+}

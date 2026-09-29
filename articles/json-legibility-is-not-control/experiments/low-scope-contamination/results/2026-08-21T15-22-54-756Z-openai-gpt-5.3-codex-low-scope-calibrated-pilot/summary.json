@@ -1,0 +1,44 @@
+{
+  "provider": "openai",
+  "model": "gpt-5.3-codex",
+  "calls": 40,
+  "errors": 0,
+  "conditions": {
+    "b_only_same_word": {
+      "calls": 10,
+      "counts": {
+        "local_hold": 10
+      },
+      "outputs": [
+        "HOLD"
+      ]
+    },
+    "inactive_a_same_word": {
+      "calls": 10,
+      "counts": {
+        "local_hold": 10
+      },
+      "outputs": [
+        "HOLD"
+      ]
+    },
+    "inactive_a_different_word": {
+      "calls": 10,
+      "counts": {
+        "local_hold": 10
+      },
+      "outputs": [
+        "HOLD"
+      ]
+    },
+    "inactive_a_explicit_scope": {
+      "calls": 10,
+      "counts": {
+        "local_hold": 10
+      },
+      "outputs": [
+        "HOLD"
+      ]
+    }
+  }
+}

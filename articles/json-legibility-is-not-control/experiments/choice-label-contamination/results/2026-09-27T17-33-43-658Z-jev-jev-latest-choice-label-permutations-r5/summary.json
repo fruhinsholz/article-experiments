@@ -1,0 +1,152 @@
+{
+  "byCondition": {
+    "permutation_1_full_partial_none": {
+      "full": {
+        "n": 5,
+        "mean": 0.08800000000000001,
+        "min": 0.07,
+        "max": 0.1
+      },
+      "partial": {
+        "n": 5,
+        "mean": 0.9120000000000001,
+        "min": 0.9,
+        "max": 0.93
+      },
+      "none": {
+        "n": 5,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "selected": {
+        "partial": 5
+      }
+    },
+    "permutation_2_full_none_partial": {
+      "full": {
+        "n": 5,
+        "mean": 0.34,
+        "min": 0.31,
+        "max": 0.37
+      },
+      "partial": {
+        "n": 5,
+        "mean": 0.6380000000000001,
+        "min": 0.61,
+        "max": 0.67
+      },
+      "none": {
+        "n": 5,
+        "mean": 0.022000000000000002,
+        "min": 0.02,
+        "max": 0.03
+      },
+      "selected": {
+        "partial": 5
+      }
+    },
+    "permutation_3_partial_full_none": {
+      "full": {
+        "n": 5,
+        "mean": 0.198,
+        "min": 0.18,
+        "max": 0.23
+      },
+      "partial": {
+        "n": 5,
+        "mean": 0.8019999999999999,
+        "min": 0.77,
+        "max": 0.82
+      },
+      "none": {
+        "n": 5,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "selected": {
+        "partial": 5
+      }
+    },
+    "permutation_4_partial_none_full": {
+      "full": {
+        "n": 5,
+        "mean": 0.044,
+        "min": 0.04,
+        "max": 0.05
+      },
+      "partial": {
+        "n": 5,
+        "mean": 0.946,
+        "min": 0.94,
+        "max": 0.95
+      },
+      "none": {
+        "n": 5,
+        "mean": 0.01,
+        "min": 0.01,
+        "max": 0.01
+      },
+      "selected": {
+        "partial": 5
+      }
+    },
+    "permutation_5_none_full_partial": {
+      "full": {
+        "n": 5,
+        "mean": 0.6160000000000001,
+        "min": 0.55,
+        "max": 0.64
+      },
+      "partial": {
+        "n": 5,
+        "mean": 0.374,
+        "min": 0.35,
+        "max": 0.44
+      },
+      "none": {
+        "n": 5,
+        "mean": 0.01,
+        "min": 0.01,
+        "max": 0.01
+      },
+      "selected": {
+        "full": 5
+      }
+    },
+    "permutation_6_none_partial_full": {
+      "full": {
+        "n": 5,
+        "mean": 0.024,
+        "min": 0.02,
+        "max": 0.03
+      },
+      "partial": {
+        "n": 5,
+        "mean": 0.976,
+        "min": 0.97,
+        "max": 0.98
+      },
+      "none": {
+        "n": 5,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "selected": {
+        "partial": 5
+      }
+    }
+  },
+  "baselineCondition": "permutation_1_full_partial_none",
+  "partialProbabilityDeltaVsBaseline": {
+    "permutation_1_full_partial_none": 0,
+    "permutation_2_full_none_partial": -0.274,
+    "permutation_3_partial_full_none": -0.11000000000000021,
+    "permutation_4_partial_none_full": 0.03399999999999981,
+    "permutation_5_none_full_partial": -0.5380000000000001,
+    "permutation_6_none_partial_full": 0.06399999999999983
+  },
+  "errors": 0
+}

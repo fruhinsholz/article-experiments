@@ -1,0 +1,33 @@
+{
+  "testbed": "json-input-low",
+  "createdAt": "2026-07-31T15:06:21.856Z",
+  "commitHash": "390de5e78148d2a7f7040298464b09135c3964f9",
+  "commandLine": "/usr/bin/node /var/lib/openclaw/.openclaw/workspace/prompt-contract-experiments/src/json-input-low.mjs --provider openai --models gpt-5.5,gpt-5.6 --contexts all --formats all --amounts 25,50,75,100,150,250,500,1000,5000,10000,20000 --samples 30 --max-output-tokens 1024 --max-calls 11000 --concurrency 8 --gzip-jsonl --label clean-openai-gpt55-gpt56-fixed-grid-json-s30",
+  "provider": "openai",
+  "requestedModels": [
+    "gpt-5.5",
+    "gpt-5.6"
+  ],
+  "apiParameters": {
+    "temperature": 0,
+    "maxOutputTokens": 1024,
+    "reasoningEffort": null,
+    "seed": null
+  },
+  "samplesPerState": 30,
+  "epochs": 10,
+  "maxCalls": 11000,
+  "dryRun": false,
+  "promptFiles": [
+    "system-prompt.txt",
+    "user-template-prose.txt",
+    "user-template-json.txt"
+  ],
+  "fixtureFile": "fixture.json",
+  "resultFiles": {
+    "rawJsonl": "calls.jsonl",
+    "summaryCsv": "summary.csv",
+    "summaryMarkdown": "summary.md",
+    "analysis": "analysis.md"
+  }
+}

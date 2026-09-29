@@ -1,0 +1,142 @@
+[
+  {
+    "id": "gemini_100k_s30",
+    "provider": "Gemini",
+    "contextTest": "$100k",
+    "runDir": "experiments/json-input-low/results/2026-07-31T02-49-23-698Z-clean-gemini-json-100k-s30-json-input-low",
+    "model": "gemini-3.5-flash-lite",
+    "responseModels": [
+      "gemini-3.5-flash-lite"
+    ],
+    "contexts": [
+      "fact_only",
+      "retrieved_100000_contract"
+    ],
+    "formats": [
+      "prose_same_block",
+      "json_flat",
+      "json_typed",
+      "json_typed_boundary_rule"
+    ],
+    "amounts": [
+      5,
+      50,
+      100,
+      150,
+      500,
+      1000,
+      5000,
+      10000,
+      20000
+    ],
+    "samplesPerCell": 30,
+    "cells": 72,
+    "calls": 2160,
+    "createdAt": "2026-07-31T02:49:23.700Z"
+  },
+  {
+    "id": "openai_100k_s30",
+    "provider": "OpenAI",
+    "contextTest": "$100k",
+    "runDir": "experiments/json-input-low/results/2026-07-31T03-03-58-046Z-clean-openai-json-100k-s30-json-input-low",
+    "model": "gpt-4.1-mini",
+    "responseModels": [
+      "gpt-4.1-mini-2025-04-14"
+    ],
+    "contexts": [
+      "fact_only",
+      "retrieved_100000_contract"
+    ],
+    "formats": [
+      "prose_same_block",
+      "json_flat",
+      "json_typed",
+      "json_typed_boundary_rule"
+    ],
+    "amounts": [
+      5,
+      50,
+      100,
+      150,
+      500,
+      1000,
+      5000,
+      10000,
+      20000
+    ],
+    "samplesPerCell": 30,
+    "cells": 72,
+    "calls": 2160,
+    "createdAt": "2026-07-31T03:03:58.046Z"
+  },
+  {
+    "id": "gemini_5_s10",
+    "provider": "Gemini",
+    "contextTest": "$5",
+    "runDir": "experiments/json-input-low/results/2026-07-31T03-34-51-862Z-check-gemini-json-5-s10-json-input-low",
+    "model": "gemini-3.5-flash-lite",
+    "responseModels": [
+      "gemini-3.5-flash-lite"
+    ],
+    "contexts": [
+      "fact_only",
+      "retrieved_5_gift_card"
+    ],
+    "formats": [
+      "prose_same_block",
+      "json_flat",
+      "json_typed",
+      "json_typed_boundary_rule"
+    ],
+    "amounts": [
+      5,
+      50,
+      100,
+      150,
+      500,
+      1000,
+      5000,
+      10000,
+      20000
+    ],
+    "samplesPerCell": 10,
+    "cells": 72,
+    "calls": 720,
+    "createdAt": "2026-07-31T03:34:51.863Z"
+  },
+  {
+    "id": "openai_5_s10",
+    "provider": "OpenAI",
+    "contextTest": "$5",
+    "runDir": "experiments/json-input-low/results/2026-07-31T03-39-55-591Z-check-openai-json-5-s10-json-input-low",
+    "model": "gpt-4.1-mini",
+    "responseModels": [
+      "gpt-4.1-mini-2025-04-14"
+    ],
+    "contexts": [
+      "fact_only",
+      "retrieved_5_gift_card"
+    ],
+    "formats": [
+      "prose_same_block",
+      "json_flat",
+      "json_typed",
+      "json_typed_boundary_rule"
+    ],
+    "amounts": [
+      5,
+      50,
+      100,
+      150,
+      500,
+      1000,
+      5000,
+      10000,
+      20000
+    ],
+    "samplesPerCell": 10,
+    "cells": 72,
+    "calls": 720,
+    "createdAt": "2026-07-31T03:39:55.592Z"
+  }
+]

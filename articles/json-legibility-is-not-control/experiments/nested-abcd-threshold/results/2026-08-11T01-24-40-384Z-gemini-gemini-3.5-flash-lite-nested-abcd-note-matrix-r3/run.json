@@ -1,0 +1,1982 @@
+{
+  "args": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "repeats": 3,
+    "maxCalls": 192,
+    "maxOutputTokens": 700,
+    "temperature": 0,
+    "concurrency": 4,
+    "label": "nested-abcd-note-matrix-r3",
+    "caseMode": "contrast",
+    "noteMode": "all",
+    "summarizeDir": "",
+    "dryRun": false,
+    "printExamples": false
+  },
+  "conditions": [
+    "control",
+    "prefix_free_text",
+    "suffix_free_text",
+    "system_rule"
+  ],
+  "noteModes": [
+    "none",
+    "a_only",
+    "c_only",
+    "both"
+  ],
+  "amounts": [
+    5,
+    50,
+    500,
+    5000,
+    20000,
+    100000
+  ],
+  "outsideRule": "Treat each JSON sub-object independently.",
+  "testCases": [
+    {
+      "id": "b50_d50000",
+      "bAmount": 50,
+      "dAmount": 50000
+    },
+    {
+      "id": "b500_d5000",
+      "bAmount": 500,
+      "dAmount": 5000
+    },
+    {
+      "id": "b5000_d50",
+      "bAmount": 5000,
+      "dAmount": 50
+    },
+    {
+      "id": "b100000_d5",
+      "bAmount": 100000,
+      "dAmount": 5
+    }
+  ],
+  "jobs": [
+    {
+      "condition": "control",
+      "noteMode": "none",
+      "testCase": {
+        "id": "b50_d50000",
+        "bAmount": 50,
+        "dAmount": 50000
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "control",
+      "noteMode": "none",
+      "testCase": {
+        "id": "b50_d50000",
+        "bAmount": 50,
+        "dAmount": 50000
+      },
+      "repeatIndex": 1
+    },
+    {
+      "condition": "control",
+      "noteMode": "none",
+      "testCase": {
+        "id": "b50_d50000",
+        "bAmount": 50,
+        "dAmount": 50000
+      },
+      "repeatIndex": 2
+    },
+    {
+      "condition": "control",
+      "noteMode": "none",
+      "testCase": {
+        "id": "b500_d5000",
+        "bAmount": 500,
+        "dAmount": 5000
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "control",
+      "noteMode": "none",
+      "testCase": {
+        "id": "b500_d5000",
+        "bAmount": 500,
+        "dAmount": 5000
+      },
+      "repeatIndex": 1
+    },
+    {
+      "condition": "control",
+      "noteMode": "none",
+      "testCase": {
+        "id": "b500_d5000",
+        "bAmount": 500,
+        "dAmount": 5000
+      },
+      "repeatIndex": 2
+    },
+    {
+      "condition": "control",
+      "noteMode": "none",
+      "testCase": {
+        "id": "b5000_d50",
+        "bAmount": 5000,
+        "dAmount": 50
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "control",
+      "noteMode": "none",
+      "testCase": {
+        "id": "b5000_d50",
+        "bAmount": 5000,
+        "dAmount": 50
+      },
+      "repeatIndex": 1
+    },
+    {
+      "condition": "control",
+      "noteMode": "none",
+      "testCase": {
+        "id": "b5000_d50",
+        "bAmount": 5000,
+        "dAmount": 50
+      },
+      "repeatIndex": 2
+    },
+    {
+      "condition": "control",
+      "noteMode": "none",
+      "testCase": {
+        "id": "b100000_d5",
+        "bAmount": 100000,
+        "dAmount": 5
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "control",
+      "noteMode": "none",
+      "testCase": {
+        "id": "b100000_d5",
+        "bAmount": 100000,
+        "dAmount": 5
+      },
+      "repeatIndex": 1
+    },
+    {
+      "condition": "control",
+      "noteMode": "none",
+      "testCase": {
+        "id": "b100000_d5",
+        "bAmount": 100000,
+        "dAmount": 5
+      },
+      "repeatIndex": 2
+    },
+    {
+      "condition": "control",
+      "noteMode": "a_only",
+      "testCase": {
+        "id": "b50_d50000",
+        "bAmount": 50,
+        "dAmount": 50000
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "control",
+      "noteMode": "a_only",
+      "testCase": {
+        "id": "b50_d50000",
+        "bAmount": 50,
+        "dAmount": 50000
+      },
+      "repeatIndex": 1
+    },
+    {
+      "condition": "control",
+      "noteMode": "a_only",
+      "testCase": {
+        "id": "b50_d50000",
+        "bAmount": 50,
+        "dAmount": 50000
+      },
+      "repeatIndex": 2
+    },
+    {
+      "condition": "control",
+      "noteMode": "a_only",
+      "testCase": {
+        "id": "b500_d5000",
+        "bAmount": 500,
+        "dAmount": 5000
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "control",
+      "noteMode": "a_only",
+      "testCase": {
+        "id": "b500_d5000",
+        "bAmount": 500,
+        "dAmount": 5000
+      },
+      "repeatIndex": 1
+    },
+    {
+      "condition": "control",
+      "noteMode": "a_only",
+      "testCase": {
+        "id": "b500_d5000",
+        "bAmount": 500,
+        "dAmount": 5000
+      },
+      "repeatIndex": 2
+    },
+    {
+      "condition": "control",
+      "noteMode": "a_only",
+      "testCase": {
+        "id": "b5000_d50",
+        "bAmount": 5000,
+        "dAmount": 50
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "control",
+      "noteMode": "a_only",
+      "testCase": {
+        "id": "b5000_d50",
+        "bAmount": 5000,
+        "dAmount": 50
+      },
+      "repeatIndex": 1
+    },
+    {
+      "condition": "control",
+      "noteMode": "a_only",
+      "testCase": {
+        "id": "b5000_d50",
+        "bAmount": 5000,
+        "dAmount": 50
+      },
+      "repeatIndex": 2
+    },
+    {
+      "condition": "control",
+      "noteMode": "a_only",
+      "testCase": {
+        "id": "b100000_d5",
+        "bAmount": 100000,
+        "dAmount": 5
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "control",
+      "noteMode": "a_only",
+      "testCase": {
+        "id": "b100000_d5",
+        "bAmount": 100000,
+        "dAmount": 5
+      },
+      "repeatIndex": 1
+    },
+    {
+      "condition": "control",
+      "noteMode": "a_only",
+      "testCase": {
+        "id": "b100000_d5",
+        "bAmount": 100000,
+        "dAmount": 5
+      },
+      "repeatIndex": 2
+    },
+    {
+      "condition": "control",
+      "noteMode": "c_only",
+      "testCase": {
+        "id": "b50_d50000",
+        "bAmount": 50,
+        "dAmount": 50000
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "control",
+      "noteMode": "c_only",
+      "testCase": {
+        "id": "b50_d50000",
+        "bAmount": 50,
+        "dAmount": 50000
+      },
+      "repeatIndex": 1
+    },
+    {
+      "condition": "control",
+      "noteMode": "c_only",
+      "testCase": {
+        "id": "b50_d50000",
+        "bAmount": 50,
+        "dAmount": 50000
+      },
+      "repeatIndex": 2
+    },
+    {
+      "condition": "control",
+      "noteMode": "c_only",
+      "testCase": {
+        "id": "b500_d5000",
+        "bAmount": 500,
+        "dAmount": 5000
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "control",
+      "noteMode": "c_only",
+      "testCase": {
+        "id": "b500_d5000",
+        "bAmount": 500,
+        "dAmount": 5000
+      },
+      "repeatIndex": 1
+    },
+    {
+      "condition": "control",
+      "noteMode": "c_only",
+      "testCase": {
+        "id": "b500_d5000",
+        "bAmount": 500,
+        "dAmount": 5000
+      },
+      "repeatIndex": 2
+    },
+    {
+      "condition": "control",
+      "noteMode": "c_only",
+      "testCase": {
+        "id": "b5000_d50",
+        "bAmount": 5000,
+        "dAmount": 50
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "control",
+      "noteMode": "c_only",
+      "testCase": {
+        "id": "b5000_d50",
+        "bAmount": 5000,
+        "dAmount": 50
+      },
+      "repeatIndex": 1
+    },
+    {
+      "condition": "control",
+      "noteMode": "c_only",
+      "testCase": {
+        "id": "b5000_d50",
+        "bAmount": 5000,
+        "dAmount": 50
+      },
+      "repeatIndex": 2
+    },
+    {
+      "condition": "control",
+      "noteMode": "c_only",
+      "testCase": {
+        "id": "b100000_d5",
+        "bAmount": 100000,
+        "dAmount": 5
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "control",
+      "noteMode": "c_only",
+      "testCase": {
+        "id": "b100000_d5",
+        "bAmount": 100000,
+        "dAmount": 5
+      },
+      "repeatIndex": 1
+    },
+    {
+      "condition": "control",
+      "noteMode": "c_only",
+      "testCase": {
+        "id": "b100000_d5",
+        "bAmount": 100000,
+        "dAmount": 5
+      },
+      "repeatIndex": 2
+    },
+    {
+      "condition": "control",
+      "noteMode": "both",
+      "testCase": {
+        "id": "b50_d50000",
+        "bAmount": 50,
+        "dAmount": 50000
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "control",
+      "noteMode": "both",
+      "testCase": {
+        "id": "b50_d50000",
+        "bAmount": 50,
+        "dAmount": 50000
+      },
+      "repeatIndex": 1
+    },
+    {
+      "condition": "control",
+      "noteMode": "both",
+      "testCase": {
+        "id": "b50_d50000",
+        "bAmount": 50,
+        "dAmount": 50000
+      },
+      "repeatIndex": 2
+    },
+    {
+      "condition": "control",
+      "noteMode": "both",
+      "testCase": {
+        "id": "b500_d5000",
+        "bAmount": 500,
+        "dAmount": 5000
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "control",
+      "noteMode": "both",
+      "testCase": {
+        "id": "b500_d5000",
+        "bAmount": 500,
+        "dAmount": 5000
+      },
+      "repeatIndex": 1
+    },
+    {
+      "condition": "control",
+      "noteMode": "both",
+      "testCase": {
+        "id": "b500_d5000",
+        "bAmount": 500,
+        "dAmount": 5000
+      },
+      "repeatIndex": 2
+    },
+    {
+      "condition": "control",
+      "noteMode": "both",
+      "testCase": {
+        "id": "b5000_d50",
+        "bAmount": 5000,
+        "dAmount": 50
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "control",
+      "noteMode": "both",
+      "testCase": {
+        "id": "b5000_d50",
+        "bAmount": 5000,
+        "dAmount": 50
+      },
+      "repeatIndex": 1
+    },
+    {
+      "condition": "control",
+      "noteMode": "both",
+      "testCase": {
+        "id": "b5000_d50",
+        "bAmount": 5000,
+        "dAmount": 50
+      },
+      "repeatIndex": 2
+    },
+    {
+      "condition": "control",
+      "noteMode": "both",
+      "testCase": {
+        "id": "b100000_d5",
+        "bAmount": 100000,
+        "dAmount": 5
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "control",
+      "noteMode": "both",
+      "testCase": {
+        "id": "b100000_d5",
+        "bAmount": 100000,
+        "dAmount": 5
+      },
+      "repeatIndex": 1
+    },
+    {
+      "condition": "control",
+      "noteMode": "both",
+      "testCase": {
+        "id": "b100000_d5",
+        "bAmount": 100000,
+        "dAmount": 5
+      },
+      "repeatIndex": 2
+    },
+    {
+      "condition": "prefix_free_text",
+      "noteMode": "none",
+      "testCase": {
+        "id": "b50_d50000",
+        "bAmount": 50,
+        "dAmount": 50000
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "prefix_free_text",
+      "noteMode": "none",
+      "testCase": {
+        "id": "b50_d50000",
+        "bAmount": 50,
+        "dAmount": 50000
+      },
+      "repeatIndex": 1
+    },
+    {
+      "condition": "prefix_free_text",
+      "noteMode": "none",
+      "testCase": {
+        "id": "b50_d50000",
+        "bAmount": 50,
+        "dAmount": 50000
+      },
+      "repeatIndex": 2
+    },
+    {
+      "condition": "prefix_free_text",
+      "noteMode": "none",
+      "testCase": {
+        "id": "b500_d5000",
+        "bAmount": 500,
+        "dAmount": 5000
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "prefix_free_text",
+      "noteMode": "none",
+      "testCase": {
+        "id": "b500_d5000",
+        "bAmount": 500,
+        "dAmount": 5000
+      },
+      "repeatIndex": 1
+    },
+    {
+      "condition": "prefix_free_text",
+      "noteMode": "none",
+      "testCase": {
+        "id": "b500_d5000",
+        "bAmount": 500,
+        "dAmount": 5000
+      },
+      "repeatIndex": 2
+    },
+    {
+      "condition": "prefix_free_text",
+      "noteMode": "none",
+      "testCase": {
+        "id": "b5000_d50",
+        "bAmount": 5000,
+        "dAmount": 50
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "prefix_free_text",
+      "noteMode": "none",
+      "testCase": {
+        "id": "b5000_d50",
+        "bAmount": 5000,
+        "dAmount": 50
+      },
+      "repeatIndex": 1
+    },
+    {
+      "condition": "prefix_free_text",
+      "noteMode": "none",
+      "testCase": {
+        "id": "b5000_d50",
+        "bAmount": 5000,
+        "dAmount": 50
+      },
+      "repeatIndex": 2
+    },
+    {
+      "condition": "prefix_free_text",
+      "noteMode": "none",
+      "testCase": {
+        "id": "b100000_d5",
+        "bAmount": 100000,
+        "dAmount": 5
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "prefix_free_text",
+      "noteMode": "none",
+      "testCase": {
+        "id": "b100000_d5",
+        "bAmount": 100000,
+        "dAmount": 5
+      },
+      "repeatIndex": 1
+    },
+    {
+      "condition": "prefix_free_text",
+      "noteMode": "none",
+      "testCase": {
+        "id": "b100000_d5",
+        "bAmount": 100000,
+        "dAmount": 5
+      },
+      "repeatIndex": 2
+    },
+    {
+      "condition": "prefix_free_text",
+      "noteMode": "a_only",
+      "testCase": {
+        "id": "b50_d50000",
+        "bAmount": 50,
+        "dAmount": 50000
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "prefix_free_text",
+      "noteMode": "a_only",
+      "testCase": {
+        "id": "b50_d50000",
+        "bAmount": 50,
+        "dAmount": 50000
+      },
+      "repeatIndex": 1
+    },
+    {
+      "condition": "prefix_free_text",
+      "noteMode": "a_only",
+      "testCase": {
+        "id": "b50_d50000",
+        "bAmount": 50,
+        "dAmount": 50000
+      },
+      "repeatIndex": 2
+    },
+    {
+      "condition": "prefix_free_text",
+      "noteMode": "a_only",
+      "testCase": {
+        "id": "b500_d5000",
+        "bAmount": 500,
+        "dAmount": 5000
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "prefix_free_text",
+      "noteMode": "a_only",
+      "testCase": {
+        "id": "b500_d5000",
+        "bAmount": 500,
+        "dAmount": 5000
+      },
+      "repeatIndex": 1
+    },
+    {
+      "condition": "prefix_free_text",
+      "noteMode": "a_only",
+      "testCase": {
+        "id": "b500_d5000",
+        "bAmount": 500,
+        "dAmount": 5000
+      },
+      "repeatIndex": 2
+    },
+    {
+      "condition": "prefix_free_text",
+      "noteMode": "a_only",
+      "testCase": {
+        "id": "b5000_d50",
+        "bAmount": 5000,
+        "dAmount": 50
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "prefix_free_text",
+      "noteMode": "a_only",
+      "testCase": {
+        "id": "b5000_d50",
+        "bAmount": 5000,
+        "dAmount": 50
+      },
+      "repeatIndex": 1
+    },
+    {
+      "condition": "prefix_free_text",
+      "noteMode": "a_only",
+      "testCase": {
+        "id": "b5000_d50",
+        "bAmount": 5000,
+        "dAmount": 50
+      },
+      "repeatIndex": 2
+    },
+    {
+      "condition": "prefix_free_text",
+      "noteMode": "a_only",
+      "testCase": {
+        "id": "b100000_d5",
+        "bAmount": 100000,
+        "dAmount": 5
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "prefix_free_text",
+      "noteMode": "a_only",
+      "testCase": {
+        "id": "b100000_d5",
+        "bAmount": 100000,
+        "dAmount": 5
+      },
+      "repeatIndex": 1
+    },
+    {
+      "condition": "prefix_free_text",
+      "noteMode": "a_only",
+      "testCase": {
+        "id": "b100000_d5",
+        "bAmount": 100000,
+        "dAmount": 5
+      },
+      "repeatIndex": 2
+    },
+    {
+      "condition": "prefix_free_text",
+      "noteMode": "c_only",
+      "testCase": {
+        "id": "b50_d50000",
+        "bAmount": 50,
+        "dAmount": 50000
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "prefix_free_text",
+      "noteMode": "c_only",
+      "testCase": {
+        "id": "b50_d50000",
+        "bAmount": 50,
+        "dAmount": 50000
+      },
+      "repeatIndex": 1
+    },
+    {
+      "condition": "prefix_free_text",
+      "noteMode": "c_only",
+      "testCase": {
+        "id": "b50_d50000",
+        "bAmount": 50,
+        "dAmount": 50000
+      },
+      "repeatIndex": 2
+    },
+    {
+      "condition": "prefix_free_text",
+      "noteMode": "c_only",
+      "testCase": {
+        "id": "b500_d5000",
+        "bAmount": 500,
+        "dAmount": 5000
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "prefix_free_text",
+      "noteMode": "c_only",
+      "testCase": {
+        "id": "b500_d5000",
+        "bAmount": 500,
+        "dAmount": 5000
+      },
+      "repeatIndex": 1
+    },
+    {
+      "condition": "prefix_free_text",
+      "noteMode": "c_only",
+      "testCase": {
+        "id": "b500_d5000",
+        "bAmount": 500,
+        "dAmount": 5000
+      },
+      "repeatIndex": 2
+    },
+    {
+      "condition": "prefix_free_text",
+      "noteMode": "c_only",
+      "testCase": {
+        "id": "b5000_d50",
+        "bAmount": 5000,
+        "dAmount": 50
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "prefix_free_text",
+      "noteMode": "c_only",
+      "testCase": {
+        "id": "b5000_d50",
+        "bAmount": 5000,
+        "dAmount": 50
+      },
+      "repeatIndex": 1
+    },
+    {
+      "condition": "prefix_free_text",
+      "noteMode": "c_only",
+      "testCase": {
+        "id": "b5000_d50",
+        "bAmount": 5000,
+        "dAmount": 50
+      },
+      "repeatIndex": 2
+    },
+    {
+      "condition": "prefix_free_text",
+      "noteMode": "c_only",
+      "testCase": {
+        "id": "b100000_d5",
+        "bAmount": 100000,
+        "dAmount": 5
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "prefix_free_text",
+      "noteMode": "c_only",
+      "testCase": {
+        "id": "b100000_d5",
+        "bAmount": 100000,
+        "dAmount": 5
+      },
+      "repeatIndex": 1
+    },
+    {
+      "condition": "prefix_free_text",
+      "noteMode": "c_only",
+      "testCase": {
+        "id": "b100000_d5",
+        "bAmount": 100000,
+        "dAmount": 5
+      },
+      "repeatIndex": 2
+    },
+    {
+      "condition": "prefix_free_text",
+      "noteMode": "both",
+      "testCase": {
+        "id": "b50_d50000",
+        "bAmount": 50,
+        "dAmount": 50000
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "prefix_free_text",
+      "noteMode": "both",
+      "testCase": {
+        "id": "b50_d50000",
+        "bAmount": 50,
+        "dAmount": 50000
+      },
+      "repeatIndex": 1
+    },
+    {
+      "condition": "prefix_free_text",
+      "noteMode": "both",
+      "testCase": {
+        "id": "b50_d50000",
+        "bAmount": 50,
+        "dAmount": 50000
+      },
+      "repeatIndex": 2
+    },
+    {
+      "condition": "prefix_free_text",
+      "noteMode": "both",
+      "testCase": {
+        "id": "b500_d5000",
+        "bAmount": 500,
+        "dAmount": 5000
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "prefix_free_text",
+      "noteMode": "both",
+      "testCase": {
+        "id": "b500_d5000",
+        "bAmount": 500,
+        "dAmount": 5000
+      },
+      "repeatIndex": 1
+    },
+    {
+      "condition": "prefix_free_text",
+      "noteMode": "both",
+      "testCase": {
+        "id": "b500_d5000",
+        "bAmount": 500,
+        "dAmount": 5000
+      },
+      "repeatIndex": 2
+    },
+    {
+      "condition": "prefix_free_text",
+      "noteMode": "both",
+      "testCase": {
+        "id": "b5000_d50",
+        "bAmount": 5000,
+        "dAmount": 50
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "prefix_free_text",
+      "noteMode": "both",
+      "testCase": {
+        "id": "b5000_d50",
+        "bAmount": 5000,
+        "dAmount": 50
+      },
+      "repeatIndex": 1
+    },
+    {
+      "condition": "prefix_free_text",
+      "noteMode": "both",
+      "testCase": {
+        "id": "b5000_d50",
+        "bAmount": 5000,
+        "dAmount": 50
+      },
+      "repeatIndex": 2
+    },
+    {
+      "condition": "prefix_free_text",
+      "noteMode": "both",
+      "testCase": {
+        "id": "b100000_d5",
+        "bAmount": 100000,
+        "dAmount": 5
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "prefix_free_text",
+      "noteMode": "both",
+      "testCase": {
+        "id": "b100000_d5",
+        "bAmount": 100000,
+        "dAmount": 5
+      },
+      "repeatIndex": 1
+    },
+    {
+      "condition": "prefix_free_text",
+      "noteMode": "both",
+      "testCase": {
+        "id": "b100000_d5",
+        "bAmount": 100000,
+        "dAmount": 5
+      },
+      "repeatIndex": 2
+    },
+    {
+      "condition": "suffix_free_text",
+      "noteMode": "none",
+      "testCase": {
+        "id": "b50_d50000",
+        "bAmount": 50,
+        "dAmount": 50000
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "suffix_free_text",
+      "noteMode": "none",
+      "testCase": {
+        "id": "b50_d50000",
+        "bAmount": 50,
+        "dAmount": 50000
+      },
+      "repeatIndex": 1
+    },
+    {
+      "condition": "suffix_free_text",
+      "noteMode": "none",
+      "testCase": {
+        "id": "b50_d50000",
+        "bAmount": 50,
+        "dAmount": 50000
+      },
+      "repeatIndex": 2
+    },
+    {
+      "condition": "suffix_free_text",
+      "noteMode": "none",
+      "testCase": {
+        "id": "b500_d5000",
+        "bAmount": 500,
+        "dAmount": 5000
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "suffix_free_text",
+      "noteMode": "none",
+      "testCase": {
+        "id": "b500_d5000",
+        "bAmount": 500,
+        "dAmount": 5000
+      },
+      "repeatIndex": 1
+    },
+    {
+      "condition": "suffix_free_text",
+      "noteMode": "none",
+      "testCase": {
+        "id": "b500_d5000",
+        "bAmount": 500,
+        "dAmount": 5000
+      },
+      "repeatIndex": 2
+    },
+    {
+      "condition": "suffix_free_text",
+      "noteMode": "none",
+      "testCase": {
+        "id": "b5000_d50",
+        "bAmount": 5000,
+        "dAmount": 50
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "suffix_free_text",
+      "noteMode": "none",
+      "testCase": {
+        "id": "b5000_d50",
+        "bAmount": 5000,
+        "dAmount": 50
+      },
+      "repeatIndex": 1
+    },
+    {
+      "condition": "suffix_free_text",
+      "noteMode": "none",
+      "testCase": {
+        "id": "b5000_d50",
+        "bAmount": 5000,
+        "dAmount": 50
+      },
+      "repeatIndex": 2
+    },
+    {
+      "condition": "suffix_free_text",
+      "noteMode": "none",
+      "testCase": {
+        "id": "b100000_d5",
+        "bAmount": 100000,
+        "dAmount": 5
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "suffix_free_text",
+      "noteMode": "none",
+      "testCase": {
+        "id": "b100000_d5",
+        "bAmount": 100000,
+        "dAmount": 5
+      },
+      "repeatIndex": 1
+    },
+    {
+      "condition": "suffix_free_text",
+      "noteMode": "none",
+      "testCase": {
+        "id": "b100000_d5",
+        "bAmount": 100000,
+        "dAmount": 5
+      },
+      "repeatIndex": 2
+    },
+    {
+      "condition": "suffix_free_text",
+      "noteMode": "a_only",
+      "testCase": {
+        "id": "b50_d50000",
+        "bAmount": 50,
+        "dAmount": 50000
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "suffix_free_text",
+      "noteMode": "a_only",
+      "testCase": {
+        "id": "b50_d50000",
+        "bAmount": 50,
+        "dAmount": 50000
+      },
+      "repeatIndex": 1
+    },
+    {
+      "condition": "suffix_free_text",
+      "noteMode": "a_only",
+      "testCase": {
+        "id": "b50_d50000",
+        "bAmount": 50,
+        "dAmount": 50000
+      },
+      "repeatIndex": 2
+    },
+    {
+      "condition": "suffix_free_text",
+      "noteMode": "a_only",
+      "testCase": {
+        "id": "b500_d5000",
+        "bAmount": 500,
+        "dAmount": 5000
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "suffix_free_text",
+      "noteMode": "a_only",
+      "testCase": {
+        "id": "b500_d5000",
+        "bAmount": 500,
+        "dAmount": 5000
+      },
+      "repeatIndex": 1
+    },
+    {
+      "condition": "suffix_free_text",
+      "noteMode": "a_only",
+      "testCase": {
+        "id": "b500_d5000",
+        "bAmount": 500,
+        "dAmount": 5000
+      },
+      "repeatIndex": 2
+    },
+    {
+      "condition": "suffix_free_text",
+      "noteMode": "a_only",
+      "testCase": {
+        "id": "b5000_d50",
+        "bAmount": 5000,
+        "dAmount": 50
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "suffix_free_text",
+      "noteMode": "a_only",
+      "testCase": {
+        "id": "b5000_d50",
+        "bAmount": 5000,
+        "dAmount": 50
+      },
+      "repeatIndex": 1
+    },
+    {
+      "condition": "suffix_free_text",
+      "noteMode": "a_only",
+      "testCase": {
+        "id": "b5000_d50",
+        "bAmount": 5000,
+        "dAmount": 50
+      },
+      "repeatIndex": 2
+    },
+    {
+      "condition": "suffix_free_text",
+      "noteMode": "a_only",
+      "testCase": {
+        "id": "b100000_d5",
+        "bAmount": 100000,
+        "dAmount": 5
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "suffix_free_text",
+      "noteMode": "a_only",
+      "testCase": {
+        "id": "b100000_d5",
+        "bAmount": 100000,
+        "dAmount": 5
+      },
+      "repeatIndex": 1
+    },
+    {
+      "condition": "suffix_free_text",
+      "noteMode": "a_only",
+      "testCase": {
+        "id": "b100000_d5",
+        "bAmount": 100000,
+        "dAmount": 5
+      },
+      "repeatIndex": 2
+    },
+    {
+      "condition": "suffix_free_text",
+      "noteMode": "c_only",
+      "testCase": {
+        "id": "b50_d50000",
+        "bAmount": 50,
+        "dAmount": 50000
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "suffix_free_text",
+      "noteMode": "c_only",
+      "testCase": {
+        "id": "b50_d50000",
+        "bAmount": 50,
+        "dAmount": 50000
+      },
+      "repeatIndex": 1
+    },
+    {
+      "condition": "suffix_free_text",
+      "noteMode": "c_only",
+      "testCase": {
+        "id": "b50_d50000",
+        "bAmount": 50,
+        "dAmount": 50000
+      },
+      "repeatIndex": 2
+    },
+    {
+      "condition": "suffix_free_text",
+      "noteMode": "c_only",
+      "testCase": {
+        "id": "b500_d5000",
+        "bAmount": 500,
+        "dAmount": 5000
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "suffix_free_text",
+      "noteMode": "c_only",
+      "testCase": {
+        "id": "b500_d5000",
+        "bAmount": 500,
+        "dAmount": 5000
+      },
+      "repeatIndex": 1
+    },
+    {
+      "condition": "suffix_free_text",
+      "noteMode": "c_only",
+      "testCase": {
+        "id": "b500_d5000",
+        "bAmount": 500,
+        "dAmount": 5000
+      },
+      "repeatIndex": 2
+    },
+    {
+      "condition": "suffix_free_text",
+      "noteMode": "c_only",
+      "testCase": {
+        "id": "b5000_d50",
+        "bAmount": 5000,
+        "dAmount": 50
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "suffix_free_text",
+      "noteMode": "c_only",
+      "testCase": {
+        "id": "b5000_d50",
+        "bAmount": 5000,
+        "dAmount": 50
+      },
+      "repeatIndex": 1
+    },
+    {
+      "condition": "suffix_free_text",
+      "noteMode": "c_only",
+      "testCase": {
+        "id": "b5000_d50",
+        "bAmount": 5000,
+        "dAmount": 50
+      },
+      "repeatIndex": 2
+    },
+    {
+      "condition": "suffix_free_text",
+      "noteMode": "c_only",
+      "testCase": {
+        "id": "b100000_d5",
+        "bAmount": 100000,
+        "dAmount": 5
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "suffix_free_text",
+      "noteMode": "c_only",
+      "testCase": {
+        "id": "b100000_d5",
+        "bAmount": 100000,
+        "dAmount": 5
+      },
+      "repeatIndex": 1
+    },
+    {
+      "condition": "suffix_free_text",
+      "noteMode": "c_only",
+      "testCase": {
+        "id": "b100000_d5",
+        "bAmount": 100000,
+        "dAmount": 5
+      },
+      "repeatIndex": 2
+    },
+    {
+      "condition": "suffix_free_text",
+      "noteMode": "both",
+      "testCase": {
+        "id": "b50_d50000",
+        "bAmount": 50,
+        "dAmount": 50000
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "suffix_free_text",
+      "noteMode": "both",
+      "testCase": {
+        "id": "b50_d50000",
+        "bAmount": 50,
+        "dAmount": 50000
+      },
+      "repeatIndex": 1
+    },
+    {
+      "condition": "suffix_free_text",
+      "noteMode": "both",
+      "testCase": {
+        "id": "b50_d50000",
+        "bAmount": 50,
+        "dAmount": 50000
+      },
+      "repeatIndex": 2
+    },
+    {
+      "condition": "suffix_free_text",
+      "noteMode": "both",
+      "testCase": {
+        "id": "b500_d5000",
+        "bAmount": 500,
+        "dAmount": 5000
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "suffix_free_text",
+      "noteMode": "both",
+      "testCase": {
+        "id": "b500_d5000",
+        "bAmount": 500,
+        "dAmount": 5000
+      },
+      "repeatIndex": 1
+    },
+    {
+      "condition": "suffix_free_text",
+      "noteMode": "both",
+      "testCase": {
+        "id": "b500_d5000",
+        "bAmount": 500,
+        "dAmount": 5000
+      },
+      "repeatIndex": 2
+    },
+    {
+      "condition": "suffix_free_text",
+      "noteMode": "both",
+      "testCase": {
+        "id": "b5000_d50",
+        "bAmount": 5000,
+        "dAmount": 50
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "suffix_free_text",
+      "noteMode": "both",
+      "testCase": {
+        "id": "b5000_d50",
+        "bAmount": 5000,
+        "dAmount": 50
+      },
+      "repeatIndex": 1
+    },
+    {
+      "condition": "suffix_free_text",
+      "noteMode": "both",
+      "testCase": {
+        "id": "b5000_d50",
+        "bAmount": 5000,
+        "dAmount": 50
+      },
+      "repeatIndex": 2
+    },
+    {
+      "condition": "suffix_free_text",
+      "noteMode": "both",
+      "testCase": {
+        "id": "b100000_d5",
+        "bAmount": 100000,
+        "dAmount": 5
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "suffix_free_text",
+      "noteMode": "both",
+      "testCase": {
+        "id": "b100000_d5",
+        "bAmount": 100000,
+        "dAmount": 5
+      },
+      "repeatIndex": 1
+    },
+    {
+      "condition": "suffix_free_text",
+      "noteMode": "both",
+      "testCase": {
+        "id": "b100000_d5",
+        "bAmount": 100000,
+        "dAmount": 5
+      },
+      "repeatIndex": 2
+    },
+    {
+      "condition": "system_rule",
+      "noteMode": "none",
+      "testCase": {
+        "id": "b50_d50000",
+        "bAmount": 50,
+        "dAmount": 50000
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "system_rule",
+      "noteMode": "none",
+      "testCase": {
+        "id": "b50_d50000",
+        "bAmount": 50,
+        "dAmount": 50000
+      },
+      "repeatIndex": 1
+    },
+    {
+      "condition": "system_rule",
+      "noteMode": "none",
+      "testCase": {
+        "id": "b50_d50000",
+        "bAmount": 50,
+        "dAmount": 50000
+      },
+      "repeatIndex": 2
+    },
+    {
+      "condition": "system_rule",
+      "noteMode": "none",
+      "testCase": {
+        "id": "b500_d5000",
+        "bAmount": 500,
+        "dAmount": 5000
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "system_rule",
+      "noteMode": "none",
+      "testCase": {
+        "id": "b500_d5000",
+        "bAmount": 500,
+        "dAmount": 5000
+      },
+      "repeatIndex": 1
+    },
+    {
+      "condition": "system_rule",
+      "noteMode": "none",
+      "testCase": {
+        "id": "b500_d5000",
+        "bAmount": 500,
+        "dAmount": 5000
+      },
+      "repeatIndex": 2
+    },
+    {
+      "condition": "system_rule",
+      "noteMode": "none",
+      "testCase": {
+        "id": "b5000_d50",
+        "bAmount": 5000,
+        "dAmount": 50
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "system_rule",
+      "noteMode": "none",
+      "testCase": {
+        "id": "b5000_d50",
+        "bAmount": 5000,
+        "dAmount": 50
+      },
+      "repeatIndex": 1
+    },
+    {
+      "condition": "system_rule",
+      "noteMode": "none",
+      "testCase": {
+        "id": "b5000_d50",
+        "bAmount": 5000,
+        "dAmount": 50
+      },
+      "repeatIndex": 2
+    },
+    {
+      "condition": "system_rule",
+      "noteMode": "none",
+      "testCase": {
+        "id": "b100000_d5",
+        "bAmount": 100000,
+        "dAmount": 5
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "system_rule",
+      "noteMode": "none",
+      "testCase": {
+        "id": "b100000_d5",
+        "bAmount": 100000,
+        "dAmount": 5
+      },
+      "repeatIndex": 1
+    },
+    {
+      "condition": "system_rule",
+      "noteMode": "none",
+      "testCase": {
+        "id": "b100000_d5",
+        "bAmount": 100000,
+        "dAmount": 5
+      },
+      "repeatIndex": 2
+    },
+    {
+      "condition": "system_rule",
+      "noteMode": "a_only",
+      "testCase": {
+        "id": "b50_d50000",
+        "bAmount": 50,
+        "dAmount": 50000
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "system_rule",
+      "noteMode": "a_only",
+      "testCase": {
+        "id": "b50_d50000",
+        "bAmount": 50,
+        "dAmount": 50000
+      },
+      "repeatIndex": 1
+    },
+    {
+      "condition": "system_rule",
+      "noteMode": "a_only",
+      "testCase": {
+        "id": "b50_d50000",
+        "bAmount": 50,
+        "dAmount": 50000
+      },
+      "repeatIndex": 2
+    },
+    {
+      "condition": "system_rule",
+      "noteMode": "a_only",
+      "testCase": {
+        "id": "b500_d5000",
+        "bAmount": 500,
+        "dAmount": 5000
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "system_rule",
+      "noteMode": "a_only",
+      "testCase": {
+        "id": "b500_d5000",
+        "bAmount": 500,
+        "dAmount": 5000
+      },
+      "repeatIndex": 1
+    },
+    {
+      "condition": "system_rule",
+      "noteMode": "a_only",
+      "testCase": {
+        "id": "b500_d5000",
+        "bAmount": 500,
+        "dAmount": 5000
+      },
+      "repeatIndex": 2
+    },
+    {
+      "condition": "system_rule",
+      "noteMode": "a_only",
+      "testCase": {
+        "id": "b5000_d50",
+        "bAmount": 5000,
+        "dAmount": 50
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "system_rule",
+      "noteMode": "a_only",
+      "testCase": {
+        "id": "b5000_d50",
+        "bAmount": 5000,
+        "dAmount": 50
+      },
+      "repeatIndex": 1
+    },
+    {
+      "condition": "system_rule",
+      "noteMode": "a_only",
+      "testCase": {
+        "id": "b5000_d50",
+        "bAmount": 5000,
+        "dAmount": 50
+      },
+      "repeatIndex": 2
+    },
+    {
+      "condition": "system_rule",
+      "noteMode": "a_only",
+      "testCase": {
+        "id": "b100000_d5",
+        "bAmount": 100000,
+        "dAmount": 5
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "system_rule",
+      "noteMode": "a_only",
+      "testCase": {
+        "id": "b100000_d5",
+        "bAmount": 100000,
+        "dAmount": 5
+      },
+      "repeatIndex": 1
+    },
+    {
+      "condition": "system_rule",
+      "noteMode": "a_only",
+      "testCase": {
+        "id": "b100000_d5",
+        "bAmount": 100000,
+        "dAmount": 5
+      },
+      "repeatIndex": 2
+    },
+    {
+      "condition": "system_rule",
+      "noteMode": "c_only",
+      "testCase": {
+        "id": "b50_d50000",
+        "bAmount": 50,
+        "dAmount": 50000
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "system_rule",
+      "noteMode": "c_only",
+      "testCase": {
+        "id": "b50_d50000",
+        "bAmount": 50,
+        "dAmount": 50000
+      },
+      "repeatIndex": 1
+    },
+    {
+      "condition": "system_rule",
+      "noteMode": "c_only",
+      "testCase": {
+        "id": "b50_d50000",
+        "bAmount": 50,
+        "dAmount": 50000
+      },
+      "repeatIndex": 2
+    },
+    {
+      "condition": "system_rule",
+      "noteMode": "c_only",
+      "testCase": {
+        "id": "b500_d5000",
+        "bAmount": 500,
+        "dAmount": 5000
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "system_rule",
+      "noteMode": "c_only",
+      "testCase": {
+        "id": "b500_d5000",
+        "bAmount": 500,
+        "dAmount": 5000
+      },
+      "repeatIndex": 1
+    },
+    {
+      "condition": "system_rule",
+      "noteMode": "c_only",
+      "testCase": {
+        "id": "b500_d5000",
+        "bAmount": 500,
+        "dAmount": 5000
+      },
+      "repeatIndex": 2
+    },
+    {
+      "condition": "system_rule",
+      "noteMode": "c_only",
+      "testCase": {
+        "id": "b5000_d50",
+        "bAmount": 5000,
+        "dAmount": 50
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "system_rule",
+      "noteMode": "c_only",
+      "testCase": {
+        "id": "b5000_d50",
+        "bAmount": 5000,
+        "dAmount": 50
+      },
+      "repeatIndex": 1
+    },
+    {
+      "condition": "system_rule",
+      "noteMode": "c_only",
+      "testCase": {
+        "id": "b5000_d50",
+        "bAmount": 5000,
+        "dAmount": 50
+      },
+      "repeatIndex": 2
+    },
+    {
+      "condition": "system_rule",
+      "noteMode": "c_only",
+      "testCase": {
+        "id": "b100000_d5",
+        "bAmount": 100000,
+        "dAmount": 5
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "system_rule",
+      "noteMode": "c_only",
+      "testCase": {
+        "id": "b100000_d5",
+        "bAmount": 100000,
+        "dAmount": 5
+      },
+      "repeatIndex": 1
+    },
+    {
+      "condition": "system_rule",
+      "noteMode": "c_only",
+      "testCase": {
+        "id": "b100000_d5",
+        "bAmount": 100000,
+        "dAmount": 5
+      },
+      "repeatIndex": 2
+    },
+    {
+      "condition": "system_rule",
+      "noteMode": "both",
+      "testCase": {
+        "id": "b50_d50000",
+        "bAmount": 50,
+        "dAmount": 50000
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "system_rule",
+      "noteMode": "both",
+      "testCase": {
+        "id": "b50_d50000",
+        "bAmount": 50,
+        "dAmount": 50000
+      },
+      "repeatIndex": 1
+    },
+    {
+      "condition": "system_rule",
+      "noteMode": "both",
+      "testCase": {
+        "id": "b50_d50000",
+        "bAmount": 50,
+        "dAmount": 50000
+      },
+      "repeatIndex": 2
+    },
+    {
+      "condition": "system_rule",
+      "noteMode": "both",
+      "testCase": {
+        "id": "b500_d5000",
+        "bAmount": 500,
+        "dAmount": 5000
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "system_rule",
+      "noteMode": "both",
+      "testCase": {
+        "id": "b500_d5000",
+        "bAmount": 500,
+        "dAmount": 5000
+      },
+      "repeatIndex": 1
+    },
+    {
+      "condition": "system_rule",
+      "noteMode": "both",
+      "testCase": {
+        "id": "b500_d5000",
+        "bAmount": 500,
+        "dAmount": 5000
+      },
+      "repeatIndex": 2
+    },
+    {
+      "condition": "system_rule",
+      "noteMode": "both",
+      "testCase": {
+        "id": "b5000_d50",
+        "bAmount": 5000,
+        "dAmount": 50
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "system_rule",
+      "noteMode": "both",
+      "testCase": {
+        "id": "b5000_d50",
+        "bAmount": 5000,
+        "dAmount": 50
+      },
+      "repeatIndex": 1
+    },
+    {
+      "condition": "system_rule",
+      "noteMode": "both",
+      "testCase": {
+        "id": "b5000_d50",
+        "bAmount": 5000,
+        "dAmount": 50
+      },
+      "repeatIndex": 2
+    },
+    {
+      "condition": "system_rule",
+      "noteMode": "both",
+      "testCase": {
+        "id": "b100000_d5",
+        "bAmount": 100000,
+        "dAmount": 5
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "system_rule",
+      "noteMode": "both",
+      "testCase": {
+        "id": "b100000_d5",
+        "bAmount": 100000,
+        "dAmount": 5
+      },
+      "repeatIndex": 1
+    },
+    {
+      "condition": "system_rule",
+      "noteMode": "both",
+      "testCase": {
+        "id": "b100000_d5",
+        "bAmount": 100000,
+        "dAmount": 5
+      },
+      "repeatIndex": 2
+    }
+  ]
+}

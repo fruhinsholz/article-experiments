@@ -1,0 +1,17 @@
+provider,context_test,model,format_id,fact_only_highest_majority_low,context_highest_majority_low
+Gemini,$100k,gemini-3.5-flash-lite,prose_same_block,100,10000
+Gemini,$100k,gemini-3.5-flash-lite,json_flat,500,20000
+Gemini,$100k,gemini-3.5-flash-lite,json_typed,20000,20000
+Gemini,$100k,gemini-3.5-flash-lite,json_typed_boundary_rule,100,20000
+OpenAI,$100k,gpt-4.1-mini,prose_same_block,100,20000
+OpenAI,$100k,gpt-4.1-mini,json_flat,500,20000
+OpenAI,$100k,gpt-4.1-mini,json_typed,500,20000
+OpenAI,$100k,gpt-4.1-mini,json_typed_boundary_rule,100,100
+Gemini,$5,gemini-3.5-flash-lite,prose_same_block,150,5
+Gemini,$5,gemini-3.5-flash-lite,json_flat,500,5
+Gemini,$5,gemini-3.5-flash-lite,json_typed,20000,5
+Gemini,$5,gemini-3.5-flash-lite,json_typed_boundary_rule,100,100
+OpenAI,$5,gpt-4.1-mini,prose_same_block,100,5
+OpenAI,$5,gpt-4.1-mini,json_flat,1000,5
+OpenAI,$5,gpt-4.1-mini,json_typed,500,50
+OpenAI,$5,gpt-4.1-mini,json_typed_boundary_rule,100,100

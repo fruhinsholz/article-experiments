@@ -1,0 +1,79 @@
+# JSON Input LOW Summary
+
+Created: 2026-07-31T03:03:58.046Z
+Commit: c61a3b83bb1ca5de371d14ca7b5ac62075c570bb
+
+| Model | Format | Context | Amount | Total | LOW | NOT_LOW | Invalid |
+| --- | --- | --- | ---: | ---: | ---: | ---: | ---: |
+| `gpt-4.1-mini` | `json_flat` | `fact_only` | 5 | 30 | 30 (100.0%) | 0 (0.0%) | 0 |
+| `gpt-4.1-mini` | `json_flat` | `fact_only` | 50 | 30 | 30 (100.0%) | 0 (0.0%) | 0 |
+| `gpt-4.1-mini` | `json_flat` | `fact_only` | 100 | 30 | 29 (96.7%) | 1 (3.3%) | 0 |
+| `gpt-4.1-mini` | `json_flat` | `fact_only` | 150 | 30 | 29 (96.7%) | 1 (3.3%) | 0 |
+| `gpt-4.1-mini` | `json_flat` | `fact_only` | 500 | 30 | 21 (70.0%) | 9 (30.0%) | 0 |
+| `gpt-4.1-mini` | `json_flat` | `fact_only` | 1000 | 30 | 15 (50.0%) | 15 (50.0%) | 0 |
+| `gpt-4.1-mini` | `json_flat` | `fact_only` | 5000 | 30 | 4 (13.3%) | 26 (86.7%) | 0 |
+| `gpt-4.1-mini` | `json_flat` | `fact_only` | 10000 | 30 | 7 (23.3%) | 23 (76.7%) | 0 |
+| `gpt-4.1-mini` | `json_flat` | `fact_only` | 20000 | 30 | 1 (3.3%) | 29 (96.7%) | 0 |
+| `gpt-4.1-mini` | `json_flat` | `retrieved_100000_contract` | 5 | 30 | 30 (100.0%) | 0 (0.0%) | 0 |
+| `gpt-4.1-mini` | `json_flat` | `retrieved_100000_contract` | 50 | 30 | 30 (100.0%) | 0 (0.0%) | 0 |
+| `gpt-4.1-mini` | `json_flat` | `retrieved_100000_contract` | 100 | 30 | 30 (100.0%) | 0 (0.0%) | 0 |
+| `gpt-4.1-mini` | `json_flat` | `retrieved_100000_contract` | 150 | 30 | 30 (100.0%) | 0 (0.0%) | 0 |
+| `gpt-4.1-mini` | `json_flat` | `retrieved_100000_contract` | 500 | 30 | 30 (100.0%) | 0 (0.0%) | 0 |
+| `gpt-4.1-mini` | `json_flat` | `retrieved_100000_contract` | 1000 | 30 | 30 (100.0%) | 0 (0.0%) | 0 |
+| `gpt-4.1-mini` | `json_flat` | `retrieved_100000_contract` | 5000 | 30 | 30 (100.0%) | 0 (0.0%) | 0 |
+| `gpt-4.1-mini` | `json_flat` | `retrieved_100000_contract` | 10000 | 30 | 30 (100.0%) | 0 (0.0%) | 0 |
+| `gpt-4.1-mini` | `json_flat` | `retrieved_100000_contract` | 20000 | 30 | 30 (100.0%) | 0 (0.0%) | 0 |
+| `gpt-4.1-mini` | `json_typed_boundary_rule` | `fact_only` | 5 | 30 | 30 (100.0%) | 0 (0.0%) | 0 |
+| `gpt-4.1-mini` | `json_typed_boundary_rule` | `fact_only` | 50 | 30 | 30 (100.0%) | 0 (0.0%) | 0 |
+| `gpt-4.1-mini` | `json_typed_boundary_rule` | `fact_only` | 100 | 30 | 30 (100.0%) | 0 (0.0%) | 0 |
+| `gpt-4.1-mini` | `json_typed_boundary_rule` | `fact_only` | 150 | 30 | 0 (0.0%) | 30 (100.0%) | 0 |
+| `gpt-4.1-mini` | `json_typed_boundary_rule` | `fact_only` | 500 | 30 | 0 (0.0%) | 30 (100.0%) | 0 |
+| `gpt-4.1-mini` | `json_typed_boundary_rule` | `fact_only` | 1000 | 30 | 0 (0.0%) | 30 (100.0%) | 0 |
+| `gpt-4.1-mini` | `json_typed_boundary_rule` | `fact_only` | 5000 | 30 | 0 (0.0%) | 30 (100.0%) | 0 |
+| `gpt-4.1-mini` | `json_typed_boundary_rule` | `fact_only` | 10000 | 30 | 0 (0.0%) | 30 (100.0%) | 0 |
+| `gpt-4.1-mini` | `json_typed_boundary_rule` | `fact_only` | 20000 | 30 | 0 (0.0%) | 30 (100.0%) | 0 |
+| `gpt-4.1-mini` | `json_typed_boundary_rule` | `retrieved_100000_contract` | 5 | 30 | 30 (100.0%) | 0 (0.0%) | 0 |
+| `gpt-4.1-mini` | `json_typed_boundary_rule` | `retrieved_100000_contract` | 50 | 30 | 30 (100.0%) | 0 (0.0%) | 0 |
+| `gpt-4.1-mini` | `json_typed_boundary_rule` | `retrieved_100000_contract` | 100 | 30 | 30 (100.0%) | 0 (0.0%) | 0 |
+| `gpt-4.1-mini` | `json_typed_boundary_rule` | `retrieved_100000_contract` | 150 | 30 | 0 (0.0%) | 30 (100.0%) | 0 |
+| `gpt-4.1-mini` | `json_typed_boundary_rule` | `retrieved_100000_contract` | 500 | 30 | 0 (0.0%) | 30 (100.0%) | 0 |
+| `gpt-4.1-mini` | `json_typed_boundary_rule` | `retrieved_100000_contract` | 1000 | 30 | 0 (0.0%) | 30 (100.0%) | 0 |
+| `gpt-4.1-mini` | `json_typed_boundary_rule` | `retrieved_100000_contract` | 5000 | 30 | 0 (0.0%) | 30 (100.0%) | 0 |
+| `gpt-4.1-mini` | `json_typed_boundary_rule` | `retrieved_100000_contract` | 10000 | 30 | 0 (0.0%) | 30 (100.0%) | 0 |
+| `gpt-4.1-mini` | `json_typed_boundary_rule` | `retrieved_100000_contract` | 20000 | 30 | 0 (0.0%) | 30 (100.0%) | 0 |
+| `gpt-4.1-mini` | `json_typed` | `fact_only` | 5 | 30 | 30 (100.0%) | 0 (0.0%) | 0 |
+| `gpt-4.1-mini` | `json_typed` | `fact_only` | 50 | 30 | 30 (100.0%) | 0 (0.0%) | 0 |
+| `gpt-4.1-mini` | `json_typed` | `fact_only` | 100 | 30 | 30 (100.0%) | 0 (0.0%) | 0 |
+| `gpt-4.1-mini` | `json_typed` | `fact_only` | 150 | 30 | 23 (76.7%) | 7 (23.3%) | 0 |
+| `gpt-4.1-mini` | `json_typed` | `fact_only` | 500 | 30 | 24 (80.0%) | 6 (20.0%) | 0 |
+| `gpt-4.1-mini` | `json_typed` | `fact_only` | 1000 | 30 | 7 (23.3%) | 23 (76.7%) | 0 |
+| `gpt-4.1-mini` | `json_typed` | `fact_only` | 5000 | 30 | 0 (0.0%) | 30 (100.0%) | 0 |
+| `gpt-4.1-mini` | `json_typed` | `fact_only` | 10000 | 30 | 1 (3.3%) | 29 (96.7%) | 0 |
+| `gpt-4.1-mini` | `json_typed` | `fact_only` | 20000 | 30 | 1 (3.3%) | 29 (96.7%) | 0 |
+| `gpt-4.1-mini` | `json_typed` | `retrieved_100000_contract` | 5 | 30 | 30 (100.0%) | 0 (0.0%) | 0 |
+| `gpt-4.1-mini` | `json_typed` | `retrieved_100000_contract` | 50 | 30 | 30 (100.0%) | 0 (0.0%) | 0 |
+| `gpt-4.1-mini` | `json_typed` | `retrieved_100000_contract` | 100 | 30 | 30 (100.0%) | 0 (0.0%) | 0 |
+| `gpt-4.1-mini` | `json_typed` | `retrieved_100000_contract` | 150 | 30 | 30 (100.0%) | 0 (0.0%) | 0 |
+| `gpt-4.1-mini` | `json_typed` | `retrieved_100000_contract` | 500 | 30 | 30 (100.0%) | 0 (0.0%) | 0 |
+| `gpt-4.1-mini` | `json_typed` | `retrieved_100000_contract` | 1000 | 30 | 30 (100.0%) | 0 (0.0%) | 0 |
+| `gpt-4.1-mini` | `json_typed` | `retrieved_100000_contract` | 5000 | 30 | 30 (100.0%) | 0 (0.0%) | 0 |
+| `gpt-4.1-mini` | `json_typed` | `retrieved_100000_contract` | 10000 | 30 | 30 (100.0%) | 0 (0.0%) | 0 |
+| `gpt-4.1-mini` | `json_typed` | `retrieved_100000_contract` | 20000 | 30 | 30 (100.0%) | 0 (0.0%) | 0 |
+| `gpt-4.1-mini` | `prose_same_block` | `fact_only` | 5 | 30 | 30 (100.0%) | 0 (0.0%) | 0 |
+| `gpt-4.1-mini` | `prose_same_block` | `fact_only` | 50 | 30 | 30 (100.0%) | 0 (0.0%) | 0 |
+| `gpt-4.1-mini` | `prose_same_block` | `fact_only` | 100 | 30 | 23 (76.7%) | 7 (23.3%) | 0 |
+| `gpt-4.1-mini` | `prose_same_block` | `fact_only` | 150 | 30 | 12 (40.0%) | 18 (60.0%) | 0 |
+| `gpt-4.1-mini` | `prose_same_block` | `fact_only` | 500 | 30 | 5 (16.7%) | 25 (83.3%) | 0 |
+| `gpt-4.1-mini` | `prose_same_block` | `fact_only` | 1000 | 30 | 0 (0.0%) | 30 (100.0%) | 0 |
+| `gpt-4.1-mini` | `prose_same_block` | `fact_only` | 5000 | 30 | 0 (0.0%) | 30 (100.0%) | 0 |
+| `gpt-4.1-mini` | `prose_same_block` | `fact_only` | 10000 | 30 | 0 (0.0%) | 30 (100.0%) | 0 |
+| `gpt-4.1-mini` | `prose_same_block` | `fact_only` | 20000 | 30 | 0 (0.0%) | 30 (100.0%) | 0 |
+| `gpt-4.1-mini` | `prose_same_block` | `retrieved_100000_contract` | 5 | 30 | 30 (100.0%) | 0 (0.0%) | 0 |
+| `gpt-4.1-mini` | `prose_same_block` | `retrieved_100000_contract` | 50 | 30 | 30 (100.0%) | 0 (0.0%) | 0 |
+| `gpt-4.1-mini` | `prose_same_block` | `retrieved_100000_contract` | 100 | 30 | 30 (100.0%) | 0 (0.0%) | 0 |
+| `gpt-4.1-mini` | `prose_same_block` | `retrieved_100000_contract` | 150 | 30 | 30 (100.0%) | 0 (0.0%) | 0 |
+| `gpt-4.1-mini` | `prose_same_block` | `retrieved_100000_contract` | 500 | 30 | 30 (100.0%) | 0 (0.0%) | 0 |
+| `gpt-4.1-mini` | `prose_same_block` | `retrieved_100000_contract` | 1000 | 30 | 30 (100.0%) | 0 (0.0%) | 0 |
+| `gpt-4.1-mini` | `prose_same_block` | `retrieved_100000_contract` | 5000 | 30 | 30 (100.0%) | 0 (0.0%) | 0 |
+| `gpt-4.1-mini` | `prose_same_block` | `retrieved_100000_contract` | 10000 | 30 | 30 (100.0%) | 0 (0.0%) | 0 |
+| `gpt-4.1-mini` | `prose_same_block` | `retrieved_100000_contract` | 20000 | 30 | 30 (100.0%) | 0 (0.0%) | 0 |

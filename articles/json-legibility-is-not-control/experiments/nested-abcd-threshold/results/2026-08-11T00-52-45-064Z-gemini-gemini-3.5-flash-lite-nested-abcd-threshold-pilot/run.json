@@ -1,0 +1,280 @@
+{
+  "args": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "repeats": 1,
+    "maxCalls": 40,
+    "maxOutputTokens": 700,
+    "temperature": 0,
+    "concurrency": 4,
+    "label": "nested-abcd-threshold-pilot",
+    "caseMode": "diagonal",
+    "dryRun": false,
+    "printExamples": false
+  },
+  "conditions": [
+    "control",
+    "prefix_free_text",
+    "suffix_free_text",
+    "system_rule"
+  ],
+  "amounts": [
+    5,
+    50,
+    500,
+    5000,
+    20000,
+    100000
+  ],
+  "outsideRule": "For this task, treat the two top-level JSON branches independently. Use A's local threshold context only for B. Use C's local threshold context only for D. Do not let A/B context affect C/D, and do not let C/D context affect A/B.",
+  "testCases": [
+    {
+      "id": "b5_d5",
+      "bAmount": 5,
+      "dAmount": 5
+    },
+    {
+      "id": "b50_d50",
+      "bAmount": 50,
+      "dAmount": 50
+    },
+    {
+      "id": "b500_d500",
+      "bAmount": 500,
+      "dAmount": 500
+    },
+    {
+      "id": "b5000_d5000",
+      "bAmount": 5000,
+      "dAmount": 5000
+    },
+    {
+      "id": "b20000_d20000",
+      "bAmount": 20000,
+      "dAmount": 20000
+    },
+    {
+      "id": "b100000_d100000",
+      "bAmount": 100000,
+      "dAmount": 100000
+    }
+  ],
+  "jobs": [
+    {
+      "condition": "control",
+      "testCase": {
+        "id": "b5_d5",
+        "bAmount": 5,
+        "dAmount": 5
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "control",
+      "testCase": {
+        "id": "b50_d50",
+        "bAmount": 50,
+        "dAmount": 50
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "control",
+      "testCase": {
+        "id": "b500_d500",
+        "bAmount": 500,
+        "dAmount": 500
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "control",
+      "testCase": {
+        "id": "b5000_d5000",
+        "bAmount": 5000,
+        "dAmount": 5000
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "control",
+      "testCase": {
+        "id": "b20000_d20000",
+        "bAmount": 20000,
+        "dAmount": 20000
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "control",
+      "testCase": {
+        "id": "b100000_d100000",
+        "bAmount": 100000,
+        "dAmount": 100000
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "prefix_free_text",
+      "testCase": {
+        "id": "b5_d5",
+        "bAmount": 5,
+        "dAmount": 5
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "prefix_free_text",
+      "testCase": {
+        "id": "b50_d50",
+        "bAmount": 50,
+        "dAmount": 50
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "prefix_free_text",
+      "testCase": {
+        "id": "b500_d500",
+        "bAmount": 500,
+        "dAmount": 500
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "prefix_free_text",
+      "testCase": {
+        "id": "b5000_d5000",
+        "bAmount": 5000,
+        "dAmount": 5000
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "prefix_free_text",
+      "testCase": {
+        "id": "b20000_d20000",
+        "bAmount": 20000,
+        "dAmount": 20000
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "prefix_free_text",
+      "testCase": {
+        "id": "b100000_d100000",
+        "bAmount": 100000,
+        "dAmount": 100000
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "suffix_free_text",
+      "testCase": {
+        "id": "b5_d5",
+        "bAmount": 5,
+        "dAmount": 5
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "suffix_free_text",
+      "testCase": {
+        "id": "b50_d50",
+        "bAmount": 50,
+        "dAmount": 50
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "suffix_free_text",
+      "testCase": {
+        "id": "b500_d500",
+        "bAmount": 500,
+        "dAmount": 500
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "suffix_free_text",
+      "testCase": {
+        "id": "b5000_d5000",
+        "bAmount": 5000,
+        "dAmount": 5000
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "suffix_free_text",
+      "testCase": {
+        "id": "b20000_d20000",
+        "bAmount": 20000,
+        "dAmount": 20000
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "suffix_free_text",
+      "testCase": {
+        "id": "b100000_d100000",
+        "bAmount": 100000,
+        "dAmount": 100000
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "system_rule",
+      "testCase": {
+        "id": "b5_d5",
+        "bAmount": 5,
+        "dAmount": 5
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "system_rule",
+      "testCase": {
+        "id": "b50_d50",
+        "bAmount": 50,
+        "dAmount": 50
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "system_rule",
+      "testCase": {
+        "id": "b500_d500",
+        "bAmount": 500,
+        "dAmount": 500
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "system_rule",
+      "testCase": {
+        "id": "b5000_d5000",
+        "bAmount": 5000,
+        "dAmount": 5000
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "system_rule",
+      "testCase": {
+        "id": "b20000_d20000",
+        "bAmount": 20000,
+        "dAmount": 20000
+      },
+      "repeatIndex": 0
+    },
+    {
+      "condition": "system_rule",
+      "testCase": {
+        "id": "b100000_d100000",
+        "bAmount": 100000,
+        "dAmount": 100000
+      },
+      "repeatIndex": 0
+    }
+  ]
+}

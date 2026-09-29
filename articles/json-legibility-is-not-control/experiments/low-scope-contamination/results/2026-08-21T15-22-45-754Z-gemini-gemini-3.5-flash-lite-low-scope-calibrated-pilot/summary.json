@@ -1,0 +1,48 @@
+{
+  "provider": "gemini",
+  "model": "gemini-3.5-flash-lite",
+  "calls": 40,
+  "errors": 0,
+  "conditions": {
+    "b_only_same_word": {
+      "calls": 10,
+      "counts": {
+        "local_hold": 10
+      },
+      "outputs": [
+        "HOLD"
+      ]
+    },
+    "inactive_a_same_word": {
+      "calls": 10,
+      "counts": {
+        "local_hold": 7,
+        "global_buy": 3
+      },
+      "outputs": [
+        "HOLD",
+        "BUY"
+      ]
+    },
+    "inactive_a_different_word": {
+      "calls": 10,
+      "counts": {
+        "local_hold": 10
+      },
+      "outputs": [
+        "HOLD"
+      ]
+    },
+    "inactive_a_explicit_scope": {
+      "calls": 10,
+      "counts": {
+        "local_hold": 9,
+        "global_buy": 1
+      },
+      "outputs": [
+        "HOLD",
+        "BUY"
+      ]
+    }
+  }
+}

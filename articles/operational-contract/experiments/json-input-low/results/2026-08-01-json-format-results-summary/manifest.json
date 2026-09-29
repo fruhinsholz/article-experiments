@@ -1,0 +1,9 @@
+{
+  "createdAt": "2026-08-01T01:18:35.033Z",
+  "resultSet": [
+    "experiments/json-input-low/results/2026-07-31T15-06-21-856Z-clean-openai-gpt55-gpt56-fixed-grid-json-s30-json-input-low",
+    "experiments/json-input-low/results/2026-07-31T02-49-23-698Z-clean-gemini-json-100k-s30-json-input-low",
+    "experiments/json-input-low/results/2026-07-31T03-34-51-862Z-check-gemini-json-5-s10-json-input-low",
+    "experiments/json-input-low/results/2026-08-01T01-06-10-144Z-supplemental-gemini-100k-dense-json-input-low"
+  ]
+}

@@ -1,0 +1,8 @@
+Case:
+A customer submitted a refund claim for $X for a consumer purchase.
+
+Classify the claim amount as exactly one label:
+LOW
+NOT_LOW
+
+Return only the label.

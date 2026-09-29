@@ -1,0 +1,32 @@
+{
+  "testbed": "json-input-low",
+  "createdAt": "2026-07-31T03:39:55.592Z",
+  "commitHash": "c61a3b83bb1ca5de371d14ca7b5ac62075c570bb",
+  "commandLine": "/usr/bin/node /home/eric/workspace/prompt-contract-experiments/src/json-input-low.mjs --provider openai --models gpt-4.1-mini --contexts fact_only,retrieved_5_gift_card --formats prose_same_block,json_flat,json_typed,json_typed_boundary_rule --amounts 5,50,100,150,500,1000,5000,10000,20000 --samples 10 --reasoning-effort none --max-output-tokens 128 --max-calls 1000 --gzip-jsonl --label check-openai-json-5-s10",
+  "provider": "openai",
+  "requestedModels": [
+    "gpt-4.1-mini"
+  ],
+  "apiParameters": {
+    "temperature": 0,
+    "maxOutputTokens": 128,
+    "reasoningEffort": "none",
+    "seed": null
+  },
+  "samplesPerState": 10,
+  "epochs": 10,
+  "maxCalls": 1000,
+  "dryRun": false,
+  "promptFiles": [
+    "system-prompt.txt",
+    "user-template-prose.txt",
+    "user-template-json.txt"
+  ],
+  "fixtureFile": "fixture.json",
+  "resultFiles": {
+    "rawJsonl": "calls.jsonl",
+    "summaryCsv": "summary.csv",
+    "summaryMarkdown": "summary.md",
+    "analysis": "analysis.md"
+  }
+}

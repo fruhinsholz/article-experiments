@@ -1,0 +1,19 @@
+A case has 10 evidence signals. Each signal is scored from 0 to 10.
+
+Signals:
+1. Identity match: X/10
+2. Purchase record: X/10
+3. Delivery evidence: X/10
+4. Customer statement: X/10
+5. Account history: X/10
+6. Device consistency: X/10
+7. Timing consistency: X/10
+8. Prior dispute pattern: X/10
+9. Supporting document: X/10
+10. Policy match: X/10
+
+Classify whether the evidence is sufficient as exactly one label:
+ENOUGH
+NOT_ENOUGH
+
+Return only the label.

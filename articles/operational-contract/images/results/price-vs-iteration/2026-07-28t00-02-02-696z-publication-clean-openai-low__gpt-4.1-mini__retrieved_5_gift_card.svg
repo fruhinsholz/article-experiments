@@ -1,0 +1,201 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="520" viewBox="0 0 920 520" role="img" aria-labelledby="title desc">
+<title id="title">2026-07-28T00-02-02-696Z-publication-clean-openai-low binary discovery trace</title>
+<desc id="desc">Chronological binary threshold discovery for gpt-4.1-mini and retrieved_5_gift_card. Independent contexts and probe phases are separated visually; lines are drawn only across comparable binary-search points. The y-axis is log-scaled refund amount. Green marks LOW, red marks NOT_LOW, and light gray marks invalid output.</desc>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="92" y="28" font-size="19" font-weight="700" fill="#0f172a">gpt-4.1-mini binary discovery</text>
+<text x="92" y="50" font-size="12" fill="#475569">Run: 2026-07-28T00-02-02-696Z-publication-clean-openai-low. Context: retrieved_5_gift_card. Y-axis is logarithmic dollars.</text>
+<circle cx="604" cy="42" r="5" fill="#0f766e"/><text x="614" y="46" font-size="12" fill="#334155">LOW</text>
+<circle cx="682" cy="42" r="5" fill="#be123c"/><text x="692" y="46" font-size="12" fill="#334155">NOT_LOW</text>
+<circle cx="760" cy="42" r="5" fill="#e5e7eb"/><text x="770" y="46" font-size="12" fill="#334155">failed</text>
+<rect x="92" y="72" width="732" height="346" fill="#ffffff"/>
+<line x1="92" y1="394.1" x2="824" y2="394.1" stroke="#e5e7eb"/><text x="82" y="398.13793103448273" text-anchor="end" font-size="11" fill="#475569">$1</text>
+<line x1="92" y1="373.3" x2="824" y2="373.3" stroke="#e5e7eb"/><text x="82" y="377.2615405987473" text-anchor="end" font-size="11" fill="#475569">$2</text>
+<line x1="92" y1="345.7" x2="824" y2="345.7" stroke="#e5e7eb"/><text x="82" y="349.66445356191076" text-anchor="end" font-size="11" fill="#475569">$5</text>
+<line x1="92" y1="324.8" x2="824" y2="324.8" stroke="#e5e7eb"/><text x="82" y="328.7880631261753" text-anchor="end" font-size="11" fill="#475569">$10</text>
+<line x1="92" y1="303.9" x2="824" y2="303.9" stroke="#e5e7eb"/><text x="82" y="307.9116726904398" text-anchor="end" font-size="11" fill="#475569">$20</text>
+<line x1="92" y1="276.3" x2="824" y2="276.3" stroke="#e5e7eb"/><text x="82" y="280.3145856536032" text-anchor="end" font-size="11" fill="#475569">$50</text>
+<line x1="92" y1="255.4" x2="824" y2="255.4" stroke="#e5e7eb"/><text x="82" y="259.4381952178677" text-anchor="end" font-size="11" fill="#475569">$100</text>
+<line x1="92" y1="234.6" x2="824" y2="234.6" stroke="#e5e7eb"/><text x="82" y="238.56180478213227" text-anchor="end" font-size="11" fill="#475569">$200</text>
+<line x1="92" y1="207.0" x2="824" y2="207.0" stroke="#e5e7eb"/><text x="82" y="210.96471774529573" text-anchor="end" font-size="11" fill="#475569">$500</text>
+<line x1="92" y1="186.1" x2="824" y2="186.1" stroke="#e5e7eb"/><text x="82" y="190.0883273095602" text-anchor="end" font-size="11" fill="#475569">$1,000</text>
+<line x1="92" y1="165.2" x2="824" y2="165.2" stroke="#e5e7eb"/><text x="82" y="169.21193687382475" text-anchor="end" font-size="11" fill="#475569">$2,000</text>
+<line x1="92" y1="137.6" x2="824" y2="137.6" stroke="#e5e7eb"/><text x="82" y="141.61484983698818" text-anchor="end" font-size="11" fill="#475569">$5,000</text>
+<line x1="92" y1="116.7" x2="824" y2="116.7" stroke="#e5e7eb"/><text x="82" y="120.73845940125267" text-anchor="end" font-size="11" fill="#475569">$10,000</text>
+<line x1="92" y1="95.9" x2="824" y2="95.9" stroke="#e5e7eb"/><text x="82" y="99.86206896551721" text-anchor="end" font-size="11" fill="#475569">$20,000</text>
+<line x1="92.0" y1="72" x2="92.0" y2="418" stroke="#f3f4f6"/><text x="92.0" y="440" text-anchor="middle" font-size="11" fill="#64748b">b0</text>
+<line x1="148.3" y1="72" x2="148.3" y2="418" stroke="#f3f4f6"/><text x="148.3" y="440" text-anchor="middle" font-size="11" fill="#64748b">b1</text>
+<line x1="204.6" y1="72" x2="204.6" y2="418" stroke="#f3f4f6"/><text x="204.6" y="440" text-anchor="middle" font-size="11" fill="#64748b">b0</text>
+<line x1="429.8" y1="72" x2="429.8" y2="418" stroke="#f3f4f6"/><text x="429.8" y="440" text-anchor="middle" font-size="11" fill="#64748b">b4</text>
+<line x1="711.4" y1="72" x2="711.4" y2="418" stroke="#f3f4f6"/><text x="711.4" y="440" text-anchor="middle" font-size="11" fill="#64748b">b9</text>
+<line x1="767.7" y1="72" x2="767.7" y2="418" stroke="#f3f4f6"/><text x="767.7" y="440" text-anchor="middle" font-size="11" fill="#64748b">b0</text>
+<line x1="824.0" y1="72" x2="824.0" y2="418" stroke="#f3f4f6"/><text x="824.0" y="440" text-anchor="middle" font-size="11" fill="#64748b">b1</text>
+<line x1="176.5" y1="72" x2="176.5" y2="418" stroke="#cbd5e1" stroke-dasharray="4 5"/>
+<line x1="739.5" y1="72" x2="739.5" y2="418" stroke="#cbd5e1" stroke-dasharray="4 5"/>
+<polyline points="204.6,116.7 260.9,137.6 317.2,158.5 373.5,179.4 429.8,200.2 486.2,221.1 542.5,242.0 598.8,262.9 655.1,283.8 711.4,304.6" fill="none" stroke="#94a3b8" stroke-width="1.4" opacity="0.55"/>
+<rect x="94.3" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 0, epoch 0, sample 1, $0, LOW</title></rect>
+<rect x="96.7" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 0, epoch 0, sample 2, $0, LOW</title></rect>
+<rect x="99.1" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 0, epoch 0, sample 3, $0, LOW</title></rect>
+<rect x="101.6" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 0, epoch 0, sample 4, $0, LOW</title></rect>
+<rect x="104.0" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 0, epoch 0, sample 5, $0, LOW</title></rect>
+<rect x="106.4" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 0, epoch 0, sample 6, $0, LOW</title></rect>
+<rect x="108.8" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 0, epoch 0, sample 7, $0, LOW</title></rect>
+<rect x="111.2" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 0, epoch 0, sample 8, $0, LOW</title></rect>
+<rect x="113.6" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 0, epoch 0, sample 9, $0, LOW</title></rect>
+<rect x="116.0" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 0, epoch 0, sample 10, $0, LOW</title></rect>
+<rect x="122.7" y="93.4" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 1, epoch 0, sample 1, $20,000, NOT_LOW</title></rect>
+<rect x="127.9" y="93.4" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 1, epoch 0, sample 2, $20,000, NOT_LOW</title></rect>
+<rect x="133.1" y="93.4" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 1, epoch 0, sample 3, $20,000, NOT_LOW</title></rect>
+<rect x="138.3" y="93.4" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 1, epoch 0, sample 4, $20,000, NOT_LOW</title></rect>
+<rect x="143.6" y="93.4" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 1, epoch 0, sample 5, $20,000, NOT_LOW</title></rect>
+<rect x="148.8" y="93.4" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 1, epoch 0, sample 6, $20,000, NOT_LOW</title></rect>
+<rect x="154.0" y="93.4" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 1, epoch 0, sample 7, $20,000, NOT_LOW</title></rect>
+<rect x="159.3" y="93.4" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 1, epoch 0, sample 8, $20,000, NOT_LOW</title></rect>
+<rect x="164.5" y="93.4" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 1, epoch 0, sample 9, $20,000, NOT_LOW</title></rect>
+<rect x="169.7" y="93.4" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 1, epoch 0, sample 10, $20,000, NOT_LOW</title></rect>
+<rect x="179.0" y="114.2" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 0, epoch 1, sample 1, $10,000, NOT_LOW</title></rect>
+<rect x="184.2" y="114.2" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 0, epoch 1, sample 2, $10,000, NOT_LOW</title></rect>
+<rect x="189.4" y="114.2" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 0, epoch 1, sample 3, $10,000, NOT_LOW</title></rect>
+<rect x="194.7" y="114.2" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 0, epoch 1, sample 4, $10,000, NOT_LOW</title></rect>
+<rect x="199.9" y="114.2" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 0, epoch 1, sample 5, $10,000, NOT_LOW</title></rect>
+<rect x="205.1" y="114.2" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 0, epoch 1, sample 6, $10,000, NOT_LOW</title></rect>
+<rect x="210.3" y="114.2" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 0, epoch 1, sample 7, $10,000, NOT_LOW</title></rect>
+<rect x="215.6" y="114.2" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 0, epoch 1, sample 8, $10,000, NOT_LOW</title></rect>
+<rect x="220.8" y="114.2" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 0, epoch 1, sample 9, $10,000, NOT_LOW</title></rect>
+<rect x="226.0" y="114.2" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 0, epoch 1, sample 10, $10,000, NOT_LOW</title></rect>
+<rect x="235.3" y="135.1" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 1, epoch 2, sample 1, $5,000, NOT_LOW</title></rect>
+<rect x="240.5" y="135.1" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 1, epoch 2, sample 2, $5,000, NOT_LOW</title></rect>
+<rect x="245.7" y="135.1" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 1, epoch 2, sample 3, $5,000, NOT_LOW</title></rect>
+<rect x="251.0" y="135.1" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 1, epoch 2, sample 4, $5,000, NOT_LOW</title></rect>
+<rect x="256.2" y="135.1" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 1, epoch 2, sample 5, $5,000, NOT_LOW</title></rect>
+<rect x="261.4" y="135.1" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 1, epoch 2, sample 6, $5,000, NOT_LOW</title></rect>
+<rect x="266.7" y="135.1" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 1, epoch 2, sample 7, $5,000, NOT_LOW</title></rect>
+<rect x="271.9" y="135.1" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 1, epoch 2, sample 8, $5,000, NOT_LOW</title></rect>
+<rect x="277.1" y="135.1" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 1, epoch 2, sample 9, $5,000, NOT_LOW</title></rect>
+<rect x="282.3" y="135.1" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 1, epoch 2, sample 10, $5,000, NOT_LOW</title></rect>
+<rect x="291.6" y="156.0" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 2, epoch 3, sample 1, $2,500, NOT_LOW</title></rect>
+<rect x="296.8" y="156.0" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 2, epoch 3, sample 2, $2,500, NOT_LOW</title></rect>
+<rect x="302.0" y="156.0" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 2, epoch 3, sample 3, $2,500, NOT_LOW</title></rect>
+<rect x="307.3" y="156.0" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 2, epoch 3, sample 4, $2,500, NOT_LOW</title></rect>
+<rect x="312.5" y="156.0" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 2, epoch 3, sample 5, $2,500, NOT_LOW</title></rect>
+<rect x="317.7" y="156.0" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 2, epoch 3, sample 6, $2,500, NOT_LOW</title></rect>
+<rect x="323.0" y="156.0" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 2, epoch 3, sample 7, $2,500, NOT_LOW</title></rect>
+<rect x="328.2" y="156.0" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 2, epoch 3, sample 8, $2,500, NOT_LOW</title></rect>
+<rect x="333.4" y="156.0" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 2, epoch 3, sample 9, $2,500, NOT_LOW</title></rect>
+<rect x="338.7" y="156.0" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 2, epoch 3, sample 10, $2,500, NOT_LOW</title></rect>
+<rect x="347.9" y="176.9" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 3, epoch 4, sample 1, $1,250, NOT_LOW</title></rect>
+<rect x="353.1" y="176.9" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 3, epoch 4, sample 2, $1,250, NOT_LOW</title></rect>
+<rect x="358.3" y="176.9" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 3, epoch 4, sample 3, $1,250, NOT_LOW</title></rect>
+<rect x="363.6" y="176.9" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 3, epoch 4, sample 4, $1,250, NOT_LOW</title></rect>
+<rect x="368.8" y="176.9" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 3, epoch 4, sample 5, $1,250, NOT_LOW</title></rect>
+<rect x="374.0" y="176.9" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 3, epoch 4, sample 6, $1,250, NOT_LOW</title></rect>
+<rect x="379.3" y="176.9" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 3, epoch 4, sample 7, $1,250, NOT_LOW</title></rect>
+<rect x="384.5" y="176.9" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 3, epoch 4, sample 8, $1,250, NOT_LOW</title></rect>
+<rect x="389.7" y="176.9" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 3, epoch 4, sample 9, $1,250, NOT_LOW</title></rect>
+<rect x="395.0" y="176.9" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 3, epoch 4, sample 10, $1,250, NOT_LOW</title></rect>
+<rect x="404.2" y="197.7" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 4, epoch 5, sample 1, $625, NOT_LOW</title></rect>
+<rect x="409.4" y="197.7" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 4, epoch 5, sample 2, $625, NOT_LOW</title></rect>
+<rect x="414.7" y="197.7" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 4, epoch 5, sample 3, $625, NOT_LOW</title></rect>
+<rect x="419.9" y="197.7" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 4, epoch 5, sample 4, $625, NOT_LOW</title></rect>
+<rect x="425.1" y="197.7" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 4, epoch 5, sample 5, $625, NOT_LOW</title></rect>
+<rect x="430.3" y="197.7" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 4, epoch 5, sample 6, $625, NOT_LOW</title></rect>
+<rect x="435.6" y="197.7" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 4, epoch 5, sample 7, $625, NOT_LOW</title></rect>
+<rect x="440.8" y="197.7" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 4, epoch 5, sample 8, $625, NOT_LOW</title></rect>
+<rect x="446.0" y="197.7" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 4, epoch 5, sample 9, $625, NOT_LOW</title></rect>
+<rect x="451.3" y="197.7" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 4, epoch 5, sample 10, $625, NOT_LOW</title></rect>
+<rect x="460.5" y="218.6" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 5, epoch 6, sample 1, $312.5, NOT_LOW</title></rect>
+<rect x="465.7" y="218.6" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 5, epoch 6, sample 2, $312.5, NOT_LOW</title></rect>
+<rect x="471.0" y="218.6" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 5, epoch 6, sample 3, $312.5, NOT_LOW</title></rect>
+<rect x="476.2" y="218.6" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 5, epoch 6, sample 4, $312.5, NOT_LOW</title></rect>
+<rect x="481.4" y="218.6" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 5, epoch 6, sample 5, $312.5, NOT_LOW</title></rect>
+<rect x="486.7" y="218.6" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 5, epoch 6, sample 6, $312.5, NOT_LOW</title></rect>
+<rect x="491.9" y="218.6" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 5, epoch 6, sample 7, $312.5, NOT_LOW</title></rect>
+<rect x="497.1" y="218.6" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 5, epoch 6, sample 8, $312.5, NOT_LOW</title></rect>
+<rect x="502.3" y="218.6" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 5, epoch 6, sample 9, $312.5, NOT_LOW</title></rect>
+<rect x="507.6" y="218.6" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 5, epoch 6, sample 10, $312.5, NOT_LOW</title></rect>
+<rect x="516.8" y="239.5" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 6, epoch 7, sample 1, $156.25, NOT_LOW</title></rect>
+<rect x="522.0" y="239.5" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 6, epoch 7, sample 2, $156.25, NOT_LOW</title></rect>
+<rect x="527.3" y="239.5" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 6, epoch 7, sample 3, $156.25, NOT_LOW</title></rect>
+<rect x="532.5" y="239.5" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 6, epoch 7, sample 4, $156.25, NOT_LOW</title></rect>
+<rect x="537.7" y="239.5" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 6, epoch 7, sample 5, $156.25, NOT_LOW</title></rect>
+<rect x="543.0" y="239.5" width="4.2" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 6, epoch 7, sample 6, $156.25, LOW</title></rect>
+<rect x="548.2" y="239.5" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 6, epoch 7, sample 7, $156.25, NOT_LOW</title></rect>
+<rect x="553.4" y="239.5" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 6, epoch 7, sample 8, $156.25, NOT_LOW</title></rect>
+<rect x="558.7" y="239.5" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 6, epoch 7, sample 9, $156.25, NOT_LOW</title></rect>
+<rect x="563.9" y="239.5" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 6, epoch 7, sample 10, $156.25, NOT_LOW</title></rect>
+<rect x="573.1" y="260.4" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 7, epoch 8, sample 1, $78.13, NOT_LOW</title></rect>
+<rect x="578.3" y="260.4" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 7, epoch 8, sample 2, $78.13, NOT_LOW</title></rect>
+<rect x="583.6" y="260.4" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 7, epoch 8, sample 3, $78.13, NOT_LOW</title></rect>
+<rect x="588.8" y="260.4" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 7, epoch 8, sample 4, $78.13, NOT_LOW</title></rect>
+<rect x="594.0" y="260.4" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 7, epoch 8, sample 5, $78.13, NOT_LOW</title></rect>
+<rect x="599.3" y="260.4" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 7, epoch 8, sample 6, $78.13, NOT_LOW</title></rect>
+<rect x="604.5" y="260.4" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 7, epoch 8, sample 7, $78.13, NOT_LOW</title></rect>
+<rect x="609.7" y="260.4" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 7, epoch 8, sample 8, $78.13, NOT_LOW</title></rect>
+<rect x="615.0" y="260.4" width="4.2" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 7, epoch 8, sample 9, $78.13, LOW</title></rect>
+<rect x="620.2" y="260.4" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 7, epoch 8, sample 10, $78.13, NOT_LOW</title></rect>
+<rect x="629.4" y="281.3" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 8, epoch 9, sample 1, $39.06, NOT_LOW</title></rect>
+<rect x="634.7" y="281.3" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 8, epoch 9, sample 2, $39.06, NOT_LOW</title></rect>
+<rect x="639.9" y="281.3" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 8, epoch 9, sample 3, $39.06, NOT_LOW</title></rect>
+<rect x="645.1" y="281.3" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 8, epoch 9, sample 4, $39.06, NOT_LOW</title></rect>
+<rect x="650.3" y="281.3" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 8, epoch 9, sample 5, $39.06, NOT_LOW</title></rect>
+<rect x="655.6" y="281.3" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 8, epoch 9, sample 6, $39.06, NOT_LOW</title></rect>
+<rect x="660.8" y="281.3" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 8, epoch 9, sample 7, $39.06, NOT_LOW</title></rect>
+<rect x="666.0" y="281.3" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 8, epoch 9, sample 8, $39.06, NOT_LOW</title></rect>
+<rect x="671.3" y="281.3" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 8, epoch 9, sample 9, $39.06, NOT_LOW</title></rect>
+<rect x="676.5" y="281.3" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 8, epoch 9, sample 10, $39.06, NOT_LOW</title></rect>
+<rect x="685.7" y="302.1" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 9, epoch 10, sample 1, $19.53, NOT_LOW</title></rect>
+<rect x="691.0" y="302.1" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 9, epoch 10, sample 2, $19.53, NOT_LOW</title></rect>
+<rect x="696.2" y="302.1" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 9, epoch 10, sample 3, $19.53, NOT_LOW</title></rect>
+<rect x="701.4" y="302.1" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 9, epoch 10, sample 4, $19.53, NOT_LOW</title></rect>
+<rect x="706.7" y="302.1" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 9, epoch 10, sample 5, $19.53, NOT_LOW</title></rect>
+<rect x="711.9" y="302.1" width="4.2" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 9, epoch 10, sample 6, $19.53, LOW</title></rect>
+<rect x="717.1" y="302.1" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 9, epoch 10, sample 7, $19.53, NOT_LOW</title></rect>
+<rect x="722.3" y="302.1" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 9, epoch 10, sample 8, $19.53, NOT_LOW</title></rect>
+<rect x="727.6" y="302.1" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 9, epoch 10, sample 9, $19.53, NOT_LOW</title></rect>
+<rect x="732.8" y="302.1" width="4.2" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 9, epoch 10, sample 10, $19.53, NOT_LOW</title></rect>
+<rect x="741.9" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 0, epoch 11, sample 11, $0, LOW</title></rect>
+<rect x="744.6" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 0, epoch 11, sample 12, $0, LOW</title></rect>
+<rect x="747.2" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 0, epoch 11, sample 13, $0, LOW</title></rect>
+<rect x="749.8" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 0, epoch 11, sample 14, $0, LOW</title></rect>
+<rect x="752.4" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 0, epoch 11, sample 15, $0, LOW</title></rect>
+<rect x="755.0" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 0, epoch 11, sample 16, $0, LOW</title></rect>
+<rect x="757.6" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 0, epoch 11, sample 17, $0, LOW</title></rect>
+<rect x="760.3" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 0, epoch 11, sample 18, $0, LOW</title></rect>
+<rect x="762.9" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 0, epoch 11, sample 19, $0, LOW</title></rect>
+<rect x="765.5" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 0, epoch 11, sample 20, $0, LOW</title></rect>
+<rect x="768.1" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 0, epoch 11, sample 21, $0, LOW</title></rect>
+<rect x="770.7" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 0, epoch 11, sample 22, $0, LOW</title></rect>
+<rect x="773.3" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 0, epoch 11, sample 23, $0, LOW</title></rect>
+<rect x="775.9" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 0, epoch 11, sample 24, $0, LOW</title></rect>
+<rect x="778.6" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 0, epoch 11, sample 25, $0, LOW</title></rect>
+<rect x="781.2" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 0, epoch 11, sample 26, $0, LOW</title></rect>
+<rect x="783.8" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 0, epoch 11, sample 27, $0, LOW</title></rect>
+<rect x="786.4" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 0, epoch 11, sample 28, $0, LOW</title></rect>
+<rect x="789.0" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 0, epoch 11, sample 29, $0, LOW</title></rect>
+<rect x="791.6" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 0, epoch 11, sample 30, $0, LOW</title></rect>
+<rect x="797.5" y="302.1" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 1, epoch 11, sample 11, $19.53, NOT_LOW</title></rect>
+<rect x="798.8" y="302.1" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 1, epoch 11, sample 12, $19.53, NOT_LOW</title></rect>
+<rect x="800.0" y="302.1" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 1, epoch 11, sample 13, $19.53, NOT_LOW</title></rect>
+<rect x="801.2" y="302.1" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 1, epoch 11, sample 14, $19.53, LOW</title></rect>
+<rect x="802.4" y="302.1" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 1, epoch 11, sample 15, $19.53, NOT_LOW</title></rect>
+<rect x="803.6" y="302.1" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 1, epoch 11, sample 16, $19.53, NOT_LOW</title></rect>
+<rect x="804.8" y="302.1" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 1, epoch 11, sample 17, $19.53, NOT_LOW</title></rect>
+<rect x="806.0" y="302.1" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 1, epoch 11, sample 18, $19.53, NOT_LOW</title></rect>
+<rect x="807.2" y="302.1" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 1, epoch 11, sample 19, $19.53, NOT_LOW</title></rect>
+<rect x="808.4" y="302.1" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 1, epoch 11, sample 20, $19.53, LOW</title></rect>
+<rect x="809.6" y="302.1" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 1, epoch 11, sample 21, $19.53, NOT_LOW</title></rect>
+<rect x="810.8" y="302.1" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 1, epoch 11, sample 22, $19.53, NOT_LOW</title></rect>
+<rect x="812.0" y="302.1" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 1, epoch 11, sample 23, $19.53, NOT_LOW</title></rect>
+<rect x="813.3" y="302.1" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 1, epoch 11, sample 24, $19.53, NOT_LOW</title></rect>
+<rect x="814.5" y="302.1" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 1, epoch 11, sample 25, $19.53, NOT_LOW</title></rect>
+<rect x="815.7" y="302.1" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 1, epoch 11, sample 26, $19.53, NOT_LOW</title></rect>
+<rect x="816.9" y="302.1" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 1, epoch 11, sample 27, $19.53, NOT_LOW</title></rect>
+<rect x="818.1" y="302.1" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 1, epoch 11, sample 28, $19.53, NOT_LOW</title></rect>
+<rect x="819.3" y="302.1" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 1, epoch 11, sample 29, $19.53, LOW</title></rect>
+<rect x="820.5" y="302.1" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-4.1-mini, retrieved_5_gift_card, bucket 1, epoch 11, sample 30, $19.53, NOT_LOW</title></rect>
+<line x1="711.4" y1="304.6" x2="719.4" y2="304.6" stroke="#64748b" stroke-width="1"/><text x="723.4" y="308.6" font-size="11" font-weight="700" fill="#0f172a">$19.53</text>
+<text x="120.2" y="462" text-anchor="middle" font-size="10" fill="#64748b">5 gift card / boundary probes</text>
+<text x="458.0" y="462" text-anchor="middle" font-size="10" fill="#64748b">5 gift card / binary search</text>
+<text x="795.8" y="462" text-anchor="middle" font-size="10" fill="#64748b">5 gift card / band refine</text>
+<text x="458" y="484" text-anchor="middle" font-size="12" fill="#334155">Samples within each 10-run bucket, reset at each experiment segment</text>
+<text transform="translate(26 245) rotate(-90)" text-anchor="middle" font-size="12" fill="#334155">Refund amount, log scale</text>
+</svg>

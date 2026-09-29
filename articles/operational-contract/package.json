@@ -1,0 +1,26 @@
+{
+  "name": "prompt-contract-experiments",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "thresholds:low:retrieved-context": "node src/low-retrieved-context.mjs",
+    "thresholds:low:retrieved-context:dry": "node src/low-retrieved-context.mjs --dry-run",
+    "thresholds:enough": "node src/enough.mjs",
+    "thresholds:enough:dry": "node src/enough.mjs --dry-run",
+    "results:price-iteration": "node scripts/plot-price-vs-iteration.mjs",
+    "results:enough-thresholds": "node scripts/plot-enough-thresholds.mjs",
+    "results:json-input-low:table": "node scripts/generate-json-input-low-table.mjs",
+    "results:json-input-low:table:check": "node scripts/generate-json-input-low-table.mjs --check",
+    "results:publication-clean": "node scripts/summarize-publication-clean.mjs",
+    "results:graphs": "npm run results:price-iteration && npm run results:enough-thresholds && npm run results:publication-clean && npm run results:json-input-low:publication && npm run results:json-input-low:table && npm run viewer:build",
+    "check": "node --check src/shared/harness.mjs && node --check src/low-retrieved-context.mjs && node --check src/enough.mjs && node --check src/json-input-low.mjs && node --check scripts/plot-price-vs-iteration.mjs && node --check scripts/plot-enough-thresholds.mjs && node --check scripts/summarize-publication-clean.mjs && node --check scripts/summarize-json-input-low-publication.mjs && node --check scripts/generate-json-input-low-table.mjs && node --check scripts/build-image-viewer.mjs && node --check scripts/serve-image-viewer.mjs && npm run results:graphs && npm run results:json-input-low:table:check && npm run results:json-input-low:table:validate",
+    "viewer:build": "node scripts/build-image-viewer.mjs",
+    "viewer": "npm run viewer:build && node scripts/serve-image-viewer.mjs",
+    "viewer:lan": "npm run viewer:build && HOST=0.0.0.0 VIEWER_USER=viewer VIEWER_PASSWORD=${VIEWER_PASSWORD:-password} node scripts/serve-image-viewer.mjs",
+    "thresholds:low:json-input": "node src/json-input-low.mjs",
+    "thresholds:low:json-input:dry": "node src/json-input-low.mjs --dry-run",
+    "results:json-input-low:publication": "node scripts/summarize-json-input-low-publication.mjs",
+    "results:json-input-low:table:validate": "python3 scripts/validate-json-input-low-article-table.py"
+  }
+}

@@ -1,0 +1,1172 @@
+{
+  "provider": "gemini",
+  "model": "gemini-3.5-flash-lite",
+  "calls": 192,
+  "errors": 0,
+  "amounts": [
+    5,
+    50,
+    500,
+    5000,
+    50000,
+    100000
+  ],
+  "branchAmounts": {
+    "B": [
+      50,
+      500,
+      5000,
+      100000
+    ],
+    "D": [
+      5,
+      50,
+      5000,
+      50000
+    ]
+  },
+  "cases": [
+    {
+      "id": "b50_d50000",
+      "bAmount": 50,
+      "dAmount": 50000
+    },
+    {
+      "id": "b500_d5000",
+      "bAmount": 500,
+      "dAmount": 5000
+    },
+    {
+      "id": "b5000_d50",
+      "bAmount": 5000,
+      "dAmount": 50
+    },
+    {
+      "id": "b100000_d5",
+      "bAmount": 100000,
+      "dAmount": 5
+    }
+  ],
+  "classification": {
+    "control/a_only": {
+      "condition": "control",
+      "noteMode": "a_only",
+      "runs": 12,
+      "branchCounts": {
+        "B": {
+          "50": {
+            "LOW": 3,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "500": {
+            "LOW": 1,
+            "NOT_LOW": 2,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "5000": {
+            "LOW": 0,
+            "NOT_LOW": 3,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "100000": {
+            "LOW": 0,
+            "NOT_LOW": 3,
+            "INVALID": 0,
+            "MISSING": 0
+          }
+        },
+        "D": {
+          "5": {
+            "LOW": 3,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "50": {
+            "LOW": 3,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "5000": {
+            "LOW": 0,
+            "NOT_LOW": 3,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "50000": {
+            "LOW": 0,
+            "NOT_LOW": 3,
+            "INVALID": 0,
+            "MISSING": 0
+          }
+        }
+      },
+      "localAnchorAgreement": {
+        "B": 8,
+        "D": 6,
+        "both": 6,
+        "runs": 12
+      },
+      "sameAmount": {
+        "compared": 0,
+        "sameLabel": 0,
+        "differentLabel": 0
+      }
+    },
+    "control/both": {
+      "condition": "control",
+      "noteMode": "both",
+      "runs": 12,
+      "branchCounts": {
+        "B": {
+          "50": {
+            "LOW": 3,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "500": {
+            "LOW": 2,
+            "NOT_LOW": 1,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "5000": {
+            "LOW": 0,
+            "NOT_LOW": 3,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "100000": {
+            "LOW": 0,
+            "NOT_LOW": 3,
+            "INVALID": 0,
+            "MISSING": 0
+          }
+        },
+        "D": {
+          "5": {
+            "LOW": 3,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "50": {
+            "LOW": 3,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "5000": {
+            "LOW": 0,
+            "NOT_LOW": 3,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "50000": {
+            "LOW": 0,
+            "NOT_LOW": 3,
+            "INVALID": 0,
+            "MISSING": 0
+          }
+        }
+      },
+      "localAnchorAgreement": {
+        "B": 7,
+        "D": 6,
+        "both": 6,
+        "runs": 12
+      },
+      "sameAmount": {
+        "compared": 0,
+        "sameLabel": 0,
+        "differentLabel": 0
+      }
+    },
+    "control/c_only": {
+      "condition": "control",
+      "noteMode": "c_only",
+      "runs": 12,
+      "branchCounts": {
+        "B": {
+          "50": {
+            "LOW": 3,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "500": {
+            "LOW": 3,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "5000": {
+            "LOW": 0,
+            "NOT_LOW": 3,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "100000": {
+            "LOW": 0,
+            "NOT_LOW": 3,
+            "INVALID": 0,
+            "MISSING": 0
+          }
+        },
+        "D": {
+          "5": {
+            "LOW": 3,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "50": {
+            "LOW": 3,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "5000": {
+            "LOW": 3,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "50000": {
+            "LOW": 0,
+            "NOT_LOW": 3,
+            "INVALID": 0,
+            "MISSING": 0
+          }
+        }
+      },
+      "localAnchorAgreement": {
+        "B": 6,
+        "D": 9,
+        "both": 6,
+        "runs": 12
+      },
+      "sameAmount": {
+        "compared": 0,
+        "sameLabel": 0,
+        "differentLabel": 0
+      }
+    },
+    "control/none": {
+      "condition": "control",
+      "noteMode": "none",
+      "runs": 12,
+      "branchCounts": {
+        "B": {
+          "50": {
+            "LOW": 3,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "500": {
+            "LOW": 3,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "5000": {
+            "LOW": 0,
+            "NOT_LOW": 3,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "100000": {
+            "LOW": 0,
+            "NOT_LOW": 3,
+            "INVALID": 0,
+            "MISSING": 0
+          }
+        },
+        "D": {
+          "5": {
+            "LOW": 3,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "50": {
+            "LOW": 3,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "5000": {
+            "LOW": 0,
+            "NOT_LOW": 3,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "50000": {
+            "LOW": 0,
+            "NOT_LOW": 3,
+            "INVALID": 0,
+            "MISSING": 0
+          }
+        }
+      },
+      "localAnchorAgreement": {
+        "B": 6,
+        "D": 6,
+        "both": 6,
+        "runs": 12
+      },
+      "sameAmount": {
+        "compared": 0,
+        "sameLabel": 0,
+        "differentLabel": 0
+      }
+    },
+    "prefix_free_text/a_only": {
+      "condition": "prefix_free_text",
+      "noteMode": "a_only",
+      "runs": 12,
+      "branchCounts": {
+        "B": {
+          "50": {
+            "LOW": 3,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "500": {
+            "LOW": 1,
+            "NOT_LOW": 2,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "5000": {
+            "LOW": 0,
+            "NOT_LOW": 3,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "100000": {
+            "LOW": 0,
+            "NOT_LOW": 3,
+            "INVALID": 0,
+            "MISSING": 0
+          }
+        },
+        "D": {
+          "5": {
+            "LOW": 3,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "50": {
+            "LOW": 3,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "5000": {
+            "LOW": 0,
+            "NOT_LOW": 3,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "50000": {
+            "LOW": 0,
+            "NOT_LOW": 3,
+            "INVALID": 0,
+            "MISSING": 0
+          }
+        }
+      },
+      "localAnchorAgreement": {
+        "B": 8,
+        "D": 6,
+        "both": 6,
+        "runs": 12
+      },
+      "sameAmount": {
+        "compared": 0,
+        "sameLabel": 0,
+        "differentLabel": 0
+      }
+    },
+    "prefix_free_text/both": {
+      "condition": "prefix_free_text",
+      "noteMode": "both",
+      "runs": 12,
+      "branchCounts": {
+        "B": {
+          "50": {
+            "LOW": 3,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "500": {
+            "LOW": 3,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "5000": {
+            "LOW": 0,
+            "NOT_LOW": 3,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "100000": {
+            "LOW": 0,
+            "NOT_LOW": 3,
+            "INVALID": 0,
+            "MISSING": 0
+          }
+        },
+        "D": {
+          "5": {
+            "LOW": 3,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "50": {
+            "LOW": 3,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "5000": {
+            "LOW": 0,
+            "NOT_LOW": 3,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "50000": {
+            "LOW": 0,
+            "NOT_LOW": 3,
+            "INVALID": 0,
+            "MISSING": 0
+          }
+        }
+      },
+      "localAnchorAgreement": {
+        "B": 6,
+        "D": 6,
+        "both": 6,
+        "runs": 12
+      },
+      "sameAmount": {
+        "compared": 0,
+        "sameLabel": 0,
+        "differentLabel": 0
+      }
+    },
+    "prefix_free_text/c_only": {
+      "condition": "prefix_free_text",
+      "noteMode": "c_only",
+      "runs": 12,
+      "branchCounts": {
+        "B": {
+          "50": {
+            "LOW": 3,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "500": {
+            "LOW": 3,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "5000": {
+            "LOW": 0,
+            "NOT_LOW": 3,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "100000": {
+            "LOW": 0,
+            "NOT_LOW": 3,
+            "INVALID": 0,
+            "MISSING": 0
+          }
+        },
+        "D": {
+          "5": {
+            "LOW": 3,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "50": {
+            "LOW": 3,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "5000": {
+            "LOW": 1,
+            "NOT_LOW": 2,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "50000": {
+            "LOW": 0,
+            "NOT_LOW": 3,
+            "INVALID": 0,
+            "MISSING": 0
+          }
+        }
+      },
+      "localAnchorAgreement": {
+        "B": 6,
+        "D": 7,
+        "both": 6,
+        "runs": 12
+      },
+      "sameAmount": {
+        "compared": 0,
+        "sameLabel": 0,
+        "differentLabel": 0
+      }
+    },
+    "prefix_free_text/none": {
+      "condition": "prefix_free_text",
+      "noteMode": "none",
+      "runs": 12,
+      "branchCounts": {
+        "B": {
+          "50": {
+            "LOW": 3,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "500": {
+            "LOW": 3,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "5000": {
+            "LOW": 0,
+            "NOT_LOW": 3,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "100000": {
+            "LOW": 0,
+            "NOT_LOW": 3,
+            "INVALID": 0,
+            "MISSING": 0
+          }
+        },
+        "D": {
+          "5": {
+            "LOW": 3,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "50": {
+            "LOW": 3,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "5000": {
+            "LOW": 0,
+            "NOT_LOW": 3,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "50000": {
+            "LOW": 0,
+            "NOT_LOW": 3,
+            "INVALID": 0,
+            "MISSING": 0
+          }
+        }
+      },
+      "localAnchorAgreement": {
+        "B": 6,
+        "D": 6,
+        "both": 6,
+        "runs": 12
+      },
+      "sameAmount": {
+        "compared": 0,
+        "sameLabel": 0,
+        "differentLabel": 0
+      }
+    },
+    "suffix_free_text/a_only": {
+      "condition": "suffix_free_text",
+      "noteMode": "a_only",
+      "runs": 12,
+      "branchCounts": {
+        "B": {
+          "50": {
+            "LOW": 3,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "500": {
+            "LOW": 1,
+            "NOT_LOW": 2,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "5000": {
+            "LOW": 0,
+            "NOT_LOW": 3,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "100000": {
+            "LOW": 0,
+            "NOT_LOW": 3,
+            "INVALID": 0,
+            "MISSING": 0
+          }
+        },
+        "D": {
+          "5": {
+            "LOW": 3,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "50": {
+            "LOW": 3,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "5000": {
+            "LOW": 0,
+            "NOT_LOW": 3,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "50000": {
+            "LOW": 0,
+            "NOT_LOW": 3,
+            "INVALID": 0,
+            "MISSING": 0
+          }
+        }
+      },
+      "localAnchorAgreement": {
+        "B": 8,
+        "D": 6,
+        "both": 6,
+        "runs": 12
+      },
+      "sameAmount": {
+        "compared": 0,
+        "sameLabel": 0,
+        "differentLabel": 0
+      }
+    },
+    "suffix_free_text/both": {
+      "condition": "suffix_free_text",
+      "noteMode": "both",
+      "runs": 12,
+      "branchCounts": {
+        "B": {
+          "50": {
+            "LOW": 3,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "500": {
+            "LOW": 0,
+            "NOT_LOW": 3,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "5000": {
+            "LOW": 0,
+            "NOT_LOW": 3,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "100000": {
+            "LOW": 0,
+            "NOT_LOW": 3,
+            "INVALID": 0,
+            "MISSING": 0
+          }
+        },
+        "D": {
+          "5": {
+            "LOW": 3,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "50": {
+            "LOW": 3,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "5000": {
+            "LOW": 0,
+            "NOT_LOW": 3,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "50000": {
+            "LOW": 0,
+            "NOT_LOW": 3,
+            "INVALID": 0,
+            "MISSING": 0
+          }
+        }
+      },
+      "localAnchorAgreement": {
+        "B": 9,
+        "D": 6,
+        "both": 6,
+        "runs": 12
+      },
+      "sameAmount": {
+        "compared": 0,
+        "sameLabel": 0,
+        "differentLabel": 0
+      }
+    },
+    "suffix_free_text/c_only": {
+      "condition": "suffix_free_text",
+      "noteMode": "c_only",
+      "runs": 12,
+      "branchCounts": {
+        "B": {
+          "50": {
+            "LOW": 3,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "500": {
+            "LOW": 3,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "5000": {
+            "LOW": 0,
+            "NOT_LOW": 3,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "100000": {
+            "LOW": 0,
+            "NOT_LOW": 3,
+            "INVALID": 0,
+            "MISSING": 0
+          }
+        },
+        "D": {
+          "5": {
+            "LOW": 3,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "50": {
+            "LOW": 3,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "5000": {
+            "LOW": 1,
+            "NOT_LOW": 2,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "50000": {
+            "LOW": 0,
+            "NOT_LOW": 3,
+            "INVALID": 0,
+            "MISSING": 0
+          }
+        }
+      },
+      "localAnchorAgreement": {
+        "B": 6,
+        "D": 7,
+        "both": 6,
+        "runs": 12
+      },
+      "sameAmount": {
+        "compared": 0,
+        "sameLabel": 0,
+        "differentLabel": 0
+      }
+    },
+    "suffix_free_text/none": {
+      "condition": "suffix_free_text",
+      "noteMode": "none",
+      "runs": 12,
+      "branchCounts": {
+        "B": {
+          "50": {
+            "LOW": 3,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "500": {
+            "LOW": 3,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "5000": {
+            "LOW": 0,
+            "NOT_LOW": 3,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "100000": {
+            "LOW": 0,
+            "NOT_LOW": 3,
+            "INVALID": 0,
+            "MISSING": 0
+          }
+        },
+        "D": {
+          "5": {
+            "LOW": 3,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "50": {
+            "LOW": 3,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "5000": {
+            "LOW": 0,
+            "NOT_LOW": 3,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "50000": {
+            "LOW": 0,
+            "NOT_LOW": 3,
+            "INVALID": 0,
+            "MISSING": 0
+          }
+        }
+      },
+      "localAnchorAgreement": {
+        "B": 6,
+        "D": 6,
+        "both": 6,
+        "runs": 12
+      },
+      "sameAmount": {
+        "compared": 0,
+        "sameLabel": 0,
+        "differentLabel": 0
+      }
+    },
+    "system_rule/a_only": {
+      "condition": "system_rule",
+      "noteMode": "a_only",
+      "runs": 12,
+      "branchCounts": {
+        "B": {
+          "50": {
+            "LOW": 3,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "500": {
+            "LOW": 3,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "5000": {
+            "LOW": 0,
+            "NOT_LOW": 3,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "100000": {
+            "LOW": 0,
+            "NOT_LOW": 3,
+            "INVALID": 0,
+            "MISSING": 0
+          }
+        },
+        "D": {
+          "5": {
+            "LOW": 3,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "50": {
+            "LOW": 3,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "5000": {
+            "LOW": 0,
+            "NOT_LOW": 3,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "50000": {
+            "LOW": 0,
+            "NOT_LOW": 3,
+            "INVALID": 0,
+            "MISSING": 0
+          }
+        }
+      },
+      "localAnchorAgreement": {
+        "B": 6,
+        "D": 6,
+        "both": 6,
+        "runs": 12
+      },
+      "sameAmount": {
+        "compared": 0,
+        "sameLabel": 0,
+        "differentLabel": 0
+      }
+    },
+    "system_rule/both": {
+      "condition": "system_rule",
+      "noteMode": "both",
+      "runs": 12,
+      "branchCounts": {
+        "B": {
+          "50": {
+            "LOW": 3,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "500": {
+            "LOW": 2,
+            "NOT_LOW": 1,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "5000": {
+            "LOW": 0,
+            "NOT_LOW": 3,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "100000": {
+            "LOW": 0,
+            "NOT_LOW": 3,
+            "INVALID": 0,
+            "MISSING": 0
+          }
+        },
+        "D": {
+          "5": {
+            "LOW": 3,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "50": {
+            "LOW": 3,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "5000": {
+            "LOW": 0,
+            "NOT_LOW": 3,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "50000": {
+            "LOW": 0,
+            "NOT_LOW": 3,
+            "INVALID": 0,
+            "MISSING": 0
+          }
+        }
+      },
+      "localAnchorAgreement": {
+        "B": 7,
+        "D": 6,
+        "both": 6,
+        "runs": 12
+      },
+      "sameAmount": {
+        "compared": 0,
+        "sameLabel": 0,
+        "differentLabel": 0
+      }
+    },
+    "system_rule/c_only": {
+      "condition": "system_rule",
+      "noteMode": "c_only",
+      "runs": 12,
+      "branchCounts": {
+        "B": {
+          "50": {
+            "LOW": 3,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "500": {
+            "LOW": 3,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "5000": {
+            "LOW": 0,
+            "NOT_LOW": 3,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "100000": {
+            "LOW": 0,
+            "NOT_LOW": 3,
+            "INVALID": 0,
+            "MISSING": 0
+          }
+        },
+        "D": {
+          "5": {
+            "LOW": 3,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "50": {
+            "LOW": 3,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "5000": {
+            "LOW": 1,
+            "NOT_LOW": 2,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "50000": {
+            "LOW": 0,
+            "NOT_LOW": 3,
+            "INVALID": 0,
+            "MISSING": 0
+          }
+        }
+      },
+      "localAnchorAgreement": {
+        "B": 6,
+        "D": 7,
+        "both": 6,
+        "runs": 12
+      },
+      "sameAmount": {
+        "compared": 0,
+        "sameLabel": 0,
+        "differentLabel": 0
+      }
+    },
+    "system_rule/none": {
+      "condition": "system_rule",
+      "noteMode": "none",
+      "runs": 12,
+      "branchCounts": {
+        "B": {
+          "50": {
+            "LOW": 3,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "500": {
+            "LOW": 3,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "5000": {
+            "LOW": 0,
+            "NOT_LOW": 3,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "100000": {
+            "LOW": 0,
+            "NOT_LOW": 3,
+            "INVALID": 0,
+            "MISSING": 0
+          }
+        },
+        "D": {
+          "5": {
+            "LOW": 3,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "50": {
+            "LOW": 3,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "5000": {
+            "LOW": 0,
+            "NOT_LOW": 3,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "50000": {
+            "LOW": 0,
+            "NOT_LOW": 3,
+            "INVALID": 0,
+            "MISSING": 0
+          }
+        }
+      },
+      "localAnchorAgreement": {
+        "B": 6,
+        "D": 6,
+        "both": 6,
+        "runs": 12
+      },
+      "sameAmount": {
+        "compared": 0,
+        "sameLabel": 0,
+        "differentLabel": 0
+      }
+    }
+  }
+}

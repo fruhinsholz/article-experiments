@@ -1,0 +1,78 @@
+{
+  "provider": "gemini",
+  "model": "gemini-3.5-flash-lite",
+  "calls": 100,
+  "errors": 0,
+  "contexts": {
+    "draft_grouping": {
+      "consequence": "group two draft-writing notes for later reading; no external action occurs",
+      "runs": 20,
+      "SAME_RULE": 0,
+      "NEEDS_REVIEW": 0,
+      "DIFFERENT_RULE": 20,
+      "INVALID": 0,
+      "risks": {
+        "low": 14,
+        "medium": 6,
+        "high": 0,
+        "invalid": 0
+      }
+    },
+    "internal_alert": {
+      "consequence": "reuse one internal monitoring alert rule; a wrong decision pages an engineer but does not affect customers",
+      "runs": 20,
+      "SAME_RULE": 0,
+      "NEEDS_REVIEW": 0,
+      "DIFFERENT_RULE": 20,
+      "INVALID": 0,
+      "risks": {
+        "low": 20,
+        "medium": 0,
+        "high": 0,
+        "invalid": 0
+      }
+    },
+    "customer_notification": {
+      "consequence": "reuse one customer-facing notification rule; a wrong decision sends the wrong message to customers",
+      "runs": 20,
+      "SAME_RULE": 0,
+      "NEEDS_REVIEW": 0,
+      "DIFFERENT_RULE": 20,
+      "INVALID": 0,
+      "risks": {
+        "low": 0,
+        "medium": 0,
+        "high": 20,
+        "invalid": 0
+      }
+    },
+    "billing_rule": {
+      "consequence": "reuse one billing rule; a wrong decision changes when customers are charged",
+      "runs": 20,
+      "SAME_RULE": 0,
+      "NEEDS_REVIEW": 0,
+      "DIFFERENT_RULE": 20,
+      "INVALID": 0,
+      "risks": {
+        "low": 0,
+        "medium": 15,
+        "high": 5,
+        "invalid": 0
+      }
+    },
+    "access_rule": {
+      "consequence": "reuse one access-control rule; a wrong decision grants or denies administrative access",
+      "runs": 20,
+      "SAME_RULE": 0,
+      "NEEDS_REVIEW": 0,
+      "DIFFERENT_RULE": 20,
+      "INVALID": 0,
+      "risks": {
+        "low": 8,
+        "medium": 12,
+        "high": 0,
+        "invalid": 0
+      }
+    }
+  }
+}

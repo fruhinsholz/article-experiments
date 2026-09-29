@@ -1,0 +1,103 @@
+{
+  "args": {
+    "provider": "openai",
+    "model": "gpt-5.3-codex",
+    "repeats": 5,
+    "maxCalls": 20,
+    "maxOutputTokens": 200,
+    "temperature": 0,
+    "concurrency": 2,
+    "label": "inactive-branch-contamination-pilot",
+    "summarizeDir": "",
+    "dryRun": false,
+    "printExamples": false
+  },
+  "conditions": [
+    "neutral_a",
+    "answer_leak_a",
+    "instruction_leak_a",
+    "authority_leak_a"
+  ],
+  "jobs": [
+    {
+      "condition": "neutral_a",
+      "repeatIndex": 0
+    },
+    {
+      "condition": "neutral_a",
+      "repeatIndex": 1
+    },
+    {
+      "condition": "neutral_a",
+      "repeatIndex": 2
+    },
+    {
+      "condition": "neutral_a",
+      "repeatIndex": 3
+    },
+    {
+      "condition": "neutral_a",
+      "repeatIndex": 4
+    },
+    {
+      "condition": "answer_leak_a",
+      "repeatIndex": 0
+    },
+    {
+      "condition": "answer_leak_a",
+      "repeatIndex": 1
+    },
+    {
+      "condition": "answer_leak_a",
+      "repeatIndex": 2
+    },
+    {
+      "condition": "answer_leak_a",
+      "repeatIndex": 3
+    },
+    {
+      "condition": "answer_leak_a",
+      "repeatIndex": 4
+    },
+    {
+      "condition": "instruction_leak_a",
+      "repeatIndex": 0
+    },
+    {
+      "condition": "instruction_leak_a",
+      "repeatIndex": 1
+    },
+    {
+      "condition": "instruction_leak_a",
+      "repeatIndex": 2
+    },
+    {
+      "condition": "instruction_leak_a",
+      "repeatIndex": 3
+    },
+    {
+      "condition": "instruction_leak_a",
+      "repeatIndex": 4
+    },
+    {
+      "condition": "authority_leak_a",
+      "repeatIndex": 0
+    },
+    {
+      "condition": "authority_leak_a",
+      "repeatIndex": 1
+    },
+    {
+      "condition": "authority_leak_a",
+      "repeatIndex": 2
+    },
+    {
+      "condition": "authority_leak_a",
+      "repeatIndex": 3
+    },
+    {
+      "condition": "authority_leak_a",
+      "repeatIndex": 4
+    }
+  ]
+}

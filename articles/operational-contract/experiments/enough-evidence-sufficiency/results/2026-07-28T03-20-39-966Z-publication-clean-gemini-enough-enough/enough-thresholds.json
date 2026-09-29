@@ -1,0 +1,282 @@
+[
+  {
+    "model": "gemini-3.5-flash-lite",
+    "mode": "evidence_count",
+    "low": 5,
+    "high": 6,
+    "width": 1,
+    "threshold": 6,
+    "unbracketed": false,
+    "candidates": [
+      {
+        "candidateValue": 0,
+        "label": "NOT_ENOUGH",
+        "total": 10,
+        "enough": 0,
+        "notEnough": 10,
+        "invalid": 0,
+        "enoughPct": 0
+      },
+      {
+        "candidateValue": 5,
+        "label": "NOT_ENOUGH",
+        "total": 10,
+        "enough": 4,
+        "notEnough": 6,
+        "invalid": 0,
+        "enoughPct": 0.4
+      },
+      {
+        "candidateValue": 6,
+        "label": "ENOUGH",
+        "total": 10,
+        "enough": 9,
+        "notEnough": 1,
+        "invalid": 0,
+        "enoughPct": 0.9
+      },
+      {
+        "candidateValue": 7,
+        "label": "ENOUGH",
+        "total": 10,
+        "enough": 9,
+        "notEnough": 1,
+        "invalid": 0,
+        "enoughPct": 0.9
+      },
+      {
+        "candidateValue": 10,
+        "label": "ENOUGH",
+        "total": 10,
+        "enough": 10,
+        "notEnough": 0,
+        "invalid": 0,
+        "enoughPct": 1
+      }
+    ]
+  },
+  {
+    "model": "gemini-3.5-flash-lite",
+    "mode": "quality",
+    "activeEvidenceCount": 6,
+    "low": 9.719,
+    "high": 9.86,
+    "width": 0.141,
+    "threshold": 9.86,
+    "unbracketed": false,
+    "candidates": [
+      {
+        "candidateValue": 1,
+        "label": "NOT_ENOUGH",
+        "total": 10,
+        "enough": 0,
+        "notEnough": 10,
+        "invalid": 0,
+        "enoughPct": 0
+      },
+      {
+        "candidateValue": 5.5,
+        "label": "NOT_ENOUGH",
+        "total": 10,
+        "enough": 1,
+        "notEnough": 9,
+        "invalid": 0,
+        "enoughPct": 0.1
+      },
+      {
+        "candidateValue": 7.75,
+        "label": "NOT_ENOUGH",
+        "total": 10,
+        "enough": 4,
+        "notEnough": 6,
+        "invalid": 0,
+        "enoughPct": 0.4
+      },
+      {
+        "candidateValue": 8.875,
+        "label": "TIE",
+        "total": 10,
+        "enough": 5,
+        "notEnough": 5,
+        "invalid": 0,
+        "enoughPct": 0.5
+      },
+      {
+        "candidateValue": 9.438,
+        "label": "NOT_ENOUGH",
+        "total": 10,
+        "enough": 4,
+        "notEnough": 6,
+        "invalid": 0,
+        "enoughPct": 0.4
+      },
+      {
+        "candidateValue": 9.719,
+        "label": "NOT_ENOUGH",
+        "total": 10,
+        "enough": 4,
+        "notEnough": 6,
+        "invalid": 0,
+        "enoughPct": 0.4
+      },
+      {
+        "candidateValue": 9.86,
+        "label": "ENOUGH",
+        "total": 10,
+        "enough": 6,
+        "notEnough": 4,
+        "invalid": 0,
+        "enoughPct": 0.6
+      },
+      {
+        "candidateValue": 10,
+        "label": "ENOUGH",
+        "total": 10,
+        "enough": 8,
+        "notEnough": 2,
+        "invalid": 0,
+        "enoughPct": 0.8
+      }
+    ]
+  },
+  {
+    "model": "gemini-3.6-flash",
+    "mode": "evidence_count",
+    "low": 5,
+    "high": 6,
+    "width": 1,
+    "threshold": 6,
+    "unbracketed": false,
+    "candidates": [
+      {
+        "candidateValue": 0,
+        "label": "NOT_ENOUGH",
+        "total": 10,
+        "enough": 0,
+        "notEnough": 10,
+        "invalid": 0,
+        "enoughPct": 0
+      },
+      {
+        "candidateValue": 5,
+        "label": "NOT_ENOUGH",
+        "total": 10,
+        "enough": 3,
+        "notEnough": 5,
+        "invalid": 2,
+        "enoughPct": 0.3
+      },
+      {
+        "candidateValue": 6,
+        "label": "ENOUGH",
+        "total": 10,
+        "enough": 7,
+        "notEnough": 3,
+        "invalid": 0,
+        "enoughPct": 0.7
+      },
+      {
+        "candidateValue": 7,
+        "label": "ENOUGH",
+        "total": 10,
+        "enough": 10,
+        "notEnough": 0,
+        "invalid": 0,
+        "enoughPct": 1
+      },
+      {
+        "candidateValue": 10,
+        "label": "ENOUGH",
+        "total": 10,
+        "enough": 9,
+        "notEnough": 0,
+        "invalid": 1,
+        "enoughPct": 0.9
+      }
+    ]
+  },
+  {
+    "model": "gemini-3.6-flash",
+    "mode": "quality",
+    "activeEvidenceCount": 6,
+    "low": 7.891,
+    "high": 8.032,
+    "width": 0.141,
+    "threshold": 8.032,
+    "unbracketed": false,
+    "candidates": [
+      {
+        "candidateValue": 1,
+        "label": "NOT_ENOUGH",
+        "total": 10,
+        "enough": 0,
+        "notEnough": 10,
+        "invalid": 0,
+        "enoughPct": 0
+      },
+      {
+        "candidateValue": 5.5,
+        "label": "NOT_ENOUGH",
+        "total": 10,
+        "enough": 0,
+        "notEnough": 10,
+        "invalid": 0,
+        "enoughPct": 0
+      },
+      {
+        "candidateValue": 7.75,
+        "label": "TIE",
+        "total": 10,
+        "enough": 5,
+        "notEnough": 5,
+        "invalid": 0,
+        "enoughPct": 0.5
+      },
+      {
+        "candidateValue": 7.891,
+        "label": "NOT_ENOUGH",
+        "total": 10,
+        "enough": 3,
+        "notEnough": 7,
+        "invalid": 0,
+        "enoughPct": 0.3
+      },
+      {
+        "candidateValue": 8.032,
+        "label": "ENOUGH",
+        "total": 10,
+        "enough": 8,
+        "notEnough": 1,
+        "invalid": 1,
+        "enoughPct": 0.8
+      },
+      {
+        "candidateValue": 8.313,
+        "label": "ENOUGH",
+        "total": 10,
+        "enough": 8,
+        "notEnough": 2,
+        "invalid": 0,
+        "enoughPct": 0.8
+      },
+      {
+        "candidateValue": 8.875,
+        "label": "ENOUGH",
+        "total": 10,
+        "enough": 9,
+        "notEnough": 1,
+        "invalid": 0,
+        "enoughPct": 0.9
+      },
+      {
+        "candidateValue": 10,
+        "label": "ENOUGH",
+        "total": 10,
+        "enough": 9,
+        "notEnough": 1,
+        "invalid": 0,
+        "enoughPct": 0.9
+      }
+    ]
+  }
+]

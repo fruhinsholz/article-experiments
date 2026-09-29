@@ -1,0 +1,1636 @@
+{
+  "args": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "samples": 20,
+    "prices": [
+      5,
+      10,
+      20,
+      50,
+      100,
+      200,
+      500,
+      1000
+    ],
+    "maxCalls": 320,
+    "maxOutputTokens": 16,
+    "temperature": 0,
+    "concurrency": 4,
+    "label": "inexpensive-bag-price-ladder-active-context",
+    "dryRun": false,
+    "printExamples": false
+  },
+  "jobs": [
+    {
+      "condition": "baseline_no_context",
+      "price": 5,
+      "sampleIndex": 1
+    },
+    {
+      "condition": "active_record_context",
+      "price": 5,
+      "sampleIndex": 1
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 10,
+      "sampleIndex": 1
+    },
+    {
+      "condition": "active_record_context",
+      "price": 10,
+      "sampleIndex": 1
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 20,
+      "sampleIndex": 1
+    },
+    {
+      "condition": "active_record_context",
+      "price": 20,
+      "sampleIndex": 1
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 50,
+      "sampleIndex": 1
+    },
+    {
+      "condition": "active_record_context",
+      "price": 50,
+      "sampleIndex": 1
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 100,
+      "sampleIndex": 1
+    },
+    {
+      "condition": "active_record_context",
+      "price": 100,
+      "sampleIndex": 1
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 200,
+      "sampleIndex": 1
+    },
+    {
+      "condition": "active_record_context",
+      "price": 200,
+      "sampleIndex": 1
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 500,
+      "sampleIndex": 1
+    },
+    {
+      "condition": "active_record_context",
+      "price": 500,
+      "sampleIndex": 1
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 1000,
+      "sampleIndex": 1
+    },
+    {
+      "condition": "active_record_context",
+      "price": 1000,
+      "sampleIndex": 1
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 5,
+      "sampleIndex": 2
+    },
+    {
+      "condition": "active_record_context",
+      "price": 5,
+      "sampleIndex": 2
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 10,
+      "sampleIndex": 2
+    },
+    {
+      "condition": "active_record_context",
+      "price": 10,
+      "sampleIndex": 2
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 20,
+      "sampleIndex": 2
+    },
+    {
+      "condition": "active_record_context",
+      "price": 20,
+      "sampleIndex": 2
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 50,
+      "sampleIndex": 2
+    },
+    {
+      "condition": "active_record_context",
+      "price": 50,
+      "sampleIndex": 2
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 100,
+      "sampleIndex": 2
+    },
+    {
+      "condition": "active_record_context",
+      "price": 100,
+      "sampleIndex": 2
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 200,
+      "sampleIndex": 2
+    },
+    {
+      "condition": "active_record_context",
+      "price": 200,
+      "sampleIndex": 2
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 500,
+      "sampleIndex": 2
+    },
+    {
+      "condition": "active_record_context",
+      "price": 500,
+      "sampleIndex": 2
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 1000,
+      "sampleIndex": 2
+    },
+    {
+      "condition": "active_record_context",
+      "price": 1000,
+      "sampleIndex": 2
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 5,
+      "sampleIndex": 3
+    },
+    {
+      "condition": "active_record_context",
+      "price": 5,
+      "sampleIndex": 3
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 10,
+      "sampleIndex": 3
+    },
+    {
+      "condition": "active_record_context",
+      "price": 10,
+      "sampleIndex": 3
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 20,
+      "sampleIndex": 3
+    },
+    {
+      "condition": "active_record_context",
+      "price": 20,
+      "sampleIndex": 3
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 50,
+      "sampleIndex": 3
+    },
+    {
+      "condition": "active_record_context",
+      "price": 50,
+      "sampleIndex": 3
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 100,
+      "sampleIndex": 3
+    },
+    {
+      "condition": "active_record_context",
+      "price": 100,
+      "sampleIndex": 3
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 200,
+      "sampleIndex": 3
+    },
+    {
+      "condition": "active_record_context",
+      "price": 200,
+      "sampleIndex": 3
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 500,
+      "sampleIndex": 3
+    },
+    {
+      "condition": "active_record_context",
+      "price": 500,
+      "sampleIndex": 3
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 1000,
+      "sampleIndex": 3
+    },
+    {
+      "condition": "active_record_context",
+      "price": 1000,
+      "sampleIndex": 3
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 5,
+      "sampleIndex": 4
+    },
+    {
+      "condition": "active_record_context",
+      "price": 5,
+      "sampleIndex": 4
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 10,
+      "sampleIndex": 4
+    },
+    {
+      "condition": "active_record_context",
+      "price": 10,
+      "sampleIndex": 4
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 20,
+      "sampleIndex": 4
+    },
+    {
+      "condition": "active_record_context",
+      "price": 20,
+      "sampleIndex": 4
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 50,
+      "sampleIndex": 4
+    },
+    {
+      "condition": "active_record_context",
+      "price": 50,
+      "sampleIndex": 4
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 100,
+      "sampleIndex": 4
+    },
+    {
+      "condition": "active_record_context",
+      "price": 100,
+      "sampleIndex": 4
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 200,
+      "sampleIndex": 4
+    },
+    {
+      "condition": "active_record_context",
+      "price": 200,
+      "sampleIndex": 4
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 500,
+      "sampleIndex": 4
+    },
+    {
+      "condition": "active_record_context",
+      "price": 500,
+      "sampleIndex": 4
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 1000,
+      "sampleIndex": 4
+    },
+    {
+      "condition": "active_record_context",
+      "price": 1000,
+      "sampleIndex": 4
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 5,
+      "sampleIndex": 5
+    },
+    {
+      "condition": "active_record_context",
+      "price": 5,
+      "sampleIndex": 5
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 10,
+      "sampleIndex": 5
+    },
+    {
+      "condition": "active_record_context",
+      "price": 10,
+      "sampleIndex": 5
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 20,
+      "sampleIndex": 5
+    },
+    {
+      "condition": "active_record_context",
+      "price": 20,
+      "sampleIndex": 5
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 50,
+      "sampleIndex": 5
+    },
+    {
+      "condition": "active_record_context",
+      "price": 50,
+      "sampleIndex": 5
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 100,
+      "sampleIndex": 5
+    },
+    {
+      "condition": "active_record_context",
+      "price": 100,
+      "sampleIndex": 5
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 200,
+      "sampleIndex": 5
+    },
+    {
+      "condition": "active_record_context",
+      "price": 200,
+      "sampleIndex": 5
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 500,
+      "sampleIndex": 5
+    },
+    {
+      "condition": "active_record_context",
+      "price": 500,
+      "sampleIndex": 5
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 1000,
+      "sampleIndex": 5
+    },
+    {
+      "condition": "active_record_context",
+      "price": 1000,
+      "sampleIndex": 5
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 5,
+      "sampleIndex": 6
+    },
+    {
+      "condition": "active_record_context",
+      "price": 5,
+      "sampleIndex": 6
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 10,
+      "sampleIndex": 6
+    },
+    {
+      "condition": "active_record_context",
+      "price": 10,
+      "sampleIndex": 6
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 20,
+      "sampleIndex": 6
+    },
+    {
+      "condition": "active_record_context",
+      "price": 20,
+      "sampleIndex": 6
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 50,
+      "sampleIndex": 6
+    },
+    {
+      "condition": "active_record_context",
+      "price": 50,
+      "sampleIndex": 6
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 100,
+      "sampleIndex": 6
+    },
+    {
+      "condition": "active_record_context",
+      "price": 100,
+      "sampleIndex": 6
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 200,
+      "sampleIndex": 6
+    },
+    {
+      "condition": "active_record_context",
+      "price": 200,
+      "sampleIndex": 6
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 500,
+      "sampleIndex": 6
+    },
+    {
+      "condition": "active_record_context",
+      "price": 500,
+      "sampleIndex": 6
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 1000,
+      "sampleIndex": 6
+    },
+    {
+      "condition": "active_record_context",
+      "price": 1000,
+      "sampleIndex": 6
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 5,
+      "sampleIndex": 7
+    },
+    {
+      "condition": "active_record_context",
+      "price": 5,
+      "sampleIndex": 7
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 10,
+      "sampleIndex": 7
+    },
+    {
+      "condition": "active_record_context",
+      "price": 10,
+      "sampleIndex": 7
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 20,
+      "sampleIndex": 7
+    },
+    {
+      "condition": "active_record_context",
+      "price": 20,
+      "sampleIndex": 7
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 50,
+      "sampleIndex": 7
+    },
+    {
+      "condition": "active_record_context",
+      "price": 50,
+      "sampleIndex": 7
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 100,
+      "sampleIndex": 7
+    },
+    {
+      "condition": "active_record_context",
+      "price": 100,
+      "sampleIndex": 7
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 200,
+      "sampleIndex": 7
+    },
+    {
+      "condition": "active_record_context",
+      "price": 200,
+      "sampleIndex": 7
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 500,
+      "sampleIndex": 7
+    },
+    {
+      "condition": "active_record_context",
+      "price": 500,
+      "sampleIndex": 7
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 1000,
+      "sampleIndex": 7
+    },
+    {
+      "condition": "active_record_context",
+      "price": 1000,
+      "sampleIndex": 7
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 5,
+      "sampleIndex": 8
+    },
+    {
+      "condition": "active_record_context",
+      "price": 5,
+      "sampleIndex": 8
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 10,
+      "sampleIndex": 8
+    },
+    {
+      "condition": "active_record_context",
+      "price": 10,
+      "sampleIndex": 8
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 20,
+      "sampleIndex": 8
+    },
+    {
+      "condition": "active_record_context",
+      "price": 20,
+      "sampleIndex": 8
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 50,
+      "sampleIndex": 8
+    },
+    {
+      "condition": "active_record_context",
+      "price": 50,
+      "sampleIndex": 8
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 100,
+      "sampleIndex": 8
+    },
+    {
+      "condition": "active_record_context",
+      "price": 100,
+      "sampleIndex": 8
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 200,
+      "sampleIndex": 8
+    },
+    {
+      "condition": "active_record_context",
+      "price": 200,
+      "sampleIndex": 8
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 500,
+      "sampleIndex": 8
+    },
+    {
+      "condition": "active_record_context",
+      "price": 500,
+      "sampleIndex": 8
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 1000,
+      "sampleIndex": 8
+    },
+    {
+      "condition": "active_record_context",
+      "price": 1000,
+      "sampleIndex": 8
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 5,
+      "sampleIndex": 9
+    },
+    {
+      "condition": "active_record_context",
+      "price": 5,
+      "sampleIndex": 9
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 10,
+      "sampleIndex": 9
+    },
+    {
+      "condition": "active_record_context",
+      "price": 10,
+      "sampleIndex": 9
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 20,
+      "sampleIndex": 9
+    },
+    {
+      "condition": "active_record_context",
+      "price": 20,
+      "sampleIndex": 9
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 50,
+      "sampleIndex": 9
+    },
+    {
+      "condition": "active_record_context",
+      "price": 50,
+      "sampleIndex": 9
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 100,
+      "sampleIndex": 9
+    },
+    {
+      "condition": "active_record_context",
+      "price": 100,
+      "sampleIndex": 9
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 200,
+      "sampleIndex": 9
+    },
+    {
+      "condition": "active_record_context",
+      "price": 200,
+      "sampleIndex": 9
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 500,
+      "sampleIndex": 9
+    },
+    {
+      "condition": "active_record_context",
+      "price": 500,
+      "sampleIndex": 9
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 1000,
+      "sampleIndex": 9
+    },
+    {
+      "condition": "active_record_context",
+      "price": 1000,
+      "sampleIndex": 9
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 5,
+      "sampleIndex": 10
+    },
+    {
+      "condition": "active_record_context",
+      "price": 5,
+      "sampleIndex": 10
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 10,
+      "sampleIndex": 10
+    },
+    {
+      "condition": "active_record_context",
+      "price": 10,
+      "sampleIndex": 10
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 20,
+      "sampleIndex": 10
+    },
+    {
+      "condition": "active_record_context",
+      "price": 20,
+      "sampleIndex": 10
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 50,
+      "sampleIndex": 10
+    },
+    {
+      "condition": "active_record_context",
+      "price": 50,
+      "sampleIndex": 10
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 100,
+      "sampleIndex": 10
+    },
+    {
+      "condition": "active_record_context",
+      "price": 100,
+      "sampleIndex": 10
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 200,
+      "sampleIndex": 10
+    },
+    {
+      "condition": "active_record_context",
+      "price": 200,
+      "sampleIndex": 10
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 500,
+      "sampleIndex": 10
+    },
+    {
+      "condition": "active_record_context",
+      "price": 500,
+      "sampleIndex": 10
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 1000,
+      "sampleIndex": 10
+    },
+    {
+      "condition": "active_record_context",
+      "price": 1000,
+      "sampleIndex": 10
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 5,
+      "sampleIndex": 11
+    },
+    {
+      "condition": "active_record_context",
+      "price": 5,
+      "sampleIndex": 11
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 10,
+      "sampleIndex": 11
+    },
+    {
+      "condition": "active_record_context",
+      "price": 10,
+      "sampleIndex": 11
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 20,
+      "sampleIndex": 11
+    },
+    {
+      "condition": "active_record_context",
+      "price": 20,
+      "sampleIndex": 11
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 50,
+      "sampleIndex": 11
+    },
+    {
+      "condition": "active_record_context",
+      "price": 50,
+      "sampleIndex": 11
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 100,
+      "sampleIndex": 11
+    },
+    {
+      "condition": "active_record_context",
+      "price": 100,
+      "sampleIndex": 11
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 200,
+      "sampleIndex": 11
+    },
+    {
+      "condition": "active_record_context",
+      "price": 200,
+      "sampleIndex": 11
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 500,
+      "sampleIndex": 11
+    },
+    {
+      "condition": "active_record_context",
+      "price": 500,
+      "sampleIndex": 11
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 1000,
+      "sampleIndex": 11
+    },
+    {
+      "condition": "active_record_context",
+      "price": 1000,
+      "sampleIndex": 11
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 5,
+      "sampleIndex": 12
+    },
+    {
+      "condition": "active_record_context",
+      "price": 5,
+      "sampleIndex": 12
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 10,
+      "sampleIndex": 12
+    },
+    {
+      "condition": "active_record_context",
+      "price": 10,
+      "sampleIndex": 12
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 20,
+      "sampleIndex": 12
+    },
+    {
+      "condition": "active_record_context",
+      "price": 20,
+      "sampleIndex": 12
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 50,
+      "sampleIndex": 12
+    },
+    {
+      "condition": "active_record_context",
+      "price": 50,
+      "sampleIndex": 12
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 100,
+      "sampleIndex": 12
+    },
+    {
+      "condition": "active_record_context",
+      "price": 100,
+      "sampleIndex": 12
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 200,
+      "sampleIndex": 12
+    },
+    {
+      "condition": "active_record_context",
+      "price": 200,
+      "sampleIndex": 12
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 500,
+      "sampleIndex": 12
+    },
+    {
+      "condition": "active_record_context",
+      "price": 500,
+      "sampleIndex": 12
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 1000,
+      "sampleIndex": 12
+    },
+    {
+      "condition": "active_record_context",
+      "price": 1000,
+      "sampleIndex": 12
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 5,
+      "sampleIndex": 13
+    },
+    {
+      "condition": "active_record_context",
+      "price": 5,
+      "sampleIndex": 13
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 10,
+      "sampleIndex": 13
+    },
+    {
+      "condition": "active_record_context",
+      "price": 10,
+      "sampleIndex": 13
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 20,
+      "sampleIndex": 13
+    },
+    {
+      "condition": "active_record_context",
+      "price": 20,
+      "sampleIndex": 13
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 50,
+      "sampleIndex": 13
+    },
+    {
+      "condition": "active_record_context",
+      "price": 50,
+      "sampleIndex": 13
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 100,
+      "sampleIndex": 13
+    },
+    {
+      "condition": "active_record_context",
+      "price": 100,
+      "sampleIndex": 13
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 200,
+      "sampleIndex": 13
+    },
+    {
+      "condition": "active_record_context",
+      "price": 200,
+      "sampleIndex": 13
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 500,
+      "sampleIndex": 13
+    },
+    {
+      "condition": "active_record_context",
+      "price": 500,
+      "sampleIndex": 13
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 1000,
+      "sampleIndex": 13
+    },
+    {
+      "condition": "active_record_context",
+      "price": 1000,
+      "sampleIndex": 13
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 5,
+      "sampleIndex": 14
+    },
+    {
+      "condition": "active_record_context",
+      "price": 5,
+      "sampleIndex": 14
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 10,
+      "sampleIndex": 14
+    },
+    {
+      "condition": "active_record_context",
+      "price": 10,
+      "sampleIndex": 14
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 20,
+      "sampleIndex": 14
+    },
+    {
+      "condition": "active_record_context",
+      "price": 20,
+      "sampleIndex": 14
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 50,
+      "sampleIndex": 14
+    },
+    {
+      "condition": "active_record_context",
+      "price": 50,
+      "sampleIndex": 14
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 100,
+      "sampleIndex": 14
+    },
+    {
+      "condition": "active_record_context",
+      "price": 100,
+      "sampleIndex": 14
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 200,
+      "sampleIndex": 14
+    },
+    {
+      "condition": "active_record_context",
+      "price": 200,
+      "sampleIndex": 14
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 500,
+      "sampleIndex": 14
+    },
+    {
+      "condition": "active_record_context",
+      "price": 500,
+      "sampleIndex": 14
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 1000,
+      "sampleIndex": 14
+    },
+    {
+      "condition": "active_record_context",
+      "price": 1000,
+      "sampleIndex": 14
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 5,
+      "sampleIndex": 15
+    },
+    {
+      "condition": "active_record_context",
+      "price": 5,
+      "sampleIndex": 15
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 10,
+      "sampleIndex": 15
+    },
+    {
+      "condition": "active_record_context",
+      "price": 10,
+      "sampleIndex": 15
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 20,
+      "sampleIndex": 15
+    },
+    {
+      "condition": "active_record_context",
+      "price": 20,
+      "sampleIndex": 15
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 50,
+      "sampleIndex": 15
+    },
+    {
+      "condition": "active_record_context",
+      "price": 50,
+      "sampleIndex": 15
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 100,
+      "sampleIndex": 15
+    },
+    {
+      "condition": "active_record_context",
+      "price": 100,
+      "sampleIndex": 15
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 200,
+      "sampleIndex": 15
+    },
+    {
+      "condition": "active_record_context",
+      "price": 200,
+      "sampleIndex": 15
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 500,
+      "sampleIndex": 15
+    },
+    {
+      "condition": "active_record_context",
+      "price": 500,
+      "sampleIndex": 15
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 1000,
+      "sampleIndex": 15
+    },
+    {
+      "condition": "active_record_context",
+      "price": 1000,
+      "sampleIndex": 15
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 5,
+      "sampleIndex": 16
+    },
+    {
+      "condition": "active_record_context",
+      "price": 5,
+      "sampleIndex": 16
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 10,
+      "sampleIndex": 16
+    },
+    {
+      "condition": "active_record_context",
+      "price": 10,
+      "sampleIndex": 16
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 20,
+      "sampleIndex": 16
+    },
+    {
+      "condition": "active_record_context",
+      "price": 20,
+      "sampleIndex": 16
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 50,
+      "sampleIndex": 16
+    },
+    {
+      "condition": "active_record_context",
+      "price": 50,
+      "sampleIndex": 16
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 100,
+      "sampleIndex": 16
+    },
+    {
+      "condition": "active_record_context",
+      "price": 100,
+      "sampleIndex": 16
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 200,
+      "sampleIndex": 16
+    },
+    {
+      "condition": "active_record_context",
+      "price": 200,
+      "sampleIndex": 16
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 500,
+      "sampleIndex": 16
+    },
+    {
+      "condition": "active_record_context",
+      "price": 500,
+      "sampleIndex": 16
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 1000,
+      "sampleIndex": 16
+    },
+    {
+      "condition": "active_record_context",
+      "price": 1000,
+      "sampleIndex": 16
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 5,
+      "sampleIndex": 17
+    },
+    {
+      "condition": "active_record_context",
+      "price": 5,
+      "sampleIndex": 17
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 10,
+      "sampleIndex": 17
+    },
+    {
+      "condition": "active_record_context",
+      "price": 10,
+      "sampleIndex": 17
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 20,
+      "sampleIndex": 17
+    },
+    {
+      "condition": "active_record_context",
+      "price": 20,
+      "sampleIndex": 17
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 50,
+      "sampleIndex": 17
+    },
+    {
+      "condition": "active_record_context",
+      "price": 50,
+      "sampleIndex": 17
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 100,
+      "sampleIndex": 17
+    },
+    {
+      "condition": "active_record_context",
+      "price": 100,
+      "sampleIndex": 17
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 200,
+      "sampleIndex": 17
+    },
+    {
+      "condition": "active_record_context",
+      "price": 200,
+      "sampleIndex": 17
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 500,
+      "sampleIndex": 17
+    },
+    {
+      "condition": "active_record_context",
+      "price": 500,
+      "sampleIndex": 17
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 1000,
+      "sampleIndex": 17
+    },
+    {
+      "condition": "active_record_context",
+      "price": 1000,
+      "sampleIndex": 17
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 5,
+      "sampleIndex": 18
+    },
+    {
+      "condition": "active_record_context",
+      "price": 5,
+      "sampleIndex": 18
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 10,
+      "sampleIndex": 18
+    },
+    {
+      "condition": "active_record_context",
+      "price": 10,
+      "sampleIndex": 18
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 20,
+      "sampleIndex": 18
+    },
+    {
+      "condition": "active_record_context",
+      "price": 20,
+      "sampleIndex": 18
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 50,
+      "sampleIndex": 18
+    },
+    {
+      "condition": "active_record_context",
+      "price": 50,
+      "sampleIndex": 18
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 100,
+      "sampleIndex": 18
+    },
+    {
+      "condition": "active_record_context",
+      "price": 100,
+      "sampleIndex": 18
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 200,
+      "sampleIndex": 18
+    },
+    {
+      "condition": "active_record_context",
+      "price": 200,
+      "sampleIndex": 18
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 500,
+      "sampleIndex": 18
+    },
+    {
+      "condition": "active_record_context",
+      "price": 500,
+      "sampleIndex": 18
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 1000,
+      "sampleIndex": 18
+    },
+    {
+      "condition": "active_record_context",
+      "price": 1000,
+      "sampleIndex": 18
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 5,
+      "sampleIndex": 19
+    },
+    {
+      "condition": "active_record_context",
+      "price": 5,
+      "sampleIndex": 19
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 10,
+      "sampleIndex": 19
+    },
+    {
+      "condition": "active_record_context",
+      "price": 10,
+      "sampleIndex": 19
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 20,
+      "sampleIndex": 19
+    },
+    {
+      "condition": "active_record_context",
+      "price": 20,
+      "sampleIndex": 19
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 50,
+      "sampleIndex": 19
+    },
+    {
+      "condition": "active_record_context",
+      "price": 50,
+      "sampleIndex": 19
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 100,
+      "sampleIndex": 19
+    },
+    {
+      "condition": "active_record_context",
+      "price": 100,
+      "sampleIndex": 19
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 200,
+      "sampleIndex": 19
+    },
+    {
+      "condition": "active_record_context",
+      "price": 200,
+      "sampleIndex": 19
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 500,
+      "sampleIndex": 19
+    },
+    {
+      "condition": "active_record_context",
+      "price": 500,
+      "sampleIndex": 19
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 1000,
+      "sampleIndex": 19
+    },
+    {
+      "condition": "active_record_context",
+      "price": 1000,
+      "sampleIndex": 19
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 5,
+      "sampleIndex": 20
+    },
+    {
+      "condition": "active_record_context",
+      "price": 5,
+      "sampleIndex": 20
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 10,
+      "sampleIndex": 20
+    },
+    {
+      "condition": "active_record_context",
+      "price": 10,
+      "sampleIndex": 20
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 20,
+      "sampleIndex": 20
+    },
+    {
+      "condition": "active_record_context",
+      "price": 20,
+      "sampleIndex": 20
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 50,
+      "sampleIndex": 20
+    },
+    {
+      "condition": "active_record_context",
+      "price": 50,
+      "sampleIndex": 20
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 100,
+      "sampleIndex": 20
+    },
+    {
+      "condition": "active_record_context",
+      "price": 100,
+      "sampleIndex": 20
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 200,
+      "sampleIndex": 20
+    },
+    {
+      "condition": "active_record_context",
+      "price": 200,
+      "sampleIndex": 20
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 500,
+      "sampleIndex": 20
+    },
+    {
+      "condition": "active_record_context",
+      "price": 500,
+      "sampleIndex": 20
+    },
+    {
+      "condition": "baseline_no_context",
+      "price": 1000,
+      "sampleIndex": 20
+    },
+    {
+      "condition": "active_record_context",
+      "price": 1000,
+      "sampleIndex": 20
+    }
+  ],
+  "conditions": [
+    {
+      "name": "baseline_no_context",
+      "templateAt10": "Question:\nI can only afford this bag if it is inexpensive.\nThe bag costs $10.\n\nIs the bag inexpensive enough for me to afford?\n\nRules:\n- Answer with exactly one token: YES or NO.\n- Do not explain."
+    },
+    {
+      "name": "active_record_context",
+      "templateAt10": "Active record context:\n- The record mentions a $100,000 contract.\n\nQuestion:\nI can only afford this bag if it is inexpensive.\nThe bag costs $10.\n\nIs the bag inexpensive enough for me to afford?\n\nRules:\n- Answer with exactly one token: YES or NO.\n- Do not explain."
+    }
+  ]
+}

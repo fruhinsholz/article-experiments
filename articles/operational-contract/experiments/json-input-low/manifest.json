@@ -1,0 +1,606 @@
+{
+  "schema_version": "json-input-low.manifest.v1",
+  "experiment_id": "json-input-low",
+  "updated_at": "2026-08-02",
+  "purpose": "Track the raw runs and derived article-facing table for the JSON input LOW probe.",
+  "reader_summary": "Raw runs are immutable. The article table is generated from publication-clean n=100 runs: no-context controls, $100k retrieved-context prose, $5 gift-card prose, and $5 gift-card explicit-boundary JSON checks. Older format-comparison batches remain audit context rather than mixed into article numbers.",
+  "raw_data_policy": {
+    "raw_runs_are_immutable": true,
+    "derived_outputs_must_be_generated": true,
+    "article_numbers_must_reference_this_manifest": true
+  },
+  "article_table": {
+    "id": "json-input-low-consolidated-article-table",
+    "title": "JSON Input LOW Article Table",
+    "description": "Highest tested claim amount classified as LOW by majority vote with retrieved context present.",
+    "formats": [
+      "prose_same_block",
+      "json_flat",
+      "json_typed",
+      "json_typed_boundary_rule"
+    ],
+    "rows": [
+      {
+        "provider": "OpenAI",
+        "model": "gpt-5.5",
+        "test_label": "$100k contract",
+        "context_id": "retrieved_100000_contract",
+        "run_id": "openai_gpt55_gpt56_fixed_grid_s30",
+        "baseline_source_id": "low_context_openai_gpt55_gpt56"
+      },
+      {
+        "provider": "OpenAI",
+        "model": "gpt-5.6",
+        "test_label": "$100k contract",
+        "context_id": "retrieved_100000_contract",
+        "run_id": "openai_gpt55_gpt56_fixed_grid_s30",
+        "baseline_source_id": "low_context_openai_gpt55_gpt56"
+      },
+      {
+        "provider": "Gemini",
+        "model": "gemini-3.5-flash-lite",
+        "test_label": "$100k contract",
+        "context_id": "retrieved_100000_contract",
+        "run_id": "gemini_100k_dense_s30",
+        "baseline_source_id": "low_context_gemini_publication_clean"
+      },
+      {
+        "provider": "OpenAI",
+        "model": "gpt-5.5",
+        "test_label": "$5 gift card",
+        "context_id": "retrieved_5_gift_card",
+        "run_id": "openai_gpt55_gpt56_fixed_grid_s30",
+        "baseline_source_id": "low_context_openai_gpt55_gpt56"
+      },
+      {
+        "provider": "OpenAI",
+        "model": "gpt-5.6",
+        "test_label": "$5 gift card",
+        "context_id": "retrieved_5_gift_card",
+        "run_id": "openai_gpt55_gpt56_fixed_grid_s30",
+        "baseline_source_id": "low_context_openai_gpt55_gpt56"
+      },
+      {
+        "provider": "Gemini",
+        "model": "gemini-3.5-flash-lite",
+        "test_label": "$5 gift card",
+        "context_id": "retrieved_5_gift_card",
+        "run_id": "gemini_5_s10",
+        "baseline_source_id": "low_context_gemini_publication_clean"
+      }
+    ],
+    "outputs": {
+      "markdown": "experiments/json-input-low/generated/article-table.md",
+      "json": "experiments/json-input-low/generated/article-table.json"
+    },
+    "baseline_sources": [
+      {
+        "id": "low_context_openai_gpt55_gpt56",
+        "run_dir": "experiments/low-retrieved-context/results/2026-07-29T18-47-12-806Z-publication-clean-openai-gpt55-gpt56-max1024-low",
+        "provider": "openai",
+        "models": [
+          "gpt-5.5",
+          "gpt-5.6"
+        ],
+        "notes": "No-added-context baseline for OpenAI rows in the article table, derived from LOW retrieved-context threshold bands."
+      },
+      {
+        "id": "low_context_gemini_publication_clean",
+        "run_dir": "experiments/low-retrieved-context/results/2026-07-28T00-13-22-919Z-publication-clean-gemini-low",
+        "provider": "gemini",
+        "models": [
+          "gemini-3.5-flash-lite",
+          "gemini-3.6-flash"
+        ],
+        "notes": "No-added-context baseline for Gemini rows in the article table, derived from LOW retrieved-context threshold bands."
+      }
+    ]
+  },
+  "runs": [
+    {
+      "id": "publication_clean_control_gemini_36_flash_s100",
+      "role": "publication_clean_control_source",
+      "status": "current",
+      "run_dir": "experiments/json-input-low/results/2026-08-02T18-32-02-384Z-publication-clean-control-gemini-36-flash-s100-json-input-low",
+      "provider": "gemini",
+      "models": [
+        "gemini-3.6-flash"
+      ],
+      "contexts": [
+        "fact_only"
+      ],
+      "formats": [
+        "prose_same_block"
+      ],
+      "amounts": [
+        0,
+        5,
+        25,
+        49,
+        50,
+        51,
+        75,
+        100,
+        101,
+        150,
+        250,
+        500,
+        1000
+      ],
+      "samples_per_cell": 100,
+      "notes": "Publication-clean no-added-context control matched to the Gemini $100k retrieved-context run."
+    },
+    {
+      "id": "publication_clean_control_openai_gpt56_s100",
+      "role": "publication_clean_control_source",
+      "status": "current",
+      "run_dir": "experiments/json-input-low/results/2026-08-02T18-27-05-695Z-publication-clean-control-openai-gpt56-s100-json-input-low",
+      "provider": "openai",
+      "models": [
+        "gpt-5.6"
+      ],
+      "contexts": [
+        "fact_only"
+      ],
+      "formats": [
+        "prose_same_block"
+      ],
+      "amounts": [
+        0,
+        5,
+        25,
+        49,
+        50,
+        51,
+        75,
+        100,
+        101,
+        150,
+        250,
+        500,
+        1000
+      ],
+      "samples_per_cell": 100,
+      "notes": "Publication-clean no-added-context control matched to the OpenAI $100k retrieved-context run."
+    },
+    {
+      "id": "publication_clean_gemini_36_flash_s100",
+      "role": "publication_clean_context_source",
+      "status": "current",
+      "run_dir": "experiments/json-input-low/results/2026-08-02T17-24-22-436Z-publication-clean-gemini-36-flash-s100-json-input-low",
+      "provider": "gemini",
+      "models": [
+        "gemini-3.6-flash"
+      ],
+      "contexts": [
+        "retrieved_100000_contract"
+      ],
+      "formats": [
+        "prose_same_block"
+      ],
+      "amounts": [
+        0,
+        5,
+        25,
+        49,
+        50,
+        51,
+        75,
+        100,
+        101,
+        150,
+        250,
+        500,
+        1000
+      ],
+      "samples_per_cell": 100,
+      "notes": "Publication-clean $100k retrieved-context source for the article-facing boundary table."
+    },
+    {
+      "id": "publication_clean_openai_gpt56_s100",
+      "role": "publication_clean_context_source",
+      "status": "current",
+      "run_dir": "experiments/json-input-low/results/2026-08-02T17-21-15-563Z-publication-clean-openai-gpt56-s100-json-input-low",
+      "provider": "openai",
+      "models": [
+        "gpt-5.6"
+      ],
+      "contexts": [
+        "retrieved_100000_contract"
+      ],
+      "formats": [
+        "prose_same_block"
+      ],
+      "amounts": [
+        0,
+        5,
+        25,
+        49,
+        50,
+        51,
+        75,
+        100,
+        101,
+        150,
+        250,
+        500,
+        1000
+      ],
+      "samples_per_cell": 100,
+      "notes": "Publication-clean $100k retrieved-context source for the article-facing boundary table."
+    },
+    {
+      "id": "publication_clean_gift_card_openai_gpt56_s100",
+      "role": "publication_clean_context_source",
+      "status": "current",
+      "run_dir": "experiments/json-input-low/results/2026-08-02T19-25-24-689Z-publication-clean-gift-card-openai-gpt56-s100-json-input-low",
+      "provider": "openai",
+      "models": [
+        "gpt-5.6"
+      ],
+      "contexts": [
+        "retrieved_5_gift_card"
+      ],
+      "formats": [
+        "prose_same_block",
+        "json_typed_boundary_rule"
+      ],
+      "amounts": [
+        0,
+        5,
+        25,
+        49,
+        50,
+        51,
+        75,
+        100,
+        101,
+        150,
+        250,
+        500,
+        1000
+      ],
+      "samples_per_cell": 100,
+      "notes": "Publication-clean $5 gift-card retrieved-context run. Includes the ordinary prose prompt used for the narrative hook and the typed JSON prompt with an explicit $100 boundary rule."
+    },
+    {
+      "id": "publication_clean_gift_card_gemini_36_flash_s100",
+      "role": "publication_clean_context_source",
+      "status": "current",
+      "run_dir": "experiments/json-input-low/results/2026-08-02T19-32-20-026Z-publication-clean-gift-card-gemini-36-flash-s100-json-input-low",
+      "provider": "gemini",
+      "models": [
+        "gemini-3.6-flash"
+      ],
+      "contexts": [
+        "retrieved_5_gift_card"
+      ],
+      "formats": [
+        "prose_same_block",
+        "json_typed_boundary_rule"
+      ],
+      "amounts": [
+        0,
+        5,
+        25,
+        49,
+        50,
+        51,
+        75,
+        100,
+        101,
+        150,
+        250,
+        500,
+        1000
+      ],
+      "samples_per_cell": 100,
+      "notes": "Publication-clean $5 gift-card retrieved-context run. Includes the ordinary prose prompt used for the narrative hook and the typed JSON prompt with an explicit $100 boundary rule."
+    },
+    {
+      "id": "openai_gpt55_gpt56_fixed_grid_s30",
+      "role": "article_table_source",
+      "status": "current",
+      "run_dir": "experiments/json-input-low/results/2026-07-31T15-06-21-856Z-clean-openai-gpt55-gpt56-fixed-grid-json-s30-json-input-low",
+      "provider": "openai",
+      "models": [
+        "gpt-5.5",
+        "gpt-5.6"
+      ],
+      "contexts": [
+        "fact_only",
+        "retrieved_5_gift_card",
+        "retrieved_100000_contract"
+      ],
+      "formats": [
+        "prose_same_block",
+        "prose_separated",
+        "json_flat",
+        "json_typed",
+        "json_typed_boundary_rule"
+      ],
+      "amounts": [
+        25,
+        50,
+        75,
+        100,
+        150,
+        250,
+        500,
+        1000,
+        5000,
+        10000,
+        20000
+      ],
+      "samples_per_cell": 30,
+      "notes": "Primary OpenAI source for article-facing JSON table values. This fixed-grid run supersedes the earlier gpt-4.1-mini clean/check batches for OpenAI article values."
+    },
+    {
+      "id": "gemini_100k_dense_s30",
+      "role": "article_table_source",
+      "status": "current",
+      "run_dir": "experiments/json-input-low/results/2026-08-01T01-06-10-144Z-supplemental-gemini-100k-dense-json-input-low",
+      "provider": "gemini",
+      "models": [
+        "gemini-3.5-flash-lite"
+      ],
+      "contexts": [
+        "retrieved_100000_contract"
+      ],
+      "formats": [
+        "prose_same_block",
+        "json_flat",
+        "json_typed",
+        "json_typed_boundary_rule"
+      ],
+      "amounts": [
+        100,
+        150,
+        500,
+        1000,
+        5000,
+        10000,
+        12000,
+        15000,
+        18000,
+        20000,
+        25000,
+        50000,
+        100000
+      ],
+      "samples_per_cell": 30,
+      "notes": "Current Gemini source for the $100k article row. This dense rerun exposes the non-smooth Gemini enforcement result rather than hiding it."
+    },
+    {
+      "id": "gemini_100k_s30",
+      "role": "supporting_evidence",
+      "status": "retained_not_article_table_source",
+      "run_dir": "experiments/json-input-low/results/2026-07-31T02-49-23-698Z-clean-gemini-json-100k-s30-json-input-low",
+      "provider": "gemini",
+      "models": [
+        "gemini-3.5-flash-lite"
+      ],
+      "contexts": [
+        "fact_only",
+        "retrieved_100000_contract"
+      ],
+      "formats": [
+        "prose_same_block",
+        "json_flat",
+        "json_typed",
+        "json_typed_boundary_rule"
+      ],
+      "amounts": [
+        5,
+        50,
+        100,
+        150,
+        500,
+        1000,
+        5000,
+        10000,
+        20000
+      ],
+      "samples_per_cell": 30,
+      "notes": "Clean 100k-context batch retained as provider corroboration. It is not mixed into the OpenAI article table."
+    },
+    {
+      "id": "openai_100k_s30",
+      "role": "historical_clean_batch",
+      "status": "superseded",
+      "run_dir": "experiments/json-input-low/results/2026-07-31T03-03-58-046Z-clean-openai-json-100k-s30-json-input-low",
+      "provider": "openai",
+      "models": [
+        "gpt-4.1-mini"
+      ],
+      "contexts": [
+        "fact_only",
+        "retrieved_100000_contract"
+      ],
+      "formats": [
+        "prose_same_block",
+        "json_flat",
+        "json_typed",
+        "json_typed_boundary_rule"
+      ],
+      "amounts": [
+        5,
+        50,
+        100,
+        150,
+        500,
+        1000,
+        5000,
+        10000,
+        20000
+      ],
+      "samples_per_cell": 30,
+      "notes": "Earlier clean batch used while exploring the article table shape. Superseded for article values by the gpt-5.5/gpt-5.6 fixed-grid run."
+    },
+    {
+      "id": "gemini_5_s10",
+      "role": "article_table_source",
+      "status": "superseded",
+      "run_dir": "experiments/json-input-low/results/2026-07-31T03-34-51-862Z-check-gemini-json-5-s10-json-input-low",
+      "provider": "gemini",
+      "models": [
+        "gemini-3.5-flash-lite"
+      ],
+      "contexts": [
+        "fact_only",
+        "retrieved_5_gift_card"
+      ],
+      "formats": [
+        "prose_same_block",
+        "json_flat",
+        "json_typed",
+        "json_typed_boundary_rule"
+      ],
+      "amounts": [
+        5,
+        50,
+        100,
+        150,
+        500,
+        1000,
+        5000,
+        10000,
+        20000
+      ],
+      "samples_per_cell": 10,
+      "notes": "Earlier smaller $5 gift-card check. Superseded for article-facing values by the publication-clean gpt-5.6 and gemini-3.6-flash s100 gift-card runs."
+    },
+    {
+      "id": "openai_5_s10",
+      "role": "supporting_check",
+      "status": "superseded",
+      "run_dir": "experiments/json-input-low/results/2026-07-31T03-39-55-591Z-check-openai-json-5-s10-json-input-low",
+      "provider": "openai",
+      "models": [
+        "gpt-4.1-mini"
+      ],
+      "contexts": [
+        "fact_only",
+        "retrieved_5_gift_card"
+      ],
+      "formats": [
+        "prose_same_block",
+        "json_flat",
+        "json_typed",
+        "json_typed_boundary_rule"
+      ],
+      "amounts": [
+        5,
+        50,
+        100,
+        150,
+        500,
+        1000,
+        5000,
+        10000,
+        20000
+      ],
+      "samples_per_cell": 10,
+      "notes": "Earlier opposite-direction OpenAI check. Superseded for article values by the gpt-5.5/gpt-5.6 fixed-grid run."
+    }
+  ],
+  "excluded_runs_policy": "Exploratory and private-labeled runs remain in results for audit history, but are excluded from article-facing generated tables unless promoted into this manifest with role article_table_source.",
+  "publication_clean_table": {
+    "id": "json-input-low-publication-clean-boundary-table",
+    "title": "JSON Input LOW Publication-Clean Boundary Table",
+    "description": "Raw count comparison of no-added-context controls, $100k retrieved context, $5 gift-card retrieved context, explicit-rule JSON checks, and deterministic runtime enforcement on a matched fixed grid.",
+    "threshold_usd": 100,
+    "format_id": "prose_same_block",
+    "contexts": [
+      "fact_only",
+      "retrieved_100000_contract",
+      "retrieved_5_gift_card"
+    ],
+    "amounts": [
+      0,
+      5,
+      25,
+      49,
+      50,
+      51,
+      75,
+      100,
+      101,
+      150,
+      250,
+      500,
+      1000
+    ],
+    "outputs": {
+      "markdown": "experiments/json-input-low/generated/article-table.md",
+      "json": "experiments/json-input-low/generated/article-table.json"
+    },
+    "generated_publication_outputs": {
+      "markdown": "experiments/json-input-low/generated/publication-clean/publication-clean-summary.md",
+      "csv": "experiments/json-input-low/generated/publication-clean/publication-clean-summary.csv",
+      "svg": "experiments/json-input-low/generated/publication-clean/publication-clean-chart.svg",
+      "provenance": "experiments/json-input-low/generated/publication-clean/publication-clean-provenance.json"
+    },
+    "rows": [
+      {
+        "provider": "OpenAI",
+        "model": "gpt-5.6",
+        "section_id": "retrieved_100000_contract_prose",
+        "section_label": "$100k retrieved context - prose classifier",
+        "control_run_id": "publication_clean_control_openai_gpt56_s100",
+        "context_run_id": "publication_clean_openai_gpt56_s100",
+        "context_id": "retrieved_100000_contract",
+        "format_id": "prose_same_block"
+      },
+      {
+        "provider": "Gemini",
+        "model": "gemini-3.6-flash",
+        "section_id": "retrieved_100000_contract_prose",
+        "section_label": "$100k retrieved context - prose classifier",
+        "control_run_id": "publication_clean_control_gemini_36_flash_s100",
+        "context_run_id": "publication_clean_gemini_36_flash_s100",
+        "context_id": "retrieved_100000_contract",
+        "format_id": "prose_same_block"
+      },
+      {
+        "provider": "OpenAI",
+        "model": "gpt-5.6",
+        "section_id": "retrieved_5_gift_card_prose",
+        "section_label": "$5 gift-card context - prose classifier",
+        "control_run_id": "publication_clean_control_openai_gpt56_s100",
+        "context_run_id": "publication_clean_gift_card_openai_gpt56_s100",
+        "context_id": "retrieved_5_gift_card",
+        "format_id": "prose_same_block"
+      },
+      {
+        "provider": "Gemini",
+        "model": "gemini-3.6-flash",
+        "section_id": "retrieved_5_gift_card_prose",
+        "section_label": "$5 gift-card context - prose classifier",
+        "control_run_id": "publication_clean_control_gemini_36_flash_s100",
+        "context_run_id": "publication_clean_gift_card_gemini_36_flash_s100",
+        "context_id": "retrieved_5_gift_card",
+        "format_id": "prose_same_block"
+      },
+      {
+        "provider": "OpenAI",
+        "model": "gpt-5.6",
+        "section_id": "retrieved_5_gift_card_explicit_rule",
+        "section_label": "$5 gift-card context - explicit $100 JSON rule",
+        "context_run_id": "publication_clean_gift_card_openai_gpt56_s100",
+        "context_id": "retrieved_5_gift_card",
+        "format_id": "json_typed_boundary_rule"
+      },
+      {
+        "provider": "Gemini",
+        "model": "gemini-3.6-flash",
+        "section_id": "retrieved_5_gift_card_explicit_rule",
+        "section_label": "$5 gift-card context - explicit $100 JSON rule",
+        "context_run_id": "publication_clean_gift_card_gemini_36_flash_s100",
+        "context_id": "retrieved_5_gift_card",
+        "format_id": "json_typed_boundary_rule"
+      }
+    ],
+    "notes": "This table supersedes the ratio-heavy mixed-run article_table for publication prose. It intentionally separates the ordinary prose classifier from the explicit $100 JSON boundary-rule check. The older article_table object remains historical format-comparison metadata only."
+  }
+}

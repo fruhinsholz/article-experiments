@@ -1,0 +1,414 @@
+{
+  "provider": "gemini",
+  "model": "gemini-3.5-flash-lite",
+  "calls": 24,
+  "errors": 0,
+  "amounts": [
+    5,
+    50,
+    500,
+    5000,
+    20000,
+    100000
+  ],
+  "branchAmounts": {
+    "B": [
+      5,
+      50,
+      500,
+      5000,
+      20000,
+      100000
+    ],
+    "D": [
+      5,
+      50,
+      500,
+      5000,
+      20000,
+      100000
+    ]
+  },
+  "cases": [
+    {
+      "id": "b5_d5",
+      "bAmount": 5,
+      "dAmount": 5
+    },
+    {
+      "id": "b50_d50",
+      "bAmount": 50,
+      "dAmount": 50
+    },
+    {
+      "id": "b500_d500",
+      "bAmount": 500,
+      "dAmount": 500
+    },
+    {
+      "id": "b5000_d5000",
+      "bAmount": 5000,
+      "dAmount": 5000
+    },
+    {
+      "id": "b20000_d20000",
+      "bAmount": 20000,
+      "dAmount": 20000
+    },
+    {
+      "id": "b100000_d100000",
+      "bAmount": 100000,
+      "dAmount": 100000
+    }
+  ],
+  "classification": {
+    "control": {
+      "runs": 6,
+      "branchCounts": {
+        "B": {
+          "5": {
+            "LOW": 1,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "50": {
+            "LOW": 0,
+            "NOT_LOW": 1,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "500": {
+            "LOW": 0,
+            "NOT_LOW": 1,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "5000": {
+            "LOW": 0,
+            "NOT_LOW": 1,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "20000": {
+            "LOW": 0,
+            "NOT_LOW": 1,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "100000": {
+            "LOW": 0,
+            "NOT_LOW": 1,
+            "INVALID": 0,
+            "MISSING": 0
+          }
+        },
+        "D": {
+          "5": {
+            "LOW": 1,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "50": {
+            "LOW": 1,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "500": {
+            "LOW": 1,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "5000": {
+            "LOW": 1,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "20000": {
+            "LOW": 1,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "100000": {
+            "LOW": 1,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          }
+        }
+      },
+      "localAgreement": {
+        "B": 6,
+        "D": 6,
+        "both": 6,
+        "runs": 6
+      }
+    },
+    "prefix_free_text": {
+      "runs": 6,
+      "branchCounts": {
+        "B": {
+          "5": {
+            "LOW": 1,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "50": {
+            "LOW": 0,
+            "NOT_LOW": 1,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "500": {
+            "LOW": 0,
+            "NOT_LOW": 1,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "5000": {
+            "LOW": 0,
+            "NOT_LOW": 1,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "20000": {
+            "LOW": 0,
+            "NOT_LOW": 1,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "100000": {
+            "LOW": 0,
+            "NOT_LOW": 1,
+            "INVALID": 0,
+            "MISSING": 0
+          }
+        },
+        "D": {
+          "5": {
+            "LOW": 1,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "50": {
+            "LOW": 1,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "500": {
+            "LOW": 1,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "5000": {
+            "LOW": 1,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "20000": {
+            "LOW": 1,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "100000": {
+            "LOW": 1,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          }
+        }
+      },
+      "localAgreement": {
+        "B": 6,
+        "D": 6,
+        "both": 6,
+        "runs": 6
+      }
+    },
+    "suffix_free_text": {
+      "runs": 6,
+      "branchCounts": {
+        "B": {
+          "5": {
+            "LOW": 1,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "50": {
+            "LOW": 0,
+            "NOT_LOW": 1,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "500": {
+            "LOW": 0,
+            "NOT_LOW": 1,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "5000": {
+            "LOW": 0,
+            "NOT_LOW": 1,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "20000": {
+            "LOW": 0,
+            "NOT_LOW": 1,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "100000": {
+            "LOW": 0,
+            "NOT_LOW": 1,
+            "INVALID": 0,
+            "MISSING": 0
+          }
+        },
+        "D": {
+          "5": {
+            "LOW": 1,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "50": {
+            "LOW": 1,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "500": {
+            "LOW": 1,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "5000": {
+            "LOW": 1,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "20000": {
+            "LOW": 1,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "100000": {
+            "LOW": 1,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          }
+        }
+      },
+      "localAgreement": {
+        "B": 6,
+        "D": 6,
+        "both": 6,
+        "runs": 6
+      }
+    },
+    "system_rule": {
+      "runs": 6,
+      "branchCounts": {
+        "B": {
+          "5": {
+            "LOW": 1,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "50": {
+            "LOW": 0,
+            "NOT_LOW": 1,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "500": {
+            "LOW": 0,
+            "NOT_LOW": 1,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "5000": {
+            "LOW": 0,
+            "NOT_LOW": 1,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "20000": {
+            "LOW": 0,
+            "NOT_LOW": 1,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "100000": {
+            "LOW": 0,
+            "NOT_LOW": 1,
+            "INVALID": 0,
+            "MISSING": 0
+          }
+        },
+        "D": {
+          "5": {
+            "LOW": 1,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "50": {
+            "LOW": 1,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "500": {
+            "LOW": 1,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "5000": {
+            "LOW": 1,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "20000": {
+            "LOW": 1,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "100000": {
+            "LOW": 1,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          }
+        }
+      },
+      "localAgreement": {
+        "B": 6,
+        "D": 6,
+        "both": 6,
+        "runs": 6
+      }
+    }
+  }
+}

@@ -1,0 +1,402 @@
+{
+  "provider": "gemini",
+  "model": "gemini-3.5-flash-lite",
+  "calls": 330,
+  "errors": 0,
+  "amounts": [
+    0,
+    1,
+    2,
+    5,
+    10,
+    20,
+    50,
+    100,
+    200,
+    500,
+    1000
+  ],
+  "conditions": {
+    "b_only": {
+      "0": {
+        "calls": 10,
+        "counts": {
+          "buy": 10
+        },
+        "buyRate": 1,
+        "holdRate": 0,
+        "outputs": [
+          "BUY"
+        ]
+      },
+      "1": {
+        "calls": 10,
+        "counts": {
+          "buy": 10
+        },
+        "buyRate": 1,
+        "holdRate": 0,
+        "outputs": [
+          "BUY"
+        ]
+      },
+      "2": {
+        "calls": 10,
+        "counts": {
+          "buy": 10
+        },
+        "buyRate": 1,
+        "holdRate": 0,
+        "outputs": [
+          "BUY"
+        ]
+      },
+      "5": {
+        "calls": 10,
+        "counts": {
+          "buy": 10
+        },
+        "buyRate": 1,
+        "holdRate": 0,
+        "outputs": [
+          "BUY"
+        ]
+      },
+      "10": {
+        "calls": 10,
+        "counts": {
+          "buy": 10
+        },
+        "buyRate": 1,
+        "holdRate": 0,
+        "outputs": [
+          "BUY"
+        ]
+      },
+      "20": {
+        "calls": 10,
+        "counts": {
+          "buy": 8,
+          "hold": 2
+        },
+        "buyRate": 0.8,
+        "holdRate": 0.2,
+        "outputs": [
+          "BUY",
+          "HOLD"
+        ]
+      },
+      "50": {
+        "calls": 10,
+        "counts": {
+          "hold": 4,
+          "buy": 6
+        },
+        "buyRate": 0.6,
+        "holdRate": 0.4,
+        "outputs": [
+          "HOLD",
+          "BUY"
+        ]
+      },
+      "100": {
+        "calls": 10,
+        "counts": {
+          "buy": 7,
+          "hold": 3
+        },
+        "buyRate": 0.7,
+        "holdRate": 0.3,
+        "outputs": [
+          "BUY",
+          "HOLD"
+        ]
+      },
+      "200": {
+        "calls": 10,
+        "counts": {
+          "hold": 4,
+          "buy": 6
+        },
+        "buyRate": 0.6,
+        "holdRate": 0.4,
+        "outputs": [
+          "HOLD",
+          "BUY"
+        ]
+      },
+      "500": {
+        "calls": 10,
+        "counts": {
+          "hold": 10
+        },
+        "buyRate": 0,
+        "holdRate": 1,
+        "outputs": [
+          "HOLD"
+        ]
+      },
+      "1000": {
+        "calls": 10,
+        "counts": {
+          "buy": 2,
+          "hold": 8
+        },
+        "buyRate": 0.2,
+        "holdRate": 0.8,
+        "outputs": [
+          "BUY",
+          "HOLD"
+        ]
+      }
+    },
+    "inactive_a_neutral": {
+      "0": {
+        "calls": 10,
+        "counts": {
+          "buy": 10
+        },
+        "buyRate": 1,
+        "holdRate": 0,
+        "outputs": [
+          "BUY"
+        ]
+      },
+      "1": {
+        "calls": 10,
+        "counts": {
+          "buy": 10
+        },
+        "buyRate": 1,
+        "holdRate": 0,
+        "outputs": [
+          "BUY"
+        ]
+      },
+      "2": {
+        "calls": 10,
+        "counts": {
+          "buy": 10
+        },
+        "buyRate": 1,
+        "holdRate": 0,
+        "outputs": [
+          "BUY"
+        ]
+      },
+      "5": {
+        "calls": 10,
+        "counts": {
+          "buy": 10
+        },
+        "buyRate": 1,
+        "holdRate": 0,
+        "outputs": [
+          "BUY"
+        ]
+      },
+      "10": {
+        "calls": 10,
+        "counts": {
+          "buy": 10
+        },
+        "buyRate": 1,
+        "holdRate": 0,
+        "outputs": [
+          "BUY"
+        ]
+      },
+      "20": {
+        "calls": 10,
+        "counts": {
+          "hold": 10
+        },
+        "buyRate": 0,
+        "holdRate": 1,
+        "outputs": [
+          "HOLD"
+        ]
+      },
+      "50": {
+        "calls": 10,
+        "counts": {
+          "hold": 10
+        },
+        "buyRate": 0,
+        "holdRate": 1,
+        "outputs": [
+          "HOLD"
+        ]
+      },
+      "100": {
+        "calls": 10,
+        "counts": {
+          "hold": 10
+        },
+        "buyRate": 0,
+        "holdRate": 1,
+        "outputs": [
+          "HOLD"
+        ]
+      },
+      "200": {
+        "calls": 10,
+        "counts": {
+          "hold": 10
+        },
+        "buyRate": 0,
+        "holdRate": 1,
+        "outputs": [
+          "HOLD"
+        ]
+      },
+      "500": {
+        "calls": 10,
+        "counts": {
+          "hold": 10
+        },
+        "buyRate": 0,
+        "holdRate": 1,
+        "outputs": [
+          "HOLD"
+        ]
+      },
+      "1000": {
+        "calls": 10,
+        "counts": {
+          "hold": 10
+        },
+        "buyRate": 0,
+        "holdRate": 1,
+        "outputs": [
+          "HOLD"
+        ]
+      }
+    },
+    "inactive_a_contract": {
+      "0": {
+        "calls": 10,
+        "counts": {
+          "buy": 10
+        },
+        "buyRate": 1,
+        "holdRate": 0,
+        "outputs": [
+          "BUY"
+        ]
+      },
+      "1": {
+        "calls": 10,
+        "counts": {
+          "buy": 10
+        },
+        "buyRate": 1,
+        "holdRate": 0,
+        "outputs": [
+          "BUY"
+        ]
+      },
+      "2": {
+        "calls": 10,
+        "counts": {
+          "buy": 10
+        },
+        "buyRate": 1,
+        "holdRate": 0,
+        "outputs": [
+          "BUY"
+        ]
+      },
+      "5": {
+        "calls": 10,
+        "counts": {
+          "buy": 10
+        },
+        "buyRate": 1,
+        "holdRate": 0,
+        "outputs": [
+          "BUY"
+        ]
+      },
+      "10": {
+        "calls": 10,
+        "counts": {
+          "buy": 10
+        },
+        "buyRate": 1,
+        "holdRate": 0,
+        "outputs": [
+          "BUY"
+        ]
+      },
+      "20": {
+        "calls": 10,
+        "counts": {
+          "buy": 10
+        },
+        "buyRate": 1,
+        "holdRate": 0,
+        "outputs": [
+          "BUY"
+        ]
+      },
+      "50": {
+        "calls": 10,
+        "counts": {
+          "buy": 10
+        },
+        "buyRate": 1,
+        "holdRate": 0,
+        "outputs": [
+          "BUY"
+        ]
+      },
+      "100": {
+        "calls": 10,
+        "counts": {
+          "buy": 10
+        },
+        "buyRate": 1,
+        "holdRate": 0,
+        "outputs": [
+          "BUY"
+        ]
+      },
+      "200": {
+        "calls": 10,
+        "counts": {
+          "buy": 10
+        },
+        "buyRate": 1,
+        "holdRate": 0,
+        "outputs": [
+          "BUY"
+        ]
+      },
+      "500": {
+        "calls": 10,
+        "counts": {
+          "buy": 10
+        },
+        "buyRate": 1,
+        "holdRate": 0,
+        "outputs": [
+          "BUY"
+        ]
+      },
+      "1000": {
+        "calls": 10,
+        "counts": {
+          "buy": 8,
+          "hold": 2
+        },
+        "buyRate": 0.8,
+        "holdRate": 0.2,
+        "outputs": [
+          "BUY",
+          "HOLD"
+        ]
+      }
+    }
+  }
+}

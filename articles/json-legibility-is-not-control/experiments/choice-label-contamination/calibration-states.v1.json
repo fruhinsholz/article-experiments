@@ -1,0 +1,43 @@
+{
+  "version": "calibration-1.0.0",
+  "frozenAt": "2026-09-27",
+  "purpose": "Select a boundary state mechanically under neutral keys before any refined confirmatory run.",
+  "question": "Which description best represents the person's current ability to complete essential work?",
+  "instructionSuffix": "Treat choice names as identifiers. Base the answer on the descriptions.",
+  "states": {
+    "c0_access_only": "My computer is broken, but I can access the system from my phone.",
+    "c1_untested_coverage": "My computer is broken, but I can access the system from my phone. I have not yet checked whether every essential duty works on it.",
+    "c2_main_work_untested_edges": "My computer is broken, but I can access the system from my phone and can perform the main parts of my work there. I have not checked every essential duty.",
+    "c3_expected_full_untested": "My computer is broken, but I can access the system from my phone and expect to complete the essential work, although I have not tested the full workflow.",
+    "c4_usually_full_possible_slowdown": "My computer is broken, but I can access the system from my phone and usually complete essential work there, though some steps may be slower."
+  },
+  "descriptions": {
+    "full": "The person can complete every essential job duty at normal quality and pace without assistance.",
+    "partial": "The person can complete some essential job duties, but at least one essential duty cannot be completed at normal quality or pace.",
+    "none": "The person cannot complete any essential job duty."
+  },
+  "keyFamilies": {
+    "neutral": {
+      "full": "A",
+      "partial": "B",
+      "none": "C",
+      "validationStatus": "reference"
+    }
+  },
+  "applicationPolicy": {
+    "reviewIfPartialPlusNoneAtLeast": 0.5,
+    "reviewBranch": "human_review",
+    "automaticBranch": "automatic_full_capacity"
+  },
+  "randomization": {
+    "seed": 28092026,
+    "unit": "complete balanced block containing every calibration state once"
+  },
+  "selectionRule": {
+    "metric": "absolute distance between mean P(partial)+P(none) and 0.50",
+    "tieBreakers": [
+      "smaller across-repeat range",
+      "lower lexical index"
+    ]
+  }
+}

@@ -1,0 +1,282 @@
+[
+  {
+    "model": "gpt-5.5",
+    "mode": "evidence_count",
+    "low": 5,
+    "high": 6,
+    "width": 1,
+    "threshold": 6,
+    "unbracketed": false,
+    "candidates": [
+      {
+        "candidateValue": 0,
+        "label": "NOT_ENOUGH",
+        "total": 10,
+        "enough": 0,
+        "notEnough": 10,
+        "invalid": 0,
+        "enoughPct": 0
+      },
+      {
+        "candidateValue": 5,
+        "label": "NOT_ENOUGH",
+        "total": 10,
+        "enough": 2,
+        "notEnough": 8,
+        "invalid": 0,
+        "enoughPct": 0.2
+      },
+      {
+        "candidateValue": 6,
+        "label": "ENOUGH",
+        "total": 10,
+        "enough": 9,
+        "notEnough": 1,
+        "invalid": 0,
+        "enoughPct": 0.9
+      },
+      {
+        "candidateValue": 7,
+        "label": "ENOUGH",
+        "total": 10,
+        "enough": 10,
+        "notEnough": 0,
+        "invalid": 0,
+        "enoughPct": 1
+      },
+      {
+        "candidateValue": 10,
+        "label": "ENOUGH",
+        "total": 10,
+        "enough": 10,
+        "notEnough": 0,
+        "invalid": 0,
+        "enoughPct": 1
+      }
+    ]
+  },
+  {
+    "model": "gpt-5.5",
+    "mode": "quality",
+    "activeEvidenceCount": 6,
+    "low": 7.61,
+    "high": 7.75,
+    "width": 0.14,
+    "threshold": 7.75,
+    "unbracketed": false,
+    "candidates": [
+      {
+        "candidateValue": 1,
+        "label": "NOT_ENOUGH",
+        "total": 10,
+        "enough": 0,
+        "notEnough": 10,
+        "invalid": 0,
+        "enoughPct": 0
+      },
+      {
+        "candidateValue": 5.5,
+        "label": "NOT_ENOUGH",
+        "total": 10,
+        "enough": 0,
+        "notEnough": 10,
+        "invalid": 0,
+        "enoughPct": 0
+      },
+      {
+        "candidateValue": 6.625,
+        "label": "NOT_ENOUGH",
+        "total": 10,
+        "enough": 0,
+        "notEnough": 10,
+        "invalid": 0,
+        "enoughPct": 0
+      },
+      {
+        "candidateValue": 7.188,
+        "label": "NOT_ENOUGH",
+        "total": 10,
+        "enough": 0,
+        "notEnough": 10,
+        "invalid": 0,
+        "enoughPct": 0
+      },
+      {
+        "candidateValue": 7.469,
+        "label": "NOT_ENOUGH",
+        "total": 10,
+        "enough": 0,
+        "notEnough": 10,
+        "invalid": 0,
+        "enoughPct": 0
+      },
+      {
+        "candidateValue": 7.61,
+        "label": "NOT_ENOUGH",
+        "total": 10,
+        "enough": 1,
+        "notEnough": 9,
+        "invalid": 0,
+        "enoughPct": 0.1
+      },
+      {
+        "candidateValue": 7.75,
+        "label": "ENOUGH",
+        "total": 10,
+        "enough": 7,
+        "notEnough": 3,
+        "invalid": 0,
+        "enoughPct": 0.7
+      },
+      {
+        "candidateValue": 10,
+        "label": "ENOUGH",
+        "total": 10,
+        "enough": 8,
+        "notEnough": 2,
+        "invalid": 0,
+        "enoughPct": 0.8
+      }
+    ]
+  },
+  {
+    "model": "gpt-5.6",
+    "mode": "evidence_count",
+    "low": 5,
+    "high": 6,
+    "width": 1,
+    "threshold": 6,
+    "unbracketed": false,
+    "candidates": [
+      {
+        "candidateValue": 0,
+        "label": "NOT_ENOUGH",
+        "total": 10,
+        "enough": 0,
+        "notEnough": 10,
+        "invalid": 0,
+        "enoughPct": 0
+      },
+      {
+        "candidateValue": 5,
+        "label": "NOT_ENOUGH",
+        "total": 10,
+        "enough": 4,
+        "notEnough": 6,
+        "invalid": 0,
+        "enoughPct": 0.4
+      },
+      {
+        "candidateValue": 6,
+        "label": "ENOUGH",
+        "total": 10,
+        "enough": 10,
+        "notEnough": 0,
+        "invalid": 0,
+        "enoughPct": 1
+      },
+      {
+        "candidateValue": 7,
+        "label": "ENOUGH",
+        "total": 10,
+        "enough": 9,
+        "notEnough": 1,
+        "invalid": 0,
+        "enoughPct": 0.9
+      },
+      {
+        "candidateValue": 10,
+        "label": "ENOUGH",
+        "total": 10,
+        "enough": 10,
+        "notEnough": 0,
+        "invalid": 0,
+        "enoughPct": 1
+      }
+    ]
+  },
+  {
+    "model": "gpt-5.6",
+    "mode": "quality",
+    "activeEvidenceCount": 6,
+    "low": 7.61,
+    "high": 7.75,
+    "width": 0.14,
+    "threshold": 7.75,
+    "unbracketed": false,
+    "candidates": [
+      {
+        "candidateValue": 1,
+        "label": "NOT_ENOUGH",
+        "total": 10,
+        "enough": 0,
+        "notEnough": 10,
+        "invalid": 0,
+        "enoughPct": 0
+      },
+      {
+        "candidateValue": 5.5,
+        "label": "NOT_ENOUGH",
+        "total": 10,
+        "enough": 0,
+        "notEnough": 10,
+        "invalid": 0,
+        "enoughPct": 0
+      },
+      {
+        "candidateValue": 6.625,
+        "label": "NOT_ENOUGH",
+        "total": 10,
+        "enough": 0,
+        "notEnough": 10,
+        "invalid": 0,
+        "enoughPct": 0
+      },
+      {
+        "candidateValue": 7.188,
+        "label": "NOT_ENOUGH",
+        "total": 10,
+        "enough": 2,
+        "notEnough": 8,
+        "invalid": 0,
+        "enoughPct": 0.2
+      },
+      {
+        "candidateValue": 7.469,
+        "label": "NOT_ENOUGH",
+        "total": 10,
+        "enough": 3,
+        "notEnough": 7,
+        "invalid": 0,
+        "enoughPct": 0.3
+      },
+      {
+        "candidateValue": 7.61,
+        "label": "NOT_ENOUGH",
+        "total": 10,
+        "enough": 2,
+        "notEnough": 8,
+        "invalid": 0,
+        "enoughPct": 0.2
+      },
+      {
+        "candidateValue": 7.75,
+        "label": "ENOUGH",
+        "total": 10,
+        "enough": 6,
+        "notEnough": 4,
+        "invalid": 0,
+        "enoughPct": 0.6
+      },
+      {
+        "candidateValue": 10,
+        "label": "ENOUGH",
+        "total": 10,
+        "enough": 7,
+        "notEnough": 3,
+        "invalid": 0,
+        "enoughPct": 0.7
+      }
+    ]
+  }
+]

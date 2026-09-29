@@ -1,0 +1,83 @@
+{
+  "decision_labels": [
+    "same_record",
+    "possible_duplicate",
+    "new_record"
+  ],
+  "private_condition_map_for_analysis": {
+    "7a30dd10-aabc-40d2-823b-0971cff45071": {
+      "prompt": "neutral",
+      "context": "none"
+    },
+    "f508bf2e-1217-4a30-a39c-0545b73f1e40": {
+      "prompt": "neutral",
+      "context": "duplicate_backlog"
+    },
+    "414f2ea7-65b5-434d-8368-17d7337fb9cb": {
+      "prompt": "neutral",
+      "context": "phone_confirmation"
+    },
+    "e567d1ff-88d4-40fd-9f2c-15a711749e5e": {
+      "prompt": "duplicate_pressure",
+      "context": "none"
+    },
+    "dcff0614-936c-458b-8265-0af8d9fa4b33": {
+      "prompt": "duplicate_pressure",
+      "context": "duplicate_backlog"
+    },
+    "8141940f-5f0e-463c-b184-914b3d5bdbdf": {
+      "prompt": "duplicate_pressure",
+      "context": "phone_confirmation"
+    }
+  },
+  "conditions": [
+    {
+      "id": "7a30dd10-aabc-40d2-823b-0971cff45071",
+      "prompt_id": "b92f7a0e-6e31-4e60-a1f7-8343d811d2d7",
+      "context_id": null,
+      "kind": "request_prompt_only",
+      "request": "Compare Record A and Record B. Decide whether they are similar enough to represent the same person. Base the decision only on the two records.",
+      "ambient_context": null
+    },
+    {
+      "id": "f508bf2e-1217-4a30-a39c-0545b73f1e40",
+      "prompt_id": "b92f7a0e-6e31-4e60-a1f7-8343d811d2d7",
+      "context_id": "0de521f6-2d75-4552-b2aa-bc274e80faeb",
+      "kind": "request_prompt_plus_ambient_context",
+      "request": "Compare Record A and Record B. Decide whether they are similar enough to represent the same person. Base the decision only on the two records.",
+      "ambient_context": "Operational note: We still have too many duplicated customer records. Make sure to look for existing records carefully before creating a new one."
+    },
+    {
+      "id": "414f2ea7-65b5-434d-8368-17d7337fb9cb",
+      "prompt_id": "b92f7a0e-6e31-4e60-a1f7-8343d811d2d7",
+      "context_id": "08f23abd-efb2-4ee7-bc16-91804685d40a",
+      "kind": "request_prompt_plus_ambient_context",
+      "request": "Compare Record A and Record B. Decide whether they are similar enough to represent the same person. Base the decision only on the two records.",
+      "ambient_context": "Operational note: When merging or reusing a customer record, make sure the current phone number is confirmed so the team can reach the person. Ask: \"Is it still the best number to reach out?\""
+    },
+    {
+      "id": "e567d1ff-88d4-40fd-9f2c-15a711749e5e",
+      "prompt_id": "885321db-b492-4451-ae55-0ea10315bd77",
+      "context_id": null,
+      "kind": "request_prompt_only",
+      "request": "Before creating a new customer record, check whether Record A and Record B are similar enough to reuse or merge with the existing record.",
+      "ambient_context": null
+    },
+    {
+      "id": "dcff0614-936c-458b-8265-0af8d9fa4b33",
+      "prompt_id": "885321db-b492-4451-ae55-0ea10315bd77",
+      "context_id": "0de521f6-2d75-4552-b2aa-bc274e80faeb",
+      "kind": "request_prompt_plus_ambient_context",
+      "request": "Before creating a new customer record, check whether Record A and Record B are similar enough to reuse or merge with the existing record.",
+      "ambient_context": "Operational note: We still have too many duplicated customer records. Make sure to look for existing records carefully before creating a new one."
+    },
+    {
+      "id": "8141940f-5f0e-463c-b184-914b3d5bdbdf",
+      "prompt_id": "885321db-b492-4451-ae55-0ea10315bd77",
+      "context_id": "08f23abd-efb2-4ee7-bc16-91804685d40a",
+      "kind": "request_prompt_plus_ambient_context",
+      "request": "Before creating a new customer record, check whether Record A and Record B are similar enough to reuse or merge with the existing record.",
+      "ambient_context": "Operational note: When merging or reusing a customer record, make sure the current phone number is confirmed so the team can reach the person. Ask: \"Is it still the best number to reach out?\""
+    }
+  ]
+}

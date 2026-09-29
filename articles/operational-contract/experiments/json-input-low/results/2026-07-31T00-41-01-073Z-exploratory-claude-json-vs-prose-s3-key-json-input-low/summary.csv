@@ -1,0 +1,57 @@
+model,response_models,format_id,context_id,amount,total,low,not_low,invalid,low_pct,not_low_pct,errors
+sonnet,claude-haiku-4-5,json_flat,fact_only,100,3,3,0,0,100.0%,0.0%,0
+sonnet,claude-haiku-4-5 claude-sonnet-5,json_flat,fact_only,150,3,0,3,0,0.0%,100.0%,0
+sonnet,claude-haiku-4-5,json_flat,fact_only,500,3,0,3,0,0.0%,100.0%,0
+sonnet,claude-haiku-4-5 claude-sonnet-5,json_flat,fact_only,1000,3,0,3,0,0.0%,100.0%,0
+sonnet,claude-haiku-4-5,json_flat,fact_only,5000,3,0,3,0,0.0%,100.0%,0
+sonnet,claude-haiku-4-5,json_flat,fact_only,10000,3,0,3,0,0.0%,100.0%,0
+sonnet,claude-haiku-4-5,json_flat,fact_only,20000,3,0,3,0,0.0%,100.0%,0
+sonnet,claude-haiku-4-5,json_flat,retrieved_100000_contract,100,3,3,0,0,100.0%,0.0%,0
+sonnet,claude-haiku-4-5 claude-sonnet-5,json_flat,retrieved_100000_contract,150,3,3,0,0,100.0%,0.0%,0
+sonnet,claude-haiku-4-5 claude-sonnet-5,json_flat,retrieved_100000_contract,500,3,3,0,0,100.0%,0.0%,0
+sonnet,claude-haiku-4-5 claude-sonnet-5,json_flat,retrieved_100000_contract,1000,3,3,0,0,100.0%,0.0%,0
+sonnet,claude-haiku-4-5,json_flat,retrieved_100000_contract,5000,3,3,0,0,100.0%,0.0%,0
+sonnet,claude-haiku-4-5,json_flat,retrieved_100000_contract,10000,3,1,2,0,33.3%,66.7%,0
+sonnet,claude-haiku-4-5,json_flat,retrieved_100000_contract,20000,3,1,2,0,33.3%,66.7%,0
+sonnet,claude-haiku-4-5,json_typed_boundary_rule,fact_only,100,3,3,0,0,100.0%,0.0%,0
+sonnet,claude-haiku-4-5 claude-sonnet-5,json_typed_boundary_rule,fact_only,150,3,0,3,0,0.0%,100.0%,0
+sonnet,claude-haiku-4-5,json_typed_boundary_rule,fact_only,500,3,0,3,0,0.0%,100.0%,0
+sonnet,claude-haiku-4-5 claude-sonnet-5,json_typed_boundary_rule,fact_only,1000,3,0,3,0,0.0%,100.0%,0
+sonnet,claude-haiku-4-5,json_typed_boundary_rule,fact_only,5000,3,0,3,0,0.0%,100.0%,0
+sonnet,claude-haiku-4-5 claude-sonnet-5,json_typed_boundary_rule,fact_only,10000,3,0,3,0,0.0%,100.0%,0
+sonnet,claude-haiku-4-5,json_typed_boundary_rule,fact_only,20000,3,0,3,0,0.0%,100.0%,0
+sonnet,claude-haiku-4-5,json_typed_boundary_rule,retrieved_100000_contract,100,3,3,0,0,100.0%,0.0%,0
+sonnet,claude-haiku-4-5,json_typed_boundary_rule,retrieved_100000_contract,150,3,0,3,0,0.0%,100.0%,0
+sonnet,claude-haiku-4-5,json_typed_boundary_rule,retrieved_100000_contract,500,3,0,3,0,0.0%,100.0%,0
+sonnet,claude-haiku-4-5,json_typed_boundary_rule,retrieved_100000_contract,1000,3,0,3,0,0.0%,100.0%,0
+sonnet,claude-haiku-4-5,json_typed_boundary_rule,retrieved_100000_contract,5000,3,0,3,0,0.0%,100.0%,0
+sonnet,claude-haiku-4-5,json_typed_boundary_rule,retrieved_100000_contract,10000,3,0,3,0,0.0%,100.0%,0
+sonnet,claude-haiku-4-5,json_typed_boundary_rule,retrieved_100000_contract,20000,3,0,3,0,0.0%,100.0%,0
+sonnet,claude-haiku-4-5 claude-sonnet-5,json_typed,fact_only,100,3,3,0,0,100.0%,0.0%,0
+sonnet,claude-haiku-4-5 claude-sonnet-5,json_typed,fact_only,150,3,2,1,0,66.7%,33.3%,0
+sonnet,claude-haiku-4-5,json_typed,fact_only,500,3,0,3,0,0.0%,100.0%,0
+sonnet,claude-haiku-4-5,json_typed,fact_only,1000,3,0,3,0,0.0%,100.0%,0
+sonnet,claude-haiku-4-5 claude-sonnet-5,json_typed,fact_only,5000,3,0,3,0,0.0%,100.0%,0
+sonnet,claude-haiku-4-5,json_typed,fact_only,10000,3,0,3,0,0.0%,100.0%,0
+sonnet,claude-haiku-4-5,json_typed,fact_only,20000,3,0,3,0,0.0%,100.0%,0
+sonnet,claude-haiku-4-5,json_typed,retrieved_100000_contract,100,3,3,0,0,100.0%,0.0%,0
+sonnet,claude-haiku-4-5 claude-sonnet-5,json_typed,retrieved_100000_contract,150,3,3,0,0,100.0%,0.0%,0
+sonnet,claude-haiku-4-5,json_typed,retrieved_100000_contract,500,3,3,0,0,100.0%,0.0%,0
+sonnet,claude-haiku-4-5,json_typed,retrieved_100000_contract,1000,3,3,0,0,100.0%,0.0%,0
+sonnet,claude-haiku-4-5,json_typed,retrieved_100000_contract,5000,3,3,0,0,100.0%,0.0%,0
+sonnet,claude-haiku-4-5,json_typed,retrieved_100000_contract,10000,3,3,0,0,100.0%,0.0%,0
+sonnet,claude-haiku-4-5,json_typed,retrieved_100000_contract,20000,3,2,1,0,66.7%,33.3%,0
+sonnet,claude-haiku-4-5,prose_same_block,fact_only,100,3,3,0,0,100.0%,0.0%,0
+sonnet,claude-haiku-4-5,prose_same_block,fact_only,150,3,1,2,0,33.3%,66.7%,0
+sonnet,claude-haiku-4-5 claude-sonnet-5,prose_same_block,fact_only,500,3,0,3,0,0.0%,100.0%,0
+sonnet,claude-haiku-4-5,prose_same_block,fact_only,1000,3,0,3,0,0.0%,100.0%,0
+sonnet,claude-haiku-4-5 claude-sonnet-5,prose_same_block,fact_only,5000,3,0,3,0,0.0%,100.0%,0
+sonnet,claude-haiku-4-5,prose_same_block,fact_only,10000,3,0,3,0,0.0%,100.0%,0
+sonnet,claude-haiku-4-5,prose_same_block,fact_only,20000,3,0,3,0,0.0%,100.0%,0
+sonnet,claude-haiku-4-5 claude-sonnet-5,prose_same_block,retrieved_100000_contract,100,3,3,0,0,100.0%,0.0%,0
+sonnet,claude-haiku-4-5 claude-sonnet-5,prose_same_block,retrieved_100000_contract,150,3,3,0,0,100.0%,0.0%,0
+sonnet,claude-haiku-4-5 claude-sonnet-5,prose_same_block,retrieved_100000_contract,500,3,3,0,0,100.0%,0.0%,0
+sonnet,claude-haiku-4-5,prose_same_block,retrieved_100000_contract,1000,3,3,0,0,100.0%,0.0%,0
+sonnet,claude-haiku-4-5 claude-sonnet-5,prose_same_block,retrieved_100000_contract,5000,3,3,0,0,100.0%,0.0%,0
+sonnet,claude-haiku-4-5,prose_same_block,retrieved_100000_contract,10000,3,3,0,0,100.0%,0.0%,0
+sonnet,claude-haiku-4-5,prose_same_block,retrieved_100000_contract,20000,3,3,0,0,100.0%,0.0%,0

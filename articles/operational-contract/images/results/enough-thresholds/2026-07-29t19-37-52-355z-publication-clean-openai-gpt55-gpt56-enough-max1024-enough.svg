@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="294" viewBox="0 0 960 294" role="img" aria-labelledby="title desc">
+<title id="title">ENOUGH contract thresholds</title>
+<desc id="desc">Two-phase ENOUGH threshold search. The left panel shows the minimum count of strong evidence rows. The right panel shows the minimum active-row score for that count.</desc>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="24" y="30" font-size="19" font-weight="700" fill="#0f172a">ENOUGH contract thresholds</text>
+<text x="24" y="52" font-size="12" fill="#475569">Run: 2026-07-29T19-37-52-355Z-publication-clean-openai-gpt55-gpt56-enough-max1024-enough. Commit: 7ca53d045534dfe5b05e7e3de2b2209c2ed50b41. Majority over 10 samples per candidate.</text>
+<text x="220" y="44" font-size="13" font-weight="700" fill="#334155">Minimum strong evidence rows</text>
+<text x="575" y="44" font-size="13" font-weight="700" fill="#334155">Minimum score for those rows</text>
+<line x1="220" y1="62" x2="220" y2="238" stroke="#f1f5f9"/>
+<text x="220" y="70" text-anchor="middle" font-size="10" fill="#64748b">0</text>
+<line x1="277" y1="62" x2="277" y2="238" stroke="#f1f5f9"/>
+<text x="277" y="70" text-anchor="middle" font-size="10" fill="#64748b">2</text>
+<line x1="334" y1="62" x2="334" y2="238" stroke="#f1f5f9"/>
+<text x="334" y="70" text-anchor="middle" font-size="10" fill="#64748b">4</text>
+<line x1="391" y1="62" x2="391" y2="238" stroke="#f1f5f9"/>
+<text x="391" y="70" text-anchor="middle" font-size="10" fill="#64748b">6</text>
+<line x1="448" y1="62" x2="448" y2="238" stroke="#f1f5f9"/>
+<text x="448" y="70" text-anchor="middle" font-size="10" fill="#64748b">8</text>
+<line x1="505" y1="62" x2="505" y2="238" stroke="#f1f5f9"/>
+<text x="505" y="70" text-anchor="middle" font-size="10" fill="#64748b">10</text>
+<line x1="575" y1="62" x2="575" y2="238" stroke="#f1f5f9"/>
+<text x="575" y="70" text-anchor="middle" font-size="10" fill="#64748b">1</text>
+<line x1="638.3333333333334" y1="62" x2="638.3333333333334" y2="238" stroke="#f1f5f9"/>
+<text x="638.3333333333334" y="70" text-anchor="middle" font-size="10" fill="#64748b">3</text>
+<line x1="701.6666666666666" y1="62" x2="701.6666666666666" y2="238" stroke="#f1f5f9"/>
+<text x="701.6666666666666" y="70" text-anchor="middle" font-size="10" fill="#64748b">5</text>
+<line x1="765" y1="62" x2="765" y2="238" stroke="#f1f5f9"/>
+<text x="765" y="70" text-anchor="middle" font-size="10" fill="#64748b">7</text>
+<line x1="828.3333333333333" y1="62" x2="828.3333333333333" y2="238" stroke="#f1f5f9"/>
+<text x="828.3333333333333" y="70" text-anchor="middle" font-size="10" fill="#64748b">9</text>
+<line x1="860" y1="62" x2="860" y2="238" stroke="#f1f5f9"/>
+<text x="860" y="70" text-anchor="middle" font-size="10" fill="#64748b">10</text>
+<text x="24" y="111" font-size="13" font-weight="700" fill="#0f172a">gpt-5.5</text>
+<text x="24" y="131" font-size="11" fill="#64748b">5 count candidates; 8 quality candidates</text>
+<line x1="220" y1="110" x2="505" y2="110" stroke="#cbd5e1" stroke-width="2"/>
+<line x1="575" y1="110" x2="860" y2="110" stroke="#cbd5e1" stroke-width="2"/>
+<rect x="362.5" y="103" width="28.5" height="14" rx="2" fill="#0f766e" opacity="0.82"><title>Evidence count band: 5 to 6</title></rect>
+<text x="399" y="114" font-size="12" fill="#334155">&gt;= 6</text>
+<rect x="784.3166666666666" y="103" width="4.433333333333394" height="14" rx="2" fill="#0f766e" opacity="0.82"><title>Quality score band: 7.61 to 7.75</title></rect>
+<text x="796.75" y="114" font-size="12" fill="#334155">&gt;= 7.75</text>
+<text x="575" y="136" font-size="11" fill="#64748b">6 active rows, inactive rows at 1</text>
+<text x="24" y="183" font-size="13" font-weight="700" fill="#0f172a">gpt-5.6</text>
+<text x="24" y="203" font-size="11" fill="#64748b">5 count candidates; 8 quality candidates</text>
+<line x1="220" y1="182" x2="505" y2="182" stroke="#cbd5e1" stroke-width="2"/>
+<line x1="575" y1="182" x2="860" y2="182" stroke="#cbd5e1" stroke-width="2"/>
+<rect x="362.5" y="175" width="28.5" height="14" rx="2" fill="#2563eb" opacity="0.82"><title>Evidence count band: 5 to 6</title></rect>
+<text x="399" y="186" font-size="12" fill="#334155">&gt;= 6</text>
+<rect x="784.3166666666666" y="175" width="4.433333333333394" height="14" rx="2" fill="#2563eb" opacity="0.82"><title>Quality score band: 7.61 to 7.75</title></rect>
+<text x="796.75" y="186" font-size="12" fill="#334155">&gt;= 7.75</text>
+<text x="575" y="208" font-size="11" fill="#64748b">6 active rows, inactive rows at 1</text>
+</svg>

@@ -1,0 +1,43 @@
+{
+  "version": "calibration-2.0.0",
+  "frozenAt": "2026-09-27",
+  "purpose": "Locate the full-versus-partial boundary around the exact normal-quality-and-pace criterion under neutral keys.",
+  "question": "Which description best represents the person's current ability to complete essential work?",
+  "instructionSuffix": "Treat choice names as identifiers. Base the answer on the descriptions.",
+  "states": {
+    "d0_explicit_normal": "My computer is broken, but from my phone I can complete every essential job duty at normal quality and pace without assistance.",
+    "d1_normal_but_untested_day": "My computer is broken, but from my phone I can complete every essential job duty at normal quality and pace. I have not yet tested the phone workflow for a full day.",
+    "d2_one_duty_may_be_slower": "My computer is broken, but from my phone I can complete every essential job duty at normal quality. Most duties are at normal pace; I am unsure whether one duty may take slightly longer.",
+    "d3_roughly_normal_pace": "My computer is broken, but from my phone I can complete every essential job duty at normal quality and roughly normal pace without assistance.",
+    "d4_close_to_normal_pace": "My computer is broken, but from my phone I can complete every essential job duty at normal quality. The pace feels close to normal, although the phone is less convenient."
+  },
+  "descriptions": {
+    "full": "The person can complete every essential job duty at normal quality and pace without assistance.",
+    "partial": "The person can complete some essential job duties, but at least one essential duty cannot be completed at normal quality or pace.",
+    "none": "The person cannot complete any essential job duty."
+  },
+  "keyFamilies": {
+    "neutral": {
+      "full": "A",
+      "partial": "B",
+      "none": "C",
+      "validationStatus": "reference"
+    }
+  },
+  "applicationPolicy": {
+    "reviewIfPartialPlusNoneAtLeast": 0.5,
+    "reviewBranch": "human_review",
+    "automaticBranch": "automatic_full_capacity"
+  },
+  "randomization": {
+    "seed": 29092026,
+    "unit": "complete balanced block containing every calibration state once"
+  },
+  "selectionRule": {
+    "metric": "absolute distance between mean P(partial)+P(none) and 0.50",
+    "tieBreakers": [
+      "smaller across-repeat range",
+      "lower lexical state ID"
+    ]
+  }
+}

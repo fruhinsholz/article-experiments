@@ -1,0 +1,24 @@
+{
+  "contexts": {
+    "fact_only": ""
+  },
+  "formats": [
+    "prose_same_block"
+  ],
+  "amounts": [
+    0,
+    5,
+    25,
+    49,
+    50,
+    51,
+    75,
+    100,
+    101,
+    150,
+    250,
+    500,
+    1000
+  ],
+  "samples": 100
+}

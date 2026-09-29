@@ -1,0 +1,48 @@
+{
+  "provider": "openai",
+  "model": "gpt-5.3-codex",
+  "calls": 40,
+  "errors": 0,
+  "conditions": {
+    "b_only_same_word": {
+      "calls": 10,
+      "counts": {
+        "global_buy": 10
+      },
+      "outputs": [
+        "BUY"
+      ]
+    },
+    "inactive_a_same_word": {
+      "calls": 10,
+      "counts": {
+        "global_buy": 9,
+        "local_hold": 1
+      },
+      "outputs": [
+        "BUY",
+        "HOLD"
+      ]
+    },
+    "inactive_a_different_word": {
+      "calls": 10,
+      "counts": {
+        "global_buy": 3,
+        "local_hold": 7
+      },
+      "outputs": [
+        "BUY",
+        "HOLD"
+      ]
+    },
+    "inactive_a_explicit_scope": {
+      "calls": 10,
+      "counts": {
+        "global_buy": 10
+      },
+      "outputs": [
+        "BUY"
+      ]
+    }
+  }
+}

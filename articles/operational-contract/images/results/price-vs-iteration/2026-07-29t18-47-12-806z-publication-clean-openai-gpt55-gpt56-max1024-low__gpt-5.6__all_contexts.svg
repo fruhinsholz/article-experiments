@@ -1,0 +1,444 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="520" viewBox="0 0 920 520" role="img" aria-labelledby="title desc">
+<title id="title">2026-07-29T18-47-12-806Z-publication-clean-openai-gpt55-gpt56-max1024-low binary discovery trace</title>
+<desc id="desc">Chronological binary threshold discovery for gpt-5.6 and all_contexts. Independent contexts and probe phases are separated visually; lines are drawn only across comparable binary-search points. The y-axis is log-scaled refund amount. Green marks LOW, red marks NOT_LOW, and light gray marks invalid output.</desc>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="92" y="28" font-size="19" font-weight="700" fill="#0f172a">gpt-5.6 binary discovery</text>
+<text x="92" y="50" font-size="12" fill="#475569">Run: 2026-07-29T18-47-12-806Z-publication-clean-openai-gpt55-gpt56-max1024-low. Context: all_contexts. Y-axis is logarithmic dollars.</text>
+<circle cx="604" cy="42" r="5" fill="#0f766e"/><text x="614" y="46" font-size="12" fill="#334155">LOW</text>
+<circle cx="682" cy="42" r="5" fill="#be123c"/><text x="692" y="46" font-size="12" fill="#334155">NOT_LOW</text>
+<circle cx="760" cy="42" r="5" fill="#e5e7eb"/><text x="770" y="46" font-size="12" fill="#334155">failed</text>
+<rect x="92" y="72" width="732" height="346" fill="#ffffff"/>
+<line x1="92" y1="394.1" x2="824" y2="394.1" stroke="#e5e7eb"/><text x="82" y="398.13793103448273" text-anchor="end" font-size="11" fill="#475569">$1</text>
+<line x1="92" y1="373.3" x2="824" y2="373.3" stroke="#e5e7eb"/><text x="82" y="377.2615405987473" text-anchor="end" font-size="11" fill="#475569">$2</text>
+<line x1="92" y1="345.7" x2="824" y2="345.7" stroke="#e5e7eb"/><text x="82" y="349.66445356191076" text-anchor="end" font-size="11" fill="#475569">$5</text>
+<line x1="92" y1="324.8" x2="824" y2="324.8" stroke="#e5e7eb"/><text x="82" y="328.7880631261753" text-anchor="end" font-size="11" fill="#475569">$10</text>
+<line x1="92" y1="303.9" x2="824" y2="303.9" stroke="#e5e7eb"/><text x="82" y="307.9116726904398" text-anchor="end" font-size="11" fill="#475569">$20</text>
+<line x1="92" y1="276.3" x2="824" y2="276.3" stroke="#e5e7eb"/><text x="82" y="280.3145856536032" text-anchor="end" font-size="11" fill="#475569">$50</text>
+<line x1="92" y1="255.4" x2="824" y2="255.4" stroke="#e5e7eb"/><text x="82" y="259.4381952178677" text-anchor="end" font-size="11" fill="#475569">$100</text>
+<line x1="92" y1="234.6" x2="824" y2="234.6" stroke="#e5e7eb"/><text x="82" y="238.56180478213227" text-anchor="end" font-size="11" fill="#475569">$200</text>
+<line x1="92" y1="207.0" x2="824" y2="207.0" stroke="#e5e7eb"/><text x="82" y="210.96471774529573" text-anchor="end" font-size="11" fill="#475569">$500</text>
+<line x1="92" y1="186.1" x2="824" y2="186.1" stroke="#e5e7eb"/><text x="82" y="190.0883273095602" text-anchor="end" font-size="11" fill="#475569">$1,000</text>
+<line x1="92" y1="165.2" x2="824" y2="165.2" stroke="#e5e7eb"/><text x="82" y="169.21193687382475" text-anchor="end" font-size="11" fill="#475569">$2,000</text>
+<line x1="92" y1="137.6" x2="824" y2="137.6" stroke="#e5e7eb"/><text x="82" y="141.61484983698818" text-anchor="end" font-size="11" fill="#475569">$5,000</text>
+<line x1="92" y1="116.7" x2="824" y2="116.7" stroke="#e5e7eb"/><text x="82" y="120.73845940125267" text-anchor="end" font-size="11" fill="#475569">$10,000</text>
+<line x1="92" y1="95.9" x2="824" y2="95.9" stroke="#e5e7eb"/><text x="82" y="99.86206896551721" text-anchor="end" font-size="11" fill="#475569">$20,000</text>
+<line x1="92.0" y1="72" x2="92.0" y2="418" stroke="#f3f4f6"/><text x="92.0" y="440" text-anchor="middle" font-size="11" fill="#64748b">b0</text>
+<line x1="115.6" y1="72" x2="115.6" y2="418" stroke="#f3f4f6"/><text x="115.6" y="440" text-anchor="middle" font-size="11" fill="#64748b">b1</text>
+<line x1="139.2" y1="72" x2="139.2" y2="418" stroke="#f3f4f6"/><text x="139.2" y="440" text-anchor="middle" font-size="11" fill="#64748b">b0</text>
+<line x1="233.7" y1="72" x2="233.7" y2="418" stroke="#f3f4f6"/><text x="233.7" y="440" text-anchor="middle" font-size="11" fill="#64748b">b4</text>
+<line x1="351.7" y1="72" x2="351.7" y2="418" stroke="#f3f4f6"/><text x="351.7" y="440" text-anchor="middle" font-size="11" fill="#64748b">b9</text>
+<line x1="375.4" y1="72" x2="375.4" y2="418" stroke="#f3f4f6"/><text x="375.4" y="440" text-anchor="middle" font-size="11" fill="#64748b">b0</text>
+<line x1="399.0" y1="72" x2="399.0" y2="418" stroke="#f3f4f6"/><text x="399.0" y="440" text-anchor="middle" font-size="11" fill="#64748b">b1</text>
+<line x1="422.6" y1="72" x2="422.6" y2="418" stroke="#f3f4f6"/><text x="422.6" y="440" text-anchor="middle" font-size="11" fill="#64748b">b0</text>
+<line x1="446.2" y1="72" x2="446.2" y2="418" stroke="#f3f4f6"/><text x="446.2" y="440" text-anchor="middle" font-size="11" fill="#64748b">b1</text>
+<line x1="469.8" y1="72" x2="469.8" y2="418" stroke="#f3f4f6"/><text x="469.8" y="440" text-anchor="middle" font-size="11" fill="#64748b">b0</text>
+<line x1="564.3" y1="72" x2="564.3" y2="418" stroke="#f3f4f6"/><text x="564.3" y="440" text-anchor="middle" font-size="11" fill="#64748b">b4</text>
+<line x1="682.3" y1="72" x2="682.3" y2="418" stroke="#f3f4f6"/><text x="682.3" y="440" text-anchor="middle" font-size="11" fill="#64748b">b9</text>
+<line x1="705.9" y1="72" x2="705.9" y2="418" stroke="#f3f4f6"/><text x="705.9" y="440" text-anchor="middle" font-size="11" fill="#64748b">b0</text>
+<line x1="729.5" y1="72" x2="729.5" y2="418" stroke="#f3f4f6"/><text x="729.5" y="440" text-anchor="middle" font-size="11" fill="#64748b">b1</text>
+<line x1="753.2" y1="72" x2="753.2" y2="418" stroke="#f3f4f6"/><text x="753.2" y="440" text-anchor="middle" font-size="11" fill="#64748b">b0</text>
+<line x1="776.8" y1="72" x2="776.8" y2="418" stroke="#f3f4f6"/><text x="776.8" y="440" text-anchor="middle" font-size="11" fill="#64748b">b1</text>
+<line x1="800.4" y1="72" x2="800.4" y2="418" stroke="#f3f4f6"/><text x="800.4" y="440" text-anchor="middle" font-size="11" fill="#64748b">b0</text>
+<line x1="824.0" y1="72" x2="824.0" y2="418" stroke="#f3f4f6"/><text x="824.0" y="440" text-anchor="middle" font-size="11" fill="#64748b">b1</text>
+<line x1="127.4" y1="72" x2="127.4" y2="418" stroke="#cbd5e1" stroke-dasharray="4 5"/>
+<line x1="363.5" y1="72" x2="363.5" y2="418" stroke="#cbd5e1" stroke-dasharray="4 5"/>
+<line x1="410.8" y1="72" x2="410.8" y2="418" stroke="#cbd5e1" stroke-dasharray="4 5"/>
+<line x1="458.0" y1="72" x2="458.0" y2="418" stroke="#cbd5e1" stroke-dasharray="4 5"/>
+<line x1="694.1" y1="72" x2="694.1" y2="418" stroke="#cbd5e1" stroke-dasharray="4 5"/>
+<line x1="741.4" y1="72" x2="741.4" y2="418" stroke="#cbd5e1" stroke-dasharray="4 5"/>
+<line x1="788.6" y1="72" x2="788.6" y2="418" stroke="#cbd5e1" stroke-dasharray="4 5"/>
+<polyline points="139.2,116.7 162.8,137.6 186.5,158.5 210.1,179.4 233.7,200.2 257.3,221.1 280.9,242.0 304.5,262.9 328.1,250.7 351.7,256.2" fill="none" stroke="#94a3b8" stroke-width="1.4" opacity="0.55"/>
+<polyline points="469.8,116.7 493.4,137.6 517.0,158.5 540.6,179.4 564.3,200.2 587.9,221.1 611.5,242.0 635.1,262.9 658.7,283.8 682.3,271.5" fill="none" stroke="#94a3b8" stroke-width="1.4" opacity="0.55"/>
+<rect x="93.5" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 0, sample 1, $0, LOW</title></rect>
+<rect x="94.3" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 0, sample 2, $0, LOW</title></rect>
+<rect x="95.1" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 0, sample 3, $0, LOW</title></rect>
+<rect x="95.8" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 0, sample 4, $0, LOW</title></rect>
+<rect x="96.6" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 0, sample 5, $0, LOW</title></rect>
+<rect x="97.4" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 0, sample 6, $0, LOW</title></rect>
+<rect x="98.2" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 0, sample 7, $0, LOW</title></rect>
+<rect x="99.0" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 0, sample 8, $0, LOW</title></rect>
+<rect x="99.7" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 0, sample 9, $0, LOW</title></rect>
+<rect x="100.5" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 0, sample 10, $0, LOW</title></rect>
+<rect x="105.9" y="93.4" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 0, sample 1, $20,000, NOT_LOW</title></rect>
+<rect x="107.8" y="93.4" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 0, sample 2, $20,000, NOT_LOW</title></rect>
+<rect x="109.8" y="93.4" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 0, sample 3, $20,000, NOT_LOW</title></rect>
+<rect x="111.8" y="93.4" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 0, sample 4, $20,000, NOT_LOW</title></rect>
+<rect x="113.7" y="93.4" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 0, sample 5, $20,000, NOT_LOW</title></rect>
+<rect x="115.7" y="93.4" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 0, sample 6, $20,000, NOT_LOW</title></rect>
+<rect x="117.7" y="93.4" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 0, sample 7, $20,000, NOT_LOW</title></rect>
+<rect x="119.6" y="93.4" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 0, sample 8, $20,000, NOT_LOW</title></rect>
+<rect x="121.6" y="93.4" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 0, sample 9, $20,000, NOT_LOW</title></rect>
+<rect x="123.5" y="93.4" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 0, sample 10, $20,000, NOT_LOW</title></rect>
+<rect x="129.5" y="114.2" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 1, sample 1, $10,000, NOT_LOW</title></rect>
+<rect x="131.5" y="114.2" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 1, sample 2, $10,000, NOT_LOW</title></rect>
+<rect x="133.4" y="114.2" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 1, sample 3, $10,000, NOT_LOW</title></rect>
+<rect x="135.4" y="114.2" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 1, sample 4, $10,000, NOT_LOW</title></rect>
+<rect x="137.3" y="114.2" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 1, sample 5, $10,000, NOT_LOW</title></rect>
+<rect x="139.3" y="114.2" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 1, sample 6, $10,000, NOT_LOW</title></rect>
+<rect x="141.3" y="114.2" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 1, sample 7, $10,000, NOT_LOW</title></rect>
+<rect x="143.2" y="114.2" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 1, sample 8, $10,000, NOT_LOW</title></rect>
+<rect x="145.2" y="114.2" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 1, sample 9, $10,000, NOT_LOW</title></rect>
+<rect x="147.2" y="114.2" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 1, sample 10, $10,000, NOT_LOW</title></rect>
+<rect x="153.1" y="135.1" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 2, sample 1, $5,000, NOT_LOW</title></rect>
+<rect x="155.1" y="135.1" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 2, sample 2, $5,000, NOT_LOW</title></rect>
+<rect x="157.0" y="135.1" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 2, sample 3, $5,000, NOT_LOW</title></rect>
+<rect x="159.0" y="135.1" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 2, sample 4, $5,000, NOT_LOW</title></rect>
+<rect x="161.0" y="135.1" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 2, sample 5, $5,000, NOT_LOW</title></rect>
+<rect x="162.9" y="135.1" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 2, sample 6, $5,000, NOT_LOW</title></rect>
+<rect x="164.9" y="135.1" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 2, sample 7, $5,000, NOT_LOW</title></rect>
+<rect x="166.8" y="135.1" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 2, sample 8, $5,000, NOT_LOW</title></rect>
+<rect x="168.8" y="135.1" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 2, sample 9, $5,000, NOT_LOW</title></rect>
+<rect x="170.8" y="135.1" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 2, sample 10, $5,000, NOT_LOW</title></rect>
+<rect x="176.7" y="156.0" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 2, epoch 3, sample 1, $2,500, NOT_LOW</title></rect>
+<rect x="178.7" y="156.0" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 2, epoch 3, sample 2, $2,500, NOT_LOW</title></rect>
+<rect x="180.6" y="156.0" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 2, epoch 3, sample 3, $2,500, NOT_LOW</title></rect>
+<rect x="182.6" y="156.0" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 2, epoch 3, sample 4, $2,500, LOW</title></rect>
+<rect x="184.6" y="156.0" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 2, epoch 3, sample 5, $2,500, LOW</title></rect>
+<rect x="186.5" y="156.0" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 2, epoch 3, sample 6, $2,500, NOT_LOW</title></rect>
+<rect x="188.5" y="156.0" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 2, epoch 3, sample 7, $2,500, NOT_LOW</title></rect>
+<rect x="190.5" y="156.0" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 2, epoch 3, sample 8, $2,500, NOT_LOW</title></rect>
+<rect x="192.4" y="156.0" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 2, epoch 3, sample 9, $2,500, NOT_LOW</title></rect>
+<rect x="194.4" y="156.0" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 2, epoch 3, sample 10, $2,500, NOT_LOW</title></rect>
+<rect x="200.3" y="176.9" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 3, epoch 4, sample 1, $1,250, NOT_LOW</title></rect>
+<rect x="202.3" y="176.9" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 3, epoch 4, sample 2, $1,250, NOT_LOW</title></rect>
+<rect x="204.3" y="176.9" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 3, epoch 4, sample 3, $1,250, NOT_LOW</title></rect>
+<rect x="206.2" y="176.9" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 3, epoch 4, sample 4, $1,250, NOT_LOW</title></rect>
+<rect x="208.2" y="176.9" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 3, epoch 4, sample 5, $1,250, NOT_LOW</title></rect>
+<rect x="210.1" y="176.9" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 3, epoch 4, sample 6, $1,250, NOT_LOW</title></rect>
+<rect x="212.1" y="176.9" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 3, epoch 4, sample 7, $1,250, NOT_LOW</title></rect>
+<rect x="214.1" y="176.9" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 3, epoch 4, sample 8, $1,250, NOT_LOW</title></rect>
+<rect x="216.0" y="176.9" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 3, epoch 4, sample 9, $1,250, NOT_LOW</title></rect>
+<rect x="218.0" y="176.9" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 3, epoch 4, sample 10, $1,250, NOT_LOW</title></rect>
+<rect x="224.0" y="197.7" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 4, epoch 5, sample 1, $625, NOT_LOW</title></rect>
+<rect x="225.9" y="197.7" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 4, epoch 5, sample 2, $625, NOT_LOW</title></rect>
+<rect x="227.9" y="197.7" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 4, epoch 5, sample 3, $625, NOT_LOW</title></rect>
+<rect x="229.8" y="197.7" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 4, epoch 5, sample 4, $625, NOT_LOW</title></rect>
+<rect x="231.8" y="197.7" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 4, epoch 5, sample 5, $625, NOT_LOW</title></rect>
+<rect x="233.8" y="197.7" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 4, epoch 5, sample 6, $625, NOT_LOW</title></rect>
+<rect x="235.7" y="197.7" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 4, epoch 5, sample 7, $625, NOT_LOW</title></rect>
+<rect x="237.7" y="197.7" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 4, epoch 5, sample 8, $625, LOW</title></rect>
+<rect x="239.6" y="197.7" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 4, epoch 5, sample 9, $625, NOT_LOW</title></rect>
+<rect x="241.6" y="197.7" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 4, epoch 5, sample 10, $625, NOT_LOW</title></rect>
+<rect x="247.6" y="218.6" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 5, epoch 6, sample 1, $312.5, NOT_LOW</title></rect>
+<rect x="249.5" y="218.6" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 5, epoch 6, sample 2, $312.5, NOT_LOW</title></rect>
+<rect x="251.5" y="218.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 5, epoch 6, sample 3, $312.5, LOW</title></rect>
+<rect x="253.4" y="218.6" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 5, epoch 6, sample 4, $312.5, NOT_LOW</title></rect>
+<rect x="255.4" y="218.6" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 5, epoch 6, sample 5, $312.5, NOT_LOW</title></rect>
+<rect x="257.4" y="218.6" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 5, epoch 6, sample 6, $312.5, NOT_LOW</title></rect>
+<rect x="259.3" y="218.6" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 5, epoch 6, sample 7, $312.5, NOT_LOW</title></rect>
+<rect x="261.3" y="218.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 5, epoch 6, sample 8, $312.5, LOW</title></rect>
+<rect x="263.3" y="218.6" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 5, epoch 6, sample 9, $312.5, NOT_LOW</title></rect>
+<rect x="265.2" y="218.6" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 5, epoch 6, sample 10, $312.5, NOT_LOW</title></rect>
+<rect x="271.2" y="239.5" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 6, epoch 7, sample 1, $156.25, LOW</title></rect>
+<rect x="273.1" y="239.5" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 6, epoch 7, sample 2, $156.25, NOT_LOW</title></rect>
+<rect x="275.1" y="239.5" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 6, epoch 7, sample 3, $156.25, NOT_LOW</title></rect>
+<rect x="277.1" y="239.5" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 6, epoch 7, sample 4, $156.25, NOT_LOW</title></rect>
+<rect x="279.0" y="239.5" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 6, epoch 7, sample 5, $156.25, NOT_LOW</title></rect>
+<rect x="281.0" y="239.5" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 6, epoch 7, sample 6, $156.25, NOT_LOW</title></rect>
+<rect x="282.9" y="239.5" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 6, epoch 7, sample 7, $156.25, NOT_LOW</title></rect>
+<rect x="284.9" y="239.5" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 6, epoch 7, sample 8, $156.25, NOT_LOW</title></rect>
+<rect x="286.9" y="239.5" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 6, epoch 7, sample 9, $156.25, NOT_LOW</title></rect>
+<rect x="288.8" y="239.5" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 6, epoch 7, sample 10, $156.25, NOT_LOW</title></rect>
+<rect x="294.8" y="260.4" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 7, epoch 8, sample 1, $78.13, LOW</title></rect>
+<rect x="296.8" y="260.4" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 7, epoch 8, sample 2, $78.13, LOW</title></rect>
+<rect x="298.7" y="260.4" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 7, epoch 8, sample 3, $78.13, LOW</title></rect>
+<rect x="300.7" y="260.4" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 7, epoch 8, sample 4, $78.13, LOW</title></rect>
+<rect x="302.6" y="260.4" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 7, epoch 8, sample 5, $78.13, LOW</title></rect>
+<rect x="304.6" y="260.4" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 7, epoch 8, sample 6, $78.13, LOW</title></rect>
+<rect x="306.6" y="260.4" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 7, epoch 8, sample 7, $78.13, LOW</title></rect>
+<rect x="308.5" y="260.4" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 7, epoch 8, sample 8, $78.13, LOW</title></rect>
+<rect x="310.5" y="260.4" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 7, epoch 8, sample 9, $78.13, LOW</title></rect>
+<rect x="312.4" y="260.4" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 7, epoch 8, sample 10, $78.13, LOW</title></rect>
+<rect x="318.4" y="248.2" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 8, epoch 9, sample 1, $117.19, NOT_LOW</title></rect>
+<rect x="320.4" y="248.2" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 8, epoch 9, sample 2, $117.19, NOT_LOW</title></rect>
+<rect x="322.3" y="248.2" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 8, epoch 9, sample 3, $117.19, NOT_LOW</title></rect>
+<rect x="324.3" y="248.2" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 8, epoch 9, sample 4, $117.19, NOT_LOW</title></rect>
+<rect x="326.2" y="248.2" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 8, epoch 9, sample 5, $117.19, LOW</title></rect>
+<rect x="328.2" y="248.2" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 8, epoch 9, sample 6, $117.19, NOT_LOW</title></rect>
+<rect x="330.2" y="248.2" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 8, epoch 9, sample 7, $117.19, NOT_LOW</title></rect>
+<rect x="332.1" y="248.2" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 8, epoch 9, sample 8, $117.19, NOT_LOW</title></rect>
+<rect x="334.1" y="248.2" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 8, epoch 9, sample 9, $117.19, NOT_LOW</title></rect>
+<rect x="336.1" y="248.2" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 8, epoch 9, sample 10, $117.19, LOW</title></rect>
+<rect x="342.0" y="253.7" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 9, epoch 10, sample 1, $97.66, LOW</title></rect>
+<rect x="344.0" y="253.7" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 9, epoch 10, sample 2, $97.66, LOW</title></rect>
+<rect x="345.9" y="253.7" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 9, epoch 10, sample 3, $97.66, LOW</title></rect>
+<rect x="347.9" y="253.7" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 9, epoch 10, sample 4, $97.66, LOW</title></rect>
+<rect x="349.9" y="253.7" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 9, epoch 10, sample 5, $97.66, LOW</title></rect>
+<rect x="351.8" y="253.7" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 9, epoch 10, sample 6, $97.66, LOW</title></rect>
+<rect x="353.8" y="253.7" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 9, epoch 10, sample 7, $97.66, LOW</title></rect>
+<rect x="355.7" y="253.7" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 9, epoch 10, sample 8, $97.66, LOW</title></rect>
+<rect x="357.7" y="253.7" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 9, epoch 10, sample 9, $97.66, LOW</title></rect>
+<rect x="359.7" y="253.7" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 9, epoch 10, sample 10, $97.66, LOW</title></rect>
+<rect x="365.1" y="253.7" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 11, sample 11, $97.66, LOW</title></rect>
+<rect x="366.1" y="253.7" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 11, sample 12, $97.66, LOW</title></rect>
+<rect x="367.1" y="253.7" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 11, sample 13, $97.66, LOW</title></rect>
+<rect x="368.1" y="253.7" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 11, sample 14, $97.66, LOW</title></rect>
+<rect x="369.1" y="253.7" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 11, sample 15, $97.66, LOW</title></rect>
+<rect x="370.0" y="253.7" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 11, sample 16, $97.66, LOW</title></rect>
+<rect x="371.0" y="253.7" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 11, sample 17, $97.66, LOW</title></rect>
+<rect x="372.0" y="253.7" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 11, sample 18, $97.66, LOW</title></rect>
+<rect x="373.0" y="253.7" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 11, sample 19, $97.66, LOW</title></rect>
+<rect x="374.0" y="253.7" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 11, sample 20, $97.66, LOW</title></rect>
+<rect x="374.9" y="253.7" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 11, sample 21, $97.66, LOW</title></rect>
+<rect x="375.9" y="253.7" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 11, sample 22, $97.66, LOW</title></rect>
+<rect x="376.9" y="253.7" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 11, sample 23, $97.66, LOW</title></rect>
+<rect x="377.9" y="253.7" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 11, sample 24, $97.66, LOW</title></rect>
+<rect x="378.9" y="253.7" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 11, sample 25, $97.66, LOW</title></rect>
+<rect x="379.8" y="253.7" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 11, sample 26, $97.66, LOW</title></rect>
+<rect x="380.8" y="253.7" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 11, sample 27, $97.66, LOW</title></rect>
+<rect x="381.8" y="253.7" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 11, sample 28, $97.66, LOW</title></rect>
+<rect x="382.8" y="253.7" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 11, sample 29, $97.66, LOW</title></rect>
+<rect x="383.8" y="253.7" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 11, sample 30, $97.66, LOW</title></rect>
+<rect x="388.8" y="248.2" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 11, sample 11, $117.19, NOT_LOW</title></rect>
+<rect x="389.7" y="248.2" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 11, sample 12, $117.19, NOT_LOW</title></rect>
+<rect x="390.7" y="248.2" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 11, sample 13, $117.19, NOT_LOW</title></rect>
+<rect x="391.7" y="248.2" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 11, sample 14, $117.19, NOT_LOW</title></rect>
+<rect x="392.7" y="248.2" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 11, sample 15, $117.19, NOT_LOW</title></rect>
+<rect x="393.7" y="248.2" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 11, sample 16, $117.19, NOT_LOW</title></rect>
+<rect x="394.6" y="248.2" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 11, sample 17, $117.19, NOT_LOW</title></rect>
+<rect x="395.6" y="248.2" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 11, sample 18, $117.19, NOT_LOW</title></rect>
+<rect x="396.6" y="248.2" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 11, sample 19, $117.19, NOT_LOW</title></rect>
+<rect x="397.6" y="248.2" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 11, sample 20, $117.19, NOT_LOW</title></rect>
+<rect x="398.6" y="248.2" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 11, sample 21, $117.19, NOT_LOW</title></rect>
+<rect x="399.5" y="248.2" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 11, sample 22, $117.19, NOT_LOW</title></rect>
+<rect x="400.5" y="248.2" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 11, sample 23, $117.19, NOT_LOW</title></rect>
+<rect x="401.5" y="248.2" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 11, sample 24, $117.19, NOT_LOW</title></rect>
+<rect x="402.5" y="248.2" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 11, sample 25, $117.19, NOT_LOW</title></rect>
+<rect x="403.5" y="248.2" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 11, sample 26, $117.19, NOT_LOW</title></rect>
+<rect x="404.4" y="248.2" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 11, sample 27, $117.19, NOT_LOW</title></rect>
+<rect x="405.4" y="248.2" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 11, sample 28, $117.19, NOT_LOW</title></rect>
+<rect x="406.4" y="248.2" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 11, sample 29, $117.19, LOW</title></rect>
+<rect x="407.4" y="248.2" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 11, sample 30, $117.19, LOW</title></rect>
+<rect x="412.9" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 0, sample 1, $0, LOW</title></rect>
+<rect x="414.8" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 0, sample 2, $0, LOW</title></rect>
+<rect x="416.8" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 0, sample 3, $0, LOW</title></rect>
+<rect x="418.7" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 0, sample 4, $0, LOW</title></rect>
+<rect x="420.7" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 0, sample 5, $0, LOW</title></rect>
+<rect x="422.7" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 0, sample 6, $0, LOW</title></rect>
+<rect x="424.6" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 0, sample 7, $0, LOW</title></rect>
+<rect x="426.6" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 0, sample 8, $0, LOW</title></rect>
+<rect x="428.5" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 0, sample 9, $0, LOW</title></rect>
+<rect x="430.5" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 0, sample 10, $0, LOW</title></rect>
+<rect x="436.5" y="93.4" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 0, sample 1, $20,000, NOT_LOW</title></rect>
+<rect x="438.4" y="93.4" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 0, sample 2, $20,000, NOT_LOW</title></rect>
+<rect x="440.4" y="93.4" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 0, sample 3, $20,000, NOT_LOW</title></rect>
+<rect x="442.4" y="93.4" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 0, sample 4, $20,000, NOT_LOW</title></rect>
+<rect x="444.3" y="93.4" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 0, sample 5, $20,000, NOT_LOW</title></rect>
+<rect x="446.3" y="93.4" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 0, sample 6, $20,000, NOT_LOW</title></rect>
+<rect x="448.2" y="93.4" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 0, sample 7, $20,000, NOT_LOW</title></rect>
+<rect x="450.2" y="93.4" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 0, sample 8, $20,000, NOT_LOW</title></rect>
+<rect x="452.2" y="93.4" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 0, sample 9, $20,000, NOT_LOW</title></rect>
+<rect x="454.1" y="93.4" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 0, sample 10, $20,000, NOT_LOW</title></rect>
+<rect x="460.1" y="114.2" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 1, sample 1, $10,000, NOT_LOW</title></rect>
+<rect x="462.0" y="114.2" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 1, sample 2, $10,000, NOT_LOW</title></rect>
+<rect x="464.0" y="114.2" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 1, sample 3, $10,000, NOT_LOW</title></rect>
+<rect x="466.0" y="114.2" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 1, sample 4, $10,000, NOT_LOW</title></rect>
+<rect x="467.9" y="114.2" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 1, sample 5, $10,000, NOT_LOW</title></rect>
+<rect x="469.9" y="114.2" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 1, sample 6, $10,000, NOT_LOW</title></rect>
+<rect x="471.8" y="114.2" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 1, sample 7, $10,000, NOT_LOW</title></rect>
+<rect x="473.8" y="114.2" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 1, sample 8, $10,000, NOT_LOW</title></rect>
+<rect x="475.8" y="114.2" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 1, sample 9, $10,000, NOT_LOW</title></rect>
+<rect x="477.7" y="114.2" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 1, sample 10, $10,000, NOT_LOW</title></rect>
+<rect x="483.7" y="135.1" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 2, sample 1, $5,000, NOT_LOW</title></rect>
+<rect x="485.7" y="135.1" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 2, sample 2, $5,000, NOT_LOW</title></rect>
+<rect x="487.6" y="135.1" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 2, sample 3, $5,000, NOT_LOW</title></rect>
+<rect x="489.6" y="135.1" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 2, sample 4, $5,000, NOT_LOW</title></rect>
+<rect x="491.5" y="135.1" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 2, sample 5, $5,000, NOT_LOW</title></rect>
+<rect x="493.5" y="135.1" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 2, sample 6, $5,000, NOT_LOW</title></rect>
+<rect x="495.5" y="135.1" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 2, sample 7, $5,000, NOT_LOW</title></rect>
+<rect x="497.4" y="135.1" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 2, sample 8, $5,000, NOT_LOW</title></rect>
+<rect x="499.4" y="135.1" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 2, sample 9, $5,000, NOT_LOW</title></rect>
+<rect x="501.3" y="135.1" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 2, sample 10, $5,000, NOT_LOW</title></rect>
+<rect x="507.3" y="156.0" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 2, epoch 3, sample 1, $2,500, NOT_LOW</title></rect>
+<rect x="509.3" y="156.0" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 2, epoch 3, sample 2, $2,500, NOT_LOW</title></rect>
+<rect x="511.2" y="156.0" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 2, epoch 3, sample 3, $2,500, NOT_LOW</title></rect>
+<rect x="513.2" y="156.0" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 2, epoch 3, sample 4, $2,500, NOT_LOW</title></rect>
+<rect x="515.2" y="156.0" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 2, epoch 3, sample 5, $2,500, NOT_LOW</title></rect>
+<rect x="517.1" y="156.0" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 2, epoch 3, sample 6, $2,500, NOT_LOW</title></rect>
+<rect x="519.1" y="156.0" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 2, epoch 3, sample 7, $2,500, NOT_LOW</title></rect>
+<rect x="521.0" y="156.0" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 2, epoch 3, sample 8, $2,500, NOT_LOW</title></rect>
+<rect x="523.0" y="156.0" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 2, epoch 3, sample 9, $2,500, NOT_LOW</title></rect>
+<rect x="525.0" y="156.0" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 2, epoch 3, sample 10, $2,500, NOT_LOW</title></rect>
+<rect x="530.9" y="176.9" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 3, epoch 4, sample 1, $1,250, NOT_LOW</title></rect>
+<rect x="532.9" y="176.9" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 3, epoch 4, sample 2, $1,250, NOT_LOW</title></rect>
+<rect x="534.8" y="176.9" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 3, epoch 4, sample 3, $1,250, NOT_LOW</title></rect>
+<rect x="536.8" y="176.9" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 3, epoch 4, sample 4, $1,250, NOT_LOW</title></rect>
+<rect x="538.8" y="176.9" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 3, epoch 4, sample 5, $1,250, NOT_LOW</title></rect>
+<rect x="540.7" y="176.9" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 3, epoch 4, sample 6, $1,250, NOT_LOW</title></rect>
+<rect x="542.7" y="176.9" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 3, epoch 4, sample 7, $1,250, NOT_LOW</title></rect>
+<rect x="544.6" y="176.9" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 3, epoch 4, sample 8, $1,250, NOT_LOW</title></rect>
+<rect x="546.6" y="176.9" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 3, epoch 4, sample 9, $1,250, NOT_LOW</title></rect>
+<rect x="548.6" y="176.9" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 3, epoch 4, sample 10, $1,250, NOT_LOW</title></rect>
+<rect x="554.5" y="197.7" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 4, epoch 5, sample 1, $625, NOT_LOW</title></rect>
+<rect x="556.5" y="197.7" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 4, epoch 5, sample 2, $625, NOT_LOW</title></rect>
+<rect x="558.5" y="197.7" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 4, epoch 5, sample 3, $625, NOT_LOW</title></rect>
+<rect x="560.4" y="197.7" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 4, epoch 5, sample 4, $625, NOT_LOW</title></rect>
+<rect x="562.4" y="197.7" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 4, epoch 5, sample 5, $625, NOT_LOW</title></rect>
+<rect x="564.3" y="197.7" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 4, epoch 5, sample 6, $625, NOT_LOW</title></rect>
+<rect x="566.3" y="197.7" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 4, epoch 5, sample 7, $625, NOT_LOW</title></rect>
+<rect x="568.3" y="197.7" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 4, epoch 5, sample 8, $625, NOT_LOW</title></rect>
+<rect x="570.2" y="197.7" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 4, epoch 5, sample 9, $625, NOT_LOW</title></rect>
+<rect x="572.2" y="197.7" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 4, epoch 5, sample 10, $625, NOT_LOW</title></rect>
+<rect x="578.1" y="218.6" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 5, epoch 6, sample 1, $312.5, NOT_LOW</title></rect>
+<rect x="580.1" y="218.6" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 5, epoch 6, sample 2, $312.5, NOT_LOW</title></rect>
+<rect x="582.1" y="218.6" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 5, epoch 6, sample 3, $312.5, NOT_LOW</title></rect>
+<rect x="584.0" y="218.6" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 5, epoch 6, sample 4, $312.5, NOT_LOW</title></rect>
+<rect x="586.0" y="218.6" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 5, epoch 6, sample 5, $312.5, NOT_LOW</title></rect>
+<rect x="588.0" y="218.6" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 5, epoch 6, sample 6, $312.5, NOT_LOW</title></rect>
+<rect x="589.9" y="218.6" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 5, epoch 6, sample 7, $312.5, NOT_LOW</title></rect>
+<rect x="591.9" y="218.6" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 5, epoch 6, sample 8, $312.5, NOT_LOW</title></rect>
+<rect x="593.8" y="218.6" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 5, epoch 6, sample 9, $312.5, NOT_LOW</title></rect>
+<rect x="595.8" y="218.6" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 5, epoch 6, sample 10, $312.5, NOT_LOW</title></rect>
+<rect x="601.8" y="239.5" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 6, epoch 7, sample 1, $156.25, NOT_LOW</title></rect>
+<rect x="603.7" y="239.5" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 6, epoch 7, sample 2, $156.25, NOT_LOW</title></rect>
+<rect x="605.7" y="239.5" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 6, epoch 7, sample 3, $156.25, NOT_LOW</title></rect>
+<rect x="607.6" y="239.5" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 6, epoch 7, sample 4, $156.25, NOT_LOW</title></rect>
+<rect x="609.6" y="239.5" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 6, epoch 7, sample 5, $156.25, NOT_LOW</title></rect>
+<rect x="611.6" y="239.5" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 6, epoch 7, sample 6, $156.25, NOT_LOW</title></rect>
+<rect x="613.5" y="239.5" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 6, epoch 7, sample 7, $156.25, NOT_LOW</title></rect>
+<rect x="615.5" y="239.5" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 6, epoch 7, sample 8, $156.25, NOT_LOW</title></rect>
+<rect x="617.4" y="239.5" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 6, epoch 7, sample 9, $156.25, NOT_LOW</title></rect>
+<rect x="619.4" y="239.5" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 6, epoch 7, sample 10, $156.25, NOT_LOW</title></rect>
+<rect x="625.4" y="260.4" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 7, epoch 8, sample 1, $78.13, LOW</title></rect>
+<rect x="627.3" y="260.4" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 7, epoch 8, sample 2, $78.13, NOT_LOW</title></rect>
+<rect x="629.3" y="260.4" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 7, epoch 8, sample 3, $78.13, NOT_LOW</title></rect>
+<rect x="631.3" y="260.4" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 7, epoch 8, sample 4, $78.13, NOT_LOW</title></rect>
+<rect x="633.2" y="260.4" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 7, epoch 8, sample 5, $78.13, NOT_LOW</title></rect>
+<rect x="635.2" y="260.4" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 7, epoch 8, sample 6, $78.13, NOT_LOW</title></rect>
+<rect x="637.1" y="260.4" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 7, epoch 8, sample 7, $78.13, NOT_LOW</title></rect>
+<rect x="639.1" y="260.4" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 7, epoch 8, sample 8, $78.13, LOW</title></rect>
+<rect x="641.1" y="260.4" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 7, epoch 8, sample 9, $78.13, NOT_LOW</title></rect>
+<rect x="643.0" y="260.4" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 7, epoch 8, sample 10, $78.13, NOT_LOW</title></rect>
+<rect x="649.0" y="281.3" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 8, epoch 9, sample 1, $39.06, LOW</title></rect>
+<rect x="650.9" y="281.3" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 8, epoch 9, sample 2, $39.06, LOW</title></rect>
+<rect x="652.9" y="281.3" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 8, epoch 9, sample 3, $39.06, LOW</title></rect>
+<rect x="654.9" y="281.3" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 8, epoch 9, sample 4, $39.06, NOT_LOW</title></rect>
+<rect x="656.8" y="281.3" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 8, epoch 9, sample 5, $39.06, LOW</title></rect>
+<rect x="658.8" y="281.3" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 8, epoch 9, sample 6, $39.06, LOW</title></rect>
+<rect x="660.8" y="281.3" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 8, epoch 9, sample 7, $39.06, LOW</title></rect>
+<rect x="662.7" y="281.3" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 8, epoch 9, sample 8, $39.06, LOW</title></rect>
+<rect x="664.7" y="281.3" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 8, epoch 9, sample 9, $39.06, NOT_LOW</title></rect>
+<rect x="666.6" y="281.3" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 8, epoch 9, sample 10, $39.06, NOT_LOW</title></rect>
+<rect x="672.6" y="269.0" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 9, epoch 10, sample 1, $58.59, NOT_LOW</title></rect>
+<rect x="674.6" y="269.0" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 9, epoch 10, sample 2, $58.59, NOT_LOW</title></rect>
+<rect x="676.5" y="269.0" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 9, epoch 10, sample 3, $58.59, NOT_LOW</title></rect>
+<rect x="678.5" y="269.0" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 9, epoch 10, sample 4, $58.59, NOT_LOW</title></rect>
+<rect x="680.4" y="269.0" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 9, epoch 10, sample 5, $58.59, LOW</title></rect>
+<rect x="682.4" y="269.0" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 9, epoch 10, sample 6, $58.59, NOT_LOW</title></rect>
+<rect x="684.4" y="269.0" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 9, epoch 10, sample 7, $58.59, NOT_LOW</title></rect>
+<rect x="686.3" y="269.0" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 9, epoch 10, sample 8, $58.59, NOT_LOW</title></rect>
+<rect x="688.3" y="269.0" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 9, epoch 10, sample 9, $58.59, NOT_LOW</title></rect>
+<rect x="690.2" y="269.0" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 9, epoch 10, sample 10, $58.59, NOT_LOW</title></rect>
+<rect x="695.7" y="281.3" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 11, sample 11, $39.06, LOW</title></rect>
+<rect x="696.7" y="281.3" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 11, sample 12, $39.06, LOW</title></rect>
+<rect x="697.7" y="281.3" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 11, sample 13, $39.06, LOW</title></rect>
+<rect x="698.7" y="281.3" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 11, sample 14, $39.06, LOW</title></rect>
+<rect x="699.6" y="281.3" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 11, sample 15, $39.06, LOW</title></rect>
+<rect x="700.6" y="281.3" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 11, sample 16, $39.06, NOT_LOW</title></rect>
+<rect x="701.6" y="281.3" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 11, sample 17, $39.06, NOT_LOW</title></rect>
+<rect x="702.6" y="281.3" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 11, sample 18, $39.06, LOW</title></rect>
+<rect x="703.6" y="281.3" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 11, sample 19, $39.06, NOT_LOW</title></rect>
+<rect x="704.5" y="281.3" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 11, sample 20, $39.06, LOW</title></rect>
+<rect x="705.5" y="281.3" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 11, sample 21, $39.06, NOT_LOW</title></rect>
+<rect x="706.5" y="281.3" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 11, sample 22, $39.06, LOW</title></rect>
+<rect x="707.5" y="281.3" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 11, sample 23, $39.06, LOW</title></rect>
+<rect x="708.5" y="281.3" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 11, sample 24, $39.06, LOW</title></rect>
+<rect x="709.4" y="281.3" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 11, sample 25, $39.06, LOW</title></rect>
+<rect x="710.4" y="281.3" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 11, sample 26, $39.06, LOW</title></rect>
+<rect x="711.4" y="281.3" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 11, sample 27, $39.06, LOW</title></rect>
+<rect x="712.4" y="281.3" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 11, sample 28, $39.06, LOW</title></rect>
+<rect x="713.4" y="281.3" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 11, sample 29, $39.06, NOT_LOW</title></rect>
+<rect x="714.4" y="281.3" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 11, sample 30, $39.06, NOT_LOW</title></rect>
+<rect x="719.3" y="269.0" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 11, sample 11, $58.59, NOT_LOW</title></rect>
+<rect x="720.3" y="269.0" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 11, sample 12, $58.59, NOT_LOW</title></rect>
+<rect x="721.3" y="269.0" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 11, sample 13, $58.59, NOT_LOW</title></rect>
+<rect x="722.3" y="269.0" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 11, sample 14, $58.59, NOT_LOW</title></rect>
+<rect x="723.3" y="269.0" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 11, sample 15, $58.59, NOT_LOW</title></rect>
+<rect x="724.2" y="269.0" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 11, sample 16, $58.59, NOT_LOW</title></rect>
+<rect x="725.2" y="269.0" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 11, sample 17, $58.59, NOT_LOW</title></rect>
+<rect x="726.2" y="269.0" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 11, sample 18, $58.59, NOT_LOW</title></rect>
+<rect x="727.2" y="269.0" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 11, sample 19, $58.59, NOT_LOW</title></rect>
+<rect x="728.2" y="269.0" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 11, sample 20, $58.59, NOT_LOW</title></rect>
+<rect x="729.1" y="269.0" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 11, sample 21, $58.59, NOT_LOW</title></rect>
+<rect x="730.1" y="269.0" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 11, sample 22, $58.59, NOT_LOW</title></rect>
+<rect x="731.1" y="269.0" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 11, sample 23, $58.59, NOT_LOW</title></rect>
+<rect x="732.1" y="269.0" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 11, sample 24, $58.59, NOT_LOW</title></rect>
+<rect x="733.1" y="269.0" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 11, sample 25, $58.59, NOT_LOW</title></rect>
+<rect x="734.0" y="269.0" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 11, sample 26, $58.59, NOT_LOW</title></rect>
+<rect x="735.0" y="269.0" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 11, sample 27, $58.59, LOW</title></rect>
+<rect x="736.0" y="269.0" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 11, sample 28, $58.59, LOW</title></rect>
+<rect x="737.0" y="269.0" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 11, sample 29, $58.59, LOW</title></rect>
+<rect x="738.0" y="269.0" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 11, sample 30, $58.59, LOW</title></rect>
+<rect x="743.4" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 0, sample 1, $0, LOW</title></rect>
+<rect x="745.4" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 0, sample 2, $0, LOW</title></rect>
+<rect x="747.4" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 0, sample 3, $0, LOW</title></rect>
+<rect x="749.3" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 0, sample 4, $0, LOW</title></rect>
+<rect x="751.3" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 0, sample 5, $0, LOW</title></rect>
+<rect x="753.2" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 0, sample 6, $0, LOW</title></rect>
+<rect x="755.2" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 0, sample 7, $0, LOW</title></rect>
+<rect x="757.2" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 0, sample 8, $0, LOW</title></rect>
+<rect x="759.1" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 0, sample 9, $0, LOW</title></rect>
+<rect x="761.1" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 0, sample 10, $0, LOW</title></rect>
+<rect x="767.0" y="93.4" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 0, sample 1, $20,000, LOW</title></rect>
+<rect x="769.0" y="93.4" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 0, sample 2, $20,000, NOT_LOW</title></rect>
+<rect x="771.0" y="93.4" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 0, sample 3, $20,000, NOT_LOW</title></rect>
+<rect x="772.9" y="93.4" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 0, sample 4, $20,000, LOW</title></rect>
+<rect x="774.9" y="93.4" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 0, sample 5, $20,000, LOW</title></rect>
+<rect x="776.9" y="93.4" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 0, sample 6, $20,000, LOW</title></rect>
+<rect x="778.8" y="93.4" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 0, sample 7, $20,000, LOW</title></rect>
+<rect x="780.8" y="93.4" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 0, sample 8, $20,000, NOT_LOW</title></rect>
+<rect x="782.7" y="93.4" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 0, sample 9, $20,000, LOW</title></rect>
+<rect x="784.7" y="93.4" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 0, sample 10, $20,000, LOW</title></rect>
+<rect x="790.2" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 11, sample 11, $0, LOW</title></rect>
+<rect x="791.2" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 11, sample 12, $0, LOW</title></rect>
+<rect x="792.1" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 11, sample 13, $0, LOW</title></rect>
+<rect x="793.1" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 11, sample 14, $0, LOW</title></rect>
+<rect x="794.1" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 11, sample 15, $0, LOW</title></rect>
+<rect x="795.1" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 11, sample 16, $0, LOW</title></rect>
+<rect x="796.1" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 11, sample 17, $0, LOW</title></rect>
+<rect x="797.0" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 11, sample 18, $0, LOW</title></rect>
+<rect x="798.0" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 11, sample 19, $0, LOW</title></rect>
+<rect x="799.0" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 11, sample 20, $0, LOW</title></rect>
+<rect x="800.0" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 11, sample 21, $0, LOW</title></rect>
+<rect x="801.0" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 11, sample 22, $0, LOW</title></rect>
+<rect x="801.9" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 11, sample 23, $0, LOW</title></rect>
+<rect x="802.9" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 11, sample 24, $0, LOW</title></rect>
+<rect x="803.9" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 11, sample 25, $0, LOW</title></rect>
+<rect x="804.9" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 11, sample 26, $0, LOW</title></rect>
+<rect x="805.9" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 11, sample 27, $0, LOW</title></rect>
+<rect x="806.8" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 11, sample 28, $0, LOW</title></rect>
+<rect x="807.8" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 11, sample 29, $0, LOW</title></rect>
+<rect x="808.8" y="391.6" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 0, epoch 11, sample 30, $0, LOW</title></rect>
+<rect x="813.5" y="93.4" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 11, sample 11, $20,000, NOT_LOW</title></rect>
+<rect x="813.9" y="93.4" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 11, sample 12, $20,000, LOW</title></rect>
+<rect x="814.3" y="93.4" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 11, sample 13, $20,000, NOT_LOW</title></rect>
+<rect x="814.7" y="93.4" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 11, sample 14, $20,000, NOT_LOW</title></rect>
+<rect x="815.1" y="93.4" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 11, sample 15, $20,000, LOW</title></rect>
+<rect x="815.4" y="93.4" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 11, sample 16, $20,000, NOT_LOW</title></rect>
+<rect x="815.8" y="93.4" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 11, sample 17, $20,000, NOT_LOW</title></rect>
+<rect x="816.2" y="93.4" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 11, sample 18, $20,000, LOW</title></rect>
+<rect x="816.6" y="93.4" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 11, sample 19, $20,000, LOW</title></rect>
+<rect x="817.0" y="93.4" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 11, sample 20, $20,000, LOW</title></rect>
+<rect x="817.4" y="93.4" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 11, sample 21, $20,000, LOW</title></rect>
+<rect x="817.8" y="93.4" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 11, sample 22, $20,000, LOW</title></rect>
+<rect x="818.2" y="93.4" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 11, sample 23, $20,000, LOW</title></rect>
+<rect x="818.6" y="93.4" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 11, sample 24, $20,000, LOW</title></rect>
+<rect x="819.0" y="93.4" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 11, sample 25, $20,000, LOW</title></rect>
+<rect x="819.3" y="93.4" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 11, sample 26, $20,000, LOW</title></rect>
+<rect x="819.7" y="93.4" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 11, sample 27, $20,000, LOW</title></rect>
+<rect x="820.1" y="93.4" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 11, sample 28, $20,000, NOT_LOW</title></rect>
+<rect x="820.5" y="93.4" width="1.8" height="5" rx="1" fill="#be123c" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 11, sample 29, $20,000, NOT_LOW</title></rect>
+<rect x="820.9" y="93.4" width="1.8" height="5" rx="1" fill="#0f766e" opacity="0.88"><title>gpt-5.6, all_contexts, bucket 1, epoch 11, sample 30, $20,000, LOW</title></rect>
+<line x1="351.7" y1="256.2" x2="359.7" y2="256.2" stroke="#64748b" stroke-width="1"/><text x="363.7" y="260.2" font-size="11" font-weight="700" fill="#0f172a">$97.66</text>
+<line x1="682.3" y1="271.5" x2="690.3" y2="271.5" stroke="#64748b" stroke-width="1"/><text x="694.3" y="275.5" font-size="11" font-weight="700" fill="#0f172a">$58.59</text>
+<text x="103.8" y="462" text-anchor="middle" font-size="10" fill="#64748b">fact only / boundary probes</text>
+<text x="245.5" y="462" text-anchor="middle" font-size="10" fill="#64748b">fact only / binary search</text>
+<text x="387.2" y="462" text-anchor="middle" font-size="10" fill="#64748b">fact only / band refine</text>
+<text x="434.4" y="462" text-anchor="middle" font-size="10" fill="#64748b">5 gift card / boundary probes</text>
+<text x="576.1" y="462" text-anchor="middle" font-size="10" fill="#64748b">5 gift card / binary search</text>
+<text x="717.7" y="462" text-anchor="middle" font-size="10" fill="#64748b">5 gift card / band refine</text>
+<text x="765.0" y="462" text-anchor="middle" font-size="10" fill="#64748b">100k contract / boundary probes</text>
+<text x="812.2" y="462" text-anchor="middle" font-size="10" fill="#64748b">100k contract / band refine</text>
+<text x="458" y="484" text-anchor="middle" font-size="12" fill="#334155">Samples within each 10-run bucket, reset at each experiment segment</text>
+<text transform="translate(26 245) rotate(-90)" text-anchor="middle" font-size="12" fill="#334155">Refund amount, log scale</text>
+</svg>

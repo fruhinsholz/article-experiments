@@ -1,0 +1,83 @@
+{
+  "decision_labels": [
+    "same_record",
+    "possible_duplicate",
+    "new_record"
+  ],
+  "private_condition_map_for_analysis": {
+    "5adfcd6f-e4c0-4a9c-89f6-e3a378f85b40": {
+      "prompt": "neutral_similarity",
+      "context": "baseline"
+    },
+    "a5eea422-80c9-4f30-9a57-a553ddc1967e": {
+      "prompt": "neutral_similarity",
+      "context": "phone_recent"
+    },
+    "cdeaea72-1421-4d50-9ef6-319741da11a0": {
+      "prompt": "neutral_similarity",
+      "context": "phone_legacy"
+    },
+    "5efd5bdf-7eb3-4440-a1c1-f1e267090c53": {
+      "prompt": "neutral_similarity",
+      "context": "email_recent"
+    },
+    "ab30ab78-00f6-4113-84f7-794dbf206c60": {
+      "prompt": "neutral_similarity",
+      "context": "support_incident"
+    },
+    "f3868f9c-b821-4717-8c29-825c2abcac43": {
+      "prompt": "neutral_similarity",
+      "context": "irreversible_merge"
+    }
+  },
+  "conditions": [
+    {
+      "id": "5adfcd6f-e4c0-4a9c-89f6-e3a378f85b40",
+      "prompt_id": "e4162040-5c1b-451d-b0c2-3c43c4be5320",
+      "context_id": null,
+      "kind": "request_prompt_only",
+      "request": "Compare Record A and Record B. Decide whether they are similar enough to represent the same person. Base the decision only on the two records.",
+      "ambient_context": null
+    },
+    {
+      "id": "a5eea422-80c9-4f30-9a57-a553ddc1967e",
+      "prompt_id": "e4162040-5c1b-451d-b0c2-3c43c4be5320",
+      "context_id": "c3f1d5ae-d296-4efe-a39c-b40d39377ee2",
+      "kind": "request_prompt_plus_ambient_context",
+      "request": "Compare Record A and Record B. Decide whether they are similar enough to represent the same person. Base the decision only on the two records.",
+      "ambient_context": "Operational note: The phone value on Record B was confirmed during a customer interaction earlier today."
+    },
+    {
+      "id": "cdeaea72-1421-4d50-9ef6-319741da11a0",
+      "prompt_id": "e4162040-5c1b-451d-b0c2-3c43c4be5320",
+      "context_id": "a63d61f5-76c1-4c2e-a910-7b461c3d53bb",
+      "kind": "request_prompt_plus_ambient_context",
+      "request": "Compare Record A and Record B. Decide whether they are similar enough to represent the same person. Base the decision only on the two records.",
+      "ambient_context": "Operational note: The phone value on Record B was imported from a legacy CRM system five years ago."
+    },
+    {
+      "id": "5efd5bdf-7eb3-4440-a1c1-f1e267090c53",
+      "prompt_id": "e4162040-5c1b-451d-b0c2-3c43c4be5320",
+      "context_id": "b69b8ddb-0c78-4840-a8f9-4c120576f6cb",
+      "kind": "request_prompt_plus_ambient_context",
+      "request": "Compare Record A and Record B. Decide whether they are similar enough to represent the same person. Base the decision only on the two records.",
+      "ambient_context": "Operational note: The email value on Record B was updated after a support exchange last week."
+    },
+    {
+      "id": "ab30ab78-00f6-4113-84f7-794dbf206c60",
+      "prompt_id": "e4162040-5c1b-451d-b0c2-3c43c4be5320",
+      "context_id": "2e8a67ee-fdbb-4187-8653-2f9baf32950d",
+      "kind": "request_prompt_plus_ambient_context",
+      "request": "Compare Record A and Record B. Decide whether they are similar enough to represent the same person. Base the decision only on the two records.",
+      "ambient_context": "Operational note: A recent support incident involved a customer saying they were contacted through an outdated record."
+    },
+    {
+      "id": "f3868f9c-b821-4717-8c29-825c2abcac43",
+      "prompt_id": "e4162040-5c1b-451d-b0c2-3c43c4be5320",
+      "context_id": "7dfde64b-fefb-42c6-986b-46eb38998932",
+      "kind": "request_prompt_plus_ambient_context",
+      "request": "Compare Record A and Record B. Decide whether they are similar enough to represent the same person. Base the decision only on the two records.",
+      "ambient_context": "Operational note: If these records are accepted as the same person, their histories will be merged and displayed as one customer profile."
+    }
+  ]
+}

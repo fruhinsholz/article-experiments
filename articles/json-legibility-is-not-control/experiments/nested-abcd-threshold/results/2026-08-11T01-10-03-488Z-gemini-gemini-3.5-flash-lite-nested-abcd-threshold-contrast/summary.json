@@ -1,0 +1,324 @@
+{
+  "provider": "gemini",
+  "model": "gemini-3.5-flash-lite",
+  "calls": 16,
+  "errors": 0,
+  "amounts": [
+    5,
+    50,
+    500,
+    5000,
+    50000,
+    100000
+  ],
+  "branchAmounts": {
+    "B": [
+      50,
+      500,
+      5000,
+      100000
+    ],
+    "D": [
+      5,
+      50,
+      5000,
+      50000
+    ]
+  },
+  "cases": [
+    {
+      "id": "b50_d50000",
+      "bAmount": 50,
+      "dAmount": 50000
+    },
+    {
+      "id": "b500_d5000",
+      "bAmount": 500,
+      "dAmount": 5000
+    },
+    {
+      "id": "b5000_d50",
+      "bAmount": 5000,
+      "dAmount": 50
+    },
+    {
+      "id": "b100000_d5",
+      "bAmount": 100000,
+      "dAmount": 5
+    }
+  ],
+  "classification": {
+    "control": {
+      "runs": 4,
+      "branchCounts": {
+        "B": {
+          "50": {
+            "LOW": 1,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "500": {
+            "LOW": 0,
+            "NOT_LOW": 1,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "5000": {
+            "LOW": 0,
+            "NOT_LOW": 1,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "100000": {
+            "LOW": 0,
+            "NOT_LOW": 1,
+            "INVALID": 0,
+            "MISSING": 0
+          }
+        },
+        "D": {
+          "5": {
+            "LOW": 1,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "50": {
+            "LOW": 1,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "5000": {
+            "LOW": 0,
+            "NOT_LOW": 1,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "50000": {
+            "LOW": 0,
+            "NOT_LOW": 1,
+            "INVALID": 0,
+            "MISSING": 0
+          }
+        }
+      },
+      "localAnchorAgreement": {
+        "B": 3,
+        "D": 2,
+        "both": 2,
+        "runs": 4
+      },
+      "sameAmount": {
+        "compared": 0,
+        "sameLabel": 0,
+        "differentLabel": 0
+      }
+    },
+    "prefix_free_text": {
+      "runs": 4,
+      "branchCounts": {
+        "B": {
+          "50": {
+            "LOW": 1,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "500": {
+            "LOW": 1,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "5000": {
+            "LOW": 0,
+            "NOT_LOW": 1,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "100000": {
+            "LOW": 0,
+            "NOT_LOW": 1,
+            "INVALID": 0,
+            "MISSING": 0
+          }
+        },
+        "D": {
+          "5": {
+            "LOW": 1,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "50": {
+            "LOW": 1,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "5000": {
+            "LOW": 0,
+            "NOT_LOW": 1,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "50000": {
+            "LOW": 0,
+            "NOT_LOW": 1,
+            "INVALID": 0,
+            "MISSING": 0
+          }
+        }
+      },
+      "localAnchorAgreement": {
+        "B": 2,
+        "D": 2,
+        "both": 2,
+        "runs": 4
+      },
+      "sameAmount": {
+        "compared": 0,
+        "sameLabel": 0,
+        "differentLabel": 0
+      }
+    },
+    "suffix_free_text": {
+      "runs": 4,
+      "branchCounts": {
+        "B": {
+          "50": {
+            "LOW": 1,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "500": {
+            "LOW": 1,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "5000": {
+            "LOW": 0,
+            "NOT_LOW": 1,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "100000": {
+            "LOW": 0,
+            "NOT_LOW": 1,
+            "INVALID": 0,
+            "MISSING": 0
+          }
+        },
+        "D": {
+          "5": {
+            "LOW": 1,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "50": {
+            "LOW": 1,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "5000": {
+            "LOW": 0,
+            "NOT_LOW": 1,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "50000": {
+            "LOW": 0,
+            "NOT_LOW": 1,
+            "INVALID": 0,
+            "MISSING": 0
+          }
+        }
+      },
+      "localAnchorAgreement": {
+        "B": 2,
+        "D": 2,
+        "both": 2,
+        "runs": 4
+      },
+      "sameAmount": {
+        "compared": 0,
+        "sameLabel": 0,
+        "differentLabel": 0
+      }
+    },
+    "system_rule": {
+      "runs": 4,
+      "branchCounts": {
+        "B": {
+          "50": {
+            "LOW": 1,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "500": {
+            "LOW": 0,
+            "NOT_LOW": 1,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "5000": {
+            "LOW": 0,
+            "NOT_LOW": 1,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "100000": {
+            "LOW": 0,
+            "NOT_LOW": 1,
+            "INVALID": 0,
+            "MISSING": 0
+          }
+        },
+        "D": {
+          "5": {
+            "LOW": 1,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "50": {
+            "LOW": 1,
+            "NOT_LOW": 0,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "5000": {
+            "LOW": 0,
+            "NOT_LOW": 1,
+            "INVALID": 0,
+            "MISSING": 0
+          },
+          "50000": {
+            "LOW": 0,
+            "NOT_LOW": 1,
+            "INVALID": 0,
+            "MISSING": 0
+          }
+        }
+      },
+      "localAnchorAgreement": {
+        "B": 3,
+        "D": 2,
+        "both": 2,
+        "runs": 4
+      },
+      "sameAmount": {
+        "compared": 0,
+        "sameLabel": 0,
+        "differentLabel": 0
+      }
+    }
+  }
+}

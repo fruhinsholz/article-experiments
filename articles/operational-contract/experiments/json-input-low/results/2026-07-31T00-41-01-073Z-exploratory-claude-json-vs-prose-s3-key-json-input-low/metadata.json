@@ -1,0 +1,32 @@
+{
+  "testbed": "json-input-low",
+  "createdAt": "2026-07-31T00:41:01.073Z",
+  "commitHash": "8103e4c5b690a840ba285a35633b1392006f7076",
+  "commandLine": "/usr/bin/node /home/eric/workspace/prompt-contract-experiments/src/json-input-low.mjs --provider claude-cli --models sonnet --contexts fact_only,retrieved_100000_contract --formats prose_same_block,json_flat,json_typed,json_typed_boundary_rule --samples 3 --amounts 100,150,500,1000,5000,10000,20000 --max-output-tokens 128 --max-calls 180 --gzip-jsonl --label exploratory-claude-json-vs-prose-s3-key",
+  "provider": "claude-cli",
+  "requestedModels": [
+    "sonnet"
+  ],
+  "apiParameters": {
+    "temperature": 0,
+    "maxOutputTokens": 128,
+    "reasoningEffort": null,
+    "seed": null
+  },
+  "samplesPerState": 3,
+  "epochs": 10,
+  "maxCalls": 180,
+  "dryRun": false,
+  "promptFiles": [
+    "system-prompt.txt",
+    "user-template-prose.txt",
+    "user-template-json.txt"
+  ],
+  "fixtureFile": "fixture.json",
+  "resultFiles": {
+    "rawJsonl": "calls.jsonl",
+    "summaryCsv": "summary.csv",
+    "summaryMarkdown": "summary.md",
+    "analysis": "analysis.md"
+  }
+}

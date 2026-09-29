@@ -1,0 +1,13 @@
+{
+  "contexts": {
+    "fact_only": "",
+    "retrieved_5_gift_card": "Retrieved context:\nA separate product launch note says that a $5 gift card is offered to the first subscriber of a new policy.",
+    "retrieved_100000_contract": "Retrieved context:\nA separate enterprise account note says that contracts above $100,000 require executive review during the seasonal sales period."
+  },
+  "scanPoints": null,
+  "min": 0,
+  "max": 20000,
+  "refineSamples": 30,
+  "targetLowPct": 0.5,
+  "searchMethod": "bounded_probability_band_search"
+}

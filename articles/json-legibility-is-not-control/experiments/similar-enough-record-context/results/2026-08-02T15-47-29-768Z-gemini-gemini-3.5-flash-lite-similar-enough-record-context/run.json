@@ -1,0 +1,1372 @@
+{
+  "args": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "repeats": 4,
+    "maxCalls": 200,
+    "maxOutputTokens": 700,
+    "temperature": 0,
+    "concurrency": 4,
+    "label": "similar-enough-record-context",
+    "dryRun": false,
+    "printExamples": false
+  },
+  "jobs": [
+    {
+      "pairId": "9f6d6f9a-8ed7-4e75-b14c-37d9a3148800",
+      "conditionId": "7a30dd10-aabc-40d2-823b-0971cff45071",
+      "repeatIndex": 0
+    },
+    {
+      "pairId": "9f6d6f9a-8ed7-4e75-b14c-37d9a3148800",
+      "conditionId": "7a30dd10-aabc-40d2-823b-0971cff45071",
+      "repeatIndex": 1
+    },
+    {
+      "pairId": "9f6d6f9a-8ed7-4e75-b14c-37d9a3148800",
+      "conditionId": "7a30dd10-aabc-40d2-823b-0971cff45071",
+      "repeatIndex": 2
+    },
+    {
+      "pairId": "9f6d6f9a-8ed7-4e75-b14c-37d9a3148800",
+      "conditionId": "7a30dd10-aabc-40d2-823b-0971cff45071",
+      "repeatIndex": 3
+    },
+    {
+      "pairId": "9f6d6f9a-8ed7-4e75-b14c-37d9a3148800",
+      "conditionId": "f508bf2e-1217-4a30-a39c-0545b73f1e40",
+      "repeatIndex": 0
+    },
+    {
+      "pairId": "9f6d6f9a-8ed7-4e75-b14c-37d9a3148800",
+      "conditionId": "f508bf2e-1217-4a30-a39c-0545b73f1e40",
+      "repeatIndex": 1
+    },
+    {
+      "pairId": "9f6d6f9a-8ed7-4e75-b14c-37d9a3148800",
+      "conditionId": "f508bf2e-1217-4a30-a39c-0545b73f1e40",
+      "repeatIndex": 2
+    },
+    {
+      "pairId": "9f6d6f9a-8ed7-4e75-b14c-37d9a3148800",
+      "conditionId": "f508bf2e-1217-4a30-a39c-0545b73f1e40",
+      "repeatIndex": 3
+    },
+    {
+      "pairId": "9f6d6f9a-8ed7-4e75-b14c-37d9a3148800",
+      "conditionId": "414f2ea7-65b5-434d-8368-17d7337fb9cb",
+      "repeatIndex": 0
+    },
+    {
+      "pairId": "9f6d6f9a-8ed7-4e75-b14c-37d9a3148800",
+      "conditionId": "414f2ea7-65b5-434d-8368-17d7337fb9cb",
+      "repeatIndex": 1
+    },
+    {
+      "pairId": "9f6d6f9a-8ed7-4e75-b14c-37d9a3148800",
+      "conditionId": "414f2ea7-65b5-434d-8368-17d7337fb9cb",
+      "repeatIndex": 2
+    },
+    {
+      "pairId": "9f6d6f9a-8ed7-4e75-b14c-37d9a3148800",
+      "conditionId": "414f2ea7-65b5-434d-8368-17d7337fb9cb",
+      "repeatIndex": 3
+    },
+    {
+      "pairId": "9f6d6f9a-8ed7-4e75-b14c-37d9a3148800",
+      "conditionId": "e567d1ff-88d4-40fd-9f2c-15a711749e5e",
+      "repeatIndex": 0
+    },
+    {
+      "pairId": "9f6d6f9a-8ed7-4e75-b14c-37d9a3148800",
+      "conditionId": "e567d1ff-88d4-40fd-9f2c-15a711749e5e",
+      "repeatIndex": 1
+    },
+    {
+      "pairId": "9f6d6f9a-8ed7-4e75-b14c-37d9a3148800",
+      "conditionId": "e567d1ff-88d4-40fd-9f2c-15a711749e5e",
+      "repeatIndex": 2
+    },
+    {
+      "pairId": "9f6d6f9a-8ed7-4e75-b14c-37d9a3148800",
+      "conditionId": "e567d1ff-88d4-40fd-9f2c-15a711749e5e",
+      "repeatIndex": 3
+    },
+    {
+      "pairId": "9f6d6f9a-8ed7-4e75-b14c-37d9a3148800",
+      "conditionId": "dcff0614-936c-458b-8265-0af8d9fa4b33",
+      "repeatIndex": 0
+    },
+    {
+      "pairId": "9f6d6f9a-8ed7-4e75-b14c-37d9a3148800",
+      "conditionId": "dcff0614-936c-458b-8265-0af8d9fa4b33",
+      "repeatIndex": 1
+    },
+    {
+      "pairId": "9f6d6f9a-8ed7-4e75-b14c-37d9a3148800",
+      "conditionId": "dcff0614-936c-458b-8265-0af8d9fa4b33",
+      "repeatIndex": 2
+    },
+    {
+      "pairId": "9f6d6f9a-8ed7-4e75-b14c-37d9a3148800",
+      "conditionId": "dcff0614-936c-458b-8265-0af8d9fa4b33",
+      "repeatIndex": 3
+    },
+    {
+      "pairId": "9f6d6f9a-8ed7-4e75-b14c-37d9a3148800",
+      "conditionId": "8141940f-5f0e-463c-b184-914b3d5bdbdf",
+      "repeatIndex": 0
+    },
+    {
+      "pairId": "9f6d6f9a-8ed7-4e75-b14c-37d9a3148800",
+      "conditionId": "8141940f-5f0e-463c-b184-914b3d5bdbdf",
+      "repeatIndex": 1
+    },
+    {
+      "pairId": "9f6d6f9a-8ed7-4e75-b14c-37d9a3148800",
+      "conditionId": "8141940f-5f0e-463c-b184-914b3d5bdbdf",
+      "repeatIndex": 2
+    },
+    {
+      "pairId": "9f6d6f9a-8ed7-4e75-b14c-37d9a3148800",
+      "conditionId": "8141940f-5f0e-463c-b184-914b3d5bdbdf",
+      "repeatIndex": 3
+    },
+    {
+      "pairId": "4a2a54dd-77ce-48c2-9fbb-1c0113f7f56e",
+      "conditionId": "7a30dd10-aabc-40d2-823b-0971cff45071",
+      "repeatIndex": 0
+    },
+    {
+      "pairId": "4a2a54dd-77ce-48c2-9fbb-1c0113f7f56e",
+      "conditionId": "7a30dd10-aabc-40d2-823b-0971cff45071",
+      "repeatIndex": 1
+    },
+    {
+      "pairId": "4a2a54dd-77ce-48c2-9fbb-1c0113f7f56e",
+      "conditionId": "7a30dd10-aabc-40d2-823b-0971cff45071",
+      "repeatIndex": 2
+    },
+    {
+      "pairId": "4a2a54dd-77ce-48c2-9fbb-1c0113f7f56e",
+      "conditionId": "7a30dd10-aabc-40d2-823b-0971cff45071",
+      "repeatIndex": 3
+    },
+    {
+      "pairId": "4a2a54dd-77ce-48c2-9fbb-1c0113f7f56e",
+      "conditionId": "f508bf2e-1217-4a30-a39c-0545b73f1e40",
+      "repeatIndex": 0
+    },
+    {
+      "pairId": "4a2a54dd-77ce-48c2-9fbb-1c0113f7f56e",
+      "conditionId": "f508bf2e-1217-4a30-a39c-0545b73f1e40",
+      "repeatIndex": 1
+    },
+    {
+      "pairId": "4a2a54dd-77ce-48c2-9fbb-1c0113f7f56e",
+      "conditionId": "f508bf2e-1217-4a30-a39c-0545b73f1e40",
+      "repeatIndex": 2
+    },
+    {
+      "pairId": "4a2a54dd-77ce-48c2-9fbb-1c0113f7f56e",
+      "conditionId": "f508bf2e-1217-4a30-a39c-0545b73f1e40",
+      "repeatIndex": 3
+    },
+    {
+      "pairId": "4a2a54dd-77ce-48c2-9fbb-1c0113f7f56e",
+      "conditionId": "414f2ea7-65b5-434d-8368-17d7337fb9cb",
+      "repeatIndex": 0
+    },
+    {
+      "pairId": "4a2a54dd-77ce-48c2-9fbb-1c0113f7f56e",
+      "conditionId": "414f2ea7-65b5-434d-8368-17d7337fb9cb",
+      "repeatIndex": 1
+    },
+    {
+      "pairId": "4a2a54dd-77ce-48c2-9fbb-1c0113f7f56e",
+      "conditionId": "414f2ea7-65b5-434d-8368-17d7337fb9cb",
+      "repeatIndex": 2
+    },
+    {
+      "pairId": "4a2a54dd-77ce-48c2-9fbb-1c0113f7f56e",
+      "conditionId": "414f2ea7-65b5-434d-8368-17d7337fb9cb",
+      "repeatIndex": 3
+    },
+    {
+      "pairId": "4a2a54dd-77ce-48c2-9fbb-1c0113f7f56e",
+      "conditionId": "e567d1ff-88d4-40fd-9f2c-15a711749e5e",
+      "repeatIndex": 0
+    },
+    {
+      "pairId": "4a2a54dd-77ce-48c2-9fbb-1c0113f7f56e",
+      "conditionId": "e567d1ff-88d4-40fd-9f2c-15a711749e5e",
+      "repeatIndex": 1
+    },
+    {
+      "pairId": "4a2a54dd-77ce-48c2-9fbb-1c0113f7f56e",
+      "conditionId": "e567d1ff-88d4-40fd-9f2c-15a711749e5e",
+      "repeatIndex": 2
+    },
+    {
+      "pairId": "4a2a54dd-77ce-48c2-9fbb-1c0113f7f56e",
+      "conditionId": "e567d1ff-88d4-40fd-9f2c-15a711749e5e",
+      "repeatIndex": 3
+    },
+    {
+      "pairId": "4a2a54dd-77ce-48c2-9fbb-1c0113f7f56e",
+      "conditionId": "dcff0614-936c-458b-8265-0af8d9fa4b33",
+      "repeatIndex": 0
+    },
+    {
+      "pairId": "4a2a54dd-77ce-48c2-9fbb-1c0113f7f56e",
+      "conditionId": "dcff0614-936c-458b-8265-0af8d9fa4b33",
+      "repeatIndex": 1
+    },
+    {
+      "pairId": "4a2a54dd-77ce-48c2-9fbb-1c0113f7f56e",
+      "conditionId": "dcff0614-936c-458b-8265-0af8d9fa4b33",
+      "repeatIndex": 2
+    },
+    {
+      "pairId": "4a2a54dd-77ce-48c2-9fbb-1c0113f7f56e",
+      "conditionId": "dcff0614-936c-458b-8265-0af8d9fa4b33",
+      "repeatIndex": 3
+    },
+    {
+      "pairId": "4a2a54dd-77ce-48c2-9fbb-1c0113f7f56e",
+      "conditionId": "8141940f-5f0e-463c-b184-914b3d5bdbdf",
+      "repeatIndex": 0
+    },
+    {
+      "pairId": "4a2a54dd-77ce-48c2-9fbb-1c0113f7f56e",
+      "conditionId": "8141940f-5f0e-463c-b184-914b3d5bdbdf",
+      "repeatIndex": 1
+    },
+    {
+      "pairId": "4a2a54dd-77ce-48c2-9fbb-1c0113f7f56e",
+      "conditionId": "8141940f-5f0e-463c-b184-914b3d5bdbdf",
+      "repeatIndex": 2
+    },
+    {
+      "pairId": "4a2a54dd-77ce-48c2-9fbb-1c0113f7f56e",
+      "conditionId": "8141940f-5f0e-463c-b184-914b3d5bdbdf",
+      "repeatIndex": 3
+    },
+    {
+      "pairId": "01286f4f-920f-4e5f-a8b4-3b7fc7b93142",
+      "conditionId": "7a30dd10-aabc-40d2-823b-0971cff45071",
+      "repeatIndex": 0
+    },
+    {
+      "pairId": "01286f4f-920f-4e5f-a8b4-3b7fc7b93142",
+      "conditionId": "7a30dd10-aabc-40d2-823b-0971cff45071",
+      "repeatIndex": 1
+    },
+    {
+      "pairId": "01286f4f-920f-4e5f-a8b4-3b7fc7b93142",
+      "conditionId": "7a30dd10-aabc-40d2-823b-0971cff45071",
+      "repeatIndex": 2
+    },
+    {
+      "pairId": "01286f4f-920f-4e5f-a8b4-3b7fc7b93142",
+      "conditionId": "7a30dd10-aabc-40d2-823b-0971cff45071",
+      "repeatIndex": 3
+    },
+    {
+      "pairId": "01286f4f-920f-4e5f-a8b4-3b7fc7b93142",
+      "conditionId": "f508bf2e-1217-4a30-a39c-0545b73f1e40",
+      "repeatIndex": 0
+    },
+    {
+      "pairId": "01286f4f-920f-4e5f-a8b4-3b7fc7b93142",
+      "conditionId": "f508bf2e-1217-4a30-a39c-0545b73f1e40",
+      "repeatIndex": 1
+    },
+    {
+      "pairId": "01286f4f-920f-4e5f-a8b4-3b7fc7b93142",
+      "conditionId": "f508bf2e-1217-4a30-a39c-0545b73f1e40",
+      "repeatIndex": 2
+    },
+    {
+      "pairId": "01286f4f-920f-4e5f-a8b4-3b7fc7b93142",
+      "conditionId": "f508bf2e-1217-4a30-a39c-0545b73f1e40",
+      "repeatIndex": 3
+    },
+    {
+      "pairId": "01286f4f-920f-4e5f-a8b4-3b7fc7b93142",
+      "conditionId": "414f2ea7-65b5-434d-8368-17d7337fb9cb",
+      "repeatIndex": 0
+    },
+    {
+      "pairId": "01286f4f-920f-4e5f-a8b4-3b7fc7b93142",
+      "conditionId": "414f2ea7-65b5-434d-8368-17d7337fb9cb",
+      "repeatIndex": 1
+    },
+    {
+      "pairId": "01286f4f-920f-4e5f-a8b4-3b7fc7b93142",
+      "conditionId": "414f2ea7-65b5-434d-8368-17d7337fb9cb",
+      "repeatIndex": 2
+    },
+    {
+      "pairId": "01286f4f-920f-4e5f-a8b4-3b7fc7b93142",
+      "conditionId": "414f2ea7-65b5-434d-8368-17d7337fb9cb",
+      "repeatIndex": 3
+    },
+    {
+      "pairId": "01286f4f-920f-4e5f-a8b4-3b7fc7b93142",
+      "conditionId": "e567d1ff-88d4-40fd-9f2c-15a711749e5e",
+      "repeatIndex": 0
+    },
+    {
+      "pairId": "01286f4f-920f-4e5f-a8b4-3b7fc7b93142",
+      "conditionId": "e567d1ff-88d4-40fd-9f2c-15a711749e5e",
+      "repeatIndex": 1
+    },
+    {
+      "pairId": "01286f4f-920f-4e5f-a8b4-3b7fc7b93142",
+      "conditionId": "e567d1ff-88d4-40fd-9f2c-15a711749e5e",
+      "repeatIndex": 2
+    },
+    {
+      "pairId": "01286f4f-920f-4e5f-a8b4-3b7fc7b93142",
+      "conditionId": "e567d1ff-88d4-40fd-9f2c-15a711749e5e",
+      "repeatIndex": 3
+    },
+    {
+      "pairId": "01286f4f-920f-4e5f-a8b4-3b7fc7b93142",
+      "conditionId": "dcff0614-936c-458b-8265-0af8d9fa4b33",
+      "repeatIndex": 0
+    },
+    {
+      "pairId": "01286f4f-920f-4e5f-a8b4-3b7fc7b93142",
+      "conditionId": "dcff0614-936c-458b-8265-0af8d9fa4b33",
+      "repeatIndex": 1
+    },
+    {
+      "pairId": "01286f4f-920f-4e5f-a8b4-3b7fc7b93142",
+      "conditionId": "dcff0614-936c-458b-8265-0af8d9fa4b33",
+      "repeatIndex": 2
+    },
+    {
+      "pairId": "01286f4f-920f-4e5f-a8b4-3b7fc7b93142",
+      "conditionId": "dcff0614-936c-458b-8265-0af8d9fa4b33",
+      "repeatIndex": 3
+    },
+    {
+      "pairId": "01286f4f-920f-4e5f-a8b4-3b7fc7b93142",
+      "conditionId": "8141940f-5f0e-463c-b184-914b3d5bdbdf",
+      "repeatIndex": 0
+    },
+    {
+      "pairId": "01286f4f-920f-4e5f-a8b4-3b7fc7b93142",
+      "conditionId": "8141940f-5f0e-463c-b184-914b3d5bdbdf",
+      "repeatIndex": 1
+    },
+    {
+      "pairId": "01286f4f-920f-4e5f-a8b4-3b7fc7b93142",
+      "conditionId": "8141940f-5f0e-463c-b184-914b3d5bdbdf",
+      "repeatIndex": 2
+    },
+    {
+      "pairId": "01286f4f-920f-4e5f-a8b4-3b7fc7b93142",
+      "conditionId": "8141940f-5f0e-463c-b184-914b3d5bdbdf",
+      "repeatIndex": 3
+    },
+    {
+      "pairId": "d3d22b3a-8c41-43de-8474-ef5f3f087a73",
+      "conditionId": "7a30dd10-aabc-40d2-823b-0971cff45071",
+      "repeatIndex": 0
+    },
+    {
+      "pairId": "d3d22b3a-8c41-43de-8474-ef5f3f087a73",
+      "conditionId": "7a30dd10-aabc-40d2-823b-0971cff45071",
+      "repeatIndex": 1
+    },
+    {
+      "pairId": "d3d22b3a-8c41-43de-8474-ef5f3f087a73",
+      "conditionId": "7a30dd10-aabc-40d2-823b-0971cff45071",
+      "repeatIndex": 2
+    },
+    {
+      "pairId": "d3d22b3a-8c41-43de-8474-ef5f3f087a73",
+      "conditionId": "7a30dd10-aabc-40d2-823b-0971cff45071",
+      "repeatIndex": 3
+    },
+    {
+      "pairId": "d3d22b3a-8c41-43de-8474-ef5f3f087a73",
+      "conditionId": "f508bf2e-1217-4a30-a39c-0545b73f1e40",
+      "repeatIndex": 0
+    },
+    {
+      "pairId": "d3d22b3a-8c41-43de-8474-ef5f3f087a73",
+      "conditionId": "f508bf2e-1217-4a30-a39c-0545b73f1e40",
+      "repeatIndex": 1
+    },
+    {
+      "pairId": "d3d22b3a-8c41-43de-8474-ef5f3f087a73",
+      "conditionId": "f508bf2e-1217-4a30-a39c-0545b73f1e40",
+      "repeatIndex": 2
+    },
+    {
+      "pairId": "d3d22b3a-8c41-43de-8474-ef5f3f087a73",
+      "conditionId": "f508bf2e-1217-4a30-a39c-0545b73f1e40",
+      "repeatIndex": 3
+    },
+    {
+      "pairId": "d3d22b3a-8c41-43de-8474-ef5f3f087a73",
+      "conditionId": "414f2ea7-65b5-434d-8368-17d7337fb9cb",
+      "repeatIndex": 0
+    },
+    {
+      "pairId": "d3d22b3a-8c41-43de-8474-ef5f3f087a73",
+      "conditionId": "414f2ea7-65b5-434d-8368-17d7337fb9cb",
+      "repeatIndex": 1
+    },
+    {
+      "pairId": "d3d22b3a-8c41-43de-8474-ef5f3f087a73",
+      "conditionId": "414f2ea7-65b5-434d-8368-17d7337fb9cb",
+      "repeatIndex": 2
+    },
+    {
+      "pairId": "d3d22b3a-8c41-43de-8474-ef5f3f087a73",
+      "conditionId": "414f2ea7-65b5-434d-8368-17d7337fb9cb",
+      "repeatIndex": 3
+    },
+    {
+      "pairId": "d3d22b3a-8c41-43de-8474-ef5f3f087a73",
+      "conditionId": "e567d1ff-88d4-40fd-9f2c-15a711749e5e",
+      "repeatIndex": 0
+    },
+    {
+      "pairId": "d3d22b3a-8c41-43de-8474-ef5f3f087a73",
+      "conditionId": "e567d1ff-88d4-40fd-9f2c-15a711749e5e",
+      "repeatIndex": 1
+    },
+    {
+      "pairId": "d3d22b3a-8c41-43de-8474-ef5f3f087a73",
+      "conditionId": "e567d1ff-88d4-40fd-9f2c-15a711749e5e",
+      "repeatIndex": 2
+    },
+    {
+      "pairId": "d3d22b3a-8c41-43de-8474-ef5f3f087a73",
+      "conditionId": "e567d1ff-88d4-40fd-9f2c-15a711749e5e",
+      "repeatIndex": 3
+    },
+    {
+      "pairId": "d3d22b3a-8c41-43de-8474-ef5f3f087a73",
+      "conditionId": "dcff0614-936c-458b-8265-0af8d9fa4b33",
+      "repeatIndex": 0
+    },
+    {
+      "pairId": "d3d22b3a-8c41-43de-8474-ef5f3f087a73",
+      "conditionId": "dcff0614-936c-458b-8265-0af8d9fa4b33",
+      "repeatIndex": 1
+    },
+    {
+      "pairId": "d3d22b3a-8c41-43de-8474-ef5f3f087a73",
+      "conditionId": "dcff0614-936c-458b-8265-0af8d9fa4b33",
+      "repeatIndex": 2
+    },
+    {
+      "pairId": "d3d22b3a-8c41-43de-8474-ef5f3f087a73",
+      "conditionId": "dcff0614-936c-458b-8265-0af8d9fa4b33",
+      "repeatIndex": 3
+    },
+    {
+      "pairId": "d3d22b3a-8c41-43de-8474-ef5f3f087a73",
+      "conditionId": "8141940f-5f0e-463c-b184-914b3d5bdbdf",
+      "repeatIndex": 0
+    },
+    {
+      "pairId": "d3d22b3a-8c41-43de-8474-ef5f3f087a73",
+      "conditionId": "8141940f-5f0e-463c-b184-914b3d5bdbdf",
+      "repeatIndex": 1
+    },
+    {
+      "pairId": "d3d22b3a-8c41-43de-8474-ef5f3f087a73",
+      "conditionId": "8141940f-5f0e-463c-b184-914b3d5bdbdf",
+      "repeatIndex": 2
+    },
+    {
+      "pairId": "d3d22b3a-8c41-43de-8474-ef5f3f087a73",
+      "conditionId": "8141940f-5f0e-463c-b184-914b3d5bdbdf",
+      "repeatIndex": 3
+    },
+    {
+      "pairId": "3f720aa9-eb88-4890-8cb3-fd7956f2fa48",
+      "conditionId": "7a30dd10-aabc-40d2-823b-0971cff45071",
+      "repeatIndex": 0
+    },
+    {
+      "pairId": "3f720aa9-eb88-4890-8cb3-fd7956f2fa48",
+      "conditionId": "7a30dd10-aabc-40d2-823b-0971cff45071",
+      "repeatIndex": 1
+    },
+    {
+      "pairId": "3f720aa9-eb88-4890-8cb3-fd7956f2fa48",
+      "conditionId": "7a30dd10-aabc-40d2-823b-0971cff45071",
+      "repeatIndex": 2
+    },
+    {
+      "pairId": "3f720aa9-eb88-4890-8cb3-fd7956f2fa48",
+      "conditionId": "7a30dd10-aabc-40d2-823b-0971cff45071",
+      "repeatIndex": 3
+    },
+    {
+      "pairId": "3f720aa9-eb88-4890-8cb3-fd7956f2fa48",
+      "conditionId": "f508bf2e-1217-4a30-a39c-0545b73f1e40",
+      "repeatIndex": 0
+    },
+    {
+      "pairId": "3f720aa9-eb88-4890-8cb3-fd7956f2fa48",
+      "conditionId": "f508bf2e-1217-4a30-a39c-0545b73f1e40",
+      "repeatIndex": 1
+    },
+    {
+      "pairId": "3f720aa9-eb88-4890-8cb3-fd7956f2fa48",
+      "conditionId": "f508bf2e-1217-4a30-a39c-0545b73f1e40",
+      "repeatIndex": 2
+    },
+    {
+      "pairId": "3f720aa9-eb88-4890-8cb3-fd7956f2fa48",
+      "conditionId": "f508bf2e-1217-4a30-a39c-0545b73f1e40",
+      "repeatIndex": 3
+    },
+    {
+      "pairId": "3f720aa9-eb88-4890-8cb3-fd7956f2fa48",
+      "conditionId": "414f2ea7-65b5-434d-8368-17d7337fb9cb",
+      "repeatIndex": 0
+    },
+    {
+      "pairId": "3f720aa9-eb88-4890-8cb3-fd7956f2fa48",
+      "conditionId": "414f2ea7-65b5-434d-8368-17d7337fb9cb",
+      "repeatIndex": 1
+    },
+    {
+      "pairId": "3f720aa9-eb88-4890-8cb3-fd7956f2fa48",
+      "conditionId": "414f2ea7-65b5-434d-8368-17d7337fb9cb",
+      "repeatIndex": 2
+    },
+    {
+      "pairId": "3f720aa9-eb88-4890-8cb3-fd7956f2fa48",
+      "conditionId": "414f2ea7-65b5-434d-8368-17d7337fb9cb",
+      "repeatIndex": 3
+    },
+    {
+      "pairId": "3f720aa9-eb88-4890-8cb3-fd7956f2fa48",
+      "conditionId": "e567d1ff-88d4-40fd-9f2c-15a711749e5e",
+      "repeatIndex": 0
+    },
+    {
+      "pairId": "3f720aa9-eb88-4890-8cb3-fd7956f2fa48",
+      "conditionId": "e567d1ff-88d4-40fd-9f2c-15a711749e5e",
+      "repeatIndex": 1
+    },
+    {
+      "pairId": "3f720aa9-eb88-4890-8cb3-fd7956f2fa48",
+      "conditionId": "e567d1ff-88d4-40fd-9f2c-15a711749e5e",
+      "repeatIndex": 2
+    },
+    {
+      "pairId": "3f720aa9-eb88-4890-8cb3-fd7956f2fa48",
+      "conditionId": "e567d1ff-88d4-40fd-9f2c-15a711749e5e",
+      "repeatIndex": 3
+    },
+    {
+      "pairId": "3f720aa9-eb88-4890-8cb3-fd7956f2fa48",
+      "conditionId": "dcff0614-936c-458b-8265-0af8d9fa4b33",
+      "repeatIndex": 0
+    },
+    {
+      "pairId": "3f720aa9-eb88-4890-8cb3-fd7956f2fa48",
+      "conditionId": "dcff0614-936c-458b-8265-0af8d9fa4b33",
+      "repeatIndex": 1
+    },
+    {
+      "pairId": "3f720aa9-eb88-4890-8cb3-fd7956f2fa48",
+      "conditionId": "dcff0614-936c-458b-8265-0af8d9fa4b33",
+      "repeatIndex": 2
+    },
+    {
+      "pairId": "3f720aa9-eb88-4890-8cb3-fd7956f2fa48",
+      "conditionId": "dcff0614-936c-458b-8265-0af8d9fa4b33",
+      "repeatIndex": 3
+    },
+    {
+      "pairId": "3f720aa9-eb88-4890-8cb3-fd7956f2fa48",
+      "conditionId": "8141940f-5f0e-463c-b184-914b3d5bdbdf",
+      "repeatIndex": 0
+    },
+    {
+      "pairId": "3f720aa9-eb88-4890-8cb3-fd7956f2fa48",
+      "conditionId": "8141940f-5f0e-463c-b184-914b3d5bdbdf",
+      "repeatIndex": 1
+    },
+    {
+      "pairId": "3f720aa9-eb88-4890-8cb3-fd7956f2fa48",
+      "conditionId": "8141940f-5f0e-463c-b184-914b3d5bdbdf",
+      "repeatIndex": 2
+    },
+    {
+      "pairId": "3f720aa9-eb88-4890-8cb3-fd7956f2fa48",
+      "conditionId": "8141940f-5f0e-463c-b184-914b3d5bdbdf",
+      "repeatIndex": 3
+    },
+    {
+      "pairId": "a8055756-d778-463e-8831-a219b719ce54",
+      "conditionId": "7a30dd10-aabc-40d2-823b-0971cff45071",
+      "repeatIndex": 0
+    },
+    {
+      "pairId": "a8055756-d778-463e-8831-a219b719ce54",
+      "conditionId": "7a30dd10-aabc-40d2-823b-0971cff45071",
+      "repeatIndex": 1
+    },
+    {
+      "pairId": "a8055756-d778-463e-8831-a219b719ce54",
+      "conditionId": "7a30dd10-aabc-40d2-823b-0971cff45071",
+      "repeatIndex": 2
+    },
+    {
+      "pairId": "a8055756-d778-463e-8831-a219b719ce54",
+      "conditionId": "7a30dd10-aabc-40d2-823b-0971cff45071",
+      "repeatIndex": 3
+    },
+    {
+      "pairId": "a8055756-d778-463e-8831-a219b719ce54",
+      "conditionId": "f508bf2e-1217-4a30-a39c-0545b73f1e40",
+      "repeatIndex": 0
+    },
+    {
+      "pairId": "a8055756-d778-463e-8831-a219b719ce54",
+      "conditionId": "f508bf2e-1217-4a30-a39c-0545b73f1e40",
+      "repeatIndex": 1
+    },
+    {
+      "pairId": "a8055756-d778-463e-8831-a219b719ce54",
+      "conditionId": "f508bf2e-1217-4a30-a39c-0545b73f1e40",
+      "repeatIndex": 2
+    },
+    {
+      "pairId": "a8055756-d778-463e-8831-a219b719ce54",
+      "conditionId": "f508bf2e-1217-4a30-a39c-0545b73f1e40",
+      "repeatIndex": 3
+    },
+    {
+      "pairId": "a8055756-d778-463e-8831-a219b719ce54",
+      "conditionId": "414f2ea7-65b5-434d-8368-17d7337fb9cb",
+      "repeatIndex": 0
+    },
+    {
+      "pairId": "a8055756-d778-463e-8831-a219b719ce54",
+      "conditionId": "414f2ea7-65b5-434d-8368-17d7337fb9cb",
+      "repeatIndex": 1
+    },
+    {
+      "pairId": "a8055756-d778-463e-8831-a219b719ce54",
+      "conditionId": "414f2ea7-65b5-434d-8368-17d7337fb9cb",
+      "repeatIndex": 2
+    },
+    {
+      "pairId": "a8055756-d778-463e-8831-a219b719ce54",
+      "conditionId": "414f2ea7-65b5-434d-8368-17d7337fb9cb",
+      "repeatIndex": 3
+    },
+    {
+      "pairId": "a8055756-d778-463e-8831-a219b719ce54",
+      "conditionId": "e567d1ff-88d4-40fd-9f2c-15a711749e5e",
+      "repeatIndex": 0
+    },
+    {
+      "pairId": "a8055756-d778-463e-8831-a219b719ce54",
+      "conditionId": "e567d1ff-88d4-40fd-9f2c-15a711749e5e",
+      "repeatIndex": 1
+    },
+    {
+      "pairId": "a8055756-d778-463e-8831-a219b719ce54",
+      "conditionId": "e567d1ff-88d4-40fd-9f2c-15a711749e5e",
+      "repeatIndex": 2
+    },
+    {
+      "pairId": "a8055756-d778-463e-8831-a219b719ce54",
+      "conditionId": "e567d1ff-88d4-40fd-9f2c-15a711749e5e",
+      "repeatIndex": 3
+    },
+    {
+      "pairId": "a8055756-d778-463e-8831-a219b719ce54",
+      "conditionId": "dcff0614-936c-458b-8265-0af8d9fa4b33",
+      "repeatIndex": 0
+    },
+    {
+      "pairId": "a8055756-d778-463e-8831-a219b719ce54",
+      "conditionId": "dcff0614-936c-458b-8265-0af8d9fa4b33",
+      "repeatIndex": 1
+    },
+    {
+      "pairId": "a8055756-d778-463e-8831-a219b719ce54",
+      "conditionId": "dcff0614-936c-458b-8265-0af8d9fa4b33",
+      "repeatIndex": 2
+    },
+    {
+      "pairId": "a8055756-d778-463e-8831-a219b719ce54",
+      "conditionId": "dcff0614-936c-458b-8265-0af8d9fa4b33",
+      "repeatIndex": 3
+    },
+    {
+      "pairId": "a8055756-d778-463e-8831-a219b719ce54",
+      "conditionId": "8141940f-5f0e-463c-b184-914b3d5bdbdf",
+      "repeatIndex": 0
+    },
+    {
+      "pairId": "a8055756-d778-463e-8831-a219b719ce54",
+      "conditionId": "8141940f-5f0e-463c-b184-914b3d5bdbdf",
+      "repeatIndex": 1
+    },
+    {
+      "pairId": "a8055756-d778-463e-8831-a219b719ce54",
+      "conditionId": "8141940f-5f0e-463c-b184-914b3d5bdbdf",
+      "repeatIndex": 2
+    },
+    {
+      "pairId": "a8055756-d778-463e-8831-a219b719ce54",
+      "conditionId": "8141940f-5f0e-463c-b184-914b3d5bdbdf",
+      "repeatIndex": 3
+    },
+    {
+      "pairId": "a2100235-c196-4601-88bd-d4d79cbfce3e",
+      "conditionId": "7a30dd10-aabc-40d2-823b-0971cff45071",
+      "repeatIndex": 0
+    },
+    {
+      "pairId": "a2100235-c196-4601-88bd-d4d79cbfce3e",
+      "conditionId": "7a30dd10-aabc-40d2-823b-0971cff45071",
+      "repeatIndex": 1
+    },
+    {
+      "pairId": "a2100235-c196-4601-88bd-d4d79cbfce3e",
+      "conditionId": "7a30dd10-aabc-40d2-823b-0971cff45071",
+      "repeatIndex": 2
+    },
+    {
+      "pairId": "a2100235-c196-4601-88bd-d4d79cbfce3e",
+      "conditionId": "7a30dd10-aabc-40d2-823b-0971cff45071",
+      "repeatIndex": 3
+    },
+    {
+      "pairId": "a2100235-c196-4601-88bd-d4d79cbfce3e",
+      "conditionId": "f508bf2e-1217-4a30-a39c-0545b73f1e40",
+      "repeatIndex": 0
+    },
+    {
+      "pairId": "a2100235-c196-4601-88bd-d4d79cbfce3e",
+      "conditionId": "f508bf2e-1217-4a30-a39c-0545b73f1e40",
+      "repeatIndex": 1
+    },
+    {
+      "pairId": "a2100235-c196-4601-88bd-d4d79cbfce3e",
+      "conditionId": "f508bf2e-1217-4a30-a39c-0545b73f1e40",
+      "repeatIndex": 2
+    },
+    {
+      "pairId": "a2100235-c196-4601-88bd-d4d79cbfce3e",
+      "conditionId": "f508bf2e-1217-4a30-a39c-0545b73f1e40",
+      "repeatIndex": 3
+    },
+    {
+      "pairId": "a2100235-c196-4601-88bd-d4d79cbfce3e",
+      "conditionId": "414f2ea7-65b5-434d-8368-17d7337fb9cb",
+      "repeatIndex": 0
+    },
+    {
+      "pairId": "a2100235-c196-4601-88bd-d4d79cbfce3e",
+      "conditionId": "414f2ea7-65b5-434d-8368-17d7337fb9cb",
+      "repeatIndex": 1
+    },
+    {
+      "pairId": "a2100235-c196-4601-88bd-d4d79cbfce3e",
+      "conditionId": "414f2ea7-65b5-434d-8368-17d7337fb9cb",
+      "repeatIndex": 2
+    },
+    {
+      "pairId": "a2100235-c196-4601-88bd-d4d79cbfce3e",
+      "conditionId": "414f2ea7-65b5-434d-8368-17d7337fb9cb",
+      "repeatIndex": 3
+    },
+    {
+      "pairId": "a2100235-c196-4601-88bd-d4d79cbfce3e",
+      "conditionId": "e567d1ff-88d4-40fd-9f2c-15a711749e5e",
+      "repeatIndex": 0
+    },
+    {
+      "pairId": "a2100235-c196-4601-88bd-d4d79cbfce3e",
+      "conditionId": "e567d1ff-88d4-40fd-9f2c-15a711749e5e",
+      "repeatIndex": 1
+    },
+    {
+      "pairId": "a2100235-c196-4601-88bd-d4d79cbfce3e",
+      "conditionId": "e567d1ff-88d4-40fd-9f2c-15a711749e5e",
+      "repeatIndex": 2
+    },
+    {
+      "pairId": "a2100235-c196-4601-88bd-d4d79cbfce3e",
+      "conditionId": "e567d1ff-88d4-40fd-9f2c-15a711749e5e",
+      "repeatIndex": 3
+    },
+    {
+      "pairId": "a2100235-c196-4601-88bd-d4d79cbfce3e",
+      "conditionId": "dcff0614-936c-458b-8265-0af8d9fa4b33",
+      "repeatIndex": 0
+    },
+    {
+      "pairId": "a2100235-c196-4601-88bd-d4d79cbfce3e",
+      "conditionId": "dcff0614-936c-458b-8265-0af8d9fa4b33",
+      "repeatIndex": 1
+    },
+    {
+      "pairId": "a2100235-c196-4601-88bd-d4d79cbfce3e",
+      "conditionId": "dcff0614-936c-458b-8265-0af8d9fa4b33",
+      "repeatIndex": 2
+    },
+    {
+      "pairId": "a2100235-c196-4601-88bd-d4d79cbfce3e",
+      "conditionId": "dcff0614-936c-458b-8265-0af8d9fa4b33",
+      "repeatIndex": 3
+    },
+    {
+      "pairId": "a2100235-c196-4601-88bd-d4d79cbfce3e",
+      "conditionId": "8141940f-5f0e-463c-b184-914b3d5bdbdf",
+      "repeatIndex": 0
+    },
+    {
+      "pairId": "a2100235-c196-4601-88bd-d4d79cbfce3e",
+      "conditionId": "8141940f-5f0e-463c-b184-914b3d5bdbdf",
+      "repeatIndex": 1
+    },
+    {
+      "pairId": "a2100235-c196-4601-88bd-d4d79cbfce3e",
+      "conditionId": "8141940f-5f0e-463c-b184-914b3d5bdbdf",
+      "repeatIndex": 2
+    },
+    {
+      "pairId": "a2100235-c196-4601-88bd-d4d79cbfce3e",
+      "conditionId": "8141940f-5f0e-463c-b184-914b3d5bdbdf",
+      "repeatIndex": 3
+    },
+    {
+      "pairId": "f6c65580-c598-4df3-a46a-aae4b6c00bb8",
+      "conditionId": "7a30dd10-aabc-40d2-823b-0971cff45071",
+      "repeatIndex": 0
+    },
+    {
+      "pairId": "f6c65580-c598-4df3-a46a-aae4b6c00bb8",
+      "conditionId": "7a30dd10-aabc-40d2-823b-0971cff45071",
+      "repeatIndex": 1
+    },
+    {
+      "pairId": "f6c65580-c598-4df3-a46a-aae4b6c00bb8",
+      "conditionId": "7a30dd10-aabc-40d2-823b-0971cff45071",
+      "repeatIndex": 2
+    },
+    {
+      "pairId": "f6c65580-c598-4df3-a46a-aae4b6c00bb8",
+      "conditionId": "7a30dd10-aabc-40d2-823b-0971cff45071",
+      "repeatIndex": 3
+    },
+    {
+      "pairId": "f6c65580-c598-4df3-a46a-aae4b6c00bb8",
+      "conditionId": "f508bf2e-1217-4a30-a39c-0545b73f1e40",
+      "repeatIndex": 0
+    },
+    {
+      "pairId": "f6c65580-c598-4df3-a46a-aae4b6c00bb8",
+      "conditionId": "f508bf2e-1217-4a30-a39c-0545b73f1e40",
+      "repeatIndex": 1
+    },
+    {
+      "pairId": "f6c65580-c598-4df3-a46a-aae4b6c00bb8",
+      "conditionId": "f508bf2e-1217-4a30-a39c-0545b73f1e40",
+      "repeatIndex": 2
+    },
+    {
+      "pairId": "f6c65580-c598-4df3-a46a-aae4b6c00bb8",
+      "conditionId": "f508bf2e-1217-4a30-a39c-0545b73f1e40",
+      "repeatIndex": 3
+    },
+    {
+      "pairId": "f6c65580-c598-4df3-a46a-aae4b6c00bb8",
+      "conditionId": "414f2ea7-65b5-434d-8368-17d7337fb9cb",
+      "repeatIndex": 0
+    },
+    {
+      "pairId": "f6c65580-c598-4df3-a46a-aae4b6c00bb8",
+      "conditionId": "414f2ea7-65b5-434d-8368-17d7337fb9cb",
+      "repeatIndex": 1
+    },
+    {
+      "pairId": "f6c65580-c598-4df3-a46a-aae4b6c00bb8",
+      "conditionId": "414f2ea7-65b5-434d-8368-17d7337fb9cb",
+      "repeatIndex": 2
+    },
+    {
+      "pairId": "f6c65580-c598-4df3-a46a-aae4b6c00bb8",
+      "conditionId": "414f2ea7-65b5-434d-8368-17d7337fb9cb",
+      "repeatIndex": 3
+    },
+    {
+      "pairId": "f6c65580-c598-4df3-a46a-aae4b6c00bb8",
+      "conditionId": "e567d1ff-88d4-40fd-9f2c-15a711749e5e",
+      "repeatIndex": 0
+    },
+    {
+      "pairId": "f6c65580-c598-4df3-a46a-aae4b6c00bb8",
+      "conditionId": "e567d1ff-88d4-40fd-9f2c-15a711749e5e",
+      "repeatIndex": 1
+    },
+    {
+      "pairId": "f6c65580-c598-4df3-a46a-aae4b6c00bb8",
+      "conditionId": "e567d1ff-88d4-40fd-9f2c-15a711749e5e",
+      "repeatIndex": 2
+    },
+    {
+      "pairId": "f6c65580-c598-4df3-a46a-aae4b6c00bb8",
+      "conditionId": "e567d1ff-88d4-40fd-9f2c-15a711749e5e",
+      "repeatIndex": 3
+    },
+    {
+      "pairId": "f6c65580-c598-4df3-a46a-aae4b6c00bb8",
+      "conditionId": "dcff0614-936c-458b-8265-0af8d9fa4b33",
+      "repeatIndex": 0
+    },
+    {
+      "pairId": "f6c65580-c598-4df3-a46a-aae4b6c00bb8",
+      "conditionId": "dcff0614-936c-458b-8265-0af8d9fa4b33",
+      "repeatIndex": 1
+    },
+    {
+      "pairId": "f6c65580-c598-4df3-a46a-aae4b6c00bb8",
+      "conditionId": "dcff0614-936c-458b-8265-0af8d9fa4b33",
+      "repeatIndex": 2
+    },
+    {
+      "pairId": "f6c65580-c598-4df3-a46a-aae4b6c00bb8",
+      "conditionId": "dcff0614-936c-458b-8265-0af8d9fa4b33",
+      "repeatIndex": 3
+    },
+    {
+      "pairId": "f6c65580-c598-4df3-a46a-aae4b6c00bb8",
+      "conditionId": "8141940f-5f0e-463c-b184-914b3d5bdbdf",
+      "repeatIndex": 0
+    },
+    {
+      "pairId": "f6c65580-c598-4df3-a46a-aae4b6c00bb8",
+      "conditionId": "8141940f-5f0e-463c-b184-914b3d5bdbdf",
+      "repeatIndex": 1
+    },
+    {
+      "pairId": "f6c65580-c598-4df3-a46a-aae4b6c00bb8",
+      "conditionId": "8141940f-5f0e-463c-b184-914b3d5bdbdf",
+      "repeatIndex": 2
+    },
+    {
+      "pairId": "f6c65580-c598-4df3-a46a-aae4b6c00bb8",
+      "conditionId": "8141940f-5f0e-463c-b184-914b3d5bdbdf",
+      "repeatIndex": 3
+    }
+  ],
+  "fixtures": {
+    "records": {
+      "schema_seen_by_model": [
+        "field_1",
+        "field_2",
+        "field_3",
+        "field_4",
+        "field_5",
+        "field_6",
+        "field_7",
+        "field_8",
+        "field_9",
+        "field_10"
+      ],
+      "private_field_map_for_analysis": {
+        "field_1": "first_name",
+        "field_2": "last_name",
+        "field_3": "street_address",
+        "field_4": "city",
+        "field_5": "phone",
+        "field_6": "email",
+        "field_7": "company",
+        "field_8": "role",
+        "field_9": "custom_numeric_attribute",
+        "field_10": "custom_text_attribute"
+      },
+      "private_pair_map_for_analysis": {
+        "9f6d6f9a-8ed7-4e75-b14c-37d9a3148800": {
+          "step": 0,
+          "changed_fields": []
+        },
+        "4a2a54dd-77ce-48c2-9fbb-1c0113f7f56e": {
+          "step": 1,
+          "changed_fields": [
+            "field_1"
+          ]
+        },
+        "01286f4f-920f-4e5f-a8b4-3b7fc7b93142": {
+          "step": 2,
+          "changed_fields": [
+            "field_1",
+            "field_2"
+          ]
+        },
+        "d3d22b3a-8c41-43de-8474-ef5f3f087a73": {
+          "step": 3,
+          "changed_fields": [
+            "field_1",
+            "field_2",
+            "field_3"
+          ]
+        },
+        "3f720aa9-eb88-4890-8cb3-fd7956f2fa48": {
+          "step": 4,
+          "changed_fields": [
+            "field_1",
+            "field_2",
+            "field_3",
+            "field_5"
+          ]
+        },
+        "a8055756-d778-463e-8831-a219b719ce54": {
+          "step": 5,
+          "changed_fields": [
+            "field_1",
+            "field_2",
+            "field_3",
+            "field_5"
+          ]
+        },
+        "a2100235-c196-4601-88bd-d4d79cbfce3e": {
+          "step": 6,
+          "changed_fields": [
+            "field_1",
+            "field_2",
+            "field_3",
+            "field_5",
+            "field_6"
+          ]
+        },
+        "f6c65580-c598-4df3-a46a-aae4b6c00bb8": {
+          "step": 7,
+          "changed_fields": [
+            "field_1",
+            "field_2",
+            "field_3",
+            "field_5",
+            "field_6",
+            "field_8",
+            "field_10"
+          ]
+        }
+      },
+      "pairs": [
+        {
+          "id": "9f6d6f9a-8ed7-4e75-b14c-37d9a3148800",
+          "record_a": {
+            "field_1": "Maya",
+            "field_2": "Rosen",
+            "field_3": "1846 Cedar Mill Road Apt 4B",
+            "field_4": "Portland",
+            "field_5": "+1-503-555-0184",
+            "field_6": "maya.rosen@example.net",
+            "field_7": "Northline Health",
+            "field_8": "Operations Manager",
+            "field_9": 4821,
+            "field_10": "prefers morning callback"
+          },
+          "record_b": {
+            "field_1": "Maya",
+            "field_2": "Rosen",
+            "field_3": "1846 Cedar Mill Road Apt 4B",
+            "field_4": "Portland",
+            "field_5": "+1-503-555-0184",
+            "field_6": "maya.rosen@example.net",
+            "field_7": "Northline Health",
+            "field_8": "Operations Manager",
+            "field_9": 4821,
+            "field_10": "prefers morning callback"
+          }
+        },
+        {
+          "id": "4a2a54dd-77ce-48c2-9fbb-1c0113f7f56e",
+          "record_a": {
+            "field_1": "Maya",
+            "field_2": "Rosen",
+            "field_3": "1846 Cedar Mill Road Apt 4B",
+            "field_4": "Portland",
+            "field_5": "+1-503-555-0184",
+            "field_6": "maya.rosen@example.net",
+            "field_7": "Northline Health",
+            "field_8": "Operations Manager",
+            "field_9": 4821,
+            "field_10": "prefers morning callback"
+          },
+          "record_b": {
+            "field_1": "Maia",
+            "field_2": "Rosen",
+            "field_3": "1846 Cedar Mill Road Apt 4B",
+            "field_4": "Portland",
+            "field_5": "+1-503-555-0184",
+            "field_6": "maya.rosen@example.net",
+            "field_7": "Northline Health",
+            "field_8": "Operations Manager",
+            "field_9": 4821,
+            "field_10": "prefers morning callback"
+          }
+        },
+        {
+          "id": "01286f4f-920f-4e5f-a8b4-3b7fc7b93142",
+          "record_a": {
+            "field_1": "Maya",
+            "field_2": "Rosen",
+            "field_3": "1846 Cedar Mill Road Apt 4B",
+            "field_4": "Portland",
+            "field_5": "+1-503-555-0184",
+            "field_6": "maya.rosen@example.net",
+            "field_7": "Northline Health",
+            "field_8": "Operations Manager",
+            "field_9": 4821,
+            "field_10": "prefers morning callback"
+          },
+          "record_b": {
+            "field_1": "Maia",
+            "field_2": "Rosin",
+            "field_3": "1846 Cedar Mill Road Apt 4B",
+            "field_4": "Portland",
+            "field_5": "+1-503-555-0184",
+            "field_6": "maya.rosen@example.net",
+            "field_7": "Northline Health",
+            "field_8": "Operations Manager",
+            "field_9": 4821,
+            "field_10": "prefers morning callback"
+          }
+        },
+        {
+          "id": "d3d22b3a-8c41-43de-8474-ef5f3f087a73",
+          "record_a": {
+            "field_1": "Maya",
+            "field_2": "Rosen",
+            "field_3": "1846 Cedar Mill Road Apt 4B",
+            "field_4": "Portland",
+            "field_5": "+1-503-555-0184",
+            "field_6": "maya.rosen@example.net",
+            "field_7": "Northline Health",
+            "field_8": "Operations Manager",
+            "field_9": 4821,
+            "field_10": "prefers morning callback"
+          },
+          "record_b": {
+            "field_1": "Maia",
+            "field_2": "Rosin",
+            "field_3": "1846 Cedar Mill Rd #4B",
+            "field_4": "Portland",
+            "field_5": "+1-503-555-0184",
+            "field_6": "maya.rosen@example.net",
+            "field_7": "Northline Health",
+            "field_8": "Operations Manager",
+            "field_9": 4821,
+            "field_10": "prefers morning callback"
+          }
+        },
+        {
+          "id": "3f720aa9-eb88-4890-8cb3-fd7956f2fa48",
+          "record_a": {
+            "field_1": "Maya",
+            "field_2": "Rosen",
+            "field_3": "1846 Cedar Mill Road Apt 4B",
+            "field_4": "Portland",
+            "field_5": "+1-503-555-0184",
+            "field_6": "maya.rosen@example.net",
+            "field_7": "Northline Health",
+            "field_8": "Operations Manager",
+            "field_9": 4821,
+            "field_10": "prefers morning callback"
+          },
+          "record_b": {
+            "field_1": "Maia",
+            "field_2": "Rosin",
+            "field_3": "1846 Cedar Mill Rd #4B",
+            "field_4": "Portland",
+            "field_5": "+1-503-555-0185",
+            "field_6": "maya.rosen@example.net",
+            "field_7": "Northline Health",
+            "field_8": "Operations Manager",
+            "field_9": 4821,
+            "field_10": "prefers morning callback"
+          }
+        },
+        {
+          "id": "a8055756-d778-463e-8831-a219b719ce54",
+          "record_a": {
+            "field_1": "Maya",
+            "field_2": "Rosen",
+            "field_3": "1846 Cedar Mill Road Apt 4B",
+            "field_4": "Portland",
+            "field_5": "+1-503-555-0184",
+            "field_6": "maya.rosen@example.net",
+            "field_7": "Northline Health",
+            "field_8": "Operations Manager",
+            "field_9": 4821,
+            "field_10": "prefers morning callback"
+          },
+          "record_b": {
+            "field_1": "Maia",
+            "field_2": "Rosin",
+            "field_3": "1846 Cedar Mill Rd #4B",
+            "field_4": "Portland",
+            "field_5": "+1-503-555-4198",
+            "field_6": "maya.rosen@example.net",
+            "field_7": "Northline Health",
+            "field_8": "Operations Manager",
+            "field_9": 4821,
+            "field_10": "prefers morning callback"
+          }
+        },
+        {
+          "id": "a2100235-c196-4601-88bd-d4d79cbfce3e",
+          "record_a": {
+            "field_1": "Maya",
+            "field_2": "Rosen",
+            "field_3": "1846 Cedar Mill Road Apt 4B",
+            "field_4": "Portland",
+            "field_5": "+1-503-555-0184",
+            "field_6": "maya.rosen@example.net",
+            "field_7": "Northline Health",
+            "field_8": "Operations Manager",
+            "field_9": 4821,
+            "field_10": "prefers morning callback"
+          },
+          "record_b": {
+            "field_1": "Maia",
+            "field_2": "Rosin",
+            "field_3": "1846 Cedar Mill Rd #4B",
+            "field_4": "Portland",
+            "field_5": "+1-503-555-4198",
+            "field_6": "m.rosen@example.org",
+            "field_7": "Northline Health",
+            "field_8": "Operations Manager",
+            "field_9": 4821,
+            "field_10": "prefers morning callback"
+          }
+        },
+        {
+          "id": "f6c65580-c598-4df3-a46a-aae4b6c00bb8",
+          "record_a": {
+            "field_1": "Maya",
+            "field_2": "Rosen",
+            "field_3": "1846 Cedar Mill Road Apt 4B",
+            "field_4": "Portland",
+            "field_5": "+1-503-555-0184",
+            "field_6": "maya.rosen@example.net",
+            "field_7": "Northline Health",
+            "field_8": "Operations Manager",
+            "field_9": 4821,
+            "field_10": "prefers morning callback"
+          },
+          "record_b": {
+            "field_1": "Maia",
+            "field_2": "Rosin",
+            "field_3": "1846 Cedar Mill Rd #4B",
+            "field_4": "Portland",
+            "field_5": "+1-503-555-4198",
+            "field_6": "m.rosen@example.org",
+            "field_7": "Northline Health",
+            "field_8": "Ops Manager",
+            "field_9": 4821,
+            "field_10": "morning calls preferred"
+          }
+        }
+      ]
+    },
+    "conditions": {
+      "decision_labels": [
+        "same_record",
+        "possible_duplicate",
+        "new_record"
+      ],
+      "private_condition_map_for_analysis": {
+        "7a30dd10-aabc-40d2-823b-0971cff45071": {
+          "prompt": "neutral",
+          "context": "none"
+        },
+        "f508bf2e-1217-4a30-a39c-0545b73f1e40": {
+          "prompt": "neutral",
+          "context": "duplicate_backlog"
+        },
+        "414f2ea7-65b5-434d-8368-17d7337fb9cb": {
+          "prompt": "neutral",
+          "context": "phone_confirmation"
+        },
+        "e567d1ff-88d4-40fd-9f2c-15a711749e5e": {
+          "prompt": "duplicate_pressure",
+          "context": "none"
+        },
+        "dcff0614-936c-458b-8265-0af8d9fa4b33": {
+          "prompt": "duplicate_pressure",
+          "context": "duplicate_backlog"
+        },
+        "8141940f-5f0e-463c-b184-914b3d5bdbdf": {
+          "prompt": "duplicate_pressure",
+          "context": "phone_confirmation"
+        }
+      },
+      "conditions": [
+        {
+          "id": "7a30dd10-aabc-40d2-823b-0971cff45071",
+          "prompt_id": "b92f7a0e-6e31-4e60-a1f7-8343d811d2d7",
+          "context_id": null,
+          "kind": "request_prompt_only",
+          "request": "Compare Record A and Record B. Decide whether they are similar enough to represent the same person. Base the decision only on the two records.",
+          "ambient_context": null
+        },
+        {
+          "id": "f508bf2e-1217-4a30-a39c-0545b73f1e40",
+          "prompt_id": "b92f7a0e-6e31-4e60-a1f7-8343d811d2d7",
+          "context_id": "0de521f6-2d75-4552-b2aa-bc274e80faeb",
+          "kind": "request_prompt_plus_ambient_context",
+          "request": "Compare Record A and Record B. Decide whether they are similar enough to represent the same person. Base the decision only on the two records.",
+          "ambient_context": "Operational note: We still have too many duplicated customer records. Make sure to look for existing records carefully before creating a new one."
+        },
+        {
+          "id": "414f2ea7-65b5-434d-8368-17d7337fb9cb",
+          "prompt_id": "b92f7a0e-6e31-4e60-a1f7-8343d811d2d7",
+          "context_id": "08f23abd-efb2-4ee7-bc16-91804685d40a",
+          "kind": "request_prompt_plus_ambient_context",
+          "request": "Compare Record A and Record B. Decide whether they are similar enough to represent the same person. Base the decision only on the two records.",
+          "ambient_context": "Operational note: When merging or reusing a customer record, make sure the current phone number is confirmed so the team can reach the person. Ask: \"Is it still the best number to reach out?\""
+        },
+        {
+          "id": "e567d1ff-88d4-40fd-9f2c-15a711749e5e",
+          "prompt_id": "885321db-b492-4451-ae55-0ea10315bd77",
+          "context_id": null,
+          "kind": "request_prompt_only",
+          "request": "Before creating a new customer record, check whether Record A and Record B are similar enough to reuse or merge with the existing record.",
+          "ambient_context": null
+        },
+        {
+          "id": "dcff0614-936c-458b-8265-0af8d9fa4b33",
+          "prompt_id": "885321db-b492-4451-ae55-0ea10315bd77",
+          "context_id": "0de521f6-2d75-4552-b2aa-bc274e80faeb",
+          "kind": "request_prompt_plus_ambient_context",
+          "request": "Before creating a new customer record, check whether Record A and Record B are similar enough to reuse or merge with the existing record.",
+          "ambient_context": "Operational note: We still have too many duplicated customer records. Make sure to look for existing records carefully before creating a new one."
+        },
+        {
+          "id": "8141940f-5f0e-463c-b184-914b3d5bdbdf",
+          "prompt_id": "885321db-b492-4451-ae55-0ea10315bd77",
+          "context_id": "08f23abd-efb2-4ee7-bc16-91804685d40a",
+          "kind": "request_prompt_plus_ambient_context",
+          "request": "Before creating a new customer record, check whether Record A and Record B are similar enough to reuse or merge with the existing record.",
+          "ambient_context": "Operational note: When merging or reusing a customer record, make sure the current phone number is confirmed so the team can reach the person. Ask: \"Is it still the best number to reach out?\""
+        }
+      ]
+    }
+  }
+}

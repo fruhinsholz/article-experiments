@@ -1,0 +1,42 @@
+{
+  "byCondition": {
+    "q1_only": {
+      "n": 20,
+      "mean": 0.04200000000000001,
+      "min": 0.04,
+      "max": 0.05
+    },
+    "q1_then_neutral": {
+      "n": 20,
+      "mean": 0.04200000000000001,
+      "min": 0.04,
+      "max": 0.05
+    },
+    "neutral_then_q1": {
+      "n": 20,
+      "mean": 0.04400000000000001,
+      "min": 0.04,
+      "max": 0.05
+    },
+    "q1_then_oriented": {
+      "n": 20,
+      "mean": 0.04150000000000001,
+      "min": 0.04,
+      "max": 0.05
+    },
+    "oriented_then_q1": {
+      "n": 20,
+      "mean": 0.04250000000000001,
+      "min": 0.04,
+      "max": 0.05
+    }
+  },
+  "deltas": {
+    "q1_only": 0,
+    "q1_then_neutral": 0,
+    "neutral_then_q1": 0.0020000000000000018,
+    "q1_then_oriented": -0.0005000000000000004,
+    "oriented_then_q1": 0.0005000000000000004
+  },
+  "errors": 0
+}

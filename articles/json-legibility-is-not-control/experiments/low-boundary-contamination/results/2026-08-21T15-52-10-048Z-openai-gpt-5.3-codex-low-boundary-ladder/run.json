@@ -1,0 +1,1685 @@
+{
+  "args": {
+    "provider": "openai",
+    "model": "gpt-5.3-codex",
+    "repeats": 10,
+    "amounts": [
+      0,
+      1,
+      2,
+      5,
+      10,
+      20,
+      50,
+      100,
+      200,
+      500,
+      1000
+    ],
+    "maxCalls": 330,
+    "maxOutputTokens": 16,
+    "temperature": 0,
+    "concurrency": 4,
+    "label": "low-boundary-ladder",
+    "summarizeDir": "",
+    "dryRun": false,
+    "printExamples": false
+  },
+  "conditions": [
+    "b_only",
+    "inactive_a_neutral",
+    "inactive_a_contract"
+  ],
+  "jobs": [
+    {
+      "condition": "b_only",
+      "amount": 0,
+      "repeatIndex": 0
+    },
+    {
+      "condition": "b_only",
+      "amount": 0,
+      "repeatIndex": 1
+    },
+    {
+      "condition": "b_only",
+      "amount": 0,
+      "repeatIndex": 2
+    },
+    {
+      "condition": "b_only",
+      "amount": 0,
+      "repeatIndex": 3
+    },
+    {
+      "condition": "b_only",
+      "amount": 0,
+      "repeatIndex": 4
+    },
+    {
+      "condition": "b_only",
+      "amount": 0,
+      "repeatIndex": 5
+    },
+    {
+      "condition": "b_only",
+      "amount": 0,
+      "repeatIndex": 6
+    },
+    {
+      "condition": "b_only",
+      "amount": 0,
+      "repeatIndex": 7
+    },
+    {
+      "condition": "b_only",
+      "amount": 0,
+      "repeatIndex": 8
+    },
+    {
+      "condition": "b_only",
+      "amount": 0,
+      "repeatIndex": 9
+    },
+    {
+      "condition": "b_only",
+      "amount": 1,
+      "repeatIndex": 0
+    },
+    {
+      "condition": "b_only",
+      "amount": 1,
+      "repeatIndex": 1
+    },
+    {
+      "condition": "b_only",
+      "amount": 1,
+      "repeatIndex": 2
+    },
+    {
+      "condition": "b_only",
+      "amount": 1,
+      "repeatIndex": 3
+    },
+    {
+      "condition": "b_only",
+      "amount": 1,
+      "repeatIndex": 4
+    },
+    {
+      "condition": "b_only",
+      "amount": 1,
+      "repeatIndex": 5
+    },
+    {
+      "condition": "b_only",
+      "amount": 1,
+      "repeatIndex": 6
+    },
+    {
+      "condition": "b_only",
+      "amount": 1,
+      "repeatIndex": 7
+    },
+    {
+      "condition": "b_only",
+      "amount": 1,
+      "repeatIndex": 8
+    },
+    {
+      "condition": "b_only",
+      "amount": 1,
+      "repeatIndex": 9
+    },
+    {
+      "condition": "b_only",
+      "amount": 2,
+      "repeatIndex": 0
+    },
+    {
+      "condition": "b_only",
+      "amount": 2,
+      "repeatIndex": 1
+    },
+    {
+      "condition": "b_only",
+      "amount": 2,
+      "repeatIndex": 2
+    },
+    {
+      "condition": "b_only",
+      "amount": 2,
+      "repeatIndex": 3
+    },
+    {
+      "condition": "b_only",
+      "amount": 2,
+      "repeatIndex": 4
+    },
+    {
+      "condition": "b_only",
+      "amount": 2,
+      "repeatIndex": 5
+    },
+    {
+      "condition": "b_only",
+      "amount": 2,
+      "repeatIndex": 6
+    },
+    {
+      "condition": "b_only",
+      "amount": 2,
+      "repeatIndex": 7
+    },
+    {
+      "condition": "b_only",
+      "amount": 2,
+      "repeatIndex": 8
+    },
+    {
+      "condition": "b_only",
+      "amount": 2,
+      "repeatIndex": 9
+    },
+    {
+      "condition": "b_only",
+      "amount": 5,
+      "repeatIndex": 0
+    },
+    {
+      "condition": "b_only",
+      "amount": 5,
+      "repeatIndex": 1
+    },
+    {
+      "condition": "b_only",
+      "amount": 5,
+      "repeatIndex": 2
+    },
+    {
+      "condition": "b_only",
+      "amount": 5,
+      "repeatIndex": 3
+    },
+    {
+      "condition": "b_only",
+      "amount": 5,
+      "repeatIndex": 4
+    },
+    {
+      "condition": "b_only",
+      "amount": 5,
+      "repeatIndex": 5
+    },
+    {
+      "condition": "b_only",
+      "amount": 5,
+      "repeatIndex": 6
+    },
+    {
+      "condition": "b_only",
+      "amount": 5,
+      "repeatIndex": 7
+    },
+    {
+      "condition": "b_only",
+      "amount": 5,
+      "repeatIndex": 8
+    },
+    {
+      "condition": "b_only",
+      "amount": 5,
+      "repeatIndex": 9
+    },
+    {
+      "condition": "b_only",
+      "amount": 10,
+      "repeatIndex": 0
+    },
+    {
+      "condition": "b_only",
+      "amount": 10,
+      "repeatIndex": 1
+    },
+    {
+      "condition": "b_only",
+      "amount": 10,
+      "repeatIndex": 2
+    },
+    {
+      "condition": "b_only",
+      "amount": 10,
+      "repeatIndex": 3
+    },
+    {
+      "condition": "b_only",
+      "amount": 10,
+      "repeatIndex": 4
+    },
+    {
+      "condition": "b_only",
+      "amount": 10,
+      "repeatIndex": 5
+    },
+    {
+      "condition": "b_only",
+      "amount": 10,
+      "repeatIndex": 6
+    },
+    {
+      "condition": "b_only",
+      "amount": 10,
+      "repeatIndex": 7
+    },
+    {
+      "condition": "b_only",
+      "amount": 10,
+      "repeatIndex": 8
+    },
+    {
+      "condition": "b_only",
+      "amount": 10,
+      "repeatIndex": 9
+    },
+    {
+      "condition": "b_only",
+      "amount": 20,
+      "repeatIndex": 0
+    },
+    {
+      "condition": "b_only",
+      "amount": 20,
+      "repeatIndex": 1
+    },
+    {
+      "condition": "b_only",
+      "amount": 20,
+      "repeatIndex": 2
+    },
+    {
+      "condition": "b_only",
+      "amount": 20,
+      "repeatIndex": 3
+    },
+    {
+      "condition": "b_only",
+      "amount": 20,
+      "repeatIndex": 4
+    },
+    {
+      "condition": "b_only",
+      "amount": 20,
+      "repeatIndex": 5
+    },
+    {
+      "condition": "b_only",
+      "amount": 20,
+      "repeatIndex": 6
+    },
+    {
+      "condition": "b_only",
+      "amount": 20,
+      "repeatIndex": 7
+    },
+    {
+      "condition": "b_only",
+      "amount": 20,
+      "repeatIndex": 8
+    },
+    {
+      "condition": "b_only",
+      "amount": 20,
+      "repeatIndex": 9
+    },
+    {
+      "condition": "b_only",
+      "amount": 50,
+      "repeatIndex": 0
+    },
+    {
+      "condition": "b_only",
+      "amount": 50,
+      "repeatIndex": 1
+    },
+    {
+      "condition": "b_only",
+      "amount": 50,
+      "repeatIndex": 2
+    },
+    {
+      "condition": "b_only",
+      "amount": 50,
+      "repeatIndex": 3
+    },
+    {
+      "condition": "b_only",
+      "amount": 50,
+      "repeatIndex": 4
+    },
+    {
+      "condition": "b_only",
+      "amount": 50,
+      "repeatIndex": 5
+    },
+    {
+      "condition": "b_only",
+      "amount": 50,
+      "repeatIndex": 6
+    },
+    {
+      "condition": "b_only",
+      "amount": 50,
+      "repeatIndex": 7
+    },
+    {
+      "condition": "b_only",
+      "amount": 50,
+      "repeatIndex": 8
+    },
+    {
+      "condition": "b_only",
+      "amount": 50,
+      "repeatIndex": 9
+    },
+    {
+      "condition": "b_only",
+      "amount": 100,
+      "repeatIndex": 0
+    },
+    {
+      "condition": "b_only",
+      "amount": 100,
+      "repeatIndex": 1
+    },
+    {
+      "condition": "b_only",
+      "amount": 100,
+      "repeatIndex": 2
+    },
+    {
+      "condition": "b_only",
+      "amount": 100,
+      "repeatIndex": 3
+    },
+    {
+      "condition": "b_only",
+      "amount": 100,
+      "repeatIndex": 4
+    },
+    {
+      "condition": "b_only",
+      "amount": 100,
+      "repeatIndex": 5
+    },
+    {
+      "condition": "b_only",
+      "amount": 100,
+      "repeatIndex": 6
+    },
+    {
+      "condition": "b_only",
+      "amount": 100,
+      "repeatIndex": 7
+    },
+    {
+      "condition": "b_only",
+      "amount": 100,
+      "repeatIndex": 8
+    },
+    {
+      "condition": "b_only",
+      "amount": 100,
+      "repeatIndex": 9
+    },
+    {
+      "condition": "b_only",
+      "amount": 200,
+      "repeatIndex": 0
+    },
+    {
+      "condition": "b_only",
+      "amount": 200,
+      "repeatIndex": 1
+    },
+    {
+      "condition": "b_only",
+      "amount": 200,
+      "repeatIndex": 2
+    },
+    {
+      "condition": "b_only",
+      "amount": 200,
+      "repeatIndex": 3
+    },
+    {
+      "condition": "b_only",
+      "amount": 200,
+      "repeatIndex": 4
+    },
+    {
+      "condition": "b_only",
+      "amount": 200,
+      "repeatIndex": 5
+    },
+    {
+      "condition": "b_only",
+      "amount": 200,
+      "repeatIndex": 6
+    },
+    {
+      "condition": "b_only",
+      "amount": 200,
+      "repeatIndex": 7
+    },
+    {
+      "condition": "b_only",
+      "amount": 200,
+      "repeatIndex": 8
+    },
+    {
+      "condition": "b_only",
+      "amount": 200,
+      "repeatIndex": 9
+    },
+    {
+      "condition": "b_only",
+      "amount": 500,
+      "repeatIndex": 0
+    },
+    {
+      "condition": "b_only",
+      "amount": 500,
+      "repeatIndex": 1
+    },
+    {
+      "condition": "b_only",
+      "amount": 500,
+      "repeatIndex": 2
+    },
+    {
+      "condition": "b_only",
+      "amount": 500,
+      "repeatIndex": 3
+    },
+    {
+      "condition": "b_only",
+      "amount": 500,
+      "repeatIndex": 4
+    },
+    {
+      "condition": "b_only",
+      "amount": 500,
+      "repeatIndex": 5
+    },
+    {
+      "condition": "b_only",
+      "amount": 500,
+      "repeatIndex": 6
+    },
+    {
+      "condition": "b_only",
+      "amount": 500,
+      "repeatIndex": 7
+    },
+    {
+      "condition": "b_only",
+      "amount": 500,
+      "repeatIndex": 8
+    },
+    {
+      "condition": "b_only",
+      "amount": 500,
+      "repeatIndex": 9
+    },
+    {
+      "condition": "b_only",
+      "amount": 1000,
+      "repeatIndex": 0
+    },
+    {
+      "condition": "b_only",
+      "amount": 1000,
+      "repeatIndex": 1
+    },
+    {
+      "condition": "b_only",
+      "amount": 1000,
+      "repeatIndex": 2
+    },
+    {
+      "condition": "b_only",
+      "amount": 1000,
+      "repeatIndex": 3
+    },
+    {
+      "condition": "b_only",
+      "amount": 1000,
+      "repeatIndex": 4
+    },
+    {
+      "condition": "b_only",
+      "amount": 1000,
+      "repeatIndex": 5
+    },
+    {
+      "condition": "b_only",
+      "amount": 1000,
+      "repeatIndex": 6
+    },
+    {
+      "condition": "b_only",
+      "amount": 1000,
+      "repeatIndex": 7
+    },
+    {
+      "condition": "b_only",
+      "amount": 1000,
+      "repeatIndex": 8
+    },
+    {
+      "condition": "b_only",
+      "amount": 1000,
+      "repeatIndex": 9
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 0,
+      "repeatIndex": 0
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 0,
+      "repeatIndex": 1
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 0,
+      "repeatIndex": 2
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 0,
+      "repeatIndex": 3
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 0,
+      "repeatIndex": 4
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 0,
+      "repeatIndex": 5
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 0,
+      "repeatIndex": 6
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 0,
+      "repeatIndex": 7
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 0,
+      "repeatIndex": 8
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 0,
+      "repeatIndex": 9
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 1,
+      "repeatIndex": 0
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 1,
+      "repeatIndex": 1
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 1,
+      "repeatIndex": 2
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 1,
+      "repeatIndex": 3
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 1,
+      "repeatIndex": 4
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 1,
+      "repeatIndex": 5
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 1,
+      "repeatIndex": 6
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 1,
+      "repeatIndex": 7
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 1,
+      "repeatIndex": 8
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 1,
+      "repeatIndex": 9
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 2,
+      "repeatIndex": 0
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 2,
+      "repeatIndex": 1
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 2,
+      "repeatIndex": 2
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 2,
+      "repeatIndex": 3
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 2,
+      "repeatIndex": 4
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 2,
+      "repeatIndex": 5
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 2,
+      "repeatIndex": 6
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 2,
+      "repeatIndex": 7
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 2,
+      "repeatIndex": 8
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 2,
+      "repeatIndex": 9
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 5,
+      "repeatIndex": 0
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 5,
+      "repeatIndex": 1
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 5,
+      "repeatIndex": 2
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 5,
+      "repeatIndex": 3
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 5,
+      "repeatIndex": 4
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 5,
+      "repeatIndex": 5
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 5,
+      "repeatIndex": 6
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 5,
+      "repeatIndex": 7
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 5,
+      "repeatIndex": 8
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 5,
+      "repeatIndex": 9
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 10,
+      "repeatIndex": 0
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 10,
+      "repeatIndex": 1
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 10,
+      "repeatIndex": 2
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 10,
+      "repeatIndex": 3
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 10,
+      "repeatIndex": 4
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 10,
+      "repeatIndex": 5
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 10,
+      "repeatIndex": 6
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 10,
+      "repeatIndex": 7
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 10,
+      "repeatIndex": 8
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 10,
+      "repeatIndex": 9
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 20,
+      "repeatIndex": 0
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 20,
+      "repeatIndex": 1
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 20,
+      "repeatIndex": 2
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 20,
+      "repeatIndex": 3
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 20,
+      "repeatIndex": 4
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 20,
+      "repeatIndex": 5
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 20,
+      "repeatIndex": 6
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 20,
+      "repeatIndex": 7
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 20,
+      "repeatIndex": 8
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 20,
+      "repeatIndex": 9
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 50,
+      "repeatIndex": 0
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 50,
+      "repeatIndex": 1
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 50,
+      "repeatIndex": 2
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 50,
+      "repeatIndex": 3
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 50,
+      "repeatIndex": 4
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 50,
+      "repeatIndex": 5
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 50,
+      "repeatIndex": 6
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 50,
+      "repeatIndex": 7
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 50,
+      "repeatIndex": 8
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 50,
+      "repeatIndex": 9
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 100,
+      "repeatIndex": 0
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 100,
+      "repeatIndex": 1
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 100,
+      "repeatIndex": 2
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 100,
+      "repeatIndex": 3
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 100,
+      "repeatIndex": 4
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 100,
+      "repeatIndex": 5
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 100,
+      "repeatIndex": 6
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 100,
+      "repeatIndex": 7
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 100,
+      "repeatIndex": 8
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 100,
+      "repeatIndex": 9
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 200,
+      "repeatIndex": 0
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 200,
+      "repeatIndex": 1
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 200,
+      "repeatIndex": 2
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 200,
+      "repeatIndex": 3
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 200,
+      "repeatIndex": 4
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 200,
+      "repeatIndex": 5
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 200,
+      "repeatIndex": 6
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 200,
+      "repeatIndex": 7
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 200,
+      "repeatIndex": 8
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 200,
+      "repeatIndex": 9
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 500,
+      "repeatIndex": 0
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 500,
+      "repeatIndex": 1
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 500,
+      "repeatIndex": 2
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 500,
+      "repeatIndex": 3
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 500,
+      "repeatIndex": 4
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 500,
+      "repeatIndex": 5
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 500,
+      "repeatIndex": 6
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 500,
+      "repeatIndex": 7
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 500,
+      "repeatIndex": 8
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 500,
+      "repeatIndex": 9
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 1000,
+      "repeatIndex": 0
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 1000,
+      "repeatIndex": 1
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 1000,
+      "repeatIndex": 2
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 1000,
+      "repeatIndex": 3
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 1000,
+      "repeatIndex": 4
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 1000,
+      "repeatIndex": 5
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 1000,
+      "repeatIndex": 6
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 1000,
+      "repeatIndex": 7
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 1000,
+      "repeatIndex": 8
+    },
+    {
+      "condition": "inactive_a_neutral",
+      "amount": 1000,
+      "repeatIndex": 9
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 0,
+      "repeatIndex": 0
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 0,
+      "repeatIndex": 1
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 0,
+      "repeatIndex": 2
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 0,
+      "repeatIndex": 3
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 0,
+      "repeatIndex": 4
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 0,
+      "repeatIndex": 5
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 0,
+      "repeatIndex": 6
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 0,
+      "repeatIndex": 7
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 0,
+      "repeatIndex": 8
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 0,
+      "repeatIndex": 9
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 1,
+      "repeatIndex": 0
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 1,
+      "repeatIndex": 1
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 1,
+      "repeatIndex": 2
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 1,
+      "repeatIndex": 3
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 1,
+      "repeatIndex": 4
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 1,
+      "repeatIndex": 5
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 1,
+      "repeatIndex": 6
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 1,
+      "repeatIndex": 7
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 1,
+      "repeatIndex": 8
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 1,
+      "repeatIndex": 9
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 2,
+      "repeatIndex": 0
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 2,
+      "repeatIndex": 1
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 2,
+      "repeatIndex": 2
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 2,
+      "repeatIndex": 3
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 2,
+      "repeatIndex": 4
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 2,
+      "repeatIndex": 5
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 2,
+      "repeatIndex": 6
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 2,
+      "repeatIndex": 7
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 2,
+      "repeatIndex": 8
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 2,
+      "repeatIndex": 9
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 5,
+      "repeatIndex": 0
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 5,
+      "repeatIndex": 1
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 5,
+      "repeatIndex": 2
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 5,
+      "repeatIndex": 3
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 5,
+      "repeatIndex": 4
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 5,
+      "repeatIndex": 5
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 5,
+      "repeatIndex": 6
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 5,
+      "repeatIndex": 7
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 5,
+      "repeatIndex": 8
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 5,
+      "repeatIndex": 9
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 10,
+      "repeatIndex": 0
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 10,
+      "repeatIndex": 1
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 10,
+      "repeatIndex": 2
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 10,
+      "repeatIndex": 3
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 10,
+      "repeatIndex": 4
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 10,
+      "repeatIndex": 5
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 10,
+      "repeatIndex": 6
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 10,
+      "repeatIndex": 7
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 10,
+      "repeatIndex": 8
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 10,
+      "repeatIndex": 9
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 20,
+      "repeatIndex": 0
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 20,
+      "repeatIndex": 1
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 20,
+      "repeatIndex": 2
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 20,
+      "repeatIndex": 3
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 20,
+      "repeatIndex": 4
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 20,
+      "repeatIndex": 5
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 20,
+      "repeatIndex": 6
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 20,
+      "repeatIndex": 7
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 20,
+      "repeatIndex": 8
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 20,
+      "repeatIndex": 9
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 50,
+      "repeatIndex": 0
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 50,
+      "repeatIndex": 1
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 50,
+      "repeatIndex": 2
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 50,
+      "repeatIndex": 3
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 50,
+      "repeatIndex": 4
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 50,
+      "repeatIndex": 5
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 50,
+      "repeatIndex": 6
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 50,
+      "repeatIndex": 7
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 50,
+      "repeatIndex": 8
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 50,
+      "repeatIndex": 9
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 100,
+      "repeatIndex": 0
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 100,
+      "repeatIndex": 1
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 100,
+      "repeatIndex": 2
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 100,
+      "repeatIndex": 3
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 100,
+      "repeatIndex": 4
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 100,
+      "repeatIndex": 5
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 100,
+      "repeatIndex": 6
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 100,
+      "repeatIndex": 7
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 100,
+      "repeatIndex": 8
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 100,
+      "repeatIndex": 9
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 200,
+      "repeatIndex": 0
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 200,
+      "repeatIndex": 1
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 200,
+      "repeatIndex": 2
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 200,
+      "repeatIndex": 3
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 200,
+      "repeatIndex": 4
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 200,
+      "repeatIndex": 5
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 200,
+      "repeatIndex": 6
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 200,
+      "repeatIndex": 7
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 200,
+      "repeatIndex": 8
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 200,
+      "repeatIndex": 9
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 500,
+      "repeatIndex": 0
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 500,
+      "repeatIndex": 1
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 500,
+      "repeatIndex": 2
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 500,
+      "repeatIndex": 3
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 500,
+      "repeatIndex": 4
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 500,
+      "repeatIndex": 5
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 500,
+      "repeatIndex": 6
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 500,
+      "repeatIndex": 7
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 500,
+      "repeatIndex": 8
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 500,
+      "repeatIndex": 9
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 1000,
+      "repeatIndex": 0
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 1000,
+      "repeatIndex": 1
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 1000,
+      "repeatIndex": 2
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 1000,
+      "repeatIndex": 3
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 1000,
+      "repeatIndex": 4
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 1000,
+      "repeatIndex": 5
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 1000,
+      "repeatIndex": 6
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 1000,
+      "repeatIndex": 7
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 1000,
+      "repeatIndex": 8
+    },
+    {
+      "condition": "inactive_a_contract",
+      "amount": 1000,
+      "repeatIndex": 9
+    }
+  ]
+}

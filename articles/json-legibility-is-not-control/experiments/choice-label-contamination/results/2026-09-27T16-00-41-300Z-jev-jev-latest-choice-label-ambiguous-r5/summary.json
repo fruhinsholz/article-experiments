@@ -1,0 +1,79 @@
+{
+  "byCondition": {
+    "neutral": {
+      "full": {
+        "n": 5,
+        "mean": 0.046,
+        "min": 0.03,
+        "max": 0.06
+      },
+      "partial": {
+        "n": 5,
+        "mean": 0.954,
+        "min": 0.94,
+        "max": 0.97
+      },
+      "none": {
+        "n": 5,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "selected": {
+        "partial": 5
+      }
+    },
+    "aligned": {
+      "full": {
+        "n": 5,
+        "mean": 0.084,
+        "min": 0.08,
+        "max": 0.09
+      },
+      "partial": {
+        "n": 5,
+        "mean": 0.916,
+        "min": 0.91,
+        "max": 0.92
+      },
+      "none": {
+        "n": 5,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "selected": {
+        "partial": 5
+      }
+    },
+    "conflicting": {
+      "full": {
+        "n": 5,
+        "mean": 0.01,
+        "min": 0.01,
+        "max": 0.01
+      },
+      "partial": {
+        "n": 5,
+        "mean": 0.99,
+        "min": 0.99,
+        "max": 0.99
+      },
+      "none": {
+        "n": 5,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "selected": {
+        "partial": 5
+      }
+    }
+  },
+  "partialProbabilityDeltaVsNeutral": {
+    "neutral": 0,
+    "aligned": -0.03799999999999992,
+    "conflicting": 0.03600000000000003
+  },
+  "errors": 0
+}

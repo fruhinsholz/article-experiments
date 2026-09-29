@@ -1,0 +1,28 @@
+{
+  "contexts": {
+    "fact_only": "",
+    "retrieved_5_gift_card": "A separate product launch note says that a $5 gift card is offered to the first subscriber of a new policy.",
+    "retrieved_100000_contract": "A separate enterprise account note says that contracts above $100,000 require executive review during the seasonal sales period."
+  },
+  "formats": [
+    "prose_same_block",
+    "prose_separated",
+    "json_flat",
+    "json_typed",
+    "json_typed_boundary_rule"
+  ],
+  "amounts": [
+    25,
+    50,
+    75,
+    100,
+    150,
+    250,
+    500,
+    1000,
+    5000,
+    10000,
+    20000
+  ],
+  "samples": 30
+}

@@ -1,0 +1,1119 @@
+{
+  "provider": "jev",
+  "confirmatory": false,
+  "byCell": {
+    "boundary_r06_unsure_one_slight_delay": {
+      "neutral": {
+        "n": 20,
+        "validationStatus": "reference",
+        "responseModels": {
+          "jev-1.13.0": 20
+        },
+        "probabilities": {
+          "full": {
+            "n": 20,
+            "mean": 0.518,
+            "min": 0.46,
+            "max": 0.58
+          },
+          "partial": {
+            "n": 20,
+            "mean": 0.48199999999999993,
+            "min": 0.42,
+            "max": 0.54
+          },
+          "none": {
+            "n": 20,
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          }
+        },
+        "reviewScore": {
+          "n": 20,
+          "mean": 0.48199999999999993,
+          "min": 0.42,
+          "max": 0.54
+        },
+        "selected": {
+          "full": 12,
+          "partial": 8
+        },
+        "branches": {
+          "automatic_full_capacity": 10,
+          "human_review": 10
+        }
+      },
+      "duty_coverage": {
+        "n": 20,
+        "validationStatus": "accepted",
+        "responseModels": {
+          "jev-1.13.0": 20
+        },
+        "probabilities": {
+          "full": {
+            "n": 20,
+            "mean": 0.7595,
+            "min": 0.72,
+            "max": 0.82
+          },
+          "partial": {
+            "n": 20,
+            "mean": 0.24050000000000002,
+            "min": 0.18,
+            "max": 0.28
+          },
+          "none": {
+            "n": 20,
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          }
+        },
+        "reviewScore": {
+          "n": 20,
+          "mean": 0.24050000000000002,
+          "min": 0.18,
+          "max": 0.28
+        },
+        "selected": {
+          "full": 20
+        },
+        "branches": {
+          "automatic_full_capacity": 20
+        }
+      },
+      "capability_statement": {
+        "n": 20,
+        "validationStatus": "accepted",
+        "responseModels": {
+          "jev-1.13.0": 20
+        },
+        "probabilities": {
+          "full": {
+            "n": 20,
+            "mean": 0.7609999999999999,
+            "min": 0.72,
+            "max": 0.81
+          },
+          "partial": {
+            "n": 20,
+            "mean": 0.2390000000000001,
+            "min": 0.19,
+            "max": 0.28
+          },
+          "none": {
+            "n": 20,
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          }
+        },
+        "reviewScore": {
+          "n": 20,
+          "mean": 0.2390000000000001,
+          "min": 0.19,
+          "max": 0.28
+        },
+        "selected": {
+          "full": 20
+        },
+        "branches": {
+          "automatic_full_capacity": 20
+        }
+      },
+      "work_capacity_level": {
+        "n": 20,
+        "validationStatus": "accepted",
+        "responseModels": {
+          "jev-1.13.0": 20
+        },
+        "probabilities": {
+          "full": {
+            "n": 20,
+            "mean": 0.5660000000000001,
+            "min": 0.5,
+            "max": 0.63
+          },
+          "partial": {
+            "n": 20,
+            "mean": 0.434,
+            "min": 0.37,
+            "max": 0.5
+          },
+          "none": {
+            "n": 20,
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          }
+        },
+        "reviewScore": {
+          "n": 20,
+          "mean": 0.434,
+          "min": 0.37,
+          "max": 0.5
+        },
+        "selected": {
+          "full": 19,
+          "partial": 1
+        },
+        "branches": {
+          "automatic_full_capacity": 18,
+          "human_review": 2
+        }
+      }
+    },
+    "boundary_r05_maybe_one_slight_delay": {
+      "neutral": {
+        "n": 20,
+        "validationStatus": "reference",
+        "responseModels": {
+          "jev-1.13.0": 20
+        },
+        "probabilities": {
+          "full": {
+            "n": 20,
+            "mean": 0.5465000000000001,
+            "min": 0.48,
+            "max": 0.63
+          },
+          "partial": {
+            "n": 20,
+            "mean": 0.4535,
+            "min": 0.37,
+            "max": 0.52
+          },
+          "none": {
+            "n": 20,
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          }
+        },
+        "reviewScore": {
+          "n": 20,
+          "mean": 0.4535,
+          "min": 0.37,
+          "max": 0.52
+        },
+        "selected": {
+          "full": 16,
+          "partial": 4
+        },
+        "branches": {
+          "automatic_full_capacity": 16,
+          "human_review": 4
+        }
+      },
+      "duty_coverage": {
+        "n": 20,
+        "validationStatus": "accepted",
+        "responseModels": {
+          "jev-1.13.0": 20
+        },
+        "probabilities": {
+          "full": {
+            "n": 20,
+            "mean": 0.8039999999999999,
+            "min": 0.75,
+            "max": 0.83
+          },
+          "partial": {
+            "n": 20,
+            "mean": 0.19599999999999998,
+            "min": 0.17,
+            "max": 0.25
+          },
+          "none": {
+            "n": 20,
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          }
+        },
+        "reviewScore": {
+          "n": 20,
+          "mean": 0.19599999999999998,
+          "min": 0.17,
+          "max": 0.25
+        },
+        "selected": {
+          "full": 20
+        },
+        "branches": {
+          "automatic_full_capacity": 20
+        }
+      },
+      "capability_statement": {
+        "n": 20,
+        "validationStatus": "accepted",
+        "responseModels": {
+          "jev-1.13.0": 20
+        },
+        "probabilities": {
+          "full": {
+            "n": 20,
+            "mean": 0.7614999999999998,
+            "min": 0.71,
+            "max": 0.8
+          },
+          "partial": {
+            "n": 20,
+            "mean": 0.23850000000000002,
+            "min": 0.2,
+            "max": 0.29
+          },
+          "none": {
+            "n": 20,
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          }
+        },
+        "reviewScore": {
+          "n": 20,
+          "mean": 0.23850000000000002,
+          "min": 0.2,
+          "max": 0.29
+        },
+        "selected": {
+          "full": 20
+        },
+        "branches": {
+          "automatic_full_capacity": 20
+        }
+      },
+      "work_capacity_level": {
+        "n": 20,
+        "validationStatus": "accepted",
+        "responseModels": {
+          "jev-1.13.0": 20
+        },
+        "probabilities": {
+          "full": {
+            "n": 20,
+            "mean": 0.6074999999999999,
+            "min": 0.53,
+            "max": 0.66
+          },
+          "partial": {
+            "n": 20,
+            "mean": 0.39249999999999996,
+            "min": 0.34,
+            "max": 0.47
+          },
+          "none": {
+            "n": 20,
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          }
+        },
+        "reviewScore": {
+          "n": 20,
+          "mean": 0.39249999999999996,
+          "min": 0.34,
+          "max": 0.47
+        },
+        "selected": {
+          "full": 20
+        },
+        "branches": {
+          "automatic_full_capacity": 20
+        }
+      }
+    },
+    "boundary_r04_close_to_normal_pace": {
+      "neutral": {
+        "n": 20,
+        "validationStatus": "reference",
+        "responseModels": {
+          "jev-1.13.0": 20
+        },
+        "probabilities": {
+          "full": {
+            "n": 20,
+            "mean": 0.9015000000000001,
+            "min": 0.86,
+            "max": 0.95
+          },
+          "partial": {
+            "n": 20,
+            "mean": 0.09850000000000005,
+            "min": 0.05,
+            "max": 0.14
+          },
+          "none": {
+            "n": 20,
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          }
+        },
+        "reviewScore": {
+          "n": 20,
+          "mean": 0.09850000000000005,
+          "min": 0.05,
+          "max": 0.14
+        },
+        "selected": {
+          "full": 20
+        },
+        "branches": {
+          "automatic_full_capacity": 20
+        }
+      },
+      "duty_coverage": {
+        "n": 20,
+        "validationStatus": "accepted",
+        "responseModels": {
+          "jev-1.13.0": 20
+        },
+        "probabilities": {
+          "full": {
+            "n": 20,
+            "mean": 0.9319999999999998,
+            "min": 0.92,
+            "max": 0.95
+          },
+          "partial": {
+            "n": 20,
+            "mean": 0.06800000000000003,
+            "min": 0.05,
+            "max": 0.08
+          },
+          "none": {
+            "n": 20,
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          }
+        },
+        "reviewScore": {
+          "n": 20,
+          "mean": 0.06800000000000003,
+          "min": 0.05,
+          "max": 0.08
+        },
+        "selected": {
+          "full": 20
+        },
+        "branches": {
+          "automatic_full_capacity": 20
+        }
+      },
+      "capability_statement": {
+        "n": 20,
+        "validationStatus": "accepted",
+        "responseModels": {
+          "jev-1.13.0": 20
+        },
+        "probabilities": {
+          "full": {
+            "n": 20,
+            "mean": 0.9324999999999999,
+            "min": 0.91,
+            "max": 0.96
+          },
+          "partial": {
+            "n": 20,
+            "mean": 0.06750000000000002,
+            "min": 0.04,
+            "max": 0.09
+          },
+          "none": {
+            "n": 20,
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          }
+        },
+        "reviewScore": {
+          "n": 20,
+          "mean": 0.06750000000000002,
+          "min": 0.04,
+          "max": 0.09
+        },
+        "selected": {
+          "full": 20
+        },
+        "branches": {
+          "automatic_full_capacity": 20
+        }
+      },
+      "work_capacity_level": {
+        "n": 20,
+        "validationStatus": "accepted",
+        "responseModels": {
+          "jev-1.13.0": 20
+        },
+        "probabilities": {
+          "full": {
+            "n": 20,
+            "mean": 0.8985,
+            "min": 0.83,
+            "max": 0.93
+          },
+          "partial": {
+            "n": 20,
+            "mean": 0.10150000000000003,
+            "min": 0.07,
+            "max": 0.17
+          },
+          "none": {
+            "n": 20,
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          }
+        },
+        "reviewScore": {
+          "n": 20,
+          "mean": 0.10150000000000003,
+          "min": 0.07,
+          "max": 0.17
+        },
+        "selected": {
+          "full": 20
+        },
+        "branches": {
+          "automatic_full_capacity": 20
+        }
+      }
+    },
+    "boundary_r08_one_duty_slightly_slower": {
+      "neutral": {
+        "n": 20,
+        "validationStatus": "reference",
+        "responseModels": {
+          "jev-1.13.0": 20
+        },
+        "probabilities": {
+          "full": {
+            "n": 20,
+            "mean": 0.10100000000000002,
+            "min": 0.07,
+            "max": 0.16
+          },
+          "partial": {
+            "n": 20,
+            "mean": 0.899,
+            "min": 0.84,
+            "max": 0.93
+          },
+          "none": {
+            "n": 20,
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          }
+        },
+        "reviewScore": {
+          "n": 20,
+          "mean": 0.899,
+          "min": 0.84,
+          "max": 0.93
+        },
+        "selected": {
+          "partial": 20
+        },
+        "branches": {
+          "human_review": 20
+        }
+      },
+      "duty_coverage": {
+        "n": 20,
+        "validationStatus": "accepted",
+        "responseModels": {
+          "jev-1.13.0": 20
+        },
+        "probabilities": {
+          "full": {
+            "n": 20,
+            "mean": 0.3865,
+            "min": 0.32,
+            "max": 0.46
+          },
+          "partial": {
+            "n": 20,
+            "mean": 0.6135,
+            "min": 0.54,
+            "max": 0.68
+          },
+          "none": {
+            "n": 20,
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          }
+        },
+        "reviewScore": {
+          "n": 20,
+          "mean": 0.6135,
+          "min": 0.54,
+          "max": 0.68
+        },
+        "selected": {
+          "partial": 20
+        },
+        "branches": {
+          "human_review": 20
+        }
+      },
+      "capability_statement": {
+        "n": 20,
+        "validationStatus": "accepted",
+        "responseModels": {
+          "jev-1.13.0": 20
+        },
+        "probabilities": {
+          "full": {
+            "n": 20,
+            "mean": 0.3735,
+            "min": 0.29,
+            "max": 0.46
+          },
+          "partial": {
+            "n": 20,
+            "mean": 0.6265000000000001,
+            "min": 0.54,
+            "max": 0.71
+          },
+          "none": {
+            "n": 20,
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          }
+        },
+        "reviewScore": {
+          "n": 20,
+          "mean": 0.6265000000000001,
+          "min": 0.54,
+          "max": 0.71
+        },
+        "selected": {
+          "partial": 20
+        },
+        "branches": {
+          "human_review": 20
+        }
+      },
+      "work_capacity_level": {
+        "n": 20,
+        "validationStatus": "accepted",
+        "responseModels": {
+          "jev-1.13.0": 20
+        },
+        "probabilities": {
+          "full": {
+            "n": 20,
+            "mean": 0.12050000000000002,
+            "min": 0.09,
+            "max": 0.17
+          },
+          "partial": {
+            "n": 20,
+            "mean": 0.8795000000000002,
+            "min": 0.83,
+            "max": 0.91
+          },
+          "none": {
+            "n": 20,
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          }
+        },
+        "reviewScore": {
+          "n": 20,
+          "mean": 0.8795000000000002,
+          "min": 0.83,
+          "max": 0.91
+        },
+        "selected": {
+          "partial": 20
+        },
+        "branches": {
+          "human_review": 20
+        }
+      }
+    },
+    "clear_full": {
+      "neutral": {
+        "n": 20,
+        "validationStatus": "reference",
+        "responseModels": {
+          "jev-1.13.0": 20
+        },
+        "probabilities": {
+          "full": {
+            "n": 20,
+            "mean": 1,
+            "min": 1,
+            "max": 1
+          },
+          "partial": {
+            "n": 20,
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          },
+          "none": {
+            "n": 20,
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          }
+        },
+        "reviewScore": {
+          "n": 20,
+          "mean": 0,
+          "min": 0,
+          "max": 0
+        },
+        "selected": {
+          "full": 20
+        },
+        "branches": {
+          "automatic_full_capacity": 20
+        }
+      },
+      "duty_coverage": {
+        "n": 20,
+        "validationStatus": "accepted",
+        "responseModels": {
+          "jev-1.13.0": 20
+        },
+        "probabilities": {
+          "full": {
+            "n": 20,
+            "mean": 1,
+            "min": 1,
+            "max": 1
+          },
+          "partial": {
+            "n": 20,
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          },
+          "none": {
+            "n": 20,
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          }
+        },
+        "reviewScore": {
+          "n": 20,
+          "mean": 0,
+          "min": 0,
+          "max": 0
+        },
+        "selected": {
+          "full": 20
+        },
+        "branches": {
+          "automatic_full_capacity": 20
+        }
+      },
+      "capability_statement": {
+        "n": 20,
+        "validationStatus": "accepted",
+        "responseModels": {
+          "jev-1.13.0": 20
+        },
+        "probabilities": {
+          "full": {
+            "n": 20,
+            "mean": 1,
+            "min": 1,
+            "max": 1
+          },
+          "partial": {
+            "n": 20,
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          },
+          "none": {
+            "n": 20,
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          }
+        },
+        "reviewScore": {
+          "n": 20,
+          "mean": 0,
+          "min": 0,
+          "max": 0
+        },
+        "selected": {
+          "full": 20
+        },
+        "branches": {
+          "automatic_full_capacity": 20
+        }
+      },
+      "work_capacity_level": {
+        "n": 20,
+        "validationStatus": "accepted",
+        "responseModels": {
+          "jev-1.13.0": 20
+        },
+        "probabilities": {
+          "full": {
+            "n": 20,
+            "mean": 1,
+            "min": 1,
+            "max": 1
+          },
+          "partial": {
+            "n": 20,
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          },
+          "none": {
+            "n": 20,
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          }
+        },
+        "reviewScore": {
+          "n": 20,
+          "mean": 0,
+          "min": 0,
+          "max": 0
+        },
+        "selected": {
+          "full": 20
+        },
+        "branches": {
+          "automatic_full_capacity": 20
+        }
+      }
+    },
+    "clear_partial": {
+      "neutral": {
+        "n": 20,
+        "validationStatus": "reference",
+        "responseModels": {
+          "jev-1.13.0": 20
+        },
+        "probabilities": {
+          "full": {
+            "n": 20,
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          },
+          "partial": {
+            "n": 20,
+            "mean": 1,
+            "min": 1,
+            "max": 1
+          },
+          "none": {
+            "n": 20,
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          }
+        },
+        "reviewScore": {
+          "n": 20,
+          "mean": 1,
+          "min": 1,
+          "max": 1
+        },
+        "selected": {
+          "partial": 20
+        },
+        "branches": {
+          "human_review": 20
+        }
+      },
+      "duty_coverage": {
+        "n": 20,
+        "validationStatus": "accepted",
+        "responseModels": {
+          "jev-1.13.0": 20
+        },
+        "probabilities": {
+          "full": {
+            "n": 20,
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          },
+          "partial": {
+            "n": 20,
+            "mean": 1,
+            "min": 1,
+            "max": 1
+          },
+          "none": {
+            "n": 20,
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          }
+        },
+        "reviewScore": {
+          "n": 20,
+          "mean": 1,
+          "min": 1,
+          "max": 1
+        },
+        "selected": {
+          "partial": 20
+        },
+        "branches": {
+          "human_review": 20
+        }
+      },
+      "capability_statement": {
+        "n": 20,
+        "validationStatus": "accepted",
+        "responseModels": {
+          "jev-1.13.0": 20
+        },
+        "probabilities": {
+          "full": {
+            "n": 20,
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          },
+          "partial": {
+            "n": 20,
+            "mean": 1,
+            "min": 1,
+            "max": 1
+          },
+          "none": {
+            "n": 20,
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          }
+        },
+        "reviewScore": {
+          "n": 20,
+          "mean": 1,
+          "min": 1,
+          "max": 1
+        },
+        "selected": {
+          "partial": 20
+        },
+        "branches": {
+          "human_review": 20
+        }
+      },
+      "work_capacity_level": {
+        "n": 20,
+        "validationStatus": "accepted",
+        "responseModels": {
+          "jev-1.13.0": 20
+        },
+        "probabilities": {
+          "full": {
+            "n": 20,
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          },
+          "partial": {
+            "n": 20,
+            "mean": 1,
+            "min": 1,
+            "max": 1
+          },
+          "none": {
+            "n": 20,
+            "mean": 0,
+            "min": 0,
+            "max": 0
+          }
+        },
+        "reviewScore": {
+          "n": 20,
+          "mean": 1,
+          "min": 1,
+          "max": 1
+        },
+        "selected": {
+          "partial": 20
+        },
+        "branches": {
+          "human_review": 20
+        }
+      }
+    }
+  },
+  "deltasVsNeutral": {
+    "boundary_r06_unsure_one_slight_delay": {
+      "neutral": {
+        "full": 0,
+        "partial": 0,
+        "none": 0,
+        "reviewScore": 0
+      },
+      "duty_coverage": {
+        "full": 0.24149999999999994,
+        "partial": -0.2414999999999999,
+        "none": 0,
+        "reviewScore": -0.2414999999999999
+      },
+      "capability_statement": {
+        "full": 0.24299999999999988,
+        "partial": -0.24299999999999983,
+        "none": 0,
+        "reviewScore": -0.24299999999999983
+      },
+      "work_capacity_level": {
+        "full": 0.04800000000000004,
+        "partial": -0.04799999999999993,
+        "none": 0,
+        "reviewScore": -0.04799999999999993
+      }
+    },
+    "boundary_r05_maybe_one_slight_delay": {
+      "neutral": {
+        "full": 0,
+        "partial": 0,
+        "none": 0,
+        "reviewScore": 0
+      },
+      "duty_coverage": {
+        "full": 0.25749999999999984,
+        "partial": -0.25750000000000006,
+        "none": 0,
+        "reviewScore": -0.25750000000000006
+      },
+      "capability_statement": {
+        "full": 0.21499999999999975,
+        "partial": -0.215,
+        "none": 0,
+        "reviewScore": -0.215
+      },
+      "work_capacity_level": {
+        "full": 0.06099999999999983,
+        "partial": -0.061000000000000054,
+        "none": 0,
+        "reviewScore": -0.061000000000000054
+      }
+    },
+    "boundary_r04_close_to_normal_pace": {
+      "neutral": {
+        "full": 0,
+        "partial": 0,
+        "none": 0,
+        "reviewScore": 0
+      },
+      "duty_coverage": {
+        "full": 0.03049999999999975,
+        "partial": -0.030500000000000013,
+        "none": 0,
+        "reviewScore": -0.030500000000000013
+      },
+      "capability_statement": {
+        "full": 0.030999999999999805,
+        "partial": -0.031000000000000028,
+        "none": 0,
+        "reviewScore": -0.031000000000000028
+      },
+      "work_capacity_level": {
+        "full": -0.0030000000000001137,
+        "partial": 0.002999999999999989,
+        "none": 0,
+        "reviewScore": 0.002999999999999989
+      }
+    },
+    "boundary_r08_one_duty_slightly_slower": {
+      "neutral": {
+        "full": 0,
+        "partial": 0,
+        "none": 0,
+        "reviewScore": 0
+      },
+      "duty_coverage": {
+        "full": 0.2855,
+        "partial": -0.2855,
+        "none": 0,
+        "reviewScore": -0.2855
+      },
+      "capability_statement": {
+        "full": 0.27249999999999996,
+        "partial": -0.27249999999999996,
+        "none": 0,
+        "reviewScore": -0.27249999999999996
+      },
+      "work_capacity_level": {
+        "full": 0.019500000000000003,
+        "partial": -0.01949999999999985,
+        "none": 0,
+        "reviewScore": -0.01949999999999985
+      }
+    },
+    "clear_full": {
+      "neutral": {
+        "full": 0,
+        "partial": 0,
+        "none": 0,
+        "reviewScore": 0
+      },
+      "duty_coverage": {
+        "full": 0,
+        "partial": 0,
+        "none": 0,
+        "reviewScore": 0
+      },
+      "capability_statement": {
+        "full": 0,
+        "partial": 0,
+        "none": 0,
+        "reviewScore": 0
+      },
+      "work_capacity_level": {
+        "full": 0,
+        "partial": 0,
+        "none": 0,
+        "reviewScore": 0
+      }
+    },
+    "clear_partial": {
+      "neutral": {
+        "full": 0,
+        "partial": 0,
+        "none": 0,
+        "reviewScore": 0
+      },
+      "duty_coverage": {
+        "full": 0,
+        "partial": 0,
+        "none": 0,
+        "reviewScore": 0
+      },
+      "capability_statement": {
+        "full": 0,
+        "partial": 0,
+        "none": 0,
+        "reviewScore": 0
+      },
+      "work_capacity_level": {
+        "full": 0,
+        "partial": 0,
+        "none": 0,
+        "reviewScore": 0
+      }
+    }
+  },
+  "errors": 0
+}

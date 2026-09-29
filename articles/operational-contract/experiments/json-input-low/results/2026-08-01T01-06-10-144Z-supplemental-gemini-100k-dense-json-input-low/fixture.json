@@ -1,0 +1,27 @@
+{
+  "contexts": {
+    "retrieved_100000_contract": "A separate enterprise account note says that contracts above $100,000 require executive review during the seasonal sales period."
+  },
+  "formats": [
+    "prose_same_block",
+    "json_flat",
+    "json_typed",
+    "json_typed_boundary_rule"
+  ],
+  "amounts": [
+    100,
+    150,
+    500,
+    1000,
+    5000,
+    10000,
+    12000,
+    15000,
+    18000,
+    20000,
+    25000,
+    50000,
+    100000
+  ],
+  "samples": 30
+}

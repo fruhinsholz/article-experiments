@@ -1,0 +1,14 @@
+model,response_models,format_id,context_id,amount,total,low,not_low,invalid,low_pct,not_low_pct,errors
+gpt-5.6,gpt-5.6-sol,json_typed_boundary_rule,fact_only,0,100,100,0,0,100.0%,0.0%,0
+gpt-5.6,gpt-5.6-sol,json_typed_boundary_rule,fact_only,5,100,100,0,0,100.0%,0.0%,0
+gpt-5.6,gpt-5.6-sol,json_typed_boundary_rule,fact_only,25,100,100,0,0,100.0%,0.0%,0
+gpt-5.6,gpt-5.6-sol,json_typed_boundary_rule,fact_only,49,100,100,0,0,100.0%,0.0%,0
+gpt-5.6,gpt-5.6-sol,json_typed_boundary_rule,fact_only,50,100,100,0,0,100.0%,0.0%,0
+gpt-5.6,gpt-5.6-sol,json_typed_boundary_rule,fact_only,51,100,100,0,0,100.0%,0.0%,0
+gpt-5.6,gpt-5.6-sol,json_typed_boundary_rule,fact_only,75,100,100,0,0,100.0%,0.0%,0
+gpt-5.6,gpt-5.6-sol,json_typed_boundary_rule,fact_only,100,100,100,0,0,100.0%,0.0%,0
+gpt-5.6,gpt-5.6-sol,json_typed_boundary_rule,fact_only,101,100,0,100,0,0.0%,100.0%,0
+gpt-5.6,gpt-5.6-sol,json_typed_boundary_rule,fact_only,150,100,0,100,0,0.0%,100.0%,0
+gpt-5.6,gpt-5.6-sol,json_typed_boundary_rule,fact_only,250,100,0,100,0,0.0%,100.0%,0
+gpt-5.6,gpt-5.6-sol,json_typed_boundary_rule,fact_only,500,100,0,100,0,0.0%,100.0%,0
+gpt-5.6,gpt-5.6-sol,json_typed_boundary_rule,fact_only,1000,100,0,100,0,0.0%,100.0%,0

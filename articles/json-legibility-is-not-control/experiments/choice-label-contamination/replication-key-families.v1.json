@@ -1,0 +1,36 @@
+{
+  "version": "1.0.0",
+  "date": "2026-09-27",
+  "sourcePacket": "BLIND_NATURAL_CHOICE_FAMILIES_PACKET.md",
+  "sourceResults": "BLIND_NATURAL_CHOICE_FAMILIES_RESULTS.md",
+  "selectionTiming": "before_behavioral_testing",
+  "families": {
+    "neutral_reference": {
+      "full": "A",
+      "partial": "B",
+      "none": "C",
+      "role": "secondary_reference"
+    },
+    "duty_coverage": {
+      "full": "all_essential_duties",
+      "partial": "some_essential_duties",
+      "none": "no_essential_duties",
+      "judgeSupport": "exact_3_of_3",
+      "role": "primary_descriptive"
+    },
+    "capability_statement": {
+      "full": "can_perform_all_essential_duties",
+      "partial": "can_perform_some_essential_duties",
+      "none": "cannot_perform_any_essential_duties",
+      "judgeSupport": "exact_2_of_3",
+      "role": "primary_descriptive"
+    },
+    "work_capacity_level": {
+      "full": "full_essential_work_capacity",
+      "partial": "limited_essential_work_capacity",
+      "none": "no_essential_work_capacity",
+      "judgeSupport": "recommended_by_senior_practitioner",
+      "role": "primary_descriptive"
+    }
+  }
+}

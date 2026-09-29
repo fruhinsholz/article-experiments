@@ -1,0 +1,783 @@
+{
+  "args": {
+    "provider": "jev",
+    "model": "jev-latest",
+    "repeats": 10,
+    "maxCalls": 120,
+    "concurrency": 5,
+    "label": "blind-natural-key-replication-calibration",
+    "includeRejected": false,
+    "dryRun": false,
+    "seed": 27092031,
+    "stimuliFile": "/var/lib/openclaw/.openclaw/workspace/json-legibility-control/experiments/choice-label-contamination/replication-calibration-states.v1.json",
+    "confirmatory": false,
+    "retries": 3,
+    "retryDelayMs": 500,
+    "temperature": 0
+  },
+  "stimuli": {
+    "version": "replication-calibration-1.0.0",
+    "dateFrozen": "2026-09-27",
+    "purpose": "Select four boundary states before testing the descriptive key families.",
+    "question": "To what extent can the person currently perform their essential work?",
+    "instructionSuffix": "",
+    "descriptions": {
+      "full": "The person can complete every essential job duty at normal quality and pace without assistance.",
+      "partial": "The person can complete some essential job duties, but at least one essential duty cannot be completed at normal quality or pace.",
+      "none": "The person cannot complete any essential job duty."
+    },
+    "applicationPolicy": {
+      "reviewIfPartialPlusNoneAtLeast": 0.5,
+      "reviewBranch": "human_review",
+      "automaticBranch": "automatic_full_capacity"
+    },
+    "randomization": {
+      "seed": 27092031,
+      "unit": "complete balanced block containing every calibration state once"
+    },
+    "states": {
+      "r00_explicit_normal": "My computer is broken, but from my phone I can complete every essential job duty at normal quality and pace without assistance.",
+      "r01_normal_pace_less_convenient": "My computer is broken, but from my phone I can complete every essential job duty at normal quality and pace without assistance. The phone is less convenient.",
+      "r02_normal_pace_not_full_day": "My computer is broken, but from my phone I can complete every essential job duty at normal quality and pace without assistance. I have not yet used the phone workflow for a full day.",
+      "r03_roughly_normal_pace": "My computer is broken, but from my phone I can complete every essential job duty at normal quality and roughly normal pace without assistance.",
+      "r04_close_to_normal_pace": "My computer is broken, but from my phone I can complete every essential job duty at normal quality. My pace is close to normal, although the phone is less convenient.",
+      "r05_maybe_one_slight_delay": "My computer is broken, but from my phone I can complete every essential job duty at normal quality and pace without assistance. One duty might occasionally take slightly longer.",
+      "r06_unsure_one_slight_delay": "My computer is broken, but from my phone I can complete every essential job duty at normal quality. Most duties are at normal pace; I am unsure whether one duty may take slightly longer.",
+      "r07_one_duty_sometimes_slower": "My computer is broken, but from my phone I can complete every essential job duty at normal quality. One duty is sometimes slightly slower than normal.",
+      "r08_one_duty_slightly_slower": "My computer is broken, but from my phone I can complete every essential job duty at normal quality. One duty takes slightly longer than normal.",
+      "r09_one_duty_noticeably_slower": "My computer is broken, but from my phone I can complete every essential job duty at normal quality. One duty takes noticeably longer than normal.",
+      "r10_one_duty_not_normal_pace": "My computer is broken, but from my phone I can complete every essential job duty at normal quality. One essential duty cannot be completed at normal pace.",
+      "r11_explicit_partial": "My computer is broken. From my phone I can complete some essential job duties, but at least one essential duty cannot be completed at normal quality or pace."
+    },
+    "keyFamilies": {
+      "neutral": {
+        "full": "A",
+        "partial": "B",
+        "none": "C",
+        "validationStatus": "reference"
+      }
+    }
+  },
+  "jobs": [
+    {
+      "state": "r09_one_duty_noticeably_slower",
+      "family": "neutral",
+      "block": 0,
+      "blockOrder": 0
+    },
+    {
+      "state": "r04_close_to_normal_pace",
+      "family": "neutral",
+      "block": 0,
+      "blockOrder": 1
+    },
+    {
+      "state": "r08_one_duty_slightly_slower",
+      "family": "neutral",
+      "block": 0,
+      "blockOrder": 2
+    },
+    {
+      "state": "r07_one_duty_sometimes_slower",
+      "family": "neutral",
+      "block": 0,
+      "blockOrder": 3
+    },
+    {
+      "state": "r10_one_duty_not_normal_pace",
+      "family": "neutral",
+      "block": 0,
+      "blockOrder": 4
+    },
+    {
+      "state": "r02_normal_pace_not_full_day",
+      "family": "neutral",
+      "block": 0,
+      "blockOrder": 5
+    },
+    {
+      "state": "r06_unsure_one_slight_delay",
+      "family": "neutral",
+      "block": 0,
+      "blockOrder": 6
+    },
+    {
+      "state": "r00_explicit_normal",
+      "family": "neutral",
+      "block": 0,
+      "blockOrder": 7
+    },
+    {
+      "state": "r11_explicit_partial",
+      "family": "neutral",
+      "block": 0,
+      "blockOrder": 8
+    },
+    {
+      "state": "r05_maybe_one_slight_delay",
+      "family": "neutral",
+      "block": 0,
+      "blockOrder": 9
+    },
+    {
+      "state": "r01_normal_pace_less_convenient",
+      "family": "neutral",
+      "block": 0,
+      "blockOrder": 10
+    },
+    {
+      "state": "r03_roughly_normal_pace",
+      "family": "neutral",
+      "block": 0,
+      "blockOrder": 11
+    },
+    {
+      "state": "r07_one_duty_sometimes_slower",
+      "family": "neutral",
+      "block": 1,
+      "blockOrder": 0
+    },
+    {
+      "state": "r11_explicit_partial",
+      "family": "neutral",
+      "block": 1,
+      "blockOrder": 1
+    },
+    {
+      "state": "r01_normal_pace_less_convenient",
+      "family": "neutral",
+      "block": 1,
+      "blockOrder": 2
+    },
+    {
+      "state": "r05_maybe_one_slight_delay",
+      "family": "neutral",
+      "block": 1,
+      "blockOrder": 3
+    },
+    {
+      "state": "r00_explicit_normal",
+      "family": "neutral",
+      "block": 1,
+      "blockOrder": 4
+    },
+    {
+      "state": "r10_one_duty_not_normal_pace",
+      "family": "neutral",
+      "block": 1,
+      "blockOrder": 5
+    },
+    {
+      "state": "r06_unsure_one_slight_delay",
+      "family": "neutral",
+      "block": 1,
+      "blockOrder": 6
+    },
+    {
+      "state": "r08_one_duty_slightly_slower",
+      "family": "neutral",
+      "block": 1,
+      "blockOrder": 7
+    },
+    {
+      "state": "r09_one_duty_noticeably_slower",
+      "family": "neutral",
+      "block": 1,
+      "blockOrder": 8
+    },
+    {
+      "state": "r03_roughly_normal_pace",
+      "family": "neutral",
+      "block": 1,
+      "blockOrder": 9
+    },
+    {
+      "state": "r02_normal_pace_not_full_day",
+      "family": "neutral",
+      "block": 1,
+      "blockOrder": 10
+    },
+    {
+      "state": "r04_close_to_normal_pace",
+      "family": "neutral",
+      "block": 1,
+      "blockOrder": 11
+    },
+    {
+      "state": "r05_maybe_one_slight_delay",
+      "family": "neutral",
+      "block": 2,
+      "blockOrder": 0
+    },
+    {
+      "state": "r01_normal_pace_less_convenient",
+      "family": "neutral",
+      "block": 2,
+      "blockOrder": 1
+    },
+    {
+      "state": "r02_normal_pace_not_full_day",
+      "family": "neutral",
+      "block": 2,
+      "blockOrder": 2
+    },
+    {
+      "state": "r06_unsure_one_slight_delay",
+      "family": "neutral",
+      "block": 2,
+      "blockOrder": 3
+    },
+    {
+      "state": "r09_one_duty_noticeably_slower",
+      "family": "neutral",
+      "block": 2,
+      "blockOrder": 4
+    },
+    {
+      "state": "r07_one_duty_sometimes_slower",
+      "family": "neutral",
+      "block": 2,
+      "blockOrder": 5
+    },
+    {
+      "state": "r11_explicit_partial",
+      "family": "neutral",
+      "block": 2,
+      "blockOrder": 6
+    },
+    {
+      "state": "r04_close_to_normal_pace",
+      "family": "neutral",
+      "block": 2,
+      "blockOrder": 7
+    },
+    {
+      "state": "r10_one_duty_not_normal_pace",
+      "family": "neutral",
+      "block": 2,
+      "blockOrder": 8
+    },
+    {
+      "state": "r08_one_duty_slightly_slower",
+      "family": "neutral",
+      "block": 2,
+      "blockOrder": 9
+    },
+    {
+      "state": "r03_roughly_normal_pace",
+      "family": "neutral",
+      "block": 2,
+      "blockOrder": 10
+    },
+    {
+      "state": "r00_explicit_normal",
+      "family": "neutral",
+      "block": 2,
+      "blockOrder": 11
+    },
+    {
+      "state": "r02_normal_pace_not_full_day",
+      "family": "neutral",
+      "block": 3,
+      "blockOrder": 0
+    },
+    {
+      "state": "r04_close_to_normal_pace",
+      "family": "neutral",
+      "block": 3,
+      "blockOrder": 1
+    },
+    {
+      "state": "r07_one_duty_sometimes_slower",
+      "family": "neutral",
+      "block": 3,
+      "blockOrder": 2
+    },
+    {
+      "state": "r05_maybe_one_slight_delay",
+      "family": "neutral",
+      "block": 3,
+      "blockOrder": 3
+    },
+    {
+      "state": "r03_roughly_normal_pace",
+      "family": "neutral",
+      "block": 3,
+      "blockOrder": 4
+    },
+    {
+      "state": "r06_unsure_one_slight_delay",
+      "family": "neutral",
+      "block": 3,
+      "blockOrder": 5
+    },
+    {
+      "state": "r00_explicit_normal",
+      "family": "neutral",
+      "block": 3,
+      "blockOrder": 6
+    },
+    {
+      "state": "r11_explicit_partial",
+      "family": "neutral",
+      "block": 3,
+      "blockOrder": 7
+    },
+    {
+      "state": "r08_one_duty_slightly_slower",
+      "family": "neutral",
+      "block": 3,
+      "blockOrder": 8
+    },
+    {
+      "state": "r09_one_duty_noticeably_slower",
+      "family": "neutral",
+      "block": 3,
+      "blockOrder": 9
+    },
+    {
+      "state": "r10_one_duty_not_normal_pace",
+      "family": "neutral",
+      "block": 3,
+      "blockOrder": 10
+    },
+    {
+      "state": "r01_normal_pace_less_convenient",
+      "family": "neutral",
+      "block": 3,
+      "blockOrder": 11
+    },
+    {
+      "state": "r05_maybe_one_slight_delay",
+      "family": "neutral",
+      "block": 4,
+      "blockOrder": 0
+    },
+    {
+      "state": "r02_normal_pace_not_full_day",
+      "family": "neutral",
+      "block": 4,
+      "blockOrder": 1
+    },
+    {
+      "state": "r09_one_duty_noticeably_slower",
+      "family": "neutral",
+      "block": 4,
+      "blockOrder": 2
+    },
+    {
+      "state": "r11_explicit_partial",
+      "family": "neutral",
+      "block": 4,
+      "blockOrder": 3
+    },
+    {
+      "state": "r10_one_duty_not_normal_pace",
+      "family": "neutral",
+      "block": 4,
+      "blockOrder": 4
+    },
+    {
+      "state": "r01_normal_pace_less_convenient",
+      "family": "neutral",
+      "block": 4,
+      "blockOrder": 5
+    },
+    {
+      "state": "r06_unsure_one_slight_delay",
+      "family": "neutral",
+      "block": 4,
+      "blockOrder": 6
+    },
+    {
+      "state": "r04_close_to_normal_pace",
+      "family": "neutral",
+      "block": 4,
+      "blockOrder": 7
+    },
+    {
+      "state": "r07_one_duty_sometimes_slower",
+      "family": "neutral",
+      "block": 4,
+      "blockOrder": 8
+    },
+    {
+      "state": "r00_explicit_normal",
+      "family": "neutral",
+      "block": 4,
+      "blockOrder": 9
+    },
+    {
+      "state": "r03_roughly_normal_pace",
+      "family": "neutral",
+      "block": 4,
+      "blockOrder": 10
+    },
+    {
+      "state": "r08_one_duty_slightly_slower",
+      "family": "neutral",
+      "block": 4,
+      "blockOrder": 11
+    },
+    {
+      "state": "r05_maybe_one_slight_delay",
+      "family": "neutral",
+      "block": 5,
+      "blockOrder": 0
+    },
+    {
+      "state": "r03_roughly_normal_pace",
+      "family": "neutral",
+      "block": 5,
+      "blockOrder": 1
+    },
+    {
+      "state": "r04_close_to_normal_pace",
+      "family": "neutral",
+      "block": 5,
+      "blockOrder": 2
+    },
+    {
+      "state": "r09_one_duty_noticeably_slower",
+      "family": "neutral",
+      "block": 5,
+      "blockOrder": 3
+    },
+    {
+      "state": "r08_one_duty_slightly_slower",
+      "family": "neutral",
+      "block": 5,
+      "blockOrder": 4
+    },
+    {
+      "state": "r06_unsure_one_slight_delay",
+      "family": "neutral",
+      "block": 5,
+      "blockOrder": 5
+    },
+    {
+      "state": "r11_explicit_partial",
+      "family": "neutral",
+      "block": 5,
+      "blockOrder": 6
+    },
+    {
+      "state": "r02_normal_pace_not_full_day",
+      "family": "neutral",
+      "block": 5,
+      "blockOrder": 7
+    },
+    {
+      "state": "r01_normal_pace_less_convenient",
+      "family": "neutral",
+      "block": 5,
+      "blockOrder": 8
+    },
+    {
+      "state": "r00_explicit_normal",
+      "family": "neutral",
+      "block": 5,
+      "blockOrder": 9
+    },
+    {
+      "state": "r10_one_duty_not_normal_pace",
+      "family": "neutral",
+      "block": 5,
+      "blockOrder": 10
+    },
+    {
+      "state": "r07_one_duty_sometimes_slower",
+      "family": "neutral",
+      "block": 5,
+      "blockOrder": 11
+    },
+    {
+      "state": "r01_normal_pace_less_convenient",
+      "family": "neutral",
+      "block": 6,
+      "blockOrder": 0
+    },
+    {
+      "state": "r00_explicit_normal",
+      "family": "neutral",
+      "block": 6,
+      "blockOrder": 1
+    },
+    {
+      "state": "r05_maybe_one_slight_delay",
+      "family": "neutral",
+      "block": 6,
+      "blockOrder": 2
+    },
+    {
+      "state": "r09_one_duty_noticeably_slower",
+      "family": "neutral",
+      "block": 6,
+      "blockOrder": 3
+    },
+    {
+      "state": "r08_one_duty_slightly_slower",
+      "family": "neutral",
+      "block": 6,
+      "blockOrder": 4
+    },
+    {
+      "state": "r07_one_duty_sometimes_slower",
+      "family": "neutral",
+      "block": 6,
+      "blockOrder": 5
+    },
+    {
+      "state": "r02_normal_pace_not_full_day",
+      "family": "neutral",
+      "block": 6,
+      "blockOrder": 6
+    },
+    {
+      "state": "r06_unsure_one_slight_delay",
+      "family": "neutral",
+      "block": 6,
+      "blockOrder": 7
+    },
+    {
+      "state": "r04_close_to_normal_pace",
+      "family": "neutral",
+      "block": 6,
+      "blockOrder": 8
+    },
+    {
+      "state": "r11_explicit_partial",
+      "family": "neutral",
+      "block": 6,
+      "blockOrder": 9
+    },
+    {
+      "state": "r10_one_duty_not_normal_pace",
+      "family": "neutral",
+      "block": 6,
+      "blockOrder": 10
+    },
+    {
+      "state": "r03_roughly_normal_pace",
+      "family": "neutral",
+      "block": 6,
+      "blockOrder": 11
+    },
+    {
+      "state": "r03_roughly_normal_pace",
+      "family": "neutral",
+      "block": 7,
+      "blockOrder": 0
+    },
+    {
+      "state": "r08_one_duty_slightly_slower",
+      "family": "neutral",
+      "block": 7,
+      "blockOrder": 1
+    },
+    {
+      "state": "r00_explicit_normal",
+      "family": "neutral",
+      "block": 7,
+      "blockOrder": 2
+    },
+    {
+      "state": "r09_one_duty_noticeably_slower",
+      "family": "neutral",
+      "block": 7,
+      "blockOrder": 3
+    },
+    {
+      "state": "r11_explicit_partial",
+      "family": "neutral",
+      "block": 7,
+      "blockOrder": 4
+    },
+    {
+      "state": "r05_maybe_one_slight_delay",
+      "family": "neutral",
+      "block": 7,
+      "blockOrder": 5
+    },
+    {
+      "state": "r02_normal_pace_not_full_day",
+      "family": "neutral",
+      "block": 7,
+      "blockOrder": 6
+    },
+    {
+      "state": "r01_normal_pace_less_convenient",
+      "family": "neutral",
+      "block": 7,
+      "blockOrder": 7
+    },
+    {
+      "state": "r10_one_duty_not_normal_pace",
+      "family": "neutral",
+      "block": 7,
+      "blockOrder": 8
+    },
+    {
+      "state": "r04_close_to_normal_pace",
+      "family": "neutral",
+      "block": 7,
+      "blockOrder": 9
+    },
+    {
+      "state": "r07_one_duty_sometimes_slower",
+      "family": "neutral",
+      "block": 7,
+      "blockOrder": 10
+    },
+    {
+      "state": "r06_unsure_one_slight_delay",
+      "family": "neutral",
+      "block": 7,
+      "blockOrder": 11
+    },
+    {
+      "state": "r11_explicit_partial",
+      "family": "neutral",
+      "block": 8,
+      "blockOrder": 0
+    },
+    {
+      "state": "r10_one_duty_not_normal_pace",
+      "family": "neutral",
+      "block": 8,
+      "blockOrder": 1
+    },
+    {
+      "state": "r06_unsure_one_slight_delay",
+      "family": "neutral",
+      "block": 8,
+      "blockOrder": 2
+    },
+    {
+      "state": "r09_one_duty_noticeably_slower",
+      "family": "neutral",
+      "block": 8,
+      "blockOrder": 3
+    },
+    {
+      "state": "r03_roughly_normal_pace",
+      "family": "neutral",
+      "block": 8,
+      "blockOrder": 4
+    },
+    {
+      "state": "r08_one_duty_slightly_slower",
+      "family": "neutral",
+      "block": 8,
+      "blockOrder": 5
+    },
+    {
+      "state": "r05_maybe_one_slight_delay",
+      "family": "neutral",
+      "block": 8,
+      "blockOrder": 6
+    },
+    {
+      "state": "r04_close_to_normal_pace",
+      "family": "neutral",
+      "block": 8,
+      "blockOrder": 7
+    },
+    {
+      "state": "r02_normal_pace_not_full_day",
+      "family": "neutral",
+      "block": 8,
+      "blockOrder": 8
+    },
+    {
+      "state": "r01_normal_pace_less_convenient",
+      "family": "neutral",
+      "block": 8,
+      "blockOrder": 9
+    },
+    {
+      "state": "r00_explicit_normal",
+      "family": "neutral",
+      "block": 8,
+      "blockOrder": 10
+    },
+    {
+      "state": "r07_one_duty_sometimes_slower",
+      "family": "neutral",
+      "block": 8,
+      "blockOrder": 11
+    },
+    {
+      "state": "r00_explicit_normal",
+      "family": "neutral",
+      "block": 9,
+      "blockOrder": 0
+    },
+    {
+      "state": "r07_one_duty_sometimes_slower",
+      "family": "neutral",
+      "block": 9,
+      "blockOrder": 1
+    },
+    {
+      "state": "r11_explicit_partial",
+      "family": "neutral",
+      "block": 9,
+      "blockOrder": 2
+    },
+    {
+      "state": "r08_one_duty_slightly_slower",
+      "family": "neutral",
+      "block": 9,
+      "blockOrder": 3
+    },
+    {
+      "state": "r09_one_duty_noticeably_slower",
+      "family": "neutral",
+      "block": 9,
+      "blockOrder": 4
+    },
+    {
+      "state": "r01_normal_pace_less_convenient",
+      "family": "neutral",
+      "block": 9,
+      "blockOrder": 5
+    },
+    {
+      "state": "r02_normal_pace_not_full_day",
+      "family": "neutral",
+      "block": 9,
+      "blockOrder": 6
+    },
+    {
+      "state": "r10_one_duty_not_normal_pace",
+      "family": "neutral",
+      "block": 9,
+      "blockOrder": 7
+    },
+    {
+      "state": "r03_roughly_normal_pace",
+      "family": "neutral",
+      "block": 9,
+      "blockOrder": 8
+    },
+    {
+      "state": "r06_unsure_one_slight_delay",
+      "family": "neutral",
+      "block": 9,
+      "blockOrder": 9
+    },
+    {
+      "state": "r05_maybe_one_slight_delay",
+      "family": "neutral",
+      "block": 9,
+      "blockOrder": 10
+    },
+    {
+      "state": "r04_close_to_normal_pace",
+      "family": "neutral",
+      "block": 9,
+      "blockOrder": 11
+    }
+  ]
+}

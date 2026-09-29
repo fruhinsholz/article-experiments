@@ -1,0 +1,99 @@
+{
+  "method": {
+    "design": "post-confirmatory question-wording ablation",
+    "changedVariable": "Replaced a description-oriented question with an operational question.",
+    "before": "Which description best represents the person's current ability to complete essential work?",
+    "after": "To what extent can the person currently perform their essential work?",
+    "heldFixed": [
+      "state",
+      "descriptions",
+      "key families",
+      "key order",
+      "application threshold",
+      "randomization seed",
+      "model alias",
+      "repeats",
+      "concurrency"
+    ],
+    "equivalenceTest": false,
+    "interpretation": "Descriptive robustness comparison, not a formal statistical equivalence test."
+  },
+  "descriptiveQuestion": {
+    "plannedCalls": 240,
+    "validCalls": 240,
+    "errors": 0,
+    "models": [
+      "jev-1.13.0"
+    ],
+    "requestRetries": 0,
+    "boundary": {
+      "capacity": {
+        "n": 20,
+        "meanReviewScore": 0.40700000000000003,
+        "humanReviewCount": 0,
+        "humanReviewRate": 0
+      },
+      "neutral": {
+        "n": 20,
+        "meanReviewScore": 0.48149999999999993,
+        "humanReviewCount": 7,
+        "humanReviewRate": 0.35
+      },
+      "task_coverage": {
+        "n": 20,
+        "meanReviewScore": 0.4410000000000001,
+        "humanReviewCount": 0,
+        "humanReviewRate": 0
+      },
+      "work_completion": {
+        "n": 20,
+        "meanReviewScore": 0.402,
+        "humanReviewCount": 0,
+        "humanReviewRate": 0
+      }
+    },
+    "aggregateDescriptiveReviewScore": 0.4166666666666667,
+    "aggregateDescriptiveHumanReviewRate": 0,
+    "aggregateDescriptiveGap": -0.0648333333333332,
+    "clearControlErrors": 0
+  },
+  "operationalQuestion": {
+    "plannedCalls": 240,
+    "validCalls": 240,
+    "errors": 0,
+    "models": [
+      "jev-1.13.0"
+    ],
+    "requestRetries": 0,
+    "boundary": {
+      "capacity": {
+        "n": 20,
+        "meanReviewScore": 0.4345,
+        "humanReviewCount": 1,
+        "humanReviewRate": 0.05
+      },
+      "neutral": {
+        "n": 20,
+        "meanReviewScore": 0.471,
+        "humanReviewCount": 7,
+        "humanReviewRate": 0.35
+      },
+      "task_coverage": {
+        "n": 20,
+        "meanReviewScore": 0.3225,
+        "humanReviewCount": 0,
+        "humanReviewRate": 0
+      },
+      "work_completion": {
+        "n": 20,
+        "meanReviewScore": 0.399,
+        "humanReviewCount": 0,
+        "humanReviewRate": 0
+      }
+    },
+    "aggregateDescriptiveReviewScore": 0.38533333333333336,
+    "aggregateDescriptiveHumanReviewRate": 0.016666666666666666,
+    "aggregateDescriptiveGap": -0.08566666666666663,
+    "clearControlErrors": 0
+  }
+}

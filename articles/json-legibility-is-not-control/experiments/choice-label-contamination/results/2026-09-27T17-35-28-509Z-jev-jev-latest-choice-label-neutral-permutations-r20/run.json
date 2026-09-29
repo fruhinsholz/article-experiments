@@ -1,0 +1,86 @@
+{
+  "args": {
+    "model": "jev-latest",
+    "repeats": 20,
+    "maxCalls": 120,
+    "concurrency": 5,
+    "label": "choice-label-neutral-permutations-r20",
+    "stateMode": "ambiguous",
+    "conditionSet": "neutral-permutations",
+    "dryRun": false
+  },
+  "conditions": {
+    "neutral_permutation_1_full_partial_none": {
+      "criteria": {
+        "A": "The customer can perform all necessary work.",
+        "B": "The customer can perform some, but not all, necessary work.",
+        "C": "The customer cannot perform any necessary work."
+      },
+      "semanticKeys": {
+        "full": "A",
+        "partial": "B",
+        "none": "C"
+      }
+    },
+    "neutral_permutation_2_full_none_partial": {
+      "criteria": {
+        "A": "The customer can perform all necessary work.",
+        "B": "The customer cannot perform any necessary work.",
+        "C": "The customer can perform some, but not all, necessary work."
+      },
+      "semanticKeys": {
+        "full": "A",
+        "none": "B",
+        "partial": "C"
+      }
+    },
+    "neutral_permutation_3_partial_full_none": {
+      "criteria": {
+        "A": "The customer can perform some, but not all, necessary work.",
+        "B": "The customer can perform all necessary work.",
+        "C": "The customer cannot perform any necessary work."
+      },
+      "semanticKeys": {
+        "partial": "A",
+        "full": "B",
+        "none": "C"
+      }
+    },
+    "neutral_permutation_4_partial_none_full": {
+      "criteria": {
+        "A": "The customer can perform some, but not all, necessary work.",
+        "B": "The customer cannot perform any necessary work.",
+        "C": "The customer can perform all necessary work."
+      },
+      "semanticKeys": {
+        "partial": "A",
+        "none": "B",
+        "full": "C"
+      }
+    },
+    "neutral_permutation_5_none_full_partial": {
+      "criteria": {
+        "A": "The customer cannot perform any necessary work.",
+        "B": "The customer can perform all necessary work.",
+        "C": "The customer can perform some, but not all, necessary work."
+      },
+      "semanticKeys": {
+        "none": "A",
+        "full": "B",
+        "partial": "C"
+      }
+    },
+    "neutral_permutation_6_none_partial_full": {
+      "criteria": {
+        "A": "The customer cannot perform any necessary work.",
+        "B": "The customer can perform some, but not all, necessary work.",
+        "C": "The customer can perform all necessary work."
+      },
+      "semanticKeys": {
+        "none": "A",
+        "partial": "B",
+        "full": "C"
+      }
+    }
+  }
+}

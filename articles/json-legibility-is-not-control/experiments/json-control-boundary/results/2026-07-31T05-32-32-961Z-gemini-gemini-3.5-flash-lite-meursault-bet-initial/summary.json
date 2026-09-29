@@ -1,0 +1,383 @@
+{
+  "provider": "gemini",
+  "model": "gemini-3.5-flash-lite",
+  "calls": 160,
+  "errors": 0,
+  "classification": {
+    "control": {
+      "runs": 20,
+      "byAmount": {
+        "5": {
+          "LOW": 20,
+          "NOT_LOW": 0,
+          "INVALID": 0,
+          "MISSING": 0
+        },
+        "50": {
+          "LOW": 20,
+          "NOT_LOW": 0,
+          "INVALID": 0,
+          "MISSING": 0
+        },
+        "80": {
+          "LOW": 20,
+          "NOT_LOW": 0,
+          "INVALID": 0,
+          "MISSING": 0
+        },
+        "100": {
+          "LOW": 20,
+          "NOT_LOW": 0,
+          "INVALID": 0,
+          "MISSING": 0
+        },
+        "500": {
+          "LOW": 7,
+          "NOT_LOW": 13,
+          "INVALID": 0,
+          "MISSING": 0
+        },
+        "1000": {
+          "LOW": 7,
+          "NOT_LOW": 13,
+          "INVALID": 0,
+          "MISSING": 0
+        },
+        "5000": {
+          "LOW": 6,
+          "NOT_LOW": 14,
+          "INVALID": 0,
+          "MISSING": 0
+        },
+        "20000": {
+          "LOW": 6,
+          "NOT_LOW": 14,
+          "INVALID": 0,
+          "MISSING": 0
+        }
+      }
+    },
+    "prefix_free_text": {
+      "runs": 20,
+      "byAmount": {
+        "5": {
+          "LOW": 20,
+          "NOT_LOW": 0,
+          "INVALID": 0,
+          "MISSING": 0
+        },
+        "50": {
+          "LOW": 20,
+          "NOT_LOW": 0,
+          "INVALID": 0,
+          "MISSING": 0
+        },
+        "80": {
+          "LOW": 20,
+          "NOT_LOW": 0,
+          "INVALID": 0,
+          "MISSING": 0
+        },
+        "100": {
+          "LOW": 20,
+          "NOT_LOW": 0,
+          "INVALID": 0,
+          "MISSING": 0
+        },
+        "500": {
+          "LOW": 7,
+          "NOT_LOW": 13,
+          "INVALID": 0,
+          "MISSING": 0
+        },
+        "1000": {
+          "LOW": 7,
+          "NOT_LOW": 13,
+          "INVALID": 0,
+          "MISSING": 0
+        },
+        "5000": {
+          "LOW": 4,
+          "NOT_LOW": 16,
+          "INVALID": 0,
+          "MISSING": 0
+        },
+        "20000": {
+          "LOW": 4,
+          "NOT_LOW": 16,
+          "INVALID": 0,
+          "MISSING": 0
+        }
+      }
+    },
+    "suffix_free_text": {
+      "runs": 20,
+      "byAmount": {
+        "5": {
+          "LOW": 20,
+          "NOT_LOW": 0,
+          "INVALID": 0,
+          "MISSING": 0
+        },
+        "50": {
+          "LOW": 20,
+          "NOT_LOW": 0,
+          "INVALID": 0,
+          "MISSING": 0
+        },
+        "80": {
+          "LOW": 20,
+          "NOT_LOW": 0,
+          "INVALID": 0,
+          "MISSING": 0
+        },
+        "100": {
+          "LOW": 20,
+          "NOT_LOW": 0,
+          "INVALID": 0,
+          "MISSING": 0
+        },
+        "500": {
+          "LOW": 1,
+          "NOT_LOW": 19,
+          "INVALID": 0,
+          "MISSING": 0
+        },
+        "1000": {
+          "LOW": 1,
+          "NOT_LOW": 19,
+          "INVALID": 0,
+          "MISSING": 0
+        },
+        "5000": {
+          "LOW": 1,
+          "NOT_LOW": 19,
+          "INVALID": 0,
+          "MISSING": 0
+        },
+        "20000": {
+          "LOW": 0,
+          "NOT_LOW": 20,
+          "INVALID": 0,
+          "MISSING": 0
+        }
+      }
+    },
+    "top_level_instruction": {
+      "runs": 20,
+      "byAmount": {
+        "5": {
+          "LOW": 20,
+          "NOT_LOW": 0,
+          "INVALID": 0,
+          "MISSING": 0
+        },
+        "50": {
+          "LOW": 20,
+          "NOT_LOW": 0,
+          "INVALID": 0,
+          "MISSING": 0
+        },
+        "80": {
+          "LOW": 20,
+          "NOT_LOW": 0,
+          "INVALID": 0,
+          "MISSING": 0
+        },
+        "100": {
+          "LOW": 20,
+          "NOT_LOW": 0,
+          "INVALID": 0,
+          "MISSING": 0
+        },
+        "500": {
+          "LOW": 16,
+          "NOT_LOW": 4,
+          "INVALID": 0,
+          "MISSING": 0
+        },
+        "1000": {
+          "LOW": 15,
+          "NOT_LOW": 5,
+          "INVALID": 0,
+          "MISSING": 0
+        },
+        "5000": {
+          "LOW": 13,
+          "NOT_LOW": 7,
+          "INVALID": 0,
+          "MISSING": 0
+        },
+        "20000": {
+          "LOW": 8,
+          "NOT_LOW": 12,
+          "INVALID": 0,
+          "MISSING": 0
+        }
+      }
+    },
+    "top_level_note": {
+      "runs": 20,
+      "byAmount": {
+        "5": {
+          "LOW": 20,
+          "NOT_LOW": 0,
+          "INVALID": 0,
+          "MISSING": 0
+        },
+        "50": {
+          "LOW": 20,
+          "NOT_LOW": 0,
+          "INVALID": 0,
+          "MISSING": 0
+        },
+        "80": {
+          "LOW": 20,
+          "NOT_LOW": 0,
+          "INVALID": 0,
+          "MISSING": 0
+        },
+        "100": {
+          "LOW": 20,
+          "NOT_LOW": 0,
+          "INVALID": 0,
+          "MISSING": 0
+        },
+        "500": {
+          "LOW": 5,
+          "NOT_LOW": 15,
+          "INVALID": 0,
+          "MISSING": 0
+        },
+        "1000": {
+          "LOW": 4,
+          "NOT_LOW": 16,
+          "INVALID": 0,
+          "MISSING": 0
+        },
+        "5000": {
+          "LOW": 3,
+          "NOT_LOW": 17,
+          "INVALID": 0,
+          "MISSING": 0
+        },
+        "20000": {
+          "LOW": 1,
+          "NOT_LOW": 19,
+          "INVALID": 0,
+          "MISSING": 0
+        }
+      }
+    },
+    "per_object_instruction": {
+      "runs": 20,
+      "byAmount": {
+        "5": {
+          "LOW": 20,
+          "NOT_LOW": 0,
+          "INVALID": 0,
+          "MISSING": 0
+        },
+        "50": {
+          "LOW": 20,
+          "NOT_LOW": 0,
+          "INVALID": 0,
+          "MISSING": 0
+        },
+        "80": {
+          "LOW": 20,
+          "NOT_LOW": 0,
+          "INVALID": 0,
+          "MISSING": 0
+        },
+        "100": {
+          "LOW": 20,
+          "NOT_LOW": 0,
+          "INVALID": 0,
+          "MISSING": 0
+        },
+        "500": {
+          "LOW": 13,
+          "NOT_LOW": 7,
+          "INVALID": 0,
+          "MISSING": 0
+        },
+        "1000": {
+          "LOW": 10,
+          "NOT_LOW": 10,
+          "INVALID": 0,
+          "MISSING": 0
+        },
+        "5000": {
+          "LOW": 5,
+          "NOT_LOW": 15,
+          "INVALID": 0,
+          "MISSING": 0
+        },
+        "20000": {
+          "LOW": 1,
+          "NOT_LOW": 19,
+          "INVALID": 0,
+          "MISSING": 0
+        }
+      }
+    },
+    "system_rule": {
+      "runs": 20,
+      "byAmount": {
+        "5": {
+          "LOW": 20,
+          "NOT_LOW": 0,
+          "INVALID": 0,
+          "MISSING": 0
+        },
+        "50": {
+          "LOW": 20,
+          "NOT_LOW": 0,
+          "INVALID": 0,
+          "MISSING": 0
+        },
+        "80": {
+          "LOW": 20,
+          "NOT_LOW": 0,
+          "INVALID": 0,
+          "MISSING": 0
+        },
+        "100": {
+          "LOW": 18,
+          "NOT_LOW": 2,
+          "INVALID": 0,
+          "MISSING": 0
+        },
+        "500": {
+          "LOW": 0,
+          "NOT_LOW": 20,
+          "INVALID": 0,
+          "MISSING": 0
+        },
+        "1000": {
+          "LOW": 0,
+          "NOT_LOW": 20,
+          "INVALID": 0,
+          "MISSING": 0
+        },
+        "5000": {
+          "LOW": 0,
+          "NOT_LOW": 20,
+          "INVALID": 0,
+          "MISSING": 0
+        },
+        "20000": {
+          "LOW": 0,
+          "NOT_LOW": 20,
+          "INVALID": 0,
+          "MISSING": 0
+        }
+      }
+    }
+  },
+  "transform": {
+    "runs": 20,
+    "ok": 20
+  }
+}

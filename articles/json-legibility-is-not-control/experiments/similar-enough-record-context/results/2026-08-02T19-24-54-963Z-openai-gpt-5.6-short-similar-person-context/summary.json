@@ -1,0 +1,331 @@
+{
+  "provider": "openai",
+  "model": "gpt-5.6",
+  "calls": 48,
+  "errors": 0,
+  "pairMap": {
+    "3f720aa9-eb88-4890-8cb3-fd7956f2fa48": {
+      "step": 4,
+      "label": "name_address_phone_one_digit",
+      "changed_fields": [
+        "field_1",
+        "field_2",
+        "field_3",
+        "field_5"
+      ]
+    },
+    "a2100235-c196-4601-88bd-d4d79cbfce3e": {
+      "step": 6,
+      "label": "name_address_phone_email",
+      "changed_fields": [
+        "field_1",
+        "field_2",
+        "field_3",
+        "field_5",
+        "field_6"
+      ]
+    }
+  },
+  "conditionMap": {
+    "5adfcd6f-e4c0-4a9c-89f6-e3a378f85b40": {
+      "prompt": "short_similar_person",
+      "context": "baseline"
+    },
+    "a5eea422-80c9-4f30-9a57-a553ddc1967e": {
+      "prompt": "short_similar_person",
+      "context": "phone_recent"
+    },
+    "cdeaea72-1421-4d50-9ef6-319741da11a0": {
+      "prompt": "short_similar_person",
+      "context": "phone_legacy"
+    },
+    "5efd5bdf-7eb3-4440-a1c1-f1e267090c53": {
+      "prompt": "short_similar_person",
+      "context": "email_recent"
+    },
+    "ab30ab78-00f6-4113-84f7-794dbf206c60": {
+      "prompt": "short_similar_person",
+      "context": "support_incident"
+    },
+    "f3868f9c-b821-4717-8c29-825c2abcac43": {
+      "prompt": "short_similar_person",
+      "context": "irreversible_merge"
+    }
+  },
+  "byPairAndCondition": {
+    "3f720aa9-eb88-4890-8cb3-fd7956f2fa48": {
+      "5adfcd6f-e4c0-4a9c-89f6-e3a378f85b40": {
+        "runs": 4,
+        "same_record": 4,
+        "possible_duplicate": 0,
+        "new_record": 0,
+        "invalid": 0,
+        "confidence": {
+          "low": 0,
+          "medium": 0,
+          "high": 4,
+          "invalid": 0
+        },
+        "keyFields": {
+          "field_3": 4,
+          "field_6": 4,
+          "field_7": 4,
+          "field_8": 4,
+          "field_9": 4,
+          "field_10": 4
+        }
+      },
+      "a5eea422-80c9-4f30-9a57-a553ddc1967e": {
+        "runs": 4,
+        "same_record": 4,
+        "possible_duplicate": 0,
+        "new_record": 0,
+        "invalid": 0,
+        "confidence": {
+          "low": 0,
+          "medium": 0,
+          "high": 4,
+          "invalid": 0
+        },
+        "keyFields": {
+          "field_6": 4,
+          "field_9": 4,
+          "field_3": 4,
+          "field_7": 4,
+          "field_8": 4,
+          "field_5": 2
+        }
+      },
+      "cdeaea72-1421-4d50-9ef6-319741da11a0": {
+        "runs": 4,
+        "same_record": 4,
+        "possible_duplicate": 0,
+        "new_record": 0,
+        "invalid": 0,
+        "confidence": {
+          "low": 0,
+          "medium": 0,
+          "high": 4,
+          "invalid": 0
+        },
+        "keyFields": {
+          "field_3": 4,
+          "field_6": 4,
+          "field_7": 4,
+          "field_8": 4,
+          "field_9": 4,
+          "field_10": 2
+        }
+      },
+      "5efd5bdf-7eb3-4440-a1c1-f1e267090c53": {
+        "runs": 4,
+        "same_record": 4,
+        "possible_duplicate": 0,
+        "new_record": 0,
+        "invalid": 0,
+        "confidence": {
+          "low": 0,
+          "medium": 0,
+          "high": 4,
+          "invalid": 0
+        },
+        "keyFields": {
+          "field_3": 4,
+          "field_6": 4,
+          "field_7": 4,
+          "field_8": 4,
+          "field_9": 4,
+          "field_10": 4
+        }
+      },
+      "ab30ab78-00f6-4113-84f7-794dbf206c60": {
+        "runs": 4,
+        "same_record": 4,
+        "possible_duplicate": 0,
+        "new_record": 0,
+        "invalid": 0,
+        "confidence": {
+          "low": 0,
+          "medium": 0,
+          "high": 4,
+          "invalid": 0
+        },
+        "keyFields": {
+          "field_6": 4,
+          "field_9": 4,
+          "field_3": 4,
+          "field_7": 4,
+          "field_8": 4,
+          "field_10": 1
+        }
+      },
+      "f3868f9c-b821-4717-8c29-825c2abcac43": {
+        "runs": 4,
+        "same_record": 4,
+        "possible_duplicate": 0,
+        "new_record": 0,
+        "invalid": 0,
+        "confidence": {
+          "low": 0,
+          "medium": 0,
+          "high": 4,
+          "invalid": 0
+        },
+        "keyFields": {
+          "field_3": 4,
+          "field_6": 4,
+          "field_7": 4,
+          "field_8": 4,
+          "field_9": 4,
+          "field_10": 3,
+          "field_1": 1,
+          "field_2": 1
+        }
+      }
+    },
+    "a2100235-c196-4601-88bd-d4d79cbfce3e": {
+      "5adfcd6f-e4c0-4a9c-89f6-e3a378f85b40": {
+        "runs": 4,
+        "same_record": 3,
+        "possible_duplicate": 1,
+        "new_record": 0,
+        "invalid": 0,
+        "confidence": {
+          "low": 0,
+          "medium": 1,
+          "high": 3,
+          "invalid": 0
+        },
+        "keyFields": {
+          "field_3": 4,
+          "field_7": 4,
+          "field_8": 4,
+          "field_9": 4,
+          "field_10": 4,
+          "field_1": 3,
+          "field_2": 3,
+          "field_5": 2,
+          "field_6": 2
+        }
+      },
+      "a5eea422-80c9-4f30-9a57-a553ddc1967e": {
+        "runs": 4,
+        "same_record": 2,
+        "possible_duplicate": 2,
+        "new_record": 0,
+        "invalid": 0,
+        "confidence": {
+          "low": 0,
+          "medium": 0,
+          "high": 4,
+          "invalid": 0
+        },
+        "keyFields": {
+          "field_3": 4,
+          "field_5": 3,
+          "field_6": 2,
+          "field_7": 4,
+          "field_8": 4,
+          "field_9": 4,
+          "field_10": 1,
+          "field_1": 2,
+          "field_2": 2
+        }
+      },
+      "cdeaea72-1421-4d50-9ef6-319741da11a0": {
+        "runs": 4,
+        "same_record": 4,
+        "possible_duplicate": 0,
+        "new_record": 0,
+        "invalid": 0,
+        "confidence": {
+          "low": 0,
+          "medium": 0,
+          "high": 4,
+          "invalid": 0
+        },
+        "keyFields": {
+          "field_3": 4,
+          "field_7": 4,
+          "field_8": 4,
+          "field_9": 4,
+          "field_10": 4,
+          "field_1": 2,
+          "field_2": 2
+        }
+      },
+      "5efd5bdf-7eb3-4440-a1c1-f1e267090c53": {
+        "runs": 4,
+        "same_record": 4,
+        "possible_duplicate": 0,
+        "new_record": 0,
+        "invalid": 0,
+        "confidence": {
+          "low": 0,
+          "medium": 0,
+          "high": 4,
+          "invalid": 0
+        },
+        "keyFields": {
+          "field_3": 4,
+          "field_4": 1,
+          "field_7": 4,
+          "field_8": 4,
+          "field_9": 4,
+          "field_10": 3,
+          "field_1": 4,
+          "field_2": 4,
+          "field_6": 2
+        }
+      },
+      "ab30ab78-00f6-4113-84f7-794dbf206c60": {
+        "runs": 4,
+        "same_record": 0,
+        "possible_duplicate": 4,
+        "new_record": 0,
+        "invalid": 0,
+        "confidence": {
+          "low": 0,
+          "medium": 0,
+          "high": 4,
+          "invalid": 0
+        },
+        "keyFields": {
+          "field_1": 1,
+          "field_2": 1,
+          "field_3": 4,
+          "field_5": 4,
+          "field_6": 4,
+          "field_7": 4,
+          "field_8": 4,
+          "field_9": 4,
+          "field_10": 1
+        }
+      },
+      "f3868f9c-b821-4717-8c29-825c2abcac43": {
+        "runs": 4,
+        "same_record": 0,
+        "possible_duplicate": 4,
+        "new_record": 0,
+        "invalid": 0,
+        "confidence": {
+          "low": 0,
+          "medium": 0,
+          "high": 4,
+          "invalid": 0
+        },
+        "keyFields": {
+          "field_3": 4,
+          "field_7": 4,
+          "field_8": 4,
+          "field_9": 4,
+          "field_5": 4,
+          "field_6": 4,
+          "field_1": 2,
+          "field_2": 2,
+          "field_10": 1
+        }
+      }
+    }
+  }
+}

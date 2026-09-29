@@ -1,0 +1,64 @@
+{
+  "testbed": "enough",
+  "createdAt": "2026-07-28T03:26:10.470Z",
+  "commitHash": "8f0c57540153a226953a265a2f69dbed3bfcbe89",
+  "commandLine": "/usr/bin/node /var/lib/openclaw/.openclaw/workspace/prompt-contract-experiments/experiments/prompt-thresholds/src/enough.mjs --provider openai --models gpt-4.1,gpt-4.1-mini --samples 10 --epochs 7 --converge-width 0.25 --max-output-tokens 256 --max-calls 400 --label publication-clean-openai-enough --gzip-jsonl",
+  "provider": "openai",
+  "requestedModels": [
+    "gpt-4.1",
+    "gpt-4.1-mini"
+  ],
+  "apiParameters": {
+    "temperature": 0,
+    "maxOutputTokens": 256,
+    "reasoningEffort": null,
+    "seed": null
+  },
+  "samplesPerState": 10,
+  "epochs": 7,
+  "maxCalls": 400,
+  "dryRun": false,
+  "convergenceRule": "contract mode binary-searches integer evidence count, then binary-searches minimum active-row score until high-low <= 0.25; average mode binary search stops after 7 epochs or when high-low <= 0.25; passing mode scans 0..10 counts",
+  "binarySearchRange": {
+    "average": [
+      0,
+      10
+    ],
+    "passingCount": [
+      0,
+      10
+    ],
+    "evidenceCount": [
+      0,
+      10
+    ],
+    "qualityScore": [
+      1,
+      10
+    ],
+    "initialAverageScan": [
+      0,
+      2,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ]
+  },
+  "promptFiles": [
+    "system-prompt.txt",
+    "user-template.txt"
+  ],
+  "fixtureFile": "fixture.json",
+  "resultFiles": {
+    "rawJsonl": "calls.jsonl",
+    "summaryCsv": "summary.csv",
+    "summaryMarkdown": "summary.md",
+    "analysis": "analysis.md",
+    "enoughThresholdsJson": "enough-thresholds.json",
+    "enoughThresholdsMarkdown": "enough-thresholds.md"
+  }
+}

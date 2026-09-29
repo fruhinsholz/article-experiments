@@ -1,0 +1,49 @@
+{
+  "args": {
+    "model": "jev-latest",
+    "repeats": 5,
+    "maxCalls": 15,
+    "concurrency": 3,
+    "label": "choice-label-ambiguous-r5",
+    "stateMode": "ambiguous",
+    "dryRun": false
+  },
+  "conditions": {
+    "neutral": {
+      "criteria": {
+        "A": "The customer can perform all necessary work.",
+        "B": "The customer can perform some, but not all, necessary work.",
+        "C": "The customer cannot perform any necessary work."
+      },
+      "semanticKeys": {
+        "full": "A",
+        "partial": "B",
+        "none": "C"
+      }
+    },
+    "aligned": {
+      "criteria": {
+        "fully_operational": "The customer can perform all necessary work.",
+        "partially_blocked": "The customer can perform some, but not all, necessary work.",
+        "fully_blocked": "The customer cannot perform any necessary work."
+      },
+      "semanticKeys": {
+        "full": "fully_operational",
+        "partial": "partially_blocked",
+        "none": "fully_blocked"
+      }
+    },
+    "conflicting": {
+      "criteria": {
+        "blocked": "The customer can perform all necessary work.",
+        "working": "The customer can perform some, but not all, necessary work.",
+        "unaffected": "The customer cannot perform any necessary work."
+      },
+      "semanticKeys": {
+        "full": "blocked",
+        "partial": "working",
+        "none": "unaffected"
+      }
+    }
+  }
+}

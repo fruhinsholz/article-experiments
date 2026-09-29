@@ -1,0 +1,14 @@
+model,response_models,format_id,context_id,amount,total,low,not_low,invalid,low_pct,not_low_pct,errors
+gpt-5.6,gpt-5.6-sol,prose_same_block,retrieved_100000_contract,0,100,100,0,0,100.0%,0.0%,0
+gpt-5.6,gpt-5.6-sol,prose_same_block,retrieved_100000_contract,5,100,100,0,0,100.0%,0.0%,0
+gpt-5.6,gpt-5.6-sol,prose_same_block,retrieved_100000_contract,25,100,100,0,0,100.0%,0.0%,0
+gpt-5.6,gpt-5.6-sol,prose_same_block,retrieved_100000_contract,49,100,100,0,0,100.0%,0.0%,0
+gpt-5.6,gpt-5.6-sol,prose_same_block,retrieved_100000_contract,50,100,100,0,0,100.0%,0.0%,0
+gpt-5.6,gpt-5.6-sol,prose_same_block,retrieved_100000_contract,51,100,98,2,0,98.0%,2.0%,0
+gpt-5.6,gpt-5.6-sol,prose_same_block,retrieved_100000_contract,75,100,100,0,0,100.0%,0.0%,0
+gpt-5.6,gpt-5.6-sol,prose_same_block,retrieved_100000_contract,100,100,100,0,0,100.0%,0.0%,0
+gpt-5.6,gpt-5.6-sol,prose_same_block,retrieved_100000_contract,101,100,90,10,0,90.0%,10.0%,0
+gpt-5.6,gpt-5.6-sol,prose_same_block,retrieved_100000_contract,150,100,100,0,0,100.0%,0.0%,0
+gpt-5.6,gpt-5.6-sol,prose_same_block,retrieved_100000_contract,250,100,100,0,0,100.0%,0.0%,0
+gpt-5.6,gpt-5.6-sol,prose_same_block,retrieved_100000_contract,500,100,100,0,0,100.0%,0.0%,0
+gpt-5.6,gpt-5.6-sol,prose_same_block,retrieved_100000_contract,1000,100,99,1,0,99.0%,1.0%,0

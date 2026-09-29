@@ -1,0 +1,40 @@
+{
+  "testbed": "low",
+  "createdAt": "2026-07-28T00:02:02.697Z",
+  "commitHash": "d6a77c06ec2217c3b09764a60c08d220cc59a381",
+  "commandLine": "/usr/bin/node /home/eric/workspace/prompt-contract-experiments/experiments/prompt-thresholds/src/low-retrieved-context.mjs --models gpt-4.1-mini,gpt-4.1 --contexts all --samples 10 --refine-samples 30 --epochs 10 --max 20000 --max-calls 2000 --gzip-jsonl --label publication-clean-openai",
+  "provider": "openai",
+  "requestedModels": [
+    "gpt-4.1-mini",
+    "gpt-4.1"
+  ],
+  "apiParameters": {
+    "temperature": 0,
+    "maxOutputTokens": 256,
+    "reasoningEffort": null,
+    "seed": null
+  },
+  "samplesPerState": 10,
+  "epochs": 10,
+  "maxCalls": 2000,
+  "dryRun": false,
+  "convergenceRule": "bounded_probability_band_search targets P(LOW)=0.5, stops after 10 epochs or when high-low <= 25, then refines final endpoints to 30 samples",
+  "binarySearchRange": {
+    "min": 0,
+    "max": 20000,
+    "initialScan": null
+  },
+  "promptFiles": [
+    "system-prompt.txt",
+    "user-template.txt"
+  ],
+  "fixtureFile": "fixture.json",
+  "resultFiles": {
+    "rawJsonl": "calls.jsonl",
+    "summaryCsv": "summary.csv",
+    "summaryMarkdown": "summary.md",
+    "analysis": "analysis.md",
+    "thresholdBandsJson": "threshold-bands.json",
+    "thresholdBandsMarkdown": "threshold-bands.md"
+  }
+}

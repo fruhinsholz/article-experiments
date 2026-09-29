@@ -1,0 +1,26 @@
+{
+  "args": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "repeats": 100,
+    "maxCalls": 300,
+    "temperature": 0,
+    "maxOutputTokens": 256,
+    "concurrency": 5,
+    "label": "access-phone-q3-complaint-r100",
+    "questionMode": "bare",
+    "conditionSet": "complaint",
+    "dryRun": false,
+    "printExamples": false,
+    "conditions": [
+      "q1_only",
+      "q1_then_oriented_then_complaint",
+      "complaint_then_q1_then_oriented"
+    ]
+  },
+  "conditions": [
+    "q1_only",
+    "q1_then_oriented_then_complaint",
+    "complaint_then_q1_then_oriented"
+  ]
+}

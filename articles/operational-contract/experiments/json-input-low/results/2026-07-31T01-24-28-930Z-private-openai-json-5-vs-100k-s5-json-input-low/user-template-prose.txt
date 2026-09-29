@@ -1,0 +1,11 @@
+Retrieved context:
+A separate enterprise account note says that contracts above $100,000 require executive review during the seasonal sales period.
+
+Case:
+A customer submitted a refund claim for $NaN for a consumer purchase.
+
+Classify the claim amount as exactly one label:
+LOW
+NOT_LOW
+
+Return only the label.

@@ -1,0 +1,291 @@
+[
+  {
+    "model": "gpt-4.1",
+    "mode": "evidence_count",
+    "low": 3,
+    "high": 4,
+    "width": 1,
+    "threshold": 4,
+    "unbracketed": false,
+    "candidates": [
+      {
+        "candidateValue": 0,
+        "label": "NOT_ENOUGH",
+        "total": 10,
+        "enough": 0,
+        "notEnough": 10,
+        "invalid": 0,
+        "enoughPct": 0
+      },
+      {
+        "candidateValue": 2,
+        "label": "NOT_ENOUGH",
+        "total": 10,
+        "enough": 3,
+        "notEnough": 7,
+        "invalid": 0,
+        "enoughPct": 0.3
+      },
+      {
+        "candidateValue": 3,
+        "label": "NOT_ENOUGH",
+        "total": 10,
+        "enough": 4,
+        "notEnough": 6,
+        "invalid": 0,
+        "enoughPct": 0.4
+      },
+      {
+        "candidateValue": 4,
+        "label": "ENOUGH",
+        "total": 10,
+        "enough": 8,
+        "notEnough": 2,
+        "invalid": 0,
+        "enoughPct": 0.8
+      },
+      {
+        "candidateValue": 5,
+        "label": "ENOUGH",
+        "total": 10,
+        "enough": 10,
+        "notEnough": 0,
+        "invalid": 0,
+        "enoughPct": 1
+      },
+      {
+        "candidateValue": 10,
+        "label": "ENOUGH",
+        "total": 10,
+        "enough": 10,
+        "notEnough": 0,
+        "invalid": 0,
+        "enoughPct": 1
+      }
+    ]
+  },
+  {
+    "model": "gpt-4.1",
+    "mode": "quality",
+    "activeEvidenceCount": 4,
+    "low": 8.875,
+    "high": 9.016,
+    "width": 0.141,
+    "threshold": 9.016,
+    "unbracketed": false,
+    "candidates": [
+      {
+        "candidateValue": 1,
+        "label": "NOT_ENOUGH",
+        "total": 10,
+        "enough": 0,
+        "notEnough": 10,
+        "invalid": 0,
+        "enoughPct": 0
+      },
+      {
+        "candidateValue": 5.5,
+        "label": "NOT_ENOUGH",
+        "total": 10,
+        "enough": 0,
+        "notEnough": 10,
+        "invalid": 0,
+        "enoughPct": 0
+      },
+      {
+        "candidateValue": 7.75,
+        "label": "NOT_ENOUGH",
+        "total": 10,
+        "enough": 4,
+        "notEnough": 6,
+        "invalid": 0,
+        "enoughPct": 0.4
+      },
+      {
+        "candidateValue": 8.875,
+        "label": "TIE",
+        "total": 10,
+        "enough": 5,
+        "notEnough": 5,
+        "invalid": 0,
+        "enoughPct": 0.5
+      },
+      {
+        "candidateValue": 9.016,
+        "label": "ENOUGH",
+        "total": 10,
+        "enough": 7,
+        "notEnough": 3,
+        "invalid": 0,
+        "enoughPct": 0.7
+      },
+      {
+        "candidateValue": 9.157,
+        "label": "ENOUGH",
+        "total": 10,
+        "enough": 6,
+        "notEnough": 4,
+        "invalid": 0,
+        "enoughPct": 0.6
+      },
+      {
+        "candidateValue": 9.438,
+        "label": "ENOUGH",
+        "total": 10,
+        "enough": 8,
+        "notEnough": 2,
+        "invalid": 0,
+        "enoughPct": 0.8
+      },
+      {
+        "candidateValue": 10,
+        "label": "ENOUGH",
+        "total": 10,
+        "enough": 7,
+        "notEnough": 3,
+        "invalid": 0,
+        "enoughPct": 0.7
+      }
+    ]
+  },
+  {
+    "model": "gpt-4.1-mini",
+    "mode": "evidence_count",
+    "low": 5,
+    "high": 6,
+    "width": 1,
+    "threshold": 6,
+    "unbracketed": false,
+    "candidates": [
+      {
+        "candidateValue": 0,
+        "label": "NOT_ENOUGH",
+        "total": 10,
+        "enough": 0,
+        "notEnough": 10,
+        "invalid": 0,
+        "enoughPct": 0
+      },
+      {
+        "candidateValue": 5,
+        "label": "TIE",
+        "total": 10,
+        "enough": 5,
+        "notEnough": 5,
+        "invalid": 0,
+        "enoughPct": 0.5
+      },
+      {
+        "candidateValue": 6,
+        "label": "ENOUGH",
+        "total": 10,
+        "enough": 9,
+        "notEnough": 1,
+        "invalid": 0,
+        "enoughPct": 0.9
+      },
+      {
+        "candidateValue": 7,
+        "label": "ENOUGH",
+        "total": 10,
+        "enough": 10,
+        "notEnough": 0,
+        "invalid": 0,
+        "enoughPct": 1
+      },
+      {
+        "candidateValue": 10,
+        "label": "ENOUGH",
+        "total": 10,
+        "enough": 10,
+        "notEnough": 0,
+        "invalid": 0,
+        "enoughPct": 1
+      }
+    ]
+  },
+  {
+    "model": "gpt-4.1-mini",
+    "mode": "quality",
+    "activeEvidenceCount": 6,
+    "low": 7.891,
+    "high": 8.032,
+    "width": 0.141,
+    "threshold": 8.032,
+    "unbracketed": false,
+    "candidates": [
+      {
+        "candidateValue": 1,
+        "label": "NOT_ENOUGH",
+        "total": 10,
+        "enough": 0,
+        "notEnough": 10,
+        "invalid": 0,
+        "enoughPct": 0
+      },
+      {
+        "candidateValue": 5.5,
+        "label": "NOT_ENOUGH",
+        "total": 10,
+        "enough": 0,
+        "notEnough": 10,
+        "invalid": 0,
+        "enoughPct": 0
+      },
+      {
+        "candidateValue": 7.75,
+        "label": "NOT_ENOUGH",
+        "total": 10,
+        "enough": 3,
+        "notEnough": 7,
+        "invalid": 0,
+        "enoughPct": 0.3
+      },
+      {
+        "candidateValue": 7.891,
+        "label": "NOT_ENOUGH",
+        "total": 10,
+        "enough": 2,
+        "notEnough": 8,
+        "invalid": 0,
+        "enoughPct": 0.2
+      },
+      {
+        "candidateValue": 8.032,
+        "label": "ENOUGH",
+        "total": 10,
+        "enough": 6,
+        "notEnough": 4,
+        "invalid": 0,
+        "enoughPct": 0.6
+      },
+      {
+        "candidateValue": 8.313,
+        "label": "ENOUGH",
+        "total": 10,
+        "enough": 8,
+        "notEnough": 2,
+        "invalid": 0,
+        "enoughPct": 0.8
+      },
+      {
+        "candidateValue": 8.875,
+        "label": "ENOUGH",
+        "total": 10,
+        "enough": 6,
+        "notEnough": 4,
+        "invalid": 0,
+        "enoughPct": 0.6
+      },
+      {
+        "candidateValue": 10,
+        "label": "ENOUGH",
+        "total": 10,
+        "enough": 10,
+        "notEnough": 0,
+        "invalid": 0,
+        "enoughPct": 1
+      }
+    ]
+  }
+]

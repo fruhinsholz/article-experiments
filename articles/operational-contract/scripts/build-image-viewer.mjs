@@ -1,0 +1,465 @@
+#!/usr/bin/env node
+import { mkdir, readdir, stat, writeFile } from "node:fs/promises";
+import path from "node:path";
+
+const ROOT = path.resolve(new URL("..", import.meta.url).pathname);
+const IMAGE_DIR = path.join(ROOT, "images/results/price-vs-iteration");
+const VIEWER_DIR = path.join(ROOT, "viewer");
+const OUT_FILE = path.join(VIEWER_DIR, "index.html");
+const FILE_PATTERN = /^(?<stamp>\d{4}-\d{2}-\d{2}t\d{2}-\d{2}-\d{2}-\d{3}z)-(?<run>.+?)__(?<model>.+?)__(?<context>.+?)\.(?<ext>svg|png|jpe?g|webp)$/i;
+
+function parseImage(fileName, fileStat) {
+  const match = fileName.match(FILE_PATTERN);
+  const groups = match?.groups ?? {};
+  const context = groups.context ?? "unknown_context";
+  return {
+    fileName,
+    path: `../images/results/price-vs-iteration/${fileName}`,
+    extension: (groups.ext ?? path.extname(fileName).slice(1)).toLowerCase(),
+    generatedAt: parseStamp(groups.stamp) ?? fileStat.mtime.toISOString(),
+    modifiedAt: parseStamp(groups.stamp) ?? fileStat.mtime.toISOString(),
+    run: labelizeRun(groups.run ?? "unknown run"),
+    model: groups.model ?? "unknown model",
+    test: labelizeContext(context),
+    context,
+  };
+}
+
+function parseStamp(stamp) {
+  const match = String(stamp ?? "").match(/^(\d{4})-(\d{2})-(\d{2})t(\d{2})-(\d{2})-(\d{2})-(\d{3})z$/i);
+  if (!match) return null;
+  const [, year, month, day, hour, minute, second, ms] = match;
+  return `${year}-${month}-${day}T${hour}:${minute}:${second}.${ms}Z`;
+}
+
+function labelizeRun(value) {
+  return String(value)
+    .replace(/-low$/i, "")
+    .replaceAll("-", " ")
+    .replace(/\b\d{8}\b/g, (date) => `${date.slice(0, 4)}-${date.slice(4, 6)}-${date.slice(6)}`);
+}
+
+function labelizeContext(value) {
+  const labels = {
+    all_contexts: "All contexts",
+    fact_only: "Base fact only",
+    retrieved_5_gift_card: "Retrieved: gift card examples",
+    retrieved_100000_contract: "Retrieved: explicit contract",
+  };
+  return labels[value] ?? String(value).replaceAll("_", " ");
+}
+
+function renderHtml(images) {
+  const manifest = JSON.stringify(images, null, 2).replaceAll("</", "<\\/");
+  return `<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prompt Contract Image Viewer</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f7f8fb;
+      --panel: #ffffff;
+      --ink: #111827;
+      --muted: #667085;
+      --line: #d8dee8;
+      --hover: #f1f5f9;
+      --shadow: 0 18px 50px rgba(15, 23, 42, 0.14);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ink);
+      background: var(--bg);
+      font: 14px/1.4 Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    button, input, select { font: inherit; }
+    button:disabled { opacity: 0.5; cursor: not-allowed; }
+    .app { display: grid; grid-template-columns: minmax(320px, 410px) minmax(0, 1fr); height: 100vh; overflow: hidden; }
+    aside { min-width: 0; border-right: 1px solid var(--line); background: var(--panel); display: grid; grid-template-rows: auto auto minmax(0, 1fr); }
+    .topbar { padding: 18px 18px 14px; border-bottom: 1px solid var(--line); }
+    h1 { margin: 0 0 5px; font-size: 18px; letter-spacing: 0; }
+    .subtle { color: var(--muted); font-size: 12px; }
+    .filters { display: grid; gap: 10px; padding: 12px 14px; border-bottom: 1px solid var(--line); }
+    .searchRow { display: grid; grid-template-columns: 1fr 36px; gap: 8px; }
+    input, select {
+      width: 100%;
+      min-height: 36px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: #fff;
+      color: var(--ink);
+      padding: 8px 9px;
+    }
+    .selects { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .iconButton, .actionButton {
+      min-height: 36px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: #fff;
+      color: var(--ink);
+      cursor: pointer;
+    }
+    .actionButton { padding: 8px 10px; }
+    .iconButton:hover, .actionButton:hover { border-color: #94a3b8; background: #f8fafc; }
+    .list { overflow: auto; padding: 10px; display: grid; align-content: start; gap: 8px; }
+    .item {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 8px;
+      width: 100%;
+      padding: 8px;
+      border: 1px solid transparent;
+      border-radius: 8px;
+      background: transparent;
+      text-align: left;
+    }
+    .item:hover, .item.active { background: var(--hover); border-color: #cbd5e1; }
+    .itemSelect {
+      display: grid;
+      grid-template-columns: 96px minmax(0, 1fr);
+      gap: 10px;
+      width: 100%;
+      padding: 0;
+      border: 0;
+      background: transparent;
+      color: inherit;
+      text-align: left;
+      cursor: pointer;
+    }
+    .thumb { width: 96px; height: 68px; border: 1px solid var(--line); border-radius: 6px; background: #fff; object-fit: contain; }
+    .meta { min-width: 0; display: grid; gap: 2px; align-content: start; }
+    .model { font-weight: 700; overflow-wrap: anywhere; }
+    .test { color: #334155; font-size: 12px; overflow-wrap: anywhere; }
+    .date { color: var(--muted); font-size: 12px; }
+    .file { color: var(--muted); font-size: 11px; overflow-wrap: anywhere; }
+    .itemActions { display: none; }
+    main { min-width: 0; display: grid; grid-template-rows: auto minmax(0, 1fr); }
+    .viewerHead {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 12px;
+      align-items: center;
+      padding: 16px 20px;
+      border-bottom: 1px solid var(--line);
+      background: rgba(255,255,255,0.9);
+    }
+    .titleBlock { min-width: 0; }
+    .titleBlock h2 { margin: 0 0 4px; font-size: 17px; letter-spacing: 0; overflow-wrap: anywhere; }
+    .titleBlock div { color: var(--muted); font-size: 12px; overflow-wrap: anywhere; }
+    .actions { display: flex; gap: 8px; align-items: center; }
+    .canvas { min-width: 0; min-height: 0; padding: 10px; overflow: auto; display: grid; place-items: start center; }
+    .fullImage {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      object-fit: contain;
+      background: #fff;
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+    }
+    .empty { color: var(--muted); border: 1px dashed var(--line); border-radius: 8px; padding: 28px; background: #fff; }
+    dialog { width: min(96vw, 1280px); height: min(92vh, 820px); border: 0; border-radius: 8px; padding: 0; box-shadow: var(--shadow); }
+    dialog::backdrop { background: rgba(15, 23, 42, 0.64); }
+    .modal { height: 100%; display: grid; grid-template-rows: auto minmax(0, 1fr); background: #f8fafc; }
+    .modalHead { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 12px; align-items: center; padding: 12px 14px; background: #fff; border-bottom: 1px solid var(--line); }
+    .modalTitle { min-width: 0; font-weight: 700; overflow-wrap: anywhere; }
+    .modalImageWrap { min-width: 0; min-height: 0; overflow: auto; display: grid; place-items: center; padding: 18px; }
+    .modalImage { max-width: 100%; height: auto; background: #fff; border: 1px solid var(--line); }
+    .toast {
+      position: fixed;
+      left: 50%;
+      bottom: 18px;
+      transform: translateX(-50%);
+      z-index: 20;
+      background: #111827;
+      color: #fff;
+      padding: 9px 12px;
+      border-radius: 6px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 160ms ease;
+    }
+    .toast.show { opacity: 1; }
+    @media (max-width: 820px) {
+      body { min-height: 100svh; }
+      .app { display: block; min-height: 100svh; height: auto; overflow: visible; }
+      aside { min-height: 100svh; border-right: 0; }
+      main { display: none; }
+      .topbar { padding: 14px 14px 10px; }
+      .filters { position: sticky; top: 0; z-index: 2; background: #fff; }
+      .list { overflow: visible; padding: 10px; }
+      .item { border-color: var(--line); background: #fff; }
+      .itemSelect { grid-template-columns: 108px minmax(0, 1fr); }
+      .thumb { width: 108px; height: 78px; }
+      .itemActions { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; }
+      .itemActions .actionButton { min-width: 0; min-height: 34px; padding: 6px 7px; font-size: 12px; }
+      dialog { width: 100vw; height: 100svh; max-width: none; max-height: none; border-radius: 0; }
+      .modalHead { grid-template-columns: 1fr; }
+      .actions { flex-wrap: wrap; }
+      .modalImageWrap { padding: 8px; }
+      .modalImage { max-width: 100%; max-height: 100%; object-fit: contain; }
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <aside>
+      <div class="topbar">
+        <h1>Generated Images</h1>
+        <div class="subtle"><span id="count"></span> price-vs-iteration artifacts</div>
+      </div>
+      <div class="filters">
+        <div class="searchRow">
+          <input id="search" type="search" placeholder="Search file, model, test">
+          <button id="clearSearch" class="iconButton" title="Clear search" aria-label="Clear search">x</button>
+        </div>
+        <div class="selects">
+          <select id="modelFilter" aria-label="Filter by model"></select>
+          <select id="testFilter" aria-label="Filter by test"></select>
+        </div>
+      </div>
+      <div id="list" class="list" role="listbox" aria-label="Generated image files"></div>
+    </aside>
+    <main>
+      <div class="viewerHead">
+        <div class="titleBlock">
+          <h2 id="selectedTitle">Select an image</h2>
+          <div id="selectedMeta"></div>
+        </div>
+        <div class="actions">
+          <button id="copyFile" class="actionButton">Copy filename</button>
+          <button id="copyImage" class="actionButton">Copy image</button>
+          <button id="openModal" class="actionButton">Open full</button>
+        </div>
+      </div>
+      <div id="canvas" class="canvas"><div class="empty">No image selected.</div></div>
+    </main>
+  </div>
+
+  <dialog id="dialog">
+    <div class="modal">
+      <div class="modalHead">
+        <div id="modalTitle" class="modalTitle"></div>
+        <div class="actions">
+          <button id="modalCopyFile" class="actionButton">Copy filename</button>
+          <button id="modalCopyImage" class="actionButton">Copy image</button>
+          <button id="closeModal" class="actionButton">Close</button>
+        </div>
+      </div>
+      <div class="modalImageWrap"><img id="modalImage" class="modalImage" alt=""></div>
+    </div>
+  </dialog>
+  <div id="toast" class="toast"></div>
+
+  <script id="image-data" type="application/json">${manifest}</script>
+  <script>
+    const images = JSON.parse(document.getElementById("image-data").textContent)
+      .sort((a, b) => b.generatedAt.localeCompare(a.generatedAt) || a.model.localeCompare(b.model) || a.test.localeCompare(b.test));
+    const state = { selected: images[0] ?? null, query: "", model: "all", test: "all" };
+    const els = {
+      count: document.getElementById("count"),
+      search: document.getElementById("search"),
+      clearSearch: document.getElementById("clearSearch"),
+      modelFilter: document.getElementById("modelFilter"),
+      testFilter: document.getElementById("testFilter"),
+      list: document.getElementById("list"),
+      selectedTitle: document.getElementById("selectedTitle"),
+      selectedMeta: document.getElementById("selectedMeta"),
+      canvas: document.getElementById("canvas"),
+      copyFile: document.getElementById("copyFile"),
+      copyImage: document.getElementById("copyImage"),
+      openModal: document.getElementById("openModal"),
+      dialog: document.getElementById("dialog"),
+      modalTitle: document.getElementById("modalTitle"),
+      modalImage: document.getElementById("modalImage"),
+      modalCopyFile: document.getElementById("modalCopyFile"),
+      modalCopyImage: document.getElementById("modalCopyImage"),
+      closeModal: document.getElementById("closeModal"),
+      toast: document.getElementById("toast"),
+    };
+
+    function init() {
+      els.count.textContent = images.length;
+      fillSelect(els.modelFilter, "All models", unique(images.map((item) => item.model)));
+      fillSelect(els.testFilter, "All tests", unique(images.map((item) => item.test)));
+      els.search.addEventListener("input", () => { state.query = els.search.value.trim().toLowerCase(); render(); });
+      els.clearSearch.addEventListener("click", () => { els.search.value = ""; state.query = ""; render(); });
+      els.modelFilter.addEventListener("change", () => { state.model = els.modelFilter.value; render(); });
+      els.testFilter.addEventListener("change", () => { state.test = els.testFilter.value; render(); });
+      els.copyFile.addEventListener("click", () => copyFilename());
+      els.copyImage.addEventListener("click", () => copyImage());
+      els.openModal.addEventListener("click", () => openModal());
+      els.modalCopyFile.addEventListener("click", () => copyFilename());
+      els.modalCopyImage.addEventListener("click", () => copyImage());
+      els.closeModal.addEventListener("click", () => els.dialog.close());
+      els.dialog.addEventListener("click", (event) => { if (event.target === els.dialog) els.dialog.close(); });
+      window.addEventListener("keydown", (event) => { if (event.key === "Escape" && els.dialog.open) els.dialog.close(); });
+      render();
+    }
+
+    function unique(values) {
+      return [...new Set(values)].sort((a, b) => a.localeCompare(b));
+    }
+
+    function fillSelect(select, label, values) {
+      select.innerHTML = '<option value="all">' + escapeHtml(label) + '</option>' + values.map((value) => '<option value="' + escapeHtml(value) + '">' + escapeHtml(value) + '</option>').join("");
+    }
+
+    function filteredImages() {
+      return images.filter((item) => {
+        const haystack = (item.fileName + " " + item.model + " " + item.test + " " + item.run).toLowerCase();
+        return (!state.query || haystack.includes(state.query))
+          && (state.model === "all" || item.model === state.model)
+          && (state.test === "all" || item.test === state.test);
+      });
+    }
+
+    function render() {
+      const list = filteredImages();
+      if (!list.includes(state.selected)) state.selected = list[0] ?? null;
+      els.list.innerHTML = list.map(renderItem).join("") || '<div class="empty">No matching images.</div>';
+      els.list.querySelectorAll(".itemSelect").forEach((button) => {
+        button.addEventListener("click", () => {
+          state.selected = images.find((item) => item.fileName === button.dataset.file);
+          render();
+        });
+      });
+      els.list.querySelectorAll("[data-action]").forEach((button) => {
+        button.addEventListener("click", (event) => {
+          event.stopPropagation();
+          const item = images.find((image) => image.fileName === button.dataset.file);
+          state.selected = item;
+          const action = button.dataset.action;
+          if (action === "open") openModal(item);
+          if (action === "copy-file") copyFilename(item);
+          if (action === "copy-image") copyImage(item);
+        });
+      });
+      renderSelected();
+    }
+
+    function renderItem(item) {
+      const active = state.selected?.fileName === item.fileName ? " active" : "";
+      return '<div class="item' + active + '" role="option" aria-selected="' + (active ? "true" : "false") + '">'
+        + '<button class="itemSelect" data-file="' + escapeHtml(item.fileName) + '">'
+        + '<img class="thumb" src="' + escapeHtml(item.path) + '" alt="">'
+        + '<span class="meta">'
+        + '<span class="model">' + escapeHtml(item.model) + '</span>'
+        + '<span class="test">' + escapeHtml(item.test) + '</span>'
+        + '<span class="date">' + escapeHtml(formatDate(item.generatedAt)) + '</span>'
+        + '<span class="file">' + escapeHtml(item.fileName) + '</span>'
+        + '</span></button>'
+        + '<span class="itemActions">'
+        + '<button class="actionButton" data-action="open" data-file="' + escapeHtml(item.fileName) + '">Open</button>'
+        + '<button class="actionButton" data-action="copy-file" data-file="' + escapeHtml(item.fileName) + '">Copy name</button>'
+        + '<button class="actionButton" data-action="copy-image" data-file="' + escapeHtml(item.fileName) + '">Copy image</button>'
+        + '</span></div>';
+    }
+
+    function renderSelected() {
+      const item = state.selected;
+      [els.copyFile, els.copyImage, els.openModal].forEach((button) => { button.disabled = !item; });
+      if (!item) {
+        els.selectedTitle.textContent = "Select an image";
+        els.selectedMeta.textContent = "";
+        els.canvas.innerHTML = '<div class="empty">No image selected.</div>';
+        return;
+      }
+      els.selectedTitle.textContent = item.model + " - " + item.test;
+      els.selectedMeta.textContent = formatDate(item.generatedAt) + " · " + item.run + " · " + item.fileName;
+      els.canvas.innerHTML = '<img class="fullImage" src="' + escapeHtml(item.path) + '" alt="' + escapeHtml(item.fileName) + '">';
+    }
+
+    function openModal(selectedItem) {
+      const item = selectedItem ?? state.selected;
+      if (!item) return;
+      els.modalTitle.textContent = item.model + " - " + item.test + " - " + item.fileName;
+      els.modalImage.src = item.path;
+      els.modalImage.alt = item.fileName;
+      els.dialog.showModal();
+    }
+
+    async function copyFilename(selectedItem) {
+      const item = selectedItem ?? state.selected;
+      if (!item) return;
+      await navigator.clipboard.writeText(item.fileName);
+      showToast("Filename copied");
+    }
+
+    async function copyImage(selectedItem) {
+      const item = selectedItem ?? state.selected;
+      if (!item) return;
+      try {
+        const response = await fetch(item.path);
+        const sourceBlob = await response.blob();
+        const blob = sourceBlob.type === "image/svg+xml" ? await svgToPngBlob(sourceBlob) : sourceBlob;
+        await navigator.clipboard.write([new ClipboardItem({ [blob.type]: blob })]);
+        showToast(sourceBlob.type === "image/svg+xml" ? "Image copied as PNG" : "Image copied");
+      } catch {
+        await navigator.clipboard.writeText(item.path);
+        showToast("Image copy blocked; path copied");
+      }
+    }
+
+    async function svgToPngBlob(svgBlob) {
+      const text = await svgBlob.text();
+      const image = new Image();
+      const url = URL.createObjectURL(new Blob([text], { type: "image/svg+xml" }));
+      await new Promise((resolve, reject) => {
+        image.onload = resolve;
+        image.onerror = reject;
+        image.src = url;
+      });
+      const canvas = document.createElement("canvas");
+      canvas.width = image.naturalWidth || 920;
+      canvas.height = image.naturalHeight || 520;
+      const context = canvas.getContext("2d");
+      context.fillStyle = "#ffffff";
+      context.fillRect(0, 0, canvas.width, canvas.height);
+      context.drawImage(image, 0, 0);
+      URL.revokeObjectURL(url);
+      return await new Promise((resolve) => canvas.toBlob(resolve, "image/png"));
+    }
+
+    function formatDate(value) {
+      return new Intl.DateTimeFormat(undefined, { year: "numeric", month: "short", day: "2-digit", hour: "2-digit", minute: "2-digit" }).format(new Date(value));
+    }
+
+    function showToast(message) {
+      els.toast.textContent = message;
+      els.toast.classList.add("show");
+      clearTimeout(showToast.timer);
+      showToast.timer = setTimeout(() => els.toast.classList.remove("show"), 1700);
+    }
+
+    function escapeHtml(value) {
+      return String(value).replace(/[&<>"]/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[char]));
+    }
+
+    init();
+  </script>
+</body>
+</html>
+`;
+}
+
+async function main() {
+  await mkdir(VIEWER_DIR, { recursive: true });
+  const entries = await readdir(IMAGE_DIR, { withFileTypes: true });
+  const images = [];
+  for (const entry of entries) {
+    if (!entry.isFile() || !/\.(svg|png|jpe?g|webp)$/i.test(entry.name)) continue;
+    images.push(parseImage(entry.name, await stat(path.join(IMAGE_DIR, entry.name))));
+  }
+  await writeFile(OUT_FILE, renderHtml(images), "utf8");
+  console.log(`Wrote ${path.relative(ROOT, OUT_FILE)} with ${images.length} images.`);
+}
+
+main().catch((error) => {
+  console.error(error);
+  process.exit(1);
+});

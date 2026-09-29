@@ -1,0 +1,311 @@
+{
+  "schema_seen_by_model": [
+    "field_1",
+    "field_2",
+    "field_3",
+    "field_4",
+    "field_5",
+    "field_6",
+    "field_7",
+    "field_8",
+    "field_9",
+    "field_10"
+  ],
+  "private_field_map_for_analysis": {
+    "field_1": "first_name",
+    "field_2": "last_name",
+    "field_3": "street_address",
+    "field_4": "city",
+    "field_5": "phone",
+    "field_6": "email",
+    "field_7": "company",
+    "field_8": "role",
+    "field_9": "custom_numeric_attribute",
+    "field_10": "custom_text_attribute"
+  },
+  "private_pair_map_for_analysis": {
+    "9f6d6f9a-8ed7-4e75-b14c-37d9a3148800": {
+      "step": 0,
+      "changed_fields": []
+    },
+    "4a2a54dd-77ce-48c2-9fbb-1c0113f7f56e": {
+      "step": 1,
+      "changed_fields": [
+        "field_1"
+      ]
+    },
+    "01286f4f-920f-4e5f-a8b4-3b7fc7b93142": {
+      "step": 2,
+      "changed_fields": [
+        "field_1",
+        "field_2"
+      ]
+    },
+    "d3d22b3a-8c41-43de-8474-ef5f3f087a73": {
+      "step": 3,
+      "changed_fields": [
+        "field_1",
+        "field_2",
+        "field_3"
+      ]
+    },
+    "3f720aa9-eb88-4890-8cb3-fd7956f2fa48": {
+      "step": 4,
+      "changed_fields": [
+        "field_1",
+        "field_2",
+        "field_3",
+        "field_5"
+      ]
+    },
+    "a8055756-d778-463e-8831-a219b719ce54": {
+      "step": 5,
+      "changed_fields": [
+        "field_1",
+        "field_2",
+        "field_3",
+        "field_5"
+      ]
+    },
+    "a2100235-c196-4601-88bd-d4d79cbfce3e": {
+      "step": 6,
+      "changed_fields": [
+        "field_1",
+        "field_2",
+        "field_3",
+        "field_5",
+        "field_6"
+      ]
+    },
+    "f6c65580-c598-4df3-a46a-aae4b6c00bb8": {
+      "step": 7,
+      "changed_fields": [
+        "field_1",
+        "field_2",
+        "field_3",
+        "field_5",
+        "field_6",
+        "field_8",
+        "field_10"
+      ]
+    }
+  },
+  "pairs": [
+    {
+      "id": "9f6d6f9a-8ed7-4e75-b14c-37d9a3148800",
+      "record_a": {
+        "field_1": "Maya",
+        "field_2": "Rosen",
+        "field_3": "1846 Cedar Mill Road Apt 4B",
+        "field_4": "Portland",
+        "field_5": "+1-503-555-0184",
+        "field_6": "maya.rosen@example.net",
+        "field_7": "Northline Health",
+        "field_8": "Operations Manager",
+        "field_9": 4821,
+        "field_10": "prefers morning callback"
+      },
+      "record_b": {
+        "field_1": "Maya",
+        "field_2": "Rosen",
+        "field_3": "1846 Cedar Mill Road Apt 4B",
+        "field_4": "Portland",
+        "field_5": "+1-503-555-0184",
+        "field_6": "maya.rosen@example.net",
+        "field_7": "Northline Health",
+        "field_8": "Operations Manager",
+        "field_9": 4821,
+        "field_10": "prefers morning callback"
+      }
+    },
+    {
+      "id": "4a2a54dd-77ce-48c2-9fbb-1c0113f7f56e",
+      "record_a": {
+        "field_1": "Maya",
+        "field_2": "Rosen",
+        "field_3": "1846 Cedar Mill Road Apt 4B",
+        "field_4": "Portland",
+        "field_5": "+1-503-555-0184",
+        "field_6": "maya.rosen@example.net",
+        "field_7": "Northline Health",
+        "field_8": "Operations Manager",
+        "field_9": 4821,
+        "field_10": "prefers morning callback"
+      },
+      "record_b": {
+        "field_1": "Maia",
+        "field_2": "Rosen",
+        "field_3": "1846 Cedar Mill Road Apt 4B",
+        "field_4": "Portland",
+        "field_5": "+1-503-555-0184",
+        "field_6": "maya.rosen@example.net",
+        "field_7": "Northline Health",
+        "field_8": "Operations Manager",
+        "field_9": 4821,
+        "field_10": "prefers morning callback"
+      }
+    },
+    {
+      "id": "01286f4f-920f-4e5f-a8b4-3b7fc7b93142",
+      "record_a": {
+        "field_1": "Maya",
+        "field_2": "Rosen",
+        "field_3": "1846 Cedar Mill Road Apt 4B",
+        "field_4": "Portland",
+        "field_5": "+1-503-555-0184",
+        "field_6": "maya.rosen@example.net",
+        "field_7": "Northline Health",
+        "field_8": "Operations Manager",
+        "field_9": 4821,
+        "field_10": "prefers morning callback"
+      },
+      "record_b": {
+        "field_1": "Maia",
+        "field_2": "Rosin",
+        "field_3": "1846 Cedar Mill Road Apt 4B",
+        "field_4": "Portland",
+        "field_5": "+1-503-555-0184",
+        "field_6": "maya.rosen@example.net",
+        "field_7": "Northline Health",
+        "field_8": "Operations Manager",
+        "field_9": 4821,
+        "field_10": "prefers morning callback"
+      }
+    },
+    {
+      "id": "d3d22b3a-8c41-43de-8474-ef5f3f087a73",
+      "record_a": {
+        "field_1": "Maya",
+        "field_2": "Rosen",
+        "field_3": "1846 Cedar Mill Road Apt 4B",
+        "field_4": "Portland",
+        "field_5": "+1-503-555-0184",
+        "field_6": "maya.rosen@example.net",
+        "field_7": "Northline Health",
+        "field_8": "Operations Manager",
+        "field_9": 4821,
+        "field_10": "prefers morning callback"
+      },
+      "record_b": {
+        "field_1": "Maia",
+        "field_2": "Rosin",
+        "field_3": "1846 Cedar Mill Rd #4B",
+        "field_4": "Portland",
+        "field_5": "+1-503-555-0184",
+        "field_6": "maya.rosen@example.net",
+        "field_7": "Northline Health",
+        "field_8": "Operations Manager",
+        "field_9": 4821,
+        "field_10": "prefers morning callback"
+      }
+    },
+    {
+      "id": "3f720aa9-eb88-4890-8cb3-fd7956f2fa48",
+      "record_a": {
+        "field_1": "Maya",
+        "field_2": "Rosen",
+        "field_3": "1846 Cedar Mill Road Apt 4B",
+        "field_4": "Portland",
+        "field_5": "+1-503-555-0184",
+        "field_6": "maya.rosen@example.net",
+        "field_7": "Northline Health",
+        "field_8": "Operations Manager",
+        "field_9": 4821,
+        "field_10": "prefers morning callback"
+      },
+      "record_b": {
+        "field_1": "Maia",
+        "field_2": "Rosin",
+        "field_3": "1846 Cedar Mill Rd #4B",
+        "field_4": "Portland",
+        "field_5": "+1-503-555-0185",
+        "field_6": "maya.rosen@example.net",
+        "field_7": "Northline Health",
+        "field_8": "Operations Manager",
+        "field_9": 4821,
+        "field_10": "prefers morning callback"
+      }
+    },
+    {
+      "id": "a8055756-d778-463e-8831-a219b719ce54",
+      "record_a": {
+        "field_1": "Maya",
+        "field_2": "Rosen",
+        "field_3": "1846 Cedar Mill Road Apt 4B",
+        "field_4": "Portland",
+        "field_5": "+1-503-555-0184",
+        "field_6": "maya.rosen@example.net",
+        "field_7": "Northline Health",
+        "field_8": "Operations Manager",
+        "field_9": 4821,
+        "field_10": "prefers morning callback"
+      },
+      "record_b": {
+        "field_1": "Maia",
+        "field_2": "Rosin",
+        "field_3": "1846 Cedar Mill Rd #4B",
+        "field_4": "Portland",
+        "field_5": "+1-503-555-4198",
+        "field_6": "maya.rosen@example.net",
+        "field_7": "Northline Health",
+        "field_8": "Operations Manager",
+        "field_9": 4821,
+        "field_10": "prefers morning callback"
+      }
+    },
+    {
+      "id": "a2100235-c196-4601-88bd-d4d79cbfce3e",
+      "record_a": {
+        "field_1": "Maya",
+        "field_2": "Rosen",
+        "field_3": "1846 Cedar Mill Road Apt 4B",
+        "field_4": "Portland",
+        "field_5": "+1-503-555-0184",
+        "field_6": "maya.rosen@example.net",
+        "field_7": "Northline Health",
+        "field_8": "Operations Manager",
+        "field_9": 4821,
+        "field_10": "prefers morning callback"
+      },
+      "record_b": {
+        "field_1": "Maia",
+        "field_2": "Rosin",
+        "field_3": "1846 Cedar Mill Rd #4B",
+        "field_4": "Portland",
+        "field_5": "+1-503-555-4198",
+        "field_6": "m.rosen@example.org",
+        "field_7": "Northline Health",
+        "field_8": "Operations Manager",
+        "field_9": 4821,
+        "field_10": "prefers morning callback"
+      }
+    },
+    {
+      "id": "f6c65580-c598-4df3-a46a-aae4b6c00bb8",
+      "record_a": {
+        "field_1": "Maya",
+        "field_2": "Rosen",
+        "field_3": "1846 Cedar Mill Road Apt 4B",
+        "field_4": "Portland",
+        "field_5": "+1-503-555-0184",
+        "field_6": "maya.rosen@example.net",
+        "field_7": "Northline Health",
+        "field_8": "Operations Manager",
+        "field_9": 4821,
+        "field_10": "prefers morning callback"
+      },
+      "record_b": {
+        "field_1": "Maia",
+        "field_2": "Rosin",
+        "field_3": "1846 Cedar Mill Rd #4B",
+        "field_4": "Portland",
+        "field_5": "+1-503-555-4198",
+        "field_6": "m.rosen@example.org",
+        "field_7": "Northline Health",
+        "field_8": "Ops Manager",
+        "field_9": 4821,
+        "field_10": "morning calls preferred"
+      }
+    }
+  ]
+}

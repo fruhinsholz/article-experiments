@@ -1,0 +1,413 @@
+{
+  "method": {
+    "primaryUnit": "balanced block paired within state",
+    "aggregateBootstrap": "hierarchical bootstrap resampling states, then paired blocks within sampled states",
+    "bootstrapSamples": 10000,
+    "bootstrapSeed": 27092033,
+    "interval": "percentile 95%"
+  },
+  "calls": 480,
+  "errors": 0,
+  "responseModels": [
+    "jev-1.13.0"
+  ],
+  "boundaryStates": [
+    "boundary_r06_unsure_one_slight_delay",
+    "boundary_r05_maybe_one_slight_delay",
+    "boundary_r04_close_to_normal_pace",
+    "boundary_r08_one_duty_slightly_slower"
+  ],
+  "primaryComparisons": [
+    {
+      "first": "duty_coverage",
+      "second": "capability_statement",
+      "differenceDefinition": "duty_coverage minus capability_statement",
+      "states": [
+        {
+          "state": "boundary_r06_unsure_one_slight_delay",
+          "nBlocks": 20,
+          "meanReviewScoreDifference": 0.0014999999999999972,
+          "bootstrap95": [
+            -0.01,
+            0.013499999999999995
+          ],
+          "humanReviewRateDifference": 0,
+          "branchChanged": false,
+          "semanticSelectionChanged": false
+        },
+        {
+          "state": "boundary_r05_maybe_one_slight_delay",
+          "nBlocks": 20,
+          "meanReviewScoreDifference": -0.042499999999999996,
+          "bootstrap95": [
+            -0.05400000000000001,
+            -0.030000000000000006
+          ],
+          "humanReviewRateDifference": 0,
+          "branchChanged": false,
+          "semanticSelectionChanged": false
+        },
+        {
+          "state": "boundary_r04_close_to_normal_pace",
+          "nBlocks": 20,
+          "meanReviewScoreDifference": 0.0005000000000000008,
+          "bootstrap95": [
+            -0.007000000000000001,
+            0.0075000000000000015
+          ],
+          "humanReviewRateDifference": 0,
+          "branchChanged": false,
+          "semanticSelectionChanged": false
+        },
+        {
+          "state": "boundary_r08_one_duty_slightly_slower",
+          "nBlocks": 20,
+          "meanReviewScoreDifference": -0.012999999999999989,
+          "bootstrap95": [
+            -0.03999999999999999,
+            0.015000000000000013
+          ],
+          "humanReviewRateDifference": 0,
+          "branchChanged": false,
+          "semanticSelectionChanged": false
+        }
+      ],
+      "aggregate": {
+        "meanReviewScoreDifference": -0.013374999999999998,
+        "hierarchicalBootstrap95": [
+          -0.03375,
+          0.0033750000000000004
+        ],
+        "positiveStates": 2,
+        "negativeStates": 2,
+        "sameDirectionStates": 2,
+        "intervalExcludesZero": false,
+        "changesApplicationBranch": false,
+        "succeeds": false
+      }
+    },
+    {
+      "first": "duty_coverage",
+      "second": "work_capacity_level",
+      "differenceDefinition": "duty_coverage minus work_capacity_level",
+      "states": [
+        {
+          "state": "boundary_r06_unsure_one_slight_delay",
+          "nBlocks": 20,
+          "meanReviewScoreDifference": -0.19349999999999998,
+          "bootstrap95": [
+            -0.21300000000000002,
+            -0.1725
+          ],
+          "humanReviewRateDifference": -0.1,
+          "branchChanged": true,
+          "semanticSelectionChanged": true
+        },
+        {
+          "state": "boundary_r05_maybe_one_slight_delay",
+          "nBlocks": 20,
+          "meanReviewScoreDifference": -0.19649999999999998,
+          "bootstrap95": [
+            -0.2085,
+            -0.1835
+          ],
+          "humanReviewRateDifference": 0,
+          "branchChanged": false,
+          "semanticSelectionChanged": false
+        },
+        {
+          "state": "boundary_r04_close_to_normal_pace",
+          "nBlocks": 20,
+          "meanReviewScoreDifference": -0.03350000000000001,
+          "bootstrap95": [
+            -0.0435,
+            -0.025500000000000002
+          ],
+          "humanReviewRateDifference": 0,
+          "branchChanged": false,
+          "semanticSelectionChanged": false
+        },
+        {
+          "state": "boundary_r08_one_duty_slightly_slower",
+          "nBlocks": 20,
+          "meanReviewScoreDifference": -0.26599999999999996,
+          "bootstrap95": [
+            -0.28900000000000003,
+            -0.2435
+          ],
+          "humanReviewRateDifference": 0,
+          "branchChanged": false,
+          "semanticSelectionChanged": false
+        }
+      ],
+      "aggregate": {
+        "meanReviewScoreDifference": -0.172375,
+        "hierarchicalBootstrap95": [
+          -0.24549999999999994,
+          -0.07525000000000001
+        ],
+        "positiveStates": 0,
+        "negativeStates": 4,
+        "sameDirectionStates": 4,
+        "intervalExcludesZero": true,
+        "changesApplicationBranch": true,
+        "succeeds": true
+      }
+    },
+    {
+      "first": "capability_statement",
+      "second": "work_capacity_level",
+      "differenceDefinition": "capability_statement minus work_capacity_level",
+      "states": [
+        {
+          "state": "boundary_r06_unsure_one_slight_delay",
+          "nBlocks": 20,
+          "meanReviewScoreDifference": -0.195,
+          "bootstrap95": [
+            -0.21700000000000003,
+            -0.17249999999999996
+          ],
+          "humanReviewRateDifference": -0.1,
+          "branchChanged": true,
+          "semanticSelectionChanged": true
+        },
+        {
+          "state": "boundary_r05_maybe_one_slight_delay",
+          "nBlocks": 20,
+          "meanReviewScoreDifference": -0.15400000000000003,
+          "bootstrap95": [
+            -0.16699999999999998,
+            -0.14100000000000001
+          ],
+          "humanReviewRateDifference": 0,
+          "branchChanged": false,
+          "semanticSelectionChanged": false
+        },
+        {
+          "state": "boundary_r04_close_to_normal_pace",
+          "nBlocks": 20,
+          "meanReviewScoreDifference": -0.034,
+          "bootstrap95": [
+            -0.04650000000000001,
+            -0.023499999999999997
+          ],
+          "humanReviewRateDifference": 0,
+          "branchChanged": false,
+          "semanticSelectionChanged": false
+        },
+        {
+          "state": "boundary_r08_one_duty_slightly_slower",
+          "nBlocks": 20,
+          "meanReviewScoreDifference": -0.253,
+          "bootstrap95": [
+            -0.2720000000000001,
+            -0.23400000000000004
+          ],
+          "humanReviewRateDifference": 0,
+          "branchChanged": false,
+          "semanticSelectionChanged": false
+        }
+      ],
+      "aggregate": {
+        "meanReviewScoreDifference": -0.159,
+        "hierarchicalBootstrap95": [
+          -0.23200000000000004,
+          -0.07225000000000001
+        ],
+        "positiveStates": 0,
+        "negativeStates": 4,
+        "sameDirectionStates": 4,
+        "intervalExcludesZero": true,
+        "changesApplicationBranch": true,
+        "succeeds": true
+      }
+    }
+  ],
+  "secondaryVsNeutral": [
+    {
+      "family": "duty_coverage",
+      "states": [
+        {
+          "state": "boundary_r06_unsure_one_slight_delay",
+          "meanReviewScoreDifference": -0.24150000000000005,
+          "humanReviewRateDifference": -0.5,
+          "branchChanged": true
+        },
+        {
+          "state": "boundary_r05_maybe_one_slight_delay",
+          "meanReviewScoreDifference": -0.2575,
+          "humanReviewRateDifference": -0.2,
+          "branchChanged": true
+        },
+        {
+          "state": "boundary_r04_close_to_normal_pace",
+          "meanReviewScoreDifference": -0.030500000000000006,
+          "humanReviewRateDifference": 0,
+          "branchChanged": false
+        },
+        {
+          "state": "boundary_r08_one_duty_slightly_slower",
+          "meanReviewScoreDifference": -0.2855,
+          "humanReviewRateDifference": 0,
+          "branchChanged": false
+        }
+      ]
+    },
+    {
+      "family": "capability_statement",
+      "states": [
+        {
+          "state": "boundary_r06_unsure_one_slight_delay",
+          "meanReviewScoreDifference": -0.24299999999999997,
+          "humanReviewRateDifference": -0.5,
+          "branchChanged": true
+        },
+        {
+          "state": "boundary_r05_maybe_one_slight_delay",
+          "meanReviewScoreDifference": -0.215,
+          "humanReviewRateDifference": -0.2,
+          "branchChanged": true
+        },
+        {
+          "state": "boundary_r04_close_to_normal_pace",
+          "meanReviewScoreDifference": -0.031000000000000007,
+          "humanReviewRateDifference": 0,
+          "branchChanged": false
+        },
+        {
+          "state": "boundary_r08_one_duty_slightly_slower",
+          "meanReviewScoreDifference": -0.2725000000000001,
+          "humanReviewRateDifference": 0,
+          "branchChanged": false
+        }
+      ]
+    },
+    {
+      "family": "work_capacity_level",
+      "states": [
+        {
+          "state": "boundary_r06_unsure_one_slight_delay",
+          "meanReviewScoreDifference": -0.04800000000000001,
+          "humanReviewRateDifference": -0.4,
+          "branchChanged": true
+        },
+        {
+          "state": "boundary_r05_maybe_one_slight_delay",
+          "meanReviewScoreDifference": -0.06100000000000001,
+          "humanReviewRateDifference": -0.2,
+          "branchChanged": true
+        },
+        {
+          "state": "boundary_r04_close_to_normal_pace",
+          "meanReviewScoreDifference": 0.0030000000000000005,
+          "humanReviewRateDifference": 0,
+          "branchChanged": false
+        },
+        {
+          "state": "boundary_r08_one_duty_slightly_slower",
+          "meanReviewScoreDifference": -0.019500000000000017,
+          "humanReviewRateDifference": 0,
+          "branchChanged": false
+        }
+      ]
+    }
+  ],
+  "guardrails": [
+    {
+      "state": "clear_full",
+      "families": {
+        "neutral": {
+          "n": 20,
+          "semanticSelections": {
+            "full": 20
+          },
+          "applicationBranches": {
+            "automatic_full_capacity": 20
+          },
+          "meanReviewScore": 0
+        },
+        "duty_coverage": {
+          "n": 20,
+          "semanticSelections": {
+            "full": 20
+          },
+          "applicationBranches": {
+            "automatic_full_capacity": 20
+          },
+          "meanReviewScore": 0
+        },
+        "capability_statement": {
+          "n": 20,
+          "semanticSelections": {
+            "full": 20
+          },
+          "applicationBranches": {
+            "automatic_full_capacity": 20
+          },
+          "meanReviewScore": 0
+        },
+        "work_capacity_level": {
+          "n": 20,
+          "semanticSelections": {
+            "full": 20
+          },
+          "applicationBranches": {
+            "automatic_full_capacity": 20
+          },
+          "meanReviewScore": 0
+        }
+      }
+    },
+    {
+      "state": "clear_partial",
+      "families": {
+        "neutral": {
+          "n": 20,
+          "semanticSelections": {
+            "partial": 20
+          },
+          "applicationBranches": {
+            "human_review": 20
+          },
+          "meanReviewScore": 1
+        },
+        "duty_coverage": {
+          "n": 20,
+          "semanticSelections": {
+            "partial": 20
+          },
+          "applicationBranches": {
+            "human_review": 20
+          },
+          "meanReviewScore": 1
+        },
+        "capability_statement": {
+          "n": 20,
+          "semanticSelections": {
+            "partial": 20
+          },
+          "applicationBranches": {
+            "human_review": 20
+          },
+          "meanReviewScore": 1
+        },
+        "work_capacity_level": {
+          "n": 20,
+          "semanticSelections": {
+            "partial": 20
+          },
+          "applicationBranches": {
+            "human_review": 20
+          },
+          "meanReviewScore": 1
+        }
+      }
+    }
+  ],
+  "decision": {
+    "successfulContrasts": [
+      "duty_coverage vs work_capacity_level",
+      "capability_statement vs work_capacity_level"
+    ]
+  }
+}

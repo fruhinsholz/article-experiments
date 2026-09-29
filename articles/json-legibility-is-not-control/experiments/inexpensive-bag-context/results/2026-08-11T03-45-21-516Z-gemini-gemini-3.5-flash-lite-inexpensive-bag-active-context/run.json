@@ -1,0 +1,186 @@
+{
+  "args": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "samples": 20,
+    "maxCalls": 40,
+    "maxOutputTokens": 16,
+    "temperature": 0,
+    "concurrency": 4,
+    "label": "inexpensive-bag-active-context",
+    "dryRun": false,
+    "printExamples": false
+  },
+  "jobs": [
+    {
+      "condition": "baseline_no_context",
+      "sampleIndex": 1
+    },
+    {
+      "condition": "active_record_context",
+      "sampleIndex": 1
+    },
+    {
+      "condition": "baseline_no_context",
+      "sampleIndex": 2
+    },
+    {
+      "condition": "active_record_context",
+      "sampleIndex": 2
+    },
+    {
+      "condition": "baseline_no_context",
+      "sampleIndex": 3
+    },
+    {
+      "condition": "active_record_context",
+      "sampleIndex": 3
+    },
+    {
+      "condition": "baseline_no_context",
+      "sampleIndex": 4
+    },
+    {
+      "condition": "active_record_context",
+      "sampleIndex": 4
+    },
+    {
+      "condition": "baseline_no_context",
+      "sampleIndex": 5
+    },
+    {
+      "condition": "active_record_context",
+      "sampleIndex": 5
+    },
+    {
+      "condition": "baseline_no_context",
+      "sampleIndex": 6
+    },
+    {
+      "condition": "active_record_context",
+      "sampleIndex": 6
+    },
+    {
+      "condition": "baseline_no_context",
+      "sampleIndex": 7
+    },
+    {
+      "condition": "active_record_context",
+      "sampleIndex": 7
+    },
+    {
+      "condition": "baseline_no_context",
+      "sampleIndex": 8
+    },
+    {
+      "condition": "active_record_context",
+      "sampleIndex": 8
+    },
+    {
+      "condition": "baseline_no_context",
+      "sampleIndex": 9
+    },
+    {
+      "condition": "active_record_context",
+      "sampleIndex": 9
+    },
+    {
+      "condition": "baseline_no_context",
+      "sampleIndex": 10
+    },
+    {
+      "condition": "active_record_context",
+      "sampleIndex": 10
+    },
+    {
+      "condition": "baseline_no_context",
+      "sampleIndex": 11
+    },
+    {
+      "condition": "active_record_context",
+      "sampleIndex": 11
+    },
+    {
+      "condition": "baseline_no_context",
+      "sampleIndex": 12
+    },
+    {
+      "condition": "active_record_context",
+      "sampleIndex": 12
+    },
+    {
+      "condition": "baseline_no_context",
+      "sampleIndex": 13
+    },
+    {
+      "condition": "active_record_context",
+      "sampleIndex": 13
+    },
+    {
+      "condition": "baseline_no_context",
+      "sampleIndex": 14
+    },
+    {
+      "condition": "active_record_context",
+      "sampleIndex": 14
+    },
+    {
+      "condition": "baseline_no_context",
+      "sampleIndex": 15
+    },
+    {
+      "condition": "active_record_context",
+      "sampleIndex": 15
+    },
+    {
+      "condition": "baseline_no_context",
+      "sampleIndex": 16
+    },
+    {
+      "condition": "active_record_context",
+      "sampleIndex": 16
+    },
+    {
+      "condition": "baseline_no_context",
+      "sampleIndex": 17
+    },
+    {
+      "condition": "active_record_context",
+      "sampleIndex": 17
+    },
+    {
+      "condition": "baseline_no_context",
+      "sampleIndex": 18
+    },
+    {
+      "condition": "active_record_context",
+      "sampleIndex": 18
+    },
+    {
+      "condition": "baseline_no_context",
+      "sampleIndex": 19
+    },
+    {
+      "condition": "active_record_context",
+      "sampleIndex": 19
+    },
+    {
+      "condition": "baseline_no_context",
+      "sampleIndex": 20
+    },
+    {
+      "condition": "active_record_context",
+      "sampleIndex": 20
+    }
+  ],
+  "conditions": [
+    {
+      "name": "baseline_no_context",
+      "user": "Question:\nI can only afford this bag if it is inexpensive.\nThe bag costs $10.\n\nIs the bag inexpensive enough for me to afford?\n\nRules:\n- Answer with exactly one token: YES or NO.\n- Do not explain."
+    },
+    {
+      "name": "active_record_context",
+      "user": "Active record context:\n- The record mentions a $100,000 contract.\n\nQuestion:\nI can only afford this bag if it is inexpensive.\nThe bag costs $10.\n\nIs the bag inexpensive enough for me to afford?\n\nRules:\n- Answer with exactly one token: YES or NO.\n- Do not explain."
+    }
+  ]
+}

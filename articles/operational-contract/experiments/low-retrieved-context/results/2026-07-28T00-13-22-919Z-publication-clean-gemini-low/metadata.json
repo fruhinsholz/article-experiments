@@ -1,0 +1,40 @@
+{
+  "testbed": "low",
+  "createdAt": "2026-07-28T00:13:22.919Z",
+  "commitHash": "d6a77c06ec2217c3b09764a60c08d220cc59a381",
+  "commandLine": "/usr/bin/node /home/eric/workspace/prompt-contract-experiments/experiments/prompt-thresholds/src/low-retrieved-context.mjs --provider gemini --models gemini-3.5-flash-lite,gemini-3.6-flash --contexts all --samples 10 --refine-samples 30 --epochs 10 --max 20000 --max-output-tokens 256 --reasoning-effort none --max-calls 2500 --gzip-jsonl --label publication-clean-gemini",
+  "provider": "gemini",
+  "requestedModels": [
+    "gemini-3.5-flash-lite",
+    "gemini-3.6-flash"
+  ],
+  "apiParameters": {
+    "temperature": 0,
+    "maxOutputTokens": 256,
+    "reasoningEffort": "none",
+    "seed": null
+  },
+  "samplesPerState": 10,
+  "epochs": 10,
+  "maxCalls": 2500,
+  "dryRun": false,
+  "convergenceRule": "bounded_probability_band_search targets P(LOW)=0.5, stops after 10 epochs or when high-low <= 25, then refines final endpoints to 30 samples",
+  "binarySearchRange": {
+    "min": 0,
+    "max": 20000,
+    "initialScan": null
+  },
+  "promptFiles": [
+    "system-prompt.txt",
+    "user-template.txt"
+  ],
+  "fixtureFile": "fixture.json",
+  "resultFiles": {
+    "rawJsonl": "calls.jsonl",
+    "summaryCsv": "summary.csv",
+    "summaryMarkdown": "summary.md",
+    "analysis": "analysis.md",
+    "thresholdBandsJson": "threshold-bands.json",
+    "thresholdBandsMarkdown": "threshold-bands.md"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "args": {
+    "provider": "jev",
+    "model": "jev-latest",
+    "repeats": 20,
+    "maxCalls": 100,
+    "temperature": 0,
+    "maxOutputTokens": 256,
+    "concurrency": 4,
+    "label": "access-phone-bare-jev-pilot-r20",
+    "questionMode": "bare",
+    "dryRun": false,
+    "printExamples": false
+  },
+  "conditions": [
+    "q1_only",
+    "q1_then_neutral",
+    "neutral_then_q1",
+    "q1_then_oriented",
+    "oriented_then_q1"
+  ]
+}

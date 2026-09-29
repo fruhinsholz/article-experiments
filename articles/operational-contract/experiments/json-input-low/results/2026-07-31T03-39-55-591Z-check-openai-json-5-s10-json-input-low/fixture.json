@@ -1,0 +1,24 @@
+{
+  "contexts": {
+    "fact_only": "",
+    "retrieved_5_gift_card": "A separate product launch note says that a $5 gift card is offered to the first subscriber of a new policy."
+  },
+  "formats": [
+    "prose_same_block",
+    "json_flat",
+    "json_typed",
+    "json_typed_boundary_rule"
+  ],
+  "amounts": [
+    5,
+    50,
+    100,
+    150,
+    500,
+    1000,
+    5000,
+    10000,
+    20000
+  ],
+  "samples": 10
+}

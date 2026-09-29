@@ -1,0 +1,201 @@
+[
+  {
+    "model": "gpt-5.5",
+    "contextId": "fact_only",
+    "searchMethod": "bounded_probability_band_search",
+    "low": 996.1,
+    "high": 1015.63,
+    "width": 19.53,
+    "samplesPerState": 30,
+    "lowLabel": "LOW",
+    "highLabel": "NOT_LOW",
+    "lowProbability": {
+      "total": 30,
+      "low": 28,
+      "notLow": 2,
+      "invalid": 0,
+      "lowPct": 0.9333,
+      "lowPctWilson95": {
+        "low": 0.7868,
+        "high": 0.9815
+      }
+    },
+    "highProbability": {
+      "total": 30,
+      "low": 0,
+      "notLow": 30,
+      "invalid": 0,
+      "lowPct": 0,
+      "lowPctWilson95": {
+        "low": 0,
+        "high": 0.1135
+      }
+    }
+  },
+  {
+    "model": "gpt-5.5",
+    "contextId": "retrieved_5_gift_card",
+    "searchMethod": "bounded_probability_band_search",
+    "low": 488.28,
+    "high": 507.81,
+    "width": 19.53,
+    "samplesPerState": 30,
+    "lowLabel": "LOW",
+    "highLabel": "NOT_LOW",
+    "lowProbability": {
+      "total": 30,
+      "low": 30,
+      "notLow": 0,
+      "invalid": 0,
+      "lowPct": 1,
+      "lowPctWilson95": {
+        "low": 0.8865,
+        "high": 1
+      }
+    },
+    "highProbability": {
+      "total": 30,
+      "low": 0,
+      "notLow": 30,
+      "invalid": 0,
+      "lowPct": 0,
+      "lowPctWilson95": {
+        "low": 0,
+        "high": 0.1135
+      }
+    }
+  },
+  {
+    "model": "gpt-5.5",
+    "contextId": "retrieved_100000_contract",
+    "searchMethod": "bounded_probability_band_search",
+    "low": 19980.47,
+    "high": 20000,
+    "width": 19.53,
+    "samplesPerState": 30,
+    "lowLabel": "LOW",
+    "highLabel": "NOT_LOW",
+    "lowProbability": {
+      "total": 30,
+      "low": 30,
+      "notLow": 0,
+      "invalid": 0,
+      "lowPct": 1,
+      "lowPctWilson95": {
+        "low": 0.8865,
+        "high": 1
+      }
+    },
+    "highProbability": {
+      "total": 30,
+      "low": 14,
+      "notLow": 16,
+      "invalid": 0,
+      "lowPct": 0.4667,
+      "lowPctWilson95": {
+        "low": 0.3023,
+        "high": 0.6386
+      }
+    }
+  },
+  {
+    "model": "gpt-5.6",
+    "contextId": "fact_only",
+    "searchMethod": "bounded_probability_band_search",
+    "low": 97.66,
+    "high": 117.19,
+    "width": 19.53,
+    "samplesPerState": 30,
+    "lowLabel": "LOW",
+    "highLabel": "NOT_LOW",
+    "lowProbability": {
+      "total": 30,
+      "low": 30,
+      "notLow": 0,
+      "invalid": 0,
+      "lowPct": 1,
+      "lowPctWilson95": {
+        "low": 0.8865,
+        "high": 1
+      }
+    },
+    "highProbability": {
+      "total": 30,
+      "low": 4,
+      "notLow": 26,
+      "invalid": 0,
+      "lowPct": 0.1333,
+      "lowPctWilson95": {
+        "low": 0.0531,
+        "high": 0.2968
+      }
+    }
+  },
+  {
+    "model": "gpt-5.6",
+    "contextId": "retrieved_5_gift_card",
+    "searchMethod": "bounded_probability_band_search",
+    "low": 39.06,
+    "high": 58.59,
+    "width": 19.53,
+    "samplesPerState": 30,
+    "lowLabel": "LOW",
+    "highLabel": "NOT_LOW",
+    "lowProbability": {
+      "total": 30,
+      "low": 21,
+      "notLow": 9,
+      "invalid": 0,
+      "lowPct": 0.7,
+      "lowPctWilson95": {
+        "low": 0.5212,
+        "high": 0.8334
+      }
+    },
+    "highProbability": {
+      "total": 30,
+      "low": 5,
+      "notLow": 25,
+      "invalid": 0,
+      "lowPct": 0.1667,
+      "lowPctWilson95": {
+        "low": 0.0734,
+        "high": 0.3356
+      }
+    }
+  },
+  {
+    "model": "gpt-5.6",
+    "contextId": "retrieved_100000_contract",
+    "searchMethod": "bounded_probability_band_search",
+    "low": 0,
+    "high": 20000,
+    "width": 20000,
+    "samplesPerState": 30,
+    "lowLabel": "LOW",
+    "highLabel": "LOW",
+    "lowProbability": {
+      "total": 30,
+      "low": 30,
+      "notLow": 0,
+      "invalid": 0,
+      "lowPct": 1,
+      "lowPctWilson95": {
+        "low": 0.8865,
+        "high": 1
+      }
+    },
+    "highProbability": {
+      "total": 30,
+      "low": 20,
+      "notLow": 10,
+      "invalid": 0,
+      "lowPct": 0.6667,
+      "lowPctWilson95": {
+        "low": 0.4878,
+        "high": 0.8077
+      }
+    },
+    "unbracketed": true
+  }
+]

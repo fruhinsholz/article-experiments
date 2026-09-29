@@ -1,0 +1,40 @@
+{
+  "testbed": "low",
+  "createdAt": "2026-07-29T18:47:12.807Z",
+  "commitHash": "7ca53d045534dfe5b05e7e3de2b2209c2ed50b41",
+  "commandLine": "/usr/bin/node /var/lib/openclaw/.openclaw/workspace/prompt-contract-experiments/experiments/prompt-thresholds/src/low-retrieved-context.mjs --models gpt-5.5,gpt-5.6 --contexts all --samples 10 --refine-samples 30 --epochs 10 --max 20000 --max-output-tokens 1024 --max-calls 2000 --gzip-jsonl --label publication-clean-openai-gpt55-gpt56-max1024",
+  "provider": "openai",
+  "requestedModels": [
+    "gpt-5.5",
+    "gpt-5.6"
+  ],
+  "apiParameters": {
+    "temperature": 0,
+    "maxOutputTokens": 1024,
+    "reasoningEffort": null,
+    "seed": null
+  },
+  "samplesPerState": 10,
+  "epochs": 10,
+  "maxCalls": 2000,
+  "dryRun": false,
+  "convergenceRule": "bounded_probability_band_search targets P(LOW)=0.5, stops after 10 epochs or when high-low <= 25, then refines final endpoints to 30 samples",
+  "binarySearchRange": {
+    "min": 0,
+    "max": 20000,
+    "initialScan": null
+  },
+  "promptFiles": [
+    "system-prompt.txt",
+    "user-template.txt"
+  ],
+  "fixtureFile": "fixture.json",
+  "resultFiles": {
+    "rawJsonl": "calls.jsonl",
+    "summaryCsv": "summary.csv",
+    "summaryMarkdown": "summary.md",
+    "analysis": "analysis.md",
+    "thresholdBandsJson": "threshold-bands.json",
+    "thresholdBandsMarkdown": "threshold-bands.md"
+  }
+}

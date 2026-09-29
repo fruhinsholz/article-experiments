@@ -1,0 +1,4025 @@
+{
+  "args": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "samples": 100,
+    "maxCalls": 1000,
+    "maxOutputTokens": 900,
+    "temperature": 0,
+    "concurrency": 6,
+    "label": "meursault-bet-100-samples",
+    "dryRun": false
+  },
+  "jobs": [
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 0
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 1
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 2
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 3
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 4
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 5
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 6
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 7
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 8
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 9
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 10
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 11
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 12
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 13
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 14
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 15
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 16
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 17
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 18
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 19
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 20
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 21
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 22
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 23
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 24
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 25
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 26
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 27
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 28
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 29
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 30
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 31
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 32
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 33
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 34
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 35
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 36
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 37
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 38
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 39
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 40
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 41
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 42
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 43
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 44
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 45
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 46
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 47
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 48
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 49
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 50
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 51
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 52
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 53
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 54
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 55
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 56
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 57
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 58
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 59
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 60
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 61
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 62
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 63
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 64
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 65
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 66
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 67
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 68
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 69
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 70
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 71
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 72
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 73
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 74
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 75
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 76
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 77
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 78
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 79
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 80
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 81
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 82
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 83
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 84
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 85
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 86
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 87
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 88
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 89
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 90
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 91
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 92
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 93
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 94
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 95
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 96
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 97
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 98
+    },
+    {
+      "kind": "classification",
+      "condition": "control",
+      "sampleIndex": 99
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 0
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 1
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 2
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 3
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 4
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 5
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 6
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 7
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 8
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 9
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 10
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 11
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 12
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 13
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 14
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 15
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 16
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 17
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 18
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 19
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 20
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 21
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 22
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 23
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 24
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 25
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 26
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 27
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 28
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 29
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 30
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 31
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 32
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 33
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 34
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 35
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 36
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 37
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 38
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 39
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 40
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 41
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 42
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 43
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 44
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 45
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 46
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 47
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 48
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 49
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 50
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 51
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 52
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 53
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 54
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 55
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 56
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 57
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 58
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 59
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 60
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 61
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 62
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 63
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 64
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 65
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 66
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 67
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 68
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 69
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 70
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 71
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 72
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 73
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 74
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 75
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 76
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 77
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 78
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 79
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 80
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 81
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 82
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 83
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 84
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 85
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 86
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 87
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 88
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 89
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 90
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 91
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 92
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 93
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 94
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 95
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 96
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 97
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 98
+    },
+    {
+      "kind": "classification",
+      "condition": "prefix_free_text",
+      "sampleIndex": 99
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 0
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 1
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 2
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 3
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 4
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 5
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 6
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 7
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 8
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 9
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 10
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 11
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 12
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 13
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 14
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 15
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 16
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 17
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 18
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 19
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 20
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 21
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 22
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 23
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 24
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 25
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 26
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 27
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 28
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 29
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 30
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 31
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 32
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 33
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 34
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 35
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 36
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 37
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 38
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 39
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 40
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 41
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 42
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 43
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 44
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 45
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 46
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 47
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 48
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 49
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 50
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 51
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 52
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 53
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 54
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 55
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 56
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 57
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 58
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 59
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 60
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 61
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 62
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 63
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 64
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 65
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 66
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 67
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 68
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 69
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 70
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 71
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 72
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 73
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 74
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 75
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 76
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 77
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 78
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 79
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 80
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 81
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 82
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 83
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 84
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 85
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 86
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 87
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 88
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 89
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 90
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 91
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 92
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 93
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 94
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 95
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 96
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 97
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 98
+    },
+    {
+      "kind": "classification",
+      "condition": "suffix_free_text",
+      "sampleIndex": 99
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 0
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 1
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 2
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 3
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 4
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 5
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 6
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 7
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 8
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 9
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 10
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 11
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 12
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 13
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 14
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 15
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 16
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 17
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 18
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 19
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 20
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 21
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 22
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 23
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 24
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 25
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 26
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 27
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 28
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 29
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 30
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 31
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 32
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 33
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 34
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 35
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 36
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 37
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 38
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 39
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 40
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 41
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 42
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 43
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 44
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 45
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 46
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 47
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 48
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 49
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 50
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 51
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 52
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 53
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 54
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 55
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 56
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 57
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 58
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 59
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 60
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 61
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 62
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 63
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 64
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 65
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 66
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 67
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 68
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 69
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 70
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 71
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 72
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 73
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 74
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 75
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 76
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 77
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 78
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 79
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 80
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 81
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 82
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 83
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 84
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 85
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 86
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 87
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 88
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 89
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 90
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 91
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 92
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 93
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 94
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 95
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 96
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 97
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 98
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_instruction",
+      "sampleIndex": 99
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 0
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 1
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 2
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 3
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 4
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 5
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 6
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 7
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 8
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 9
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 10
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 11
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 12
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 13
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 14
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 15
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 16
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 17
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 18
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 19
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 20
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 21
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 22
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 23
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 24
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 25
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 26
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 27
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 28
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 29
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 30
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 31
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 32
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 33
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 34
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 35
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 36
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 37
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 38
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 39
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 40
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 41
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 42
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 43
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 44
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 45
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 46
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 47
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 48
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 49
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 50
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 51
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 52
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 53
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 54
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 55
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 56
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 57
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 58
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 59
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 60
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 61
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 62
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 63
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 64
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 65
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 66
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 67
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 68
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 69
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 70
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 71
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 72
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 73
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 74
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 75
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 76
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 77
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 78
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 79
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 80
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 81
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 82
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 83
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 84
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 85
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 86
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 87
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 88
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 89
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 90
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 91
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 92
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 93
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 94
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 95
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 96
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 97
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 98
+    },
+    {
+      "kind": "classification",
+      "condition": "top_level_note",
+      "sampleIndex": 99
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 0
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 1
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 2
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 3
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 4
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 5
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 6
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 7
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 8
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 9
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 10
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 11
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 12
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 13
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 14
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 15
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 16
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 17
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 18
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 19
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 20
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 21
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 22
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 23
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 24
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 25
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 26
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 27
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 28
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 29
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 30
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 31
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 32
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 33
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 34
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 35
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 36
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 37
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 38
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 39
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 40
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 41
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 42
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 43
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 44
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 45
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 46
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 47
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 48
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 49
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 50
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 51
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 52
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 53
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 54
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 55
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 56
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 57
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 58
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 59
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 60
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 61
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 62
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 63
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 64
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 65
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 66
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 67
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 68
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 69
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 70
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 71
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 72
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 73
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 74
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 75
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 76
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 77
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 78
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 79
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 80
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 81
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 82
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 83
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 84
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 85
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 86
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 87
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 88
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 89
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 90
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 91
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 92
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 93
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 94
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 95
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 96
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 97
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 98
+    },
+    {
+      "kind": "classification",
+      "condition": "per_object_instruction",
+      "sampleIndex": 99
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 0
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 1
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 2
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 3
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 4
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 5
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 6
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 7
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 8
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 9
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 10
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 11
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 12
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 13
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 14
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 15
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 16
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 17
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 18
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 19
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 20
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 21
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 22
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 23
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 24
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 25
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 26
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 27
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 28
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 29
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 30
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 31
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 32
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 33
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 34
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 35
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 36
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 37
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 38
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 39
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 40
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 41
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 42
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 43
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 44
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 45
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 46
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 47
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 48
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 49
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 50
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 51
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 52
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 53
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 54
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 55
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 56
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 57
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 58
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 59
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 60
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 61
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 62
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 63
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 64
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 65
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 66
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 67
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 68
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 69
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 70
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 71
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 72
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 73
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 74
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 75
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 76
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 77
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 78
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 79
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 80
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 81
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 82
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 83
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 84
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 85
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 86
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 87
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 88
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 89
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 90
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 91
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 92
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 93
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 94
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 95
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 96
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 97
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 98
+    },
+    {
+      "kind": "classification",
+      "condition": "system_rule",
+      "sampleIndex": 99
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 0
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 1
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 2
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 3
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 4
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 5
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 6
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 7
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 8
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 9
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 10
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 11
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 12
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 13
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 14
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 15
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 16
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 17
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 18
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 19
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 20
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 21
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 22
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 23
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 24
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 25
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 26
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 27
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 28
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 29
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 30
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 31
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 32
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 33
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 34
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 35
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 36
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 37
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 38
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 39
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 40
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 41
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 42
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 43
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 44
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 45
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 46
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 47
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 48
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 49
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 50
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 51
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 52
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 53
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 54
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 55
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 56
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 57
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 58
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 59
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 60
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 61
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 62
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 63
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 64
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 65
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 66
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 67
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 68
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 69
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 70
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 71
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 72
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 73
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 74
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 75
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 76
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 77
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 78
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 79
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 80
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 81
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 82
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 83
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 84
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 85
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 86
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 87
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 88
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 89
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 90
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 91
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 92
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 93
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 94
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 95
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 96
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 97
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 98
+    },
+    {
+      "kind": "transform",
+      "condition": "json_transform_positive_control",
+      "sampleIndex": 99
+    }
+  ],
+  "amounts": [
+    5,
+    50,
+    80,
+    100,
+    500,
+    1000,
+    5000,
+    20000
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "provider": "gemini",
+  "model": "gemini-3.5-flash-lite",
+  "calls": 40,
+  "errors": 0,
+  "conditions": {
+    "b_only_same_word": {
+      "calls": 10,
+      "counts": {
+        "global_buy": 7,
+        "local_hold": 3
+      },
+      "outputs": [
+        "BUY",
+        "HOLD"
+      ]
+    },
+    "inactive_a_same_word": {
+      "calls": 10,
+      "counts": {
+        "global_buy": 4,
+        "partial_local_hold": 2,
+        "partial_global_buy": 2,
+        "other": 2
+      },
+      "outputs": [
+        "BUY",
+        "{\n  \"branch\": \"B\",\n  \"result\": \"HOLD\"\n}",
+        "{\n  \"branch\": \"B\",\n  \"result\": \"BUY\"\n}",
+        "{\n  \"branch\": \"B\",\n  \"reason\": \"The route_amount is $5, which is low. Therefore",
+        "{\"branch\": \"B\", \"result\": \"HOLD\"}",
+        "{\n  \"branch\": \"B\",\n  \"reason\": \"route_amount is $5, which is considered low, triggering"
+      ]
+    },
+    "inactive_a_different_word": {
+      "calls": 10,
+      "counts": {
+        "local_hold": 2,
+        "other": 5,
+        "partial_global_buy": 2,
+        "partial_local_hold": 1
+      },
+      "outputs": [
+        "HOLD",
+        "```json\n{\n  \"branch\": \"B\",\n  \"x_value\": 5000,\n  \"",
+        "{\n  \"branch\": \"B\",\n  \"evaluation\": \"x is low\",\n  \"token\": \"BUY\"\n",
+        "```json\n{\n  \"branch\": \"B\",\n  \"x\": \"$5,000\",\n  \"evaluation",
+        "{\n  \"branch\": \"B\",\n  \"reason\": \"route_amount is $5, which is small.\",\n  ",
+        "```json\n{\n  \"branch\": \"B\",\n  \"x_value\": \"$5,000\",\n  ",
+        "```json\n{\"branch\": \"B\"}\n```\nHOLD",
+        "```json\n{\"branch\": \"B\", \"x\": \"$5,000\", \"output\": \"BUY\"}\n```"
+      ]
+    },
+    "inactive_a_explicit_scope": {
+      "calls": 10,
+      "counts": {
+        "other": 10
+      },
+      "outputs": [
+        "```json\n{\n  \"branch\": \"B\",\n  \"x\": \"$5,000\",\n  \"context",
+        "```json\n{\"branch\": \"B\", \"x\": \"$5,000\", \"context\": \"$5,000",
+        "{\n  \"branch\": \"B\",\n  \"evaluation\": \"x is $5,000, which is low in",
+        "{\n  \"branch\": \"B\",\n  \"evaluation\": \"x ($5,000) is low relative to typical"
+      ]
+    }
+  }
+}

@@ -1,0 +1,2954 @@
+{
+  "args": {
+    "provider": "jev",
+    "model": "jev-latest",
+    "repeats": 20,
+    "maxCalls": 480,
+    "concurrency": 5,
+    "label": "blind-natural-key-replication",
+    "includeRejected": false,
+    "dryRun": false,
+    "seed": 27092032,
+    "stimuliFile": "/var/lib/openclaw/.openclaw/workspace/json-legibility-control/experiments/choice-label-contamination/refined-stimuli.v5-blind-natural-key-replication.json",
+    "confirmatory": false,
+    "retries": 3,
+    "retryDelayMs": 500,
+    "temperature": 0
+  },
+  "stimuli": {
+    "version": "5.0.0-blind-natural-key-replication",
+    "dateFrozen": "2026-09-27",
+    "question": "To what extent can the person currently perform their essential work?",
+    "instructionSuffix": "",
+    "descriptions": {
+      "full": "The person can complete every essential job duty at normal quality and pace without assistance.",
+      "partial": "The person can complete some essential job duties, but at least one essential duty cannot be completed at normal quality or pace.",
+      "none": "The person cannot complete any essential job duty."
+    },
+    "applicationPolicy": {
+      "reviewIfPartialPlusNoneAtLeast": 0.5,
+      "reviewBranch": "human_review",
+      "automaticBranch": "automatic_full_capacity"
+    },
+    "randomization": {
+      "seed": 27092032,
+      "unit": "complete balanced block containing every state-family cell once"
+    },
+    "states": {
+      "boundary_r06_unsure_one_slight_delay": "My computer is broken, but from my phone I can complete every essential job duty at normal quality. Most duties are at normal pace; I am unsure whether one duty may take slightly longer.",
+      "boundary_r05_maybe_one_slight_delay": "My computer is broken, but from my phone I can complete every essential job duty at normal quality and pace without assistance. One duty might occasionally take slightly longer.",
+      "boundary_r04_close_to_normal_pace": "My computer is broken, but from my phone I can complete every essential job duty at normal quality. My pace is close to normal, although the phone is less convenient.",
+      "boundary_r08_one_duty_slightly_slower": "My computer is broken, but from my phone I can complete every essential job duty at normal quality. One duty takes slightly longer than normal.",
+      "clear_full": "My computer is broken, but from my phone I can complete every essential job duty at normal quality and pace without assistance.",
+      "clear_partial": "My computer is broken. From my phone I can complete some essential job duties, but at least one essential duty cannot be completed at normal quality or pace."
+    },
+    "keyFamilies": {
+      "neutral": {
+        "full": "A",
+        "partial": "B",
+        "none": "C",
+        "validationStatus": "reference"
+      },
+      "duty_coverage": {
+        "full": "all_essential_duties",
+        "partial": "some_essential_duties",
+        "none": "no_essential_duties",
+        "validationStatus": "accepted"
+      },
+      "capability_statement": {
+        "full": "can_perform_all_essential_duties",
+        "partial": "can_perform_some_essential_duties",
+        "none": "cannot_perform_any_essential_duties",
+        "validationStatus": "accepted"
+      },
+      "work_capacity_level": {
+        "full": "full_essential_work_capacity",
+        "partial": "limited_essential_work_capacity",
+        "none": "no_essential_work_capacity",
+        "validationStatus": "accepted"
+      }
+    }
+  },
+  "jobs": [
+    {
+      "state": "clear_full",
+      "family": "duty_coverage",
+      "block": 0,
+      "blockOrder": 0
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "neutral",
+      "block": 0,
+      "blockOrder": 1
+    },
+    {
+      "state": "clear_partial",
+      "family": "work_capacity_level",
+      "block": 0,
+      "blockOrder": 2
+    },
+    {
+      "state": "clear_partial",
+      "family": "capability_statement",
+      "block": 0,
+      "blockOrder": 3
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "work_capacity_level",
+      "block": 0,
+      "blockOrder": 4
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "duty_coverage",
+      "block": 0,
+      "blockOrder": 5
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "duty_coverage",
+      "block": 0,
+      "blockOrder": 6
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "capability_statement",
+      "block": 0,
+      "blockOrder": 7
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "capability_statement",
+      "block": 0,
+      "blockOrder": 8
+    },
+    {
+      "state": "clear_partial",
+      "family": "duty_coverage",
+      "block": 0,
+      "blockOrder": 9
+    },
+    {
+      "state": "clear_full",
+      "family": "capability_statement",
+      "block": 0,
+      "blockOrder": 10
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "work_capacity_level",
+      "block": 0,
+      "blockOrder": 11
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "work_capacity_level",
+      "block": 0,
+      "blockOrder": 12
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "neutral",
+      "block": 0,
+      "blockOrder": 13
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "capability_statement",
+      "block": 0,
+      "blockOrder": 14
+    },
+    {
+      "state": "clear_partial",
+      "family": "neutral",
+      "block": 0,
+      "blockOrder": 15
+    },
+    {
+      "state": "clear_full",
+      "family": "work_capacity_level",
+      "block": 0,
+      "blockOrder": 16
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "neutral",
+      "block": 0,
+      "blockOrder": 17
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "duty_coverage",
+      "block": 0,
+      "blockOrder": 18
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "duty_coverage",
+      "block": 0,
+      "blockOrder": 19
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "capability_statement",
+      "block": 0,
+      "blockOrder": 20
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "work_capacity_level",
+      "block": 0,
+      "blockOrder": 21
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "neutral",
+      "block": 0,
+      "blockOrder": 22
+    },
+    {
+      "state": "clear_full",
+      "family": "neutral",
+      "block": 0,
+      "blockOrder": 23
+    },
+    {
+      "state": "clear_partial",
+      "family": "work_capacity_level",
+      "block": 1,
+      "blockOrder": 0
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "work_capacity_level",
+      "block": 1,
+      "blockOrder": 1
+    },
+    {
+      "state": "clear_partial",
+      "family": "capability_statement",
+      "block": 1,
+      "blockOrder": 2
+    },
+    {
+      "state": "clear_full",
+      "family": "neutral",
+      "block": 1,
+      "blockOrder": 3
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "work_capacity_level",
+      "block": 1,
+      "blockOrder": 4
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "capability_statement",
+      "block": 1,
+      "blockOrder": 5
+    },
+    {
+      "state": "clear_full",
+      "family": "capability_statement",
+      "block": 1,
+      "blockOrder": 6
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "capability_statement",
+      "block": 1,
+      "blockOrder": 7
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "duty_coverage",
+      "block": 1,
+      "blockOrder": 8
+    },
+    {
+      "state": "clear_partial",
+      "family": "neutral",
+      "block": 1,
+      "blockOrder": 9
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "work_capacity_level",
+      "block": 1,
+      "blockOrder": 10
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "neutral",
+      "block": 1,
+      "blockOrder": 11
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "duty_coverage",
+      "block": 1,
+      "blockOrder": 12
+    },
+    {
+      "state": "clear_partial",
+      "family": "duty_coverage",
+      "block": 1,
+      "blockOrder": 13
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "duty_coverage",
+      "block": 1,
+      "blockOrder": 14
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "duty_coverage",
+      "block": 1,
+      "blockOrder": 15
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "work_capacity_level",
+      "block": 1,
+      "blockOrder": 16
+    },
+    {
+      "state": "clear_full",
+      "family": "duty_coverage",
+      "block": 1,
+      "blockOrder": 17
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "neutral",
+      "block": 1,
+      "blockOrder": 18
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "capability_statement",
+      "block": 1,
+      "blockOrder": 19
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "neutral",
+      "block": 1,
+      "blockOrder": 20
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "neutral",
+      "block": 1,
+      "blockOrder": 21
+    },
+    {
+      "state": "clear_full",
+      "family": "work_capacity_level",
+      "block": 1,
+      "blockOrder": 22
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "capability_statement",
+      "block": 1,
+      "blockOrder": 23
+    },
+    {
+      "state": "clear_partial",
+      "family": "duty_coverage",
+      "block": 2,
+      "blockOrder": 0
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "capability_statement",
+      "block": 2,
+      "blockOrder": 1
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "work_capacity_level",
+      "block": 2,
+      "blockOrder": 2
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "work_capacity_level",
+      "block": 2,
+      "blockOrder": 3
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "neutral",
+      "block": 2,
+      "blockOrder": 4
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "work_capacity_level",
+      "block": 2,
+      "blockOrder": 5
+    },
+    {
+      "state": "clear_full",
+      "family": "capability_statement",
+      "block": 2,
+      "blockOrder": 6
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "neutral",
+      "block": 2,
+      "blockOrder": 7
+    },
+    {
+      "state": "clear_full",
+      "family": "work_capacity_level",
+      "block": 2,
+      "blockOrder": 8
+    },
+    {
+      "state": "clear_partial",
+      "family": "capability_statement",
+      "block": 2,
+      "blockOrder": 9
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "neutral",
+      "block": 2,
+      "blockOrder": 10
+    },
+    {
+      "state": "clear_partial",
+      "family": "neutral",
+      "block": 2,
+      "blockOrder": 11
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "duty_coverage",
+      "block": 2,
+      "blockOrder": 12
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "capability_statement",
+      "block": 2,
+      "blockOrder": 13
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "capability_statement",
+      "block": 2,
+      "blockOrder": 14
+    },
+    {
+      "state": "clear_partial",
+      "family": "work_capacity_level",
+      "block": 2,
+      "blockOrder": 15
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "duty_coverage",
+      "block": 2,
+      "blockOrder": 16
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "duty_coverage",
+      "block": 2,
+      "blockOrder": 17
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "work_capacity_level",
+      "block": 2,
+      "blockOrder": 18
+    },
+    {
+      "state": "clear_full",
+      "family": "duty_coverage",
+      "block": 2,
+      "blockOrder": 19
+    },
+    {
+      "state": "clear_full",
+      "family": "neutral",
+      "block": 2,
+      "blockOrder": 20
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "duty_coverage",
+      "block": 2,
+      "blockOrder": 21
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "neutral",
+      "block": 2,
+      "blockOrder": 22
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "capability_statement",
+      "block": 2,
+      "blockOrder": 23
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "neutral",
+      "block": 3,
+      "blockOrder": 0
+    },
+    {
+      "state": "clear_partial",
+      "family": "capability_statement",
+      "block": 3,
+      "blockOrder": 1
+    },
+    {
+      "state": "clear_partial",
+      "family": "work_capacity_level",
+      "block": 3,
+      "blockOrder": 2
+    },
+    {
+      "state": "clear_partial",
+      "family": "neutral",
+      "block": 3,
+      "blockOrder": 3
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "duty_coverage",
+      "block": 3,
+      "blockOrder": 4
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "work_capacity_level",
+      "block": 3,
+      "blockOrder": 5
+    },
+    {
+      "state": "clear_full",
+      "family": "duty_coverage",
+      "block": 3,
+      "blockOrder": 6
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "duty_coverage",
+      "block": 3,
+      "blockOrder": 7
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "capability_statement",
+      "block": 3,
+      "blockOrder": 8
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "duty_coverage",
+      "block": 3,
+      "blockOrder": 9
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "capability_statement",
+      "block": 3,
+      "blockOrder": 10
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "neutral",
+      "block": 3,
+      "blockOrder": 11
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "neutral",
+      "block": 3,
+      "blockOrder": 12
+    },
+    {
+      "state": "clear_partial",
+      "family": "duty_coverage",
+      "block": 3,
+      "blockOrder": 13
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "work_capacity_level",
+      "block": 3,
+      "blockOrder": 14
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "neutral",
+      "block": 3,
+      "blockOrder": 15
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "capability_statement",
+      "block": 3,
+      "blockOrder": 16
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "capability_statement",
+      "block": 3,
+      "blockOrder": 17
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "work_capacity_level",
+      "block": 3,
+      "blockOrder": 18
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "work_capacity_level",
+      "block": 3,
+      "blockOrder": 19
+    },
+    {
+      "state": "clear_full",
+      "family": "work_capacity_level",
+      "block": 3,
+      "blockOrder": 20
+    },
+    {
+      "state": "clear_full",
+      "family": "neutral",
+      "block": 3,
+      "blockOrder": 21
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "duty_coverage",
+      "block": 3,
+      "blockOrder": 22
+    },
+    {
+      "state": "clear_full",
+      "family": "capability_statement",
+      "block": 3,
+      "blockOrder": 23
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "neutral",
+      "block": 4,
+      "blockOrder": 0
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "neutral",
+      "block": 4,
+      "blockOrder": 1
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "work_capacity_level",
+      "block": 4,
+      "blockOrder": 2
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "duty_coverage",
+      "block": 4,
+      "blockOrder": 3
+    },
+    {
+      "state": "clear_full",
+      "family": "work_capacity_level",
+      "block": 4,
+      "blockOrder": 4
+    },
+    {
+      "state": "clear_partial",
+      "family": "neutral",
+      "block": 4,
+      "blockOrder": 5
+    },
+    {
+      "state": "clear_full",
+      "family": "duty_coverage",
+      "block": 4,
+      "blockOrder": 6
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "duty_coverage",
+      "block": 4,
+      "blockOrder": 7
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "neutral",
+      "block": 4,
+      "blockOrder": 8
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "capability_statement",
+      "block": 4,
+      "blockOrder": 9
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "duty_coverage",
+      "block": 4,
+      "blockOrder": 10
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "duty_coverage",
+      "block": 4,
+      "blockOrder": 11
+    },
+    {
+      "state": "clear_full",
+      "family": "neutral",
+      "block": 4,
+      "blockOrder": 12
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "work_capacity_level",
+      "block": 4,
+      "blockOrder": 13
+    },
+    {
+      "state": "clear_partial",
+      "family": "capability_statement",
+      "block": 4,
+      "blockOrder": 14
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "capability_statement",
+      "block": 4,
+      "blockOrder": 15
+    },
+    {
+      "state": "clear_partial",
+      "family": "duty_coverage",
+      "block": 4,
+      "blockOrder": 16
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "capability_statement",
+      "block": 4,
+      "blockOrder": 17
+    },
+    {
+      "state": "clear_full",
+      "family": "capability_statement",
+      "block": 4,
+      "blockOrder": 18
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "work_capacity_level",
+      "block": 4,
+      "blockOrder": 19
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "capability_statement",
+      "block": 4,
+      "blockOrder": 20
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "work_capacity_level",
+      "block": 4,
+      "blockOrder": 21
+    },
+    {
+      "state": "clear_partial",
+      "family": "work_capacity_level",
+      "block": 4,
+      "blockOrder": 22
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "neutral",
+      "block": 4,
+      "blockOrder": 23
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "duty_coverage",
+      "block": 5,
+      "blockOrder": 0
+    },
+    {
+      "state": "clear_partial",
+      "family": "work_capacity_level",
+      "block": 5,
+      "blockOrder": 1
+    },
+    {
+      "state": "clear_partial",
+      "family": "neutral",
+      "block": 5,
+      "blockOrder": 2
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "duty_coverage",
+      "block": 5,
+      "blockOrder": 3
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "capability_statement",
+      "block": 5,
+      "blockOrder": 4
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "neutral",
+      "block": 5,
+      "blockOrder": 5
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "neutral",
+      "block": 5,
+      "blockOrder": 6
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "capability_statement",
+      "block": 5,
+      "blockOrder": 7
+    },
+    {
+      "state": "clear_full",
+      "family": "capability_statement",
+      "block": 5,
+      "blockOrder": 8
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "duty_coverage",
+      "block": 5,
+      "blockOrder": 9
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "work_capacity_level",
+      "block": 5,
+      "blockOrder": 10
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "neutral",
+      "block": 5,
+      "blockOrder": 11
+    },
+    {
+      "state": "clear_partial",
+      "family": "capability_statement",
+      "block": 5,
+      "blockOrder": 12
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "neutral",
+      "block": 5,
+      "blockOrder": 13
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "capability_statement",
+      "block": 5,
+      "blockOrder": 14
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "work_capacity_level",
+      "block": 5,
+      "blockOrder": 15
+    },
+    {
+      "state": "clear_partial",
+      "family": "duty_coverage",
+      "block": 5,
+      "blockOrder": 16
+    },
+    {
+      "state": "clear_full",
+      "family": "duty_coverage",
+      "block": 5,
+      "blockOrder": 17
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "work_capacity_level",
+      "block": 5,
+      "blockOrder": 18
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "duty_coverage",
+      "block": 5,
+      "blockOrder": 19
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "work_capacity_level",
+      "block": 5,
+      "blockOrder": 20
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "capability_statement",
+      "block": 5,
+      "blockOrder": 21
+    },
+    {
+      "state": "clear_full",
+      "family": "work_capacity_level",
+      "block": 5,
+      "blockOrder": 22
+    },
+    {
+      "state": "clear_full",
+      "family": "neutral",
+      "block": 5,
+      "blockOrder": 23
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "work_capacity_level",
+      "block": 6,
+      "blockOrder": 0
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "capability_statement",
+      "block": 6,
+      "blockOrder": 1
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "capability_statement",
+      "block": 6,
+      "blockOrder": 2
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "duty_coverage",
+      "block": 6,
+      "blockOrder": 3
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "neutral",
+      "block": 6,
+      "blockOrder": 4
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "duty_coverage",
+      "block": 6,
+      "blockOrder": 5
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "work_capacity_level",
+      "block": 6,
+      "blockOrder": 6
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "neutral",
+      "block": 6,
+      "blockOrder": 7
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "work_capacity_level",
+      "block": 6,
+      "blockOrder": 8
+    },
+    {
+      "state": "clear_partial",
+      "family": "duty_coverage",
+      "block": 6,
+      "blockOrder": 9
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "capability_statement",
+      "block": 6,
+      "blockOrder": 10
+    },
+    {
+      "state": "clear_partial",
+      "family": "work_capacity_level",
+      "block": 6,
+      "blockOrder": 11
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "capability_statement",
+      "block": 6,
+      "blockOrder": 12
+    },
+    {
+      "state": "clear_full",
+      "family": "duty_coverage",
+      "block": 6,
+      "blockOrder": 13
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "duty_coverage",
+      "block": 6,
+      "blockOrder": 14
+    },
+    {
+      "state": "clear_full",
+      "family": "capability_statement",
+      "block": 6,
+      "blockOrder": 15
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "neutral",
+      "block": 6,
+      "blockOrder": 16
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "duty_coverage",
+      "block": 6,
+      "blockOrder": 17
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "work_capacity_level",
+      "block": 6,
+      "blockOrder": 18
+    },
+    {
+      "state": "clear_partial",
+      "family": "capability_statement",
+      "block": 6,
+      "blockOrder": 19
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "neutral",
+      "block": 6,
+      "blockOrder": 20
+    },
+    {
+      "state": "clear_full",
+      "family": "work_capacity_level",
+      "block": 6,
+      "blockOrder": 21
+    },
+    {
+      "state": "clear_full",
+      "family": "neutral",
+      "block": 6,
+      "blockOrder": 22
+    },
+    {
+      "state": "clear_partial",
+      "family": "neutral",
+      "block": 6,
+      "blockOrder": 23
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "duty_coverage",
+      "block": 7,
+      "blockOrder": 0
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "work_capacity_level",
+      "block": 7,
+      "blockOrder": 1
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "capability_statement",
+      "block": 7,
+      "blockOrder": 2
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "duty_coverage",
+      "block": 7,
+      "blockOrder": 3
+    },
+    {
+      "state": "clear_partial",
+      "family": "duty_coverage",
+      "block": 7,
+      "blockOrder": 4
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "duty_coverage",
+      "block": 7,
+      "blockOrder": 5
+    },
+    {
+      "state": "clear_full",
+      "family": "work_capacity_level",
+      "block": 7,
+      "blockOrder": 6
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "capability_statement",
+      "block": 7,
+      "blockOrder": 7
+    },
+    {
+      "state": "clear_partial",
+      "family": "work_capacity_level",
+      "block": 7,
+      "blockOrder": 8
+    },
+    {
+      "state": "clear_partial",
+      "family": "neutral",
+      "block": 7,
+      "blockOrder": 9
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "work_capacity_level",
+      "block": 7,
+      "blockOrder": 10
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "capability_statement",
+      "block": 7,
+      "blockOrder": 11
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "neutral",
+      "block": 7,
+      "blockOrder": 12
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "work_capacity_level",
+      "block": 7,
+      "blockOrder": 13
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "neutral",
+      "block": 7,
+      "blockOrder": 14
+    },
+    {
+      "state": "clear_partial",
+      "family": "capability_statement",
+      "block": 7,
+      "blockOrder": 15
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "neutral",
+      "block": 7,
+      "blockOrder": 16
+    },
+    {
+      "state": "clear_full",
+      "family": "capability_statement",
+      "block": 7,
+      "blockOrder": 17
+    },
+    {
+      "state": "clear_full",
+      "family": "duty_coverage",
+      "block": 7,
+      "blockOrder": 18
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "duty_coverage",
+      "block": 7,
+      "blockOrder": 19
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "neutral",
+      "block": 7,
+      "blockOrder": 20
+    },
+    {
+      "state": "clear_full",
+      "family": "neutral",
+      "block": 7,
+      "blockOrder": 21
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "work_capacity_level",
+      "block": 7,
+      "blockOrder": 22
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "capability_statement",
+      "block": 7,
+      "blockOrder": 23
+    },
+    {
+      "state": "clear_partial",
+      "family": "work_capacity_level",
+      "block": 8,
+      "blockOrder": 0
+    },
+    {
+      "state": "clear_full",
+      "family": "work_capacity_level",
+      "block": 8,
+      "blockOrder": 1
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "work_capacity_level",
+      "block": 8,
+      "blockOrder": 2
+    },
+    {
+      "state": "clear_full",
+      "family": "duty_coverage",
+      "block": 8,
+      "blockOrder": 3
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "capability_statement",
+      "block": 8,
+      "blockOrder": 4
+    },
+    {
+      "state": "clear_partial",
+      "family": "capability_statement",
+      "block": 8,
+      "blockOrder": 5
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "duty_coverage",
+      "block": 8,
+      "blockOrder": 6
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "duty_coverage",
+      "block": 8,
+      "blockOrder": 7
+    },
+    {
+      "state": "clear_partial",
+      "family": "neutral",
+      "block": 8,
+      "blockOrder": 8
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "capability_statement",
+      "block": 8,
+      "blockOrder": 9
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "neutral",
+      "block": 8,
+      "blockOrder": 10
+    },
+    {
+      "state": "clear_full",
+      "family": "capability_statement",
+      "block": 8,
+      "blockOrder": 11
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "capability_statement",
+      "block": 8,
+      "blockOrder": 12
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "work_capacity_level",
+      "block": 8,
+      "blockOrder": 13
+    },
+    {
+      "state": "clear_full",
+      "family": "neutral",
+      "block": 8,
+      "blockOrder": 14
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "neutral",
+      "block": 8,
+      "blockOrder": 15
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "duty_coverage",
+      "block": 8,
+      "blockOrder": 16
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "duty_coverage",
+      "block": 8,
+      "blockOrder": 17
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "capability_statement",
+      "block": 8,
+      "blockOrder": 18
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "neutral",
+      "block": 8,
+      "blockOrder": 19
+    },
+    {
+      "state": "clear_partial",
+      "family": "duty_coverage",
+      "block": 8,
+      "blockOrder": 20
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "work_capacity_level",
+      "block": 8,
+      "blockOrder": 21
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "neutral",
+      "block": 8,
+      "blockOrder": 22
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "work_capacity_level",
+      "block": 8,
+      "blockOrder": 23
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "capability_statement",
+      "block": 9,
+      "blockOrder": 0
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "neutral",
+      "block": 9,
+      "blockOrder": 1
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "work_capacity_level",
+      "block": 9,
+      "blockOrder": 2
+    },
+    {
+      "state": "clear_full",
+      "family": "duty_coverage",
+      "block": 9,
+      "blockOrder": 3
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "duty_coverage",
+      "block": 9,
+      "blockOrder": 4
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "duty_coverage",
+      "block": 9,
+      "blockOrder": 5
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "duty_coverage",
+      "block": 9,
+      "blockOrder": 6
+    },
+    {
+      "state": "clear_partial",
+      "family": "capability_statement",
+      "block": 9,
+      "blockOrder": 7
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "capability_statement",
+      "block": 9,
+      "blockOrder": 8
+    },
+    {
+      "state": "clear_partial",
+      "family": "duty_coverage",
+      "block": 9,
+      "blockOrder": 9
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "work_capacity_level",
+      "block": 9,
+      "blockOrder": 10
+    },
+    {
+      "state": "clear_full",
+      "family": "neutral",
+      "block": 9,
+      "blockOrder": 11
+    },
+    {
+      "state": "clear_full",
+      "family": "capability_statement",
+      "block": 9,
+      "blockOrder": 12
+    },
+    {
+      "state": "clear_full",
+      "family": "work_capacity_level",
+      "block": 9,
+      "blockOrder": 13
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "neutral",
+      "block": 9,
+      "blockOrder": 14
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "capability_statement",
+      "block": 9,
+      "blockOrder": 15
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "neutral",
+      "block": 9,
+      "blockOrder": 16
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "work_capacity_level",
+      "block": 9,
+      "blockOrder": 17
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "neutral",
+      "block": 9,
+      "blockOrder": 18
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "work_capacity_level",
+      "block": 9,
+      "blockOrder": 19
+    },
+    {
+      "state": "clear_partial",
+      "family": "work_capacity_level",
+      "block": 9,
+      "blockOrder": 20
+    },
+    {
+      "state": "clear_partial",
+      "family": "neutral",
+      "block": 9,
+      "blockOrder": 21
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "duty_coverage",
+      "block": 9,
+      "blockOrder": 22
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "capability_statement",
+      "block": 9,
+      "blockOrder": 23
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "neutral",
+      "block": 10,
+      "blockOrder": 0
+    },
+    {
+      "state": "clear_full",
+      "family": "neutral",
+      "block": 10,
+      "blockOrder": 1
+    },
+    {
+      "state": "clear_partial",
+      "family": "capability_statement",
+      "block": 10,
+      "blockOrder": 2
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "work_capacity_level",
+      "block": 10,
+      "blockOrder": 3
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "duty_coverage",
+      "block": 10,
+      "blockOrder": 4
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "capability_statement",
+      "block": 10,
+      "blockOrder": 5
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "duty_coverage",
+      "block": 10,
+      "blockOrder": 6
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "duty_coverage",
+      "block": 10,
+      "blockOrder": 7
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "neutral",
+      "block": 10,
+      "blockOrder": 8
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "capability_statement",
+      "block": 10,
+      "blockOrder": 9
+    },
+    {
+      "state": "clear_partial",
+      "family": "neutral",
+      "block": 10,
+      "blockOrder": 10
+    },
+    {
+      "state": "clear_partial",
+      "family": "duty_coverage",
+      "block": 10,
+      "blockOrder": 11
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "neutral",
+      "block": 10,
+      "blockOrder": 12
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "work_capacity_level",
+      "block": 10,
+      "blockOrder": 13
+    },
+    {
+      "state": "clear_full",
+      "family": "work_capacity_level",
+      "block": 10,
+      "blockOrder": 14
+    },
+    {
+      "state": "clear_partial",
+      "family": "work_capacity_level",
+      "block": 10,
+      "blockOrder": 15
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "neutral",
+      "block": 10,
+      "blockOrder": 16
+    },
+    {
+      "state": "clear_full",
+      "family": "duty_coverage",
+      "block": 10,
+      "blockOrder": 17
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "work_capacity_level",
+      "block": 10,
+      "blockOrder": 18
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "duty_coverage",
+      "block": 10,
+      "blockOrder": 19
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "capability_statement",
+      "block": 10,
+      "blockOrder": 20
+    },
+    {
+      "state": "clear_full",
+      "family": "capability_statement",
+      "block": 10,
+      "blockOrder": 21
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "capability_statement",
+      "block": 10,
+      "blockOrder": 22
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "work_capacity_level",
+      "block": 10,
+      "blockOrder": 23
+    },
+    {
+      "state": "clear_full",
+      "family": "neutral",
+      "block": 11,
+      "blockOrder": 0
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "neutral",
+      "block": 11,
+      "blockOrder": 1
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "neutral",
+      "block": 11,
+      "blockOrder": 2
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "capability_statement",
+      "block": 11,
+      "blockOrder": 3
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "duty_coverage",
+      "block": 11,
+      "blockOrder": 4
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "duty_coverage",
+      "block": 11,
+      "blockOrder": 5
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "work_capacity_level",
+      "block": 11,
+      "blockOrder": 6
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "neutral",
+      "block": 11,
+      "blockOrder": 7
+    },
+    {
+      "state": "clear_partial",
+      "family": "work_capacity_level",
+      "block": 11,
+      "blockOrder": 8
+    },
+    {
+      "state": "clear_full",
+      "family": "work_capacity_level",
+      "block": 11,
+      "blockOrder": 9
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "duty_coverage",
+      "block": 11,
+      "blockOrder": 10
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "duty_coverage",
+      "block": 11,
+      "blockOrder": 11
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "capability_statement",
+      "block": 11,
+      "blockOrder": 12
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "work_capacity_level",
+      "block": 11,
+      "blockOrder": 13
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "capability_statement",
+      "block": 11,
+      "blockOrder": 14
+    },
+    {
+      "state": "clear_partial",
+      "family": "capability_statement",
+      "block": 11,
+      "blockOrder": 15
+    },
+    {
+      "state": "clear_partial",
+      "family": "duty_coverage",
+      "block": 11,
+      "blockOrder": 16
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "neutral",
+      "block": 11,
+      "blockOrder": 17
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "work_capacity_level",
+      "block": 11,
+      "blockOrder": 18
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "capability_statement",
+      "block": 11,
+      "blockOrder": 19
+    },
+    {
+      "state": "clear_partial",
+      "family": "neutral",
+      "block": 11,
+      "blockOrder": 20
+    },
+    {
+      "state": "clear_full",
+      "family": "capability_statement",
+      "block": 11,
+      "blockOrder": 21
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "work_capacity_level",
+      "block": 11,
+      "blockOrder": 22
+    },
+    {
+      "state": "clear_full",
+      "family": "duty_coverage",
+      "block": 11,
+      "blockOrder": 23
+    },
+    {
+      "state": "clear_full",
+      "family": "work_capacity_level",
+      "block": 12,
+      "blockOrder": 0
+    },
+    {
+      "state": "clear_partial",
+      "family": "duty_coverage",
+      "block": 12,
+      "blockOrder": 1
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "work_capacity_level",
+      "block": 12,
+      "blockOrder": 2
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "work_capacity_level",
+      "block": 12,
+      "blockOrder": 3
+    },
+    {
+      "state": "clear_full",
+      "family": "capability_statement",
+      "block": 12,
+      "blockOrder": 4
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "duty_coverage",
+      "block": 12,
+      "blockOrder": 5
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "duty_coverage",
+      "block": 12,
+      "blockOrder": 6
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "work_capacity_level",
+      "block": 12,
+      "blockOrder": 7
+    },
+    {
+      "state": "clear_partial",
+      "family": "capability_statement",
+      "block": 12,
+      "blockOrder": 8
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "capability_statement",
+      "block": 12,
+      "blockOrder": 9
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "capability_statement",
+      "block": 12,
+      "blockOrder": 10
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "duty_coverage",
+      "block": 12,
+      "blockOrder": 11
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "neutral",
+      "block": 12,
+      "blockOrder": 12
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "capability_statement",
+      "block": 12,
+      "blockOrder": 13
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "neutral",
+      "block": 12,
+      "blockOrder": 14
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "capability_statement",
+      "block": 12,
+      "blockOrder": 15
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "neutral",
+      "block": 12,
+      "blockOrder": 16
+    },
+    {
+      "state": "clear_partial",
+      "family": "work_capacity_level",
+      "block": 12,
+      "blockOrder": 17
+    },
+    {
+      "state": "clear_full",
+      "family": "neutral",
+      "block": 12,
+      "blockOrder": 18
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "work_capacity_level",
+      "block": 12,
+      "blockOrder": 19
+    },
+    {
+      "state": "clear_full",
+      "family": "duty_coverage",
+      "block": 12,
+      "blockOrder": 20
+    },
+    {
+      "state": "clear_partial",
+      "family": "neutral",
+      "block": 12,
+      "blockOrder": 21
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "duty_coverage",
+      "block": 12,
+      "blockOrder": 22
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "neutral",
+      "block": 12,
+      "blockOrder": 23
+    },
+    {
+      "state": "clear_full",
+      "family": "neutral",
+      "block": 13,
+      "blockOrder": 0
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "work_capacity_level",
+      "block": 13,
+      "blockOrder": 1
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "duty_coverage",
+      "block": 13,
+      "blockOrder": 2
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "capability_statement",
+      "block": 13,
+      "blockOrder": 3
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "neutral",
+      "block": 13,
+      "blockOrder": 4
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "duty_coverage",
+      "block": 13,
+      "blockOrder": 5
+    },
+    {
+      "state": "clear_partial",
+      "family": "neutral",
+      "block": 13,
+      "blockOrder": 6
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "work_capacity_level",
+      "block": 13,
+      "blockOrder": 7
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "capability_statement",
+      "block": 13,
+      "blockOrder": 8
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "duty_coverage",
+      "block": 13,
+      "blockOrder": 9
+    },
+    {
+      "state": "clear_partial",
+      "family": "duty_coverage",
+      "block": 13,
+      "blockOrder": 10
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "work_capacity_level",
+      "block": 13,
+      "blockOrder": 11
+    },
+    {
+      "state": "clear_partial",
+      "family": "capability_statement",
+      "block": 13,
+      "blockOrder": 12
+    },
+    {
+      "state": "clear_full",
+      "family": "capability_statement",
+      "block": 13,
+      "blockOrder": 13
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "neutral",
+      "block": 13,
+      "blockOrder": 14
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "neutral",
+      "block": 13,
+      "blockOrder": 15
+    },
+    {
+      "state": "clear_full",
+      "family": "duty_coverage",
+      "block": 13,
+      "blockOrder": 16
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "capability_statement",
+      "block": 13,
+      "blockOrder": 17
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "neutral",
+      "block": 13,
+      "blockOrder": 18
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "work_capacity_level",
+      "block": 13,
+      "blockOrder": 19
+    },
+    {
+      "state": "clear_partial",
+      "family": "work_capacity_level",
+      "block": 13,
+      "blockOrder": 20
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "capability_statement",
+      "block": 13,
+      "blockOrder": 21
+    },
+    {
+      "state": "clear_full",
+      "family": "work_capacity_level",
+      "block": 13,
+      "blockOrder": 22
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "duty_coverage",
+      "block": 13,
+      "blockOrder": 23
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "work_capacity_level",
+      "block": 14,
+      "blockOrder": 0
+    },
+    {
+      "state": "clear_partial",
+      "family": "duty_coverage",
+      "block": 14,
+      "blockOrder": 1
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "work_capacity_level",
+      "block": 14,
+      "blockOrder": 2
+    },
+    {
+      "state": "clear_full",
+      "family": "work_capacity_level",
+      "block": 14,
+      "blockOrder": 3
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "work_capacity_level",
+      "block": 14,
+      "blockOrder": 4
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "neutral",
+      "block": 14,
+      "blockOrder": 5
+    },
+    {
+      "state": "clear_partial",
+      "family": "capability_statement",
+      "block": 14,
+      "blockOrder": 6
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "duty_coverage",
+      "block": 14,
+      "blockOrder": 7
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "duty_coverage",
+      "block": 14,
+      "blockOrder": 8
+    },
+    {
+      "state": "clear_full",
+      "family": "neutral",
+      "block": 14,
+      "blockOrder": 9
+    },
+    {
+      "state": "clear_full",
+      "family": "duty_coverage",
+      "block": 14,
+      "blockOrder": 10
+    },
+    {
+      "state": "clear_partial",
+      "family": "work_capacity_level",
+      "block": 14,
+      "blockOrder": 11
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "neutral",
+      "block": 14,
+      "blockOrder": 12
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "capability_statement",
+      "block": 14,
+      "blockOrder": 13
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "neutral",
+      "block": 14,
+      "blockOrder": 14
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "duty_coverage",
+      "block": 14,
+      "blockOrder": 15
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "neutral",
+      "block": 14,
+      "blockOrder": 16
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "capability_statement",
+      "block": 14,
+      "blockOrder": 17
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "work_capacity_level",
+      "block": 14,
+      "blockOrder": 18
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "capability_statement",
+      "block": 14,
+      "blockOrder": 19
+    },
+    {
+      "state": "clear_full",
+      "family": "capability_statement",
+      "block": 14,
+      "blockOrder": 20
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "duty_coverage",
+      "block": 14,
+      "blockOrder": 21
+    },
+    {
+      "state": "clear_partial",
+      "family": "neutral",
+      "block": 14,
+      "blockOrder": 22
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "capability_statement",
+      "block": 14,
+      "blockOrder": 23
+    },
+    {
+      "state": "clear_full",
+      "family": "neutral",
+      "block": 15,
+      "blockOrder": 0
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "capability_statement",
+      "block": 15,
+      "blockOrder": 1
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "capability_statement",
+      "block": 15,
+      "blockOrder": 2
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "neutral",
+      "block": 15,
+      "blockOrder": 3
+    },
+    {
+      "state": "clear_full",
+      "family": "duty_coverage",
+      "block": 15,
+      "blockOrder": 4
+    },
+    {
+      "state": "clear_partial",
+      "family": "duty_coverage",
+      "block": 15,
+      "blockOrder": 5
+    },
+    {
+      "state": "clear_partial",
+      "family": "neutral",
+      "block": 15,
+      "blockOrder": 6
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "work_capacity_level",
+      "block": 15,
+      "blockOrder": 7
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "neutral",
+      "block": 15,
+      "blockOrder": 8
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "neutral",
+      "block": 15,
+      "blockOrder": 9
+    },
+    {
+      "state": "clear_full",
+      "family": "work_capacity_level",
+      "block": 15,
+      "blockOrder": 10
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "work_capacity_level",
+      "block": 15,
+      "blockOrder": 11
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "capability_statement",
+      "block": 15,
+      "blockOrder": 12
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "work_capacity_level",
+      "block": 15,
+      "blockOrder": 13
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "duty_coverage",
+      "block": 15,
+      "blockOrder": 14
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "work_capacity_level",
+      "block": 15,
+      "blockOrder": 15
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "duty_coverage",
+      "block": 15,
+      "blockOrder": 16
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "neutral",
+      "block": 15,
+      "blockOrder": 17
+    },
+    {
+      "state": "clear_full",
+      "family": "capability_statement",
+      "block": 15,
+      "blockOrder": 18
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "duty_coverage",
+      "block": 15,
+      "blockOrder": 19
+    },
+    {
+      "state": "clear_partial",
+      "family": "work_capacity_level",
+      "block": 15,
+      "blockOrder": 20
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "capability_statement",
+      "block": 15,
+      "blockOrder": 21
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "duty_coverage",
+      "block": 15,
+      "blockOrder": 22
+    },
+    {
+      "state": "clear_partial",
+      "family": "capability_statement",
+      "block": 15,
+      "blockOrder": 23
+    },
+    {
+      "state": "clear_full",
+      "family": "duty_coverage",
+      "block": 16,
+      "blockOrder": 0
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "neutral",
+      "block": 16,
+      "blockOrder": 1
+    },
+    {
+      "state": "clear_full",
+      "family": "neutral",
+      "block": 16,
+      "blockOrder": 2
+    },
+    {
+      "state": "clear_full",
+      "family": "capability_statement",
+      "block": 16,
+      "blockOrder": 3
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "neutral",
+      "block": 16,
+      "blockOrder": 4
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "work_capacity_level",
+      "block": 16,
+      "blockOrder": 5
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "duty_coverage",
+      "block": 16,
+      "blockOrder": 6
+    },
+    {
+      "state": "clear_partial",
+      "family": "capability_statement",
+      "block": 16,
+      "blockOrder": 7
+    },
+    {
+      "state": "clear_partial",
+      "family": "work_capacity_level",
+      "block": 16,
+      "blockOrder": 8
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "neutral",
+      "block": 16,
+      "blockOrder": 9
+    },
+    {
+      "state": "clear_partial",
+      "family": "neutral",
+      "block": 16,
+      "blockOrder": 10
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "work_capacity_level",
+      "block": 16,
+      "blockOrder": 11
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "duty_coverage",
+      "block": 16,
+      "blockOrder": 12
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "work_capacity_level",
+      "block": 16,
+      "blockOrder": 13
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "duty_coverage",
+      "block": 16,
+      "blockOrder": 14
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "duty_coverage",
+      "block": 16,
+      "blockOrder": 15
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "capability_statement",
+      "block": 16,
+      "blockOrder": 16
+    },
+    {
+      "state": "clear_partial",
+      "family": "duty_coverage",
+      "block": 16,
+      "blockOrder": 17
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "capability_statement",
+      "block": 16,
+      "blockOrder": 18
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "capability_statement",
+      "block": 16,
+      "blockOrder": 19
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "capability_statement",
+      "block": 16,
+      "blockOrder": 20
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "work_capacity_level",
+      "block": 16,
+      "blockOrder": 21
+    },
+    {
+      "state": "clear_full",
+      "family": "work_capacity_level",
+      "block": 16,
+      "blockOrder": 22
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "neutral",
+      "block": 16,
+      "blockOrder": 23
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "duty_coverage",
+      "block": 17,
+      "blockOrder": 0
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "work_capacity_level",
+      "block": 17,
+      "blockOrder": 1
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "capability_statement",
+      "block": 17,
+      "blockOrder": 2
+    },
+    {
+      "state": "clear_partial",
+      "family": "work_capacity_level",
+      "block": 17,
+      "blockOrder": 3
+    },
+    {
+      "state": "clear_partial",
+      "family": "duty_coverage",
+      "block": 17,
+      "blockOrder": 4
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "neutral",
+      "block": 17,
+      "blockOrder": 5
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "work_capacity_level",
+      "block": 17,
+      "blockOrder": 6
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "duty_coverage",
+      "block": 17,
+      "blockOrder": 7
+    },
+    {
+      "state": "clear_full",
+      "family": "neutral",
+      "block": 17,
+      "blockOrder": 8
+    },
+    {
+      "state": "clear_partial",
+      "family": "capability_statement",
+      "block": 17,
+      "blockOrder": 9
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "neutral",
+      "block": 17,
+      "blockOrder": 10
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "work_capacity_level",
+      "block": 17,
+      "blockOrder": 11
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "duty_coverage",
+      "block": 17,
+      "blockOrder": 12
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "capability_statement",
+      "block": 17,
+      "blockOrder": 13
+    },
+    {
+      "state": "clear_full",
+      "family": "capability_statement",
+      "block": 17,
+      "blockOrder": 14
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "capability_statement",
+      "block": 17,
+      "blockOrder": 15
+    },
+    {
+      "state": "clear_partial",
+      "family": "neutral",
+      "block": 17,
+      "blockOrder": 16
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "neutral",
+      "block": 17,
+      "blockOrder": 17
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "capability_statement",
+      "block": 17,
+      "blockOrder": 18
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "neutral",
+      "block": 17,
+      "blockOrder": 19
+    },
+    {
+      "state": "clear_full",
+      "family": "work_capacity_level",
+      "block": 17,
+      "blockOrder": 20
+    },
+    {
+      "state": "clear_full",
+      "family": "duty_coverage",
+      "block": 17,
+      "blockOrder": 21
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "work_capacity_level",
+      "block": 17,
+      "blockOrder": 22
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "duty_coverage",
+      "block": 17,
+      "blockOrder": 23
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "duty_coverage",
+      "block": 18,
+      "blockOrder": 0
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "work_capacity_level",
+      "block": 18,
+      "blockOrder": 1
+    },
+    {
+      "state": "clear_partial",
+      "family": "duty_coverage",
+      "block": 18,
+      "blockOrder": 2
+    },
+    {
+      "state": "clear_partial",
+      "family": "neutral",
+      "block": 18,
+      "blockOrder": 3
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "capability_statement",
+      "block": 18,
+      "blockOrder": 4
+    },
+    {
+      "state": "clear_partial",
+      "family": "work_capacity_level",
+      "block": 18,
+      "blockOrder": 5
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "duty_coverage",
+      "block": 18,
+      "blockOrder": 6
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "work_capacity_level",
+      "block": 18,
+      "blockOrder": 7
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "duty_coverage",
+      "block": 18,
+      "blockOrder": 8
+    },
+    {
+      "state": "clear_full",
+      "family": "capability_statement",
+      "block": 18,
+      "blockOrder": 9
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "capability_statement",
+      "block": 18,
+      "blockOrder": 10
+    },
+    {
+      "state": "clear_full",
+      "family": "neutral",
+      "block": 18,
+      "blockOrder": 11
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "neutral",
+      "block": 18,
+      "blockOrder": 12
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "neutral",
+      "block": 18,
+      "blockOrder": 13
+    },
+    {
+      "state": "clear_full",
+      "family": "work_capacity_level",
+      "block": 18,
+      "blockOrder": 14
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "capability_statement",
+      "block": 18,
+      "blockOrder": 15
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "work_capacity_level",
+      "block": 18,
+      "blockOrder": 16
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "neutral",
+      "block": 18,
+      "blockOrder": 17
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "neutral",
+      "block": 18,
+      "blockOrder": 18
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "work_capacity_level",
+      "block": 18,
+      "blockOrder": 19
+    },
+    {
+      "state": "clear_full",
+      "family": "duty_coverage",
+      "block": 18,
+      "blockOrder": 20
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "duty_coverage",
+      "block": 18,
+      "blockOrder": 21
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "capability_statement",
+      "block": 18,
+      "blockOrder": 22
+    },
+    {
+      "state": "clear_partial",
+      "family": "capability_statement",
+      "block": 18,
+      "blockOrder": 23
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "neutral",
+      "block": 19,
+      "blockOrder": 0
+    },
+    {
+      "state": "clear_full",
+      "family": "work_capacity_level",
+      "block": 19,
+      "blockOrder": 1
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "neutral",
+      "block": 19,
+      "blockOrder": 2
+    },
+    {
+      "state": "clear_partial",
+      "family": "capability_statement",
+      "block": 19,
+      "blockOrder": 3
+    },
+    {
+      "state": "clear_full",
+      "family": "duty_coverage",
+      "block": 19,
+      "blockOrder": 4
+    },
+    {
+      "state": "clear_partial",
+      "family": "work_capacity_level",
+      "block": 19,
+      "blockOrder": 5
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "capability_statement",
+      "block": 19,
+      "blockOrder": 6
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "work_capacity_level",
+      "block": 19,
+      "blockOrder": 7
+    },
+    {
+      "state": "clear_full",
+      "family": "capability_statement",
+      "block": 19,
+      "blockOrder": 8
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "neutral",
+      "block": 19,
+      "blockOrder": 9
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "duty_coverage",
+      "block": 19,
+      "blockOrder": 10
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "capability_statement",
+      "block": 19,
+      "blockOrder": 11
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "duty_coverage",
+      "block": 19,
+      "blockOrder": 12
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "capability_statement",
+      "block": 19,
+      "blockOrder": 13
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "neutral",
+      "block": 19,
+      "blockOrder": 14
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "duty_coverage",
+      "block": 19,
+      "blockOrder": 15
+    },
+    {
+      "state": "clear_partial",
+      "family": "neutral",
+      "block": 19,
+      "blockOrder": 16
+    },
+    {
+      "state": "boundary_r06_unsure_one_slight_delay",
+      "family": "capability_statement",
+      "block": 19,
+      "blockOrder": 17
+    },
+    {
+      "state": "boundary_r08_one_duty_slightly_slower",
+      "family": "work_capacity_level",
+      "block": 19,
+      "blockOrder": 18
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "duty_coverage",
+      "block": 19,
+      "blockOrder": 19
+    },
+    {
+      "state": "clear_full",
+      "family": "neutral",
+      "block": 19,
+      "blockOrder": 20
+    },
+    {
+      "state": "boundary_r05_maybe_one_slight_delay",
+      "family": "work_capacity_level",
+      "block": 19,
+      "blockOrder": 21
+    },
+    {
+      "state": "clear_partial",
+      "family": "duty_coverage",
+      "block": 19,
+      "blockOrder": 22
+    },
+    {
+      "state": "boundary_r04_close_to_normal_pace",
+      "family": "work_capacity_level",
+      "block": 19,
+      "blockOrder": 23
+    }
+  ]
+}
