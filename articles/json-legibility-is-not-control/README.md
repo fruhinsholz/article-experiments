@@ -1,68 +1,39 @@
-# JSON Legibility Control
+# JSON Legibility Is Not Control
 
-Date: 2026-07-31
+This directory is the public evidence surface for the article's clean prospective
+experiment.
 
-This repository is a separate exploration space for a possible article idea:
+## Main result
 
-> JSON is legible to the model, but legibility is not control.
+In 720 valid Jev 1.13.0 calls, changing only the model-facing key family from an
+explicit prevention scale to an impediment framing produced:
 
-It is intentionally separate from `prompt-contract-experiments` so these probes do not pollute the canonical evidence for `Prompt Edits Are Architecture Changes`.
+- +6.88 percentage points in the primary review score;
+- a complete-block bootstrap 95% interval of [+5.63, +8.13] points;
+- +25.00 percentage points in the primary human-review rate;
+- 240/240 correct clear-state guardrail routes;
+- a supported decision under all six frozen criteria.
 
-## Question
+The two families are coherent alternative framings of one typed application
+domain. They are not synonyms. The study is a controlled existence result, not a
+production prevalence estimate.
 
-Can a model transform and generate JSON correctly while still failing to treat JSON as an enforceable control structure before the first inference?
+## Layout
 
-The distinction under test:
+- [`current/`](current/): preregistration, frozen stimuli, raw run, analysis, and
+  runnable code for the article result
+- [`archive/pre-prospective-development/`](archive/pre-prospective-development/):
+  earlier pilots, calibrations, follow-ups, and review packets, all excluded from
+  the prospective estimate and success decision
 
-- Form competence: the model can read, transform, and generate JSON.
-- Procedural authority: JSON structure becomes an enforceable object tree or execution boundary during inference.
+## Verify the published analysis
 
-## Experiment
-
-The main task gives the model a JSON payload containing a strong global anchor and several refund claim amounts. It asks for one `LOW` or `NOT_LOW` label per item. The only variable is where the instruction `Treat each JSON sub-object independently` appears.
-
-`LOW` is deliberately left implicit. The experiment is not trying to discover the correct dollar value of `LOW`; it uses changes in `LOW` labels to show whether JSON placement can control an implicit judgment.
-
-| Condition | Format | Bet |
-|---|---|---|
-| `control` | No independence instruction | Anchor contamination remains strong. |
-| `prefix_free_text` | Instruction before JSON | Small to medium effect possible, not reliable enforcement. |
-| `suffix_free_text` | Instruction after JSON | Highest non-system chance of effect. |
-| `top_level_instruction` | JSON field named `instruction` | Possible but unstable effect. |
-| `top_level_note` | JSON field named `note` | Weak effect expected. |
-| `per_object_instruction` | Each item has an `instruction` field | Interesting failure case if it does not isolate. |
-| `system_rule` | System prompt contains the rule | Strongest effect expected. |
-| `json_transform_positive_control` | Separate JSON transformation task | High success expected. |
-
-## Run
+From this directory:
 
 ```bash
 npm run check
-npm run run:openai
-npm run run:gemini
+npm run verify
 ```
 
-Live runs require `OPENAI_API_KEY` or `GEMINI_API_KEY`. Results are written under:
-
-```text
-experiments/json-control-boundary/results/
-```
-
-Each run stores:
-
-- `calls.jsonl`: raw request metadata, raw text, parsed labels, validation.
-- `summary.md`: readable comparison table.
-- `summary.json`: aggregate counts.
-
-## Call Budget
-
-Authorized by Eric:
-
-- GPT: up to 1000 calls.
-- Gemini: up to 1000 calls.
-
-Default full run per provider:
-
-- 7 classification conditions x 20 repetitions = 140 calls per provider.
-- 20 JSON transformation positive controls per provider.
-- 160 calls per provider.
+No API key is needed to verify the preserved run. A new live run requires
+`JEV_API_KEY` and incurs provider calls.

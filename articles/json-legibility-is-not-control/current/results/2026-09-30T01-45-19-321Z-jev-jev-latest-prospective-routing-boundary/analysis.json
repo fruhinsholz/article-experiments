@@ -1,0 +1,123 @@
+{
+  "method": {
+    "primaryStates": [
+      "r05_maybe_one_slight_delay",
+      "r06_unsure_one_slight_delay"
+    ],
+    "primaryUnit": "complete randomized block; equal-weight mean of r05 and r06 paired family differences",
+    "bootstrap": "percentile bootstrap of complete block effects",
+    "bootstrapSamples": 10000,
+    "bootstrapSeed": 29092002
+  },
+  "calls": 720,
+  "errors": 0,
+  "retries": 0,
+  "responseModels": [
+    "jev-1.13.0"
+  ],
+  "primary": {
+    "scoreDifference": 0.06883333333333334,
+    "scoreBootstrap95": [
+      0.056333333333333326,
+      0.08125
+    ],
+    "reviewRateDifference": 0.25,
+    "reviewRateBootstrap95": [
+      0.15,
+      0.35833333333333334
+    ],
+    "transitions": {
+      "automaticToReview": 33,
+      "reviewToAutomatic": 3,
+      "bothAutomatic": 32,
+      "bothReview": 52
+    }
+  },
+  "stateEffects": [
+    {
+      "state": "r05_maybe_one_slight_delay",
+      "controlMean": 0.46633333333333327,
+      "treatmentMean": 0.5215,
+      "scoreDifference": 0.055166666666666676,
+      "reviewRateDifference": 0.15
+    },
+    {
+      "state": "r06_unsure_one_slight_delay",
+      "controlMean": 0.4768333333333333,
+      "treatmentMean": 0.5593333333333335,
+      "scoreDifference": 0.0825,
+      "reviewRateDifference": 0.35
+    },
+    {
+      "state": "r04_close_to_normal_pace",
+      "controlMean": 0.13633333333333336,
+      "treatmentMean": 0.2596666666666667,
+      "scoreDifference": 0.12333333333333335,
+      "reviewRateDifference": 0
+    },
+    {
+      "state": "r08_one_duty_slightly_slower",
+      "controlMean": 0.8848333333333335,
+      "treatmentMean": 0.9464999999999999,
+      "scoreDifference": 0.06166666666666664,
+      "reviewRateDifference": 0
+    },
+    {
+      "state": "clear_full",
+      "controlMean": 0,
+      "treatmentMean": 0,
+      "scoreDifference": 0,
+      "reviewRateDifference": 0
+    },
+    {
+      "state": "clear_partial",
+      "controlMean": 1,
+      "treatmentMean": 1,
+      "scoreDifference": 0,
+      "reviewRateDifference": 0
+    }
+  ],
+  "guardrails": [
+    {
+      "state": "clear_full",
+      "family": "duty_prevention",
+      "expectedBranch": "automatic_full_capacity",
+      "correct": 60,
+      "n": 60,
+      "accuracy": 1
+    },
+    {
+      "state": "clear_full",
+      "family": "work_impediment",
+      "expectedBranch": "automatic_full_capacity",
+      "correct": 60,
+      "n": 60,
+      "accuracy": 1
+    },
+    {
+      "state": "clear_partial",
+      "family": "duty_prevention",
+      "expectedBranch": "human_review",
+      "correct": 60,
+      "n": 60,
+      "accuracy": 1
+    },
+    {
+      "state": "clear_partial",
+      "family": "work_impediment",
+      "expectedBranch": "human_review",
+      "correct": 60,
+      "n": 60,
+      "accuracy": 1
+    }
+  ],
+  "successCriteria": {
+    "scoreShiftAtLeastFivePoints": true,
+    "scoreIntervalAboveZero": true,
+    "bothPrimaryStatesPositive": true,
+    "reviewRateIncreaseWithIntervalAboveZero": true,
+    "guardrailsAtLeast95Percent": true,
+    "oneReturnedModelVersion": true
+  },
+  "success": true
+}

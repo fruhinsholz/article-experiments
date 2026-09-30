@@ -1,0 +1,71 @@
+{
+  "version": "1.0.0-prospective-routing-boundary",
+  "dateFrozen": "2026-09-29",
+  "question": "To what extent can the person currently perform their essential work?",
+  "instructionSuffix": "",
+  "descriptions": {
+    "full": "The person can complete every essential job duty at normal quality and pace without assistance.",
+    "partial": "The person can complete some essential job duties, but at least one essential duty cannot be completed at normal quality or pace.",
+    "none": "The person cannot complete any essential job duty."
+  },
+  "applicationPolicy": {
+    "reviewIfPartialPlusNoneAtLeast": 0.5,
+    "reviewBranch": "human_review",
+    "automaticBranch": "automatic_full_capacity"
+  },
+  "randomization": {
+    "seed": 29092001,
+    "unit": "complete balanced block containing every state-family cell once",
+    "semanticOrders": [
+      ["full", "partial", "none"],
+      ["full", "none", "partial"],
+      ["partial", "full", "none"],
+      ["partial", "none", "full"],
+      ["none", "full", "partial"],
+      ["none", "partial", "full"]
+    ],
+    "blocksPerSemanticOrder": 10
+  },
+  "analysis": {
+    "primaryStates": [
+      "r05_maybe_one_slight_delay",
+      "r06_unsure_one_slight_delay"
+    ],
+    "rangeControls": [
+      "r04_close_to_normal_pace",
+      "r08_one_duty_slightly_slower"
+    ],
+    "guardrails": {
+      "clear_full": "automatic_full_capacity",
+      "clear_partial": "human_review"
+    },
+    "controlFamily": "duty_prevention",
+    "treatmentFamily": "work_impediment",
+    "bootstrapSamples": 10000,
+    "bootstrapSeed": 29092002,
+    "minimumPrimaryScoreShift": 0.05,
+    "minimumGuardrailAccuracy": 0.95
+  },
+  "states": {
+    "r05_maybe_one_slight_delay": "My computer is broken, but from my phone I can complete every essential job duty at normal quality and pace without assistance. One duty might occasionally take slightly longer.",
+    "r06_unsure_one_slight_delay": "My computer is broken, but from my phone I can complete every essential job duty at normal quality. Most duties are at normal pace; I am unsure whether one duty may take slightly longer.",
+    "r04_close_to_normal_pace": "My computer is broken, but from my phone I can complete every essential job duty at normal quality. My pace is close to normal, although the phone is less convenient.",
+    "r08_one_duty_slightly_slower": "My computer is broken, but from my phone I can complete every essential job duty at normal quality. One duty takes slightly longer than normal.",
+    "clear_full": "My computer is broken, but from my phone I can complete every essential job duty at normal quality and pace without assistance.",
+    "clear_partial": "My computer is broken. From my phone I can complete some essential job duties, but at least one essential duty cannot be completed at normal quality or pace."
+  },
+  "keyFamilies": {
+    "duty_prevention": {
+      "full": "no_essential_duties_prevented",
+      "partial": "some_essential_duties_prevented",
+      "none": "all_essential_duties_prevented",
+      "validationStatus": "accepted"
+    },
+    "work_impediment": {
+      "full": "essential_work_unimpeded",
+      "partial": "essential_work_impeded",
+      "none": "essential_work_halted",
+      "validationStatus": "accepted"
+    }
+  }
+}
