@@ -1,14 +1,19 @@
 #!/usr/bin/env node
 import { appendFile, mkdir, readFile, writeFile } from "node:fs/promises";
+import http from "node:http";
+import https from "node:https";
 import path from "node:path";
 import process from "node:process";
 import { fileURLToPath } from "node:url";
 import { createHash } from "node:crypto";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const STIMULI_PATH = path.join(ROOT, "stimuli.v1.json");
+const EXPERIMENT_DIR = path.join(ROOT, "experiments/choice-label-contamination");
+const STIMULI_PATH = path.join(EXPERIMENT_DIR, "refined-stimuli.v1.json");
 const JEV_URL = "https://api.typesafe.ai/v1/systemone";
 const GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta";
+const INFISICAL_ADMIN_ENV_FILE = process.env.INFISICAL_ADMIN_ENV_FILE ?? "/etc/openclaw/infisical-admin.env";
+const INFISICAL_PROJECT_ID = "dbd4a616-2507-45ee-bd99-9f390bcbb688";
 let JEV_API_KEY = process.env.JEV_API_KEY ?? process.env.jev_api_key;
 let GEMINI_API_KEY = process.env.GEMINI_API_KEY ?? process.env.gemini_api_key;
 
@@ -55,6 +60,70 @@ function parseArgs(argv) {
   if (!Number.isFinite(args.temperature) || args.temperature < 0) throw new Error("--temperature must be >= 0");
   args.model ??= args.provider === "jev" ? "jev-latest" : "gemini-3.5-flash-lite";
   return args;
+}
+
+function parseEnvFile(text) {
+  const values = {};
+  for (const rawLine of text.split(/\r?\n/)) {
+    const line = rawLine.trim();
+    if (!line || line.startsWith("#")) continue;
+    const match = /^([A-Za-z_][A-Za-z0-9_]*)=(.*)$/.exec(line);
+    if (!match) continue;
+    let value = match[2].trim();
+    if ((value.startsWith('"') && value.endsWith('"')) || (value.startsWith("'") && value.endsWith("'"))) value = value.slice(1, -1);
+    values[match[1]] = value;
+  }
+  return values;
+}
+
+async function jsonRequest(urlString, { method = "GET", headers = {}, body, redirects = 3, rejectUnauthorized = true } = {}) {
+  const url = new URL(urlString);
+  const transport = url.protocol === "https:" ? https : http;
+  const payload = body ? JSON.stringify(body) : null;
+  return new Promise((resolve, reject) => {
+    const request = transport.request(url, {
+      method,
+      rejectUnauthorized,
+      headers: { ...headers, ...(payload ? { "Content-Type": "application/json" } : {}) },
+    }, (response) => {
+      if (response.statusCode >= 300 && response.statusCode < 400 && response.headers.location && redirects > 0) {
+        response.resume();
+        jsonRequest(new URL(response.headers.location, url).toString(), { method, headers, body, redirects: redirects - 1, rejectUnauthorized }).then(resolve, reject);
+        return;
+      }
+      const chunks = [];
+      response.on("data", (chunk) => chunks.push(chunk));
+      response.on("end", () => {
+        const text = Buffer.concat(chunks).toString("utf8");
+        let json = {};
+        try { json = text ? JSON.parse(text) : {}; } catch (error) { reject(new Error(`Non-JSON HTTP ${response.statusCode}: ${error.message}`)); return; }
+        resolve({ ok: response.statusCode >= 200 && response.statusCode < 300, status: response.statusCode, json });
+      });
+    });
+    request.on("error", reject);
+    if (payload) request.write(payload);
+    request.end();
+  });
+}
+
+async function fetchInfisicalSecret(name) {
+  const bootstrap = { ...parseEnvFile(await readFile(INFISICAL_ADMIN_ENV_FILE, "utf8")), ...process.env };
+  const baseUrl = (bootstrap.INFISICAL_API_URL ?? bootstrap.INFISICAL_DOMAIN ?? "").replace(/\/+$/, "");
+  const rejectUnauthorized = process.env.INFISICAL_TLS_VERIFY !== "0";
+  if (!baseUrl || !bootstrap.INFISICAL_CLIENT_ID || !bootstrap.INFISICAL_CLIENT_SECRET) throw new Error("Infisical bootstrap configuration is incomplete");
+  const loginResponse = await jsonRequest(`${baseUrl}/api/v1/auth/universal-auth/login`, {
+    method: "POST",
+    rejectUnauthorized,
+    body: { clientId: bootstrap.INFISICAL_CLIENT_ID, clientSecret: bootstrap.INFISICAL_CLIENT_SECRET },
+  });
+  if (!loginResponse.ok || !loginResponse.json.accessToken) throw new Error(`Infisical login failed with HTTP ${loginResponse.status}`);
+  const params = new URLSearchParams({ projectId: INFISICAL_PROJECT_ID, environment: "prod", secretPath: "/", viewSecretValue: "true", includeImports: "true" });
+  const secretResponse = await jsonRequest(`${baseUrl}/api/v4/secrets/${encodeURIComponent(name)}?${params}`, {
+    headers: { Authorization: `Bearer ${loginResponse.json.accessToken}` },
+    rejectUnauthorized,
+  });
+  if (!secretResponse.ok) throw new Error(`Infisical secret read failed with HTTP ${secretResponse.status}`);
+  return secretResponse.json.secret?.secretValue ?? null;
 }
 
 function mulberry32(seed) {
@@ -338,10 +407,17 @@ async function main() {
   const jobs = buildJobs(stimuli, args);
   if (jobs.length > args.maxCalls) throw new Error(`Planned ${jobs.length} calls exceeds --max-calls ${args.maxCalls}`);
   if (!args.dryRun && args.provider === "jev" && !JEV_API_KEY) {
-    throw new Error("JEV_API_KEY is required for a live Jev run");
+    JEV_API_KEY = (await fetchInfisicalSecret("jev_api_key"))?.trim().replace(/^Bearer\s+/i, "");
+    if (!JEV_API_KEY) throw new Error("Infisical secret jev_api_key is empty or missing");
   }
   if (!args.dryRun && args.provider === "gemini" && !GEMINI_API_KEY) {
-    throw new Error("GEMINI_API_KEY is required for a live Gemini run");
+    for (const name of ["GEMINI_API_KEY", "gemini_api_key"]) {
+      try {
+        GEMINI_API_KEY = (await fetchInfisicalSecret(name))?.trim();
+      } catch {}
+      if (GEMINI_API_KEY) break;
+    }
+    if (!GEMINI_API_KEY) throw new Error("Gemini API key is empty or missing");
   }
   const stamp = new Date().toISOString().replaceAll(":", "-").replaceAll(".", "-");
   const directory = path.join(path.dirname(args.stimuliFile), "results", `${stamp}-${args.provider}-${args.model}-${args.label}`);
